@@ -1,6 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-05-18T22:31:52-03:00</updated><id>/feed.xml</id><title type="html">Matheus Richard</title><subtitle>Hi, I'm Matheus Richard, a Software Engineering Student at UnB (Brazil). This is my personal blog, where I'll share my experiences, things and lessons I've learned, and all sort of cool stuff. I hope it helps you! Have fun!</subtitle><entry><title type="html">GSoC.start!</title><link href="/gsoc/2019/05/13/gsoc-start.html" rel="alternate" type="text/html" title="GSoC.start!" /><published>2019-05-13T22:00:00-03:00</published><updated>2019-05-13T22:00:00-03:00</updated><id>/gsoc/2019/05/13/gsoc-start</id><content type="html" xml:base="/gsoc/2019/05/13/gsoc-start.html">&lt;p&gt;Hello &lt;del&gt;world&lt;/del&gt; everyone! I’m Matheus Richard, a Software Engineering undergraduated student from Brazil. I love music and my recently passion is game development.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-05-18T23:50:37-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Matheus Richard</title><subtitle>Hi, I'm Matheus Richard, a Software Engineering Student at UnB (Brazil). I'm an open source dev, I love music and my newfound passion is game development.</subtitle><entry><title type="html">Blog.new</title><link href="http://localhost:4000/2019/05/13/blog-new.html" rel="alternate" type="text/html" title="Blog.new" /><published>2019-05-13T22:00:00-03:00</published><updated>2019-05-13T22:00:00-03:00</updated><id>http://localhost:4000/2019/05/13/blog-new</id><content type="html" xml:base="http://localhost:4000/2019/05/13/blog-new.html">&lt;p&gt;Hello &lt;del&gt;world&lt;/del&gt; everyone! I’m Matheus Richard, a Software Engineering undergraduated student at &lt;a href=&quot;https://www.unb.br/&quot;&gt;UnB&lt;/a&gt; (Brazil). I’m an open source developer, I love music and my newfound passion is game development.&lt;/p&gt;
 
-&lt;p&gt;My favorite programming language is &lt;a href=&quot;https://www.ruby-lang.org/&quot;&gt;Ruby&lt;/a&gt;, so I made it my main tool. I work with it every day. This was my&lt;/p&gt;
+&lt;p&gt;This is my personal blog, where I’ll share my experiences, things and lessons I’ve learned, and all sort of cool stuff. I believe that teaching is a great way to learn too, so this is two-way learning process here, right?&lt;/p&gt;
+
+&lt;p&gt;Besides that, this will be a way to track my evolution as a developer (and writer ;D).&lt;/p&gt;
+
+&lt;p&gt;I’m living a great time in my life, so there are many cool things happening at the same time. I’m currently working on &lt;a href=&quot;#!&quot;&gt;my first game&lt;/a&gt;, I &lt;a href=&quot;#!&quot;&gt;just got accepted on GSoC 2019&lt;/a&gt; and I’m making a &lt;a href=&quot;#!&quot;&gt;simple pascal compiler&lt;/a&gt;, to mention a few of them &lt;em&gt;(I’ll update all this links when I post something about them, so stay tunned!)&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;My intent is to share a bit of what I’ve learned on those things. I hope this blog helps you! Have fun!&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;center&quot; src=&quot;https://media.giphy.com/media/l1J3CbFgn5o7DGRuE/giphy.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;P.S.: You can find me on social media through the links in the footer. Get in touch!&lt;/em&gt;&lt;/p&gt;
+
+&lt;style scoped=&quot;&quot;&gt;
+.center {
+  display: block;
+  margin: 0 auto !important;
+}
+&lt;/style&gt;</content><author><name></name></author><summary type="html">Hello world everyone! I’m Matheus Richard, a Software Engineering undergraduated student at UnB (Brazil). I’m an open source developer, I love music and my newfound passion is game development.</summary></entry><entry><title type="html">GSoC.start</title><link href="http://localhost:4000/gsoc/2019/05/13/gsoc-start.html" rel="alternate" type="text/html" title="GSoC.start" /><published>2019-05-13T22:00:00-03:00</published><updated>2019-05-13T22:00:00-03:00</updated><id>http://localhost:4000/gsoc/2019/05/13/gsoc-start</id><content type="html" xml:base="http://localhost:4000/gsoc/2019/05/13/gsoc-start.html">&lt;h1 id=&quot;project-5260793296191488&quot;&gt;Project #5260793296191488&lt;/h1&gt;
+
+&lt;p&gt;[Ruby][ruby-site] is my favorite programming language. so I made it my main tool. I work with it every day. This was why I chose Ruby as org to contribute on GSoC 2019.&lt;/p&gt;
+
+&lt;h1 id=&quot;project-5260793296191488-1&quot;&gt;Project #5260793296191488&lt;/h1&gt;
+&lt;!-- Fazer montagem com o número tipo o Wolverine. --&gt;
 
 &lt;!-- ############################ --&gt;
 &lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
@@ -15,4 +37,4 @@
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Hello world everyone! I’m Matheus Richard, a Software Engineering undergraduated student from Brazil. I love music and my recently passion is game development.</summary></entry></feed>
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Project #5260793296191488</summary></entry></feed>

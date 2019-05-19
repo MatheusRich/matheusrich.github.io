@@ -17,8 +17,7 @@ title: Matheus Richard
 email: matheusrichardt@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Hi, I'm Matheus Richard, a Software Engineering Student at UnB (Brazil).
-  This is my personal blog, where I'll share my experiences, things and lessons I've learned,
-  and all sort of cool stuff. I hope it helps you! Have fun!
+  I'm an open source dev, I love music and my newfound passion is game development.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
