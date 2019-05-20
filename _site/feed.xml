@@ -1,40 +1,96 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-05-18T23:50:37-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Matheus Richard</title><subtitle>Hi, I'm Matheus Richard, a Software Engineering Student at UnB (Brazil). I'm an open source dev, I love music and my newfound passion is game development.</subtitle><entry><title type="html">Blog.new</title><link href="http://localhost:4000/2019/05/13/blog-new.html" rel="alternate" type="text/html" title="Blog.new" /><published>2019-05-13T22:00:00-03:00</published><updated>2019-05-13T22:00:00-03:00</updated><id>http://localhost:4000/2019/05/13/blog-new</id><content type="html" xml:base="http://localhost:4000/2019/05/13/blog-new.html">&lt;p&gt;Hello &lt;del&gt;world&lt;/del&gt; everyone! I’m Matheus Richard, a Software Engineering undergraduated student at &lt;a href=&quot;https://www.unb.br/&quot;&gt;UnB&lt;/a&gt; (Brazil). I’m an open source developer, I love music and my newfound passion is game development.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-05-20T01:37:48-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Matheus Richard</title><subtitle>Hi, I'm Matheus Richard, a Software Engineering Student at UnB (Brazil). I'm an open source dev, I love music and my newfound passion is game development.</subtitle><entry><title type="html">How I got accepted into GSoC 2019</title><link href="http://localhost:4000/gsoc/2019/05/13/me-and-gsoc.html" rel="alternate" type="text/html" title="How I got accepted into GSoC 2019" /><published>2019-05-13T22:00:00-03:00</published><updated>2019-05-13T22:00:00-03:00</updated><id>http://localhost:4000/gsoc/2019/05/13/me-and-gsoc</id><content type="html" xml:base="http://localhost:4000/gsoc/2019/05/13/me-and-gsoc.html">&lt;h1 id=&quot;my-background&quot;&gt;My background&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.ruby-lang.org/&quot;&gt;Ruby&lt;/a&gt; is my favorite programming language. I’ve been working with it almost every day since 2016, whether on college projects or at work. I love how it is simple, clear, elegant and beautiful. Take a look at the code snippet bellow:&lt;/p&gt;
 
-&lt;p&gt;This is my personal blog, where I’ll share my experiences, things and lessons I’ve learned, and all sort of cool stuff. I believe that teaching is a great way to learn too, so this is two-way learning process here, right?&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;my_list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
 
-&lt;p&gt;Besides that, this will be a way to track my evolution as a developer (and writer ;D).&lt;/p&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;empty?&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;It's empty&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# No unnecessary braces, semicolons, etc&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;choosing-a-project&quot;&gt;Choosing a project&lt;/h1&gt;
+
+&lt;p&gt;I started web development and quickly discovered &lt;a href=&quot;https://rubyonrails.org/&quot;&gt;Ruby on Rails&lt;/a&gt; and eventually ruby became one of my main tools. This was why I chose the &lt;a href=&quot;httpst//summerofcode.withgoogle.com/organizations/5542255322988544/&quot;&gt;Ruby Org&lt;/a&gt; when I was looking for projects to contribute before GSoC.&lt;/p&gt;
+
+&lt;p&gt;I ran through its &lt;a href=&quot;https://github.com/rubygsoc/rubygsoc/wiki/Ideas-List&quot;&gt;ideas list&lt;/a&gt; and I found some nice projects. One that catched my eye was to &lt;a href=&quot;https://github.com/rubygsoc/rubygsoc/wiki/Ideas-for-RubyGems#integrate-functionality-from-gem-web-into-rubygems-gem-cli&quot;&gt;Integrate functionality from gem-web into RubyGems gem CLI&lt;/a&gt;. This seemed to be a project for me: kinda on my area, but challenging tho. I wanted to learn more about this project, so I could write a better proposal.&lt;/p&gt;
+
+&lt;h1 id=&quot;first-contributions&quot;&gt;First contributions&lt;/h1&gt;
+&lt;p&gt;I took a look at &lt;a href=&quot;https://github.com/bitboxer/gem-web/&quot;&gt;gem-web&lt;/a&gt;’s to see what it looks like and make some contribution. Since there were no issues, I look at its files.&lt;/p&gt;
+
+&lt;p&gt;Improving travis is an easy way to get started so this was my &lt;a href=&quot;https://github.com/bitboxer/gem-web/pull/3&quot;&gt;first contribution&lt;/a&gt; to gem-web. This is very important: &lt;strong&gt;don’t be afraid of open source projects&lt;/strong&gt;. This contribution was so simple! Take a look, just one line:&lt;/p&gt;
+
+&lt;p&gt;&lt;img style=&quot;display: block; margin: 0 auto;&quot; src=&quot;/img/first-pr.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To get used to the codebase I thought that would be nice to add some tests, so I &lt;a href=&quot;https://github.com/bitboxer/gem-web/pull/5&quot;&gt;added Simplecov&lt;/a&gt; first, and after I would write tests where gem-web was lacking.&lt;/p&gt;
+
+&lt;p&gt;I had to study a bit of the test structure of gem-web (which were written in &lt;a href=&quot;https://rspec.info/&quot;&gt;Rspec&lt;/a&gt;), and the code of rubygems (especially &lt;a href=&quot;https://github.com/rubygems/rubygems/blob/master/lib/rubygems/command.rb&quot;&gt;the Command class&lt;/a&gt;) and gem-web itself. This was my path to my &lt;a href=&quot;https://github.com/bitboxer/gem-web/pull/6&quot;&gt;third contribution&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;my-proposal&quot;&gt;My proposal&lt;/h1&gt;
+&lt;p&gt;With the knowlegde adquired from my contribuitons I was able to write a proposal. Ruby provided an &lt;a href=&quot;https://github.com/rubygsoc/rubygsoc/wiki/Student-Application&quot;&gt;application template for students&lt;/a&gt;, so I answered the questions, and wrote a Roadmap of my development process. I followed an advice from an ex-GSoCer to &lt;strong&gt;add time to get feedback from the community&lt;/strong&gt; (particularly from non-linux users), so I add these “Feedback Moments”. I added a &lt;strong&gt;contingency time&lt;/strong&gt; too, because as software developers we know: &lt;em&gt;“Sh!t Happens”&lt;/em&gt;. Here’s &lt;a href=&quot;https://docs.google.com/document/d/1YB1-rBfI9fI9i7cy9_RWV-xD45DMMW3XLnuRWlp_kvg/edit?usp=sharing&quot;&gt;my proposal draft&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;With the proposal finished I sent it to the mentors, and waited for feedback (actually they said that my proposal was good, so there are no changes between the draft and the final PDF).&lt;/p&gt;
+
+&lt;h1 id=&quot;project-5260793296191488&quot;&gt;Project #5260793296191488&lt;/h1&gt;
+
+&lt;p&gt;Well, as you know (the title has spoiled you), I &lt;a href=&quot;https://summerofcode.withgoogle.com/projects/#5260793296191488&quot;&gt;got accepted into GSoC&lt;/a&gt; ;) Here’s the nice email that I’ve received:&lt;/p&gt;
+
+&lt;p&gt;&lt;img style=&quot;display: block; margin: 0 auto;&quot; src=&quot;/img/gsoc.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;final-thoughts&quot;&gt;Final thoughts&lt;/h1&gt;
+&lt;p&gt;Yes, I am very happy to be part of this program. I feel great about myself, because sometimes we feel like we can’t do certain things, and I prove myself wrong. Well, I got accepted on my first try, so I’m not the most experieced about GSoC, but here some tips that may help you:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;My tips:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Pick an org/project/language you like&lt;/strong&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;You won’t want to work on something you don’t have any bonds with.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Start Early!&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;You can read &lt;a href=&quot;https://google.github.io/gsocguides/student/index&quot;&gt;Google’s Student Guide&lt;/a&gt;, read articles of past students(like this one), etc.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Know your project!&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;You’ll write a proposal, so knowing your project will help you to convince the organization that you are the right person for it. Contributions are welcome here!&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Interact with the mentors and the community&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Get in touch with them on IRC channels, Slack, Rocket.chat, Telegram groups or even email! No one is better than them to help you on your first steps.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Use Grammarly!&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;As english is not my first language, I’ve been using &lt;a href=&quot;https://www.grammarly.com/&quot;&gt;Grammarly&lt;/a&gt; to help me write better texts. Give it a try!&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Got turned down?&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;There are soooo many people that got turned down on GSoC multiple times before getting accepted! Don’t let this knock you down! It’s time to think about what you could have done better (ask the mentors) and start improving now! &lt;a href=&quot;https://google.github.io/gsocguides/student/being-turned-down&quot;&gt;Read this guide from Google about being turned down.&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;DO NOT GIVE UP!&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Just don’t! I know it’s tough, but you’re gonna make it!&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Well, that’s it for now. This text is longer than I expected it to be. Next post will be about my first steps on GSoC. Stay tunned and LET’S GO!&lt;/p&gt;
+
+&lt;p&gt;&lt;img style=&quot;display: block; margin: 0 auto;&quot; src=&quot;/img/letsgo.gif&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">My background Ruby is my favorite programming language. I’ve been working with it almost every day since 2016, whether on college projects or at work. I love how it is simple, clear, elegant and beautiful. Take a look at the code snippet bellow:</summary></entry><entry><title type="html">Blog.new</title><link href="http://localhost:4000/2019/05/06/blog-new.html" rel="alternate" type="text/html" title="Blog.new" /><published>2019-05-06T22:00:00-03:00</published><updated>2019-05-06T22:00:00-03:00</updated><id>http://localhost:4000/2019/05/06/blog-new</id><content type="html" xml:base="http://localhost:4000/2019/05/06/blog-new.html">&lt;p&gt;Hello &lt;del&gt;world&lt;/del&gt; everyone! I’m Matheus Richard, a Software Engineering undergraduated student at &lt;a href=&quot;https://www.unb.br/&quot;&gt;UnB&lt;/a&gt; (Brazil). I’m an open source developer, I love music and my newfound passion is game development.&lt;/p&gt;
+
+&lt;p&gt;This is my personal blog, where I’ll share my experiences, things and lessons I’ve learned, and all sort of cool stuff. I believe that teaching is a great way to learn too, so this is a two-way learning process, right?&lt;/p&gt;
+
+&lt;p&gt;Besides that, this will be a way to track my evolution as a developer (and as a writer ;D).&lt;/p&gt;
 
 &lt;p&gt;I’m living a great time in my life, so there are many cool things happening at the same time. I’m currently working on &lt;a href=&quot;#!&quot;&gt;my first game&lt;/a&gt;, I &lt;a href=&quot;#!&quot;&gt;just got accepted on GSoC 2019&lt;/a&gt; and I’m making a &lt;a href=&quot;#!&quot;&gt;simple pascal compiler&lt;/a&gt;, to mention a few of them &lt;em&gt;(I’ll update all this links when I post something about them, so stay tunned!)&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;My intent is to share a bit of what I’ve learned on those things. I hope this blog helps you! Have fun!&lt;/p&gt;
+&lt;p&gt;My intent is to share a bit of what I’ve learned on those things, and I hope this blog helps you! Have fun!&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;center&quot; src=&quot;https://media.giphy.com/media/l1J3CbFgn5o7DGRuE/giphy.gif&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img style=&quot;display: block; margin: 0 auto;&quot; src=&quot;https://media.giphy.com/media/l1J3CbFgn5o7DGRuE/giphy.gif&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;P.S.: You can find me on social media through the links in the footer. Get in touch!&lt;/em&gt;&lt;/p&gt;
-
-&lt;style scoped=&quot;&quot;&gt;
-.center {
-  display: block;
-  margin: 0 auto !important;
-}
-&lt;/style&gt;</content><author><name></name></author><summary type="html">Hello world everyone! I’m Matheus Richard, a Software Engineering undergraduated student at UnB (Brazil). I’m an open source developer, I love music and my newfound passion is game development.</summary></entry><entry><title type="html">GSoC.start</title><link href="http://localhost:4000/gsoc/2019/05/13/gsoc-start.html" rel="alternate" type="text/html" title="GSoC.start" /><published>2019-05-13T22:00:00-03:00</published><updated>2019-05-13T22:00:00-03:00</updated><id>http://localhost:4000/gsoc/2019/05/13/gsoc-start</id><content type="html" xml:base="http://localhost:4000/gsoc/2019/05/13/gsoc-start.html">&lt;h1 id=&quot;project-5260793296191488&quot;&gt;Project #5260793296191488&lt;/h1&gt;
-
-&lt;p&gt;[Ruby][ruby-site] is my favorite programming language. so I made it my main tool. I work with it every day. This was why I chose Ruby as org to contribute on GSoC 2019.&lt;/p&gt;
-
-&lt;h1 id=&quot;project-5260793296191488-1&quot;&gt;Project #5260793296191488&lt;/h1&gt;
-&lt;!-- Fazer montagem com o número tipo o Wolverine. --&gt;
-
-&lt;!-- ############################ --&gt;
-&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Project #5260793296191488</summary></entry></feed>
+&lt;p&gt;&lt;em&gt;P.S.: You can find me on social media through the links in the footer. Get in touch!&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Hello world everyone! I’m Matheus Richard, a Software Engineering undergraduated student at UnB (Brazil). I’m an open source developer, I love music and my newfound passion is game development.</summary></entry></feed>

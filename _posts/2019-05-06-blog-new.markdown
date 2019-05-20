@@ -7,15 +7,15 @@ date: 2019-05-06 22:00:00 -0300
 
 Hello ~~world~~ everyone! I'm Matheus Richard, a Software Engineering undergraduated student at [UnB][unb-link] (Brazil). I'm an open source developer, I love music and my newfound passion is game development.
 
-This is my personal blog, where I'll share my experiences, things and lessons I've learned, and all sort of cool stuff. I believe that teaching is a great way to learn too, so this is two-way learning process here, right?
+This is my personal blog, where I'll share my experiences, things and lessons I've learned, and all sort of cool stuff. I believe that teaching is a great way to learn too, so this is a two-way learning process, right?
 
-Besides that, this will be a way to track my evolution as a developer (and writer ;D).
+Besides that, this will be a way to track my evolution as a developer (and as a writer ;D).
 
 I'm living a great time in my life, so there are many cool things happening at the same time. I'm currently working on [my first game][game-link], I [just got accepted on GSoC 2019][gsoc-link] and I'm making a [simple pascal compiler][compiler-link], to mention a few of them _(I'll update all this links when I post something about them, so stay tunned!)_.
 
-My intent is to share a bit of what I've learned on those things. I hope this blog helps you! Have fun!
+My intent is to share a bit of what I've learned on those things, and I hope this blog helps you! Have fun!
 
-<img class="center" src="https://media.giphy.com/media/l1J3CbFgn5o7DGRuE/giphy.gif">
+<img style="display: block; margin: 0 auto;" src="https://media.giphy.com/media/l1J3CbFgn5o7DGRuE/giphy.gif">
 
 _P.S.: You can find me on social media through the links in the footer. Get in touch!_
 
@@ -24,9 +24,3 @@ _P.S.: You can find me on social media through the links in the footer. Get in t
 [gsoc-link]: #!
 [compiler-link]: #!
 
-<style scoped>
-.center {
-  display: block;
-  margin: 0 auto !important;
-}
-</style>
