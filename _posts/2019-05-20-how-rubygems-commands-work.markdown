@@ -5,18 +5,19 @@ date: 2019-05-13 22:00:00 -0300
 categories: gsoc rubygems cli
 ---
 
-As my first task on GSoC, my mentor [@zoras][zoras-gh] sent me some PRs ([#1938][pr-1938] and [#1944][pr-1944]) to study, as well the [class][command-class] `Command` of `rubygems` codebase. Here's a bit of what I've learned:
+I'm currently working on GSoC, and I have to [Integrate functionality from gem-web into RubyGems gem CLI][gsoc-post]. So, we're going to add a new CLI option to `rubygems`. As my first task on it, my mentor [Saroj Maharjan][zoras-gh] (@zoras) sent me some PRs ([#1938][pr-1938] and [#1944][pr-1944]) to study, as well as the [class][command-class] `Command` of [`rubygems` codebase][rubygems]. Here's a bit of what I've learned:
+
 
 # Class Command
-The first thing I noticed on the PRs was that every command inherits the class `Command`. This class works like an `interface` to the children classes, that is, the children must override its methods to work properly. The comment at `lib/rubygems/command.rb` sums this up:
+The first thing I noticed on the PRs was that every command inherits from the class `Command`. This class works like an `interface` to the children classes, that is, the children must override its methods to work properly. The comment at [`lib/rubygems/command.rb`][comment] sums this up:
 
 > Base class for all Gem commands.  When creating a new gem command, define #initialize, #execute, #arguments, #defaults_str, #description and #usage (as appropriate). 
 
 # Overriding
 
-Well, we need to override these methods, let's take a look on them:
+So we need to override these methods to create our new command. Let's take a look at them:
 
-* **`initialize`:** Initializes a new command, adding its name, a short description (that will be displayed in `gem help commands`). The argument `defaults` is a list of default arguments (that should be mirrored in `defaults_str`).
+* **`initialize`:** Initializes a new command, adding its name, a short description (that will be displayed in `gem help commands`). The argument `defaults` is a list of default arguments (that should be mirrored in `defaults_str`). Here's the [generic implementation][initialize] of this method:
 
 ```ruby
 # Gem::Command's initialize method
@@ -34,7 +35,7 @@ def initialize(command, summary=nil, defaults={})
 end
 ```
 
-It's possible add new options to your command with `add_option`. A new command `initilize` would look like this:
+It's possible to add new options to your command with `add_option`. The `initilize` method of our new command could look like this:
 
 ```ruby
 def initialize
@@ -47,7 +48,7 @@ end
 ```
 <br>
 
-* **`arguments`:** Describes the arguments that a command takes. It should return a left-justified string, one argument per line. Here's the code from the command `install`:
+* **`arguments`:** Describes the arguments that a command takes. It should return a left-justified string, one argument per line. Here's the code from the [command `install`][install], for example:
 
 ```ruby
 def arguments
@@ -56,7 +57,7 @@ end
 ```
 <br>
 
-* **`usage`:** Displays the usage for an individual gem command. The text "[options]" is automatically appended to the usage text. Take a look on the override of this method at `Gem::Commands::UpdateCommand`:
+* **`usage`:** Displays the usage for an individual gem command. The text "[options]" is automatically appended to the usage text. Take a look on the override of this method at [`Gem::Commands::UpdateCommand`][update]:
 
 ```ruby
   def usage
@@ -66,7 +67,7 @@ end
 <br>
 
 <!-- #### defaults_str -->
-* **`defaults_str`:** Defines the default argumetns from the command. It's really simple, take a look at this example:
+* **`defaults_str`:** Defines the default arguments from the command. It's really simple, take a look at this example:
 
 ```ruby
 # This method is similar to arguments, but displays the default values.
@@ -104,14 +105,21 @@ end
 
 As you may have noticed, adding a new command to `rubygems` is not rocket science. Adding tests to your new code is very important too!
 
-BTW, the tests from `rubygems` are written in [Minitest][minitest], whereas `gem-web`'s are in [Rspec][rspec], so I'll need to convert them before integrating `gem-web` into `rubygems`. I'll probably talk about this in next week's post. Stay tuned! I'm out!
+BTW, the tests from [`rubygems`][rubygems] are written in [Minitest][minitest], whereas [`gem-web`][gem-web]'s are in [Rspec][rspec], so I'll need to convert them before integrating `gem-web` into `rubygems`. I'll probably talk about this in next week's post. Stay tuned! I'm out!
 
 <img style="display: block; margin: 0 auto;" src="/img/thats-all.gif">
 
 
-[zoras-gh]: #!
+[zoras-gh]: http://github.com/zoras
+[gsoc-post]: {% post_url 2019-05-13-me-and-gsoc %}
 [pr-1938]: https://github.com/rubygems/rubygems/pull/1938
 [pr-1944]: https://github.com/rubygems/rubygems/pull/1944
+[comment]: https://github.com/rubygems/rubygems/blob/master/lib/rubygems/command.rb#L13
 [command-class]: https://github.com/rubygems/rubygems/blob/master/lib/rubygems/command.rb
+[rubygems]: https://github.com/rubygems/rubygems
 [minitest]: https://github.com/seattlerb/minitest
 [rspec]: https://rspec.info/
+[initialize]: https://github.com/rubygems/rubygems/blob/master/lib/rubygems/command.rb#L118
+[install]: https://github.com/rubygems/rubygems/blob/master/lib/rubygems/commands/install_command.rb
+[update]: https://github.com/rubygems/rubygems/blob/master/lib/rubygems/commands/update_command.rb
+[gem-web]: https://github.com/bitboxer/gem-web/
