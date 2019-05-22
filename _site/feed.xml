@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-05-20T01:37:48-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Matheus Richard</title><subtitle>Hi, I'm Matheus Richard, a Software Engineering Student at UnB (Brazil). I'm an open source dev, I love music and my newfound passion is game development.</subtitle><entry><title type="html">How I got accepted into GSoC 2019</title><link href="http://localhost:4000/gsoc/2019/05/13/me-and-gsoc.html" rel="alternate" type="text/html" title="How I got accepted into GSoC 2019" /><published>2019-05-13T22:00:00-03:00</published><updated>2019-05-13T22:00:00-03:00</updated><id>http://localhost:4000/gsoc/2019/05/13/me-and-gsoc</id><content type="html" xml:base="http://localhost:4000/gsoc/2019/05/13/me-and-gsoc.html">&lt;h1 id=&quot;my-background&quot;&gt;My background&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-05-21T23:11:35-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Matheus Richard</title><subtitle>Hi, I'm Matheus Richard, a Software Engineering Student at UnB (Brazil). I'm an open source dev, I love music and my newfound passion is game development.</subtitle><entry><title type="html">How I got accepted to GSoC 2019</title><link href="http://localhost:4000/gsoc/2019/05/13/me-and-gsoc.html" rel="alternate" type="text/html" title="How I got accepted to GSoC 2019" /><published>2019-05-13T22:00:00-03:00</published><updated>2019-05-13T22:00:00-03:00</updated><id>http://localhost:4000/gsoc/2019/05/13/me-and-gsoc</id><content type="html" xml:base="http://localhost:4000/gsoc/2019/05/13/me-and-gsoc.html">&lt;h1 id=&quot;my-background&quot;&gt;My background&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.ruby-lang.org/&quot;&gt;Ruby&lt;/a&gt; is my favorite programming language. I’ve been working with it almost every day since 2016, whether on college projects or at work. I love how it is simple, clear, elegant and beautiful. Take a look at the code snippet bellow:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;my_list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
@@ -81,7 +81,115 @@
 &lt;p&gt;&lt;br /&gt;
 Well, that’s it for now. This text is longer than I expected it to be. Next post will be about my first steps on GSoC. Stay tunned and LET’S GO!&lt;/p&gt;
 
-&lt;p&gt;&lt;img style=&quot;display: block; margin: 0 auto;&quot; src=&quot;/img/letsgo.gif&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">My background Ruby is my favorite programming language. I’ve been working with it almost every day since 2016, whether on college projects or at work. I love how it is simple, clear, elegant and beautiful. Take a look at the code snippet bellow:</summary></entry><entry><title type="html">Blog.new</title><link href="http://localhost:4000/2019/05/06/blog-new.html" rel="alternate" type="text/html" title="Blog.new" /><published>2019-05-06T22:00:00-03:00</published><updated>2019-05-06T22:00:00-03:00</updated><id>http://localhost:4000/2019/05/06/blog-new</id><content type="html" xml:base="http://localhost:4000/2019/05/06/blog-new.html">&lt;p&gt;Hello &lt;del&gt;world&lt;/del&gt; everyone! I’m Matheus Richard, a Software Engineering undergraduated student at &lt;a href=&quot;https://www.unb.br/&quot;&gt;UnB&lt;/a&gt; (Brazil). I’m an open source developer, I love music and my newfound passion is game development.&lt;/p&gt;
+&lt;p&gt;&lt;img style=&quot;display: block; margin: 0 auto;&quot; src=&quot;/img/letsgo.gif&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">My background Ruby is my favorite programming language. I’ve been working with it almost every day since 2016, whether on college projects or at work. I love how it is simple, clear, elegant and beautiful. Take a look at the code snippet bellow:</summary></entry><entry><title type="html">How Rubygems commands works</title><link href="http://localhost:4000/gsoc/rubygems/cli/2019/05/13/how-rubygems-commands-work.html" rel="alternate" type="text/html" title="How Rubygems commands works" /><published>2019-05-13T22:00:00-03:00</published><updated>2019-05-13T22:00:00-03:00</updated><id>http://localhost:4000/gsoc/rubygems/cli/2019/05/13/how-rubygems-commands-work</id><content type="html" xml:base="http://localhost:4000/gsoc/rubygems/cli/2019/05/13/how-rubygems-commands-work.html">&lt;p&gt;As my first task on GSoC, my mentor &lt;a href=&quot;#!&quot;&gt;@zoras&lt;/a&gt; sent me some PRs (&lt;a href=&quot;https://github.com/rubygems/rubygems/pull/1938&quot;&gt;#1938&lt;/a&gt; and &lt;a href=&quot;https://github.com/rubygems/rubygems/pull/1944&quot;&gt;#1944&lt;/a&gt;) to study, as well the &lt;a href=&quot;https://github.com/rubygems/rubygems/blob/master/lib/rubygems/command.rb&quot;&gt;class&lt;/a&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Command&lt;/code&gt; of &lt;code class=&quot;highlighter-rouge&quot;&gt;rubygems&lt;/code&gt; codebase. Here’s what I’ve learned:&lt;/p&gt;
+
+&lt;h1 id=&quot;class-command&quot;&gt;Class Command&lt;/h1&gt;
+&lt;p&gt;The first thing I noticed on the PRs was that every command inherits the class &lt;code class=&quot;highlighter-rouge&quot;&gt;Command&lt;/code&gt;. This class works like an &lt;code class=&quot;highlighter-rouge&quot;&gt;interface&lt;/code&gt; to the children classes, that is, the children must override its methods to work properly. The comment at &lt;code class=&quot;highlighter-rouge&quot;&gt;lib/rubygems/command.rb&lt;/code&gt; sums this up:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Base class for all Gem commands.  When creating a new gem command, define #initialize, #execute, #arguments, #defaults_str, #description and #usage (as appropriate).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;overriding&quot;&gt;Overriding&lt;/h1&gt;
+
+&lt;p&gt;Well, we need to override these methods, let’s take a look on them:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;initialize&lt;/code&gt;:&lt;/strong&gt; Initializes a new command, adding its name, a short description (that will be displayed in &lt;code class=&quot;highlighter-rouge&quot;&gt;gem help commands&lt;/code&gt;). The argument &lt;code class=&quot;highlighter-rouge&quot;&gt;defaults&lt;/code&gt; is a list of default arguments (that should be mirrored in &lt;code class=&quot;highlighter-rouge&quot;&gt;defaults_str&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Gem::Command's initialize method&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initialize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;command&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;summary&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;defaults&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{})&lt;/span&gt;
+  &lt;span class=&quot;vi&quot;&gt;@command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;command&lt;/span&gt;
+  &lt;span class=&quot;vi&quot;&gt;@summary&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;summary&lt;/span&gt;
+  &lt;span class=&quot;vi&quot;&gt;@program_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;gem &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;command&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+  &lt;span class=&quot;vi&quot;&gt;@defaults&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;defaults&lt;/span&gt;
+  &lt;span class=&quot;vi&quot;&gt;@options&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;defaults&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;dup&lt;/span&gt;
+  &lt;span class=&quot;vi&quot;&gt;@option_groups&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Hash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;vi&quot;&gt;@deprecated_options&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;vi&quot;&gt;@parser&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;nil&lt;/span&gt;
+  &lt;span class=&quot;vi&quot;&gt;@when_invoked&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;nil&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It’s possible add new options to your command with &lt;code class=&quot;highlighter-rouge&quot;&gt;add_option&lt;/code&gt;. A new command &lt;code class=&quot;highlighter-rouge&quot;&gt;initilize&lt;/code&gt; would look like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initialize&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;super&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'new_method'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Does an awesome thing.'&lt;/span&gt;
+
+  &lt;span class=&quot;n&quot;&gt;add_option&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'--awesome'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Adds awesomeness'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:awesome&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;arguments&lt;/code&gt;:&lt;/strong&gt; Describes the arguments that a command takes. It should return a left-justified string, one argument per line. Here’s the code from the command &lt;code class=&quot;highlighter-rouge&quot;&gt;install&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;arguments&lt;/span&gt;
+  &lt;span class=&quot;s2&quot;&gt;&quot;GEMNAME       name of gem to install&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;usage&lt;/code&gt;:&lt;/strong&gt; Displays the usage for an individual gem command. The text “[options]” is automatically appended to the usage text. Take a look on the override of this method at &lt;code class=&quot;highlighter-rouge&quot;&gt;Gem::Commands::UpdateCommand&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;usage&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;program_name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; GEMNAME [GEMNAME ...]&quot;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;!-- #### defaults_str --&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;defaults_str&lt;/code&gt;:&lt;/strong&gt; Defines the default argumetns from the command. It’s really simple, take a look at this example:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# This method is similar to arguments, but displays the default values.&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;defaults_str&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;document&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;no&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;force&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;description:&lt;/strong&gt; This is just a long description for what the command does.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# You can add multiple lines as well&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;description&lt;/span&gt;
+  &lt;span class=&quot;s1&quot;&gt;'The `signout` command is used to sign out from all current sessions,'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;\&lt;/span&gt;
+  &lt;span class=&quot;s1&quot;&gt;' allowing you to sign in using a different set of credentials.'&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;execute:&lt;/strong&gt; The generic method that you need to override to handle your command. Parsed option will fill &lt;code class=&quot;highlighter-rouge&quot;&gt;options&lt;/code&gt;, while unparsed option will be left in &lt;code class=&quot;highlighter-rouge&quot;&gt;options[:args]&lt;/code&gt;. An override could look something like this:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;c1&quot;&gt;# This will raise Gem::Exception if you don't override it&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;execute&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:awesome&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;add_awesomeness&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;do_other_stuff&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;wrapping-up&quot;&gt;Wrapping up&lt;/h1&gt;
+
+&lt;p&gt;As you may have noticed, adding a new command to &lt;code class=&quot;highlighter-rouge&quot;&gt;rubygems&lt;/code&gt; is not rocket science. Adding tests to your new code is very important too!&lt;/p&gt;
+
+&lt;p&gt;BTW, the tests from &lt;code class=&quot;highlighter-rouge&quot;&gt;rubygems&lt;/code&gt; are written in &lt;a href=&quot;https://github.com/seattlerb/minitest&quot;&gt;Minitest&lt;/a&gt;, whereas &lt;code class=&quot;highlighter-rouge&quot;&gt;gem-web&lt;/code&gt;’s are in &lt;a href=&quot;https://rspec.info/&quot;&gt;Rspec&lt;/a&gt;, so I’ll need to convert them before integrating &lt;code class=&quot;highlighter-rouge&quot;&gt;gem-web&lt;/code&gt; into &lt;code class=&quot;highlighter-rouge&quot;&gt;rubygems&lt;/code&gt;. I’ll probably talk about this in next week’s post. Stay tuned! I’m out!&lt;/p&gt;
+
+&lt;p&gt;&lt;img style=&quot;display: block; margin: 0 auto;&quot; src=&quot;/img/thats-all.gif&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">As my first task on GSoC, my mentor @zoras sent me some PRs (#1938 and #1944) to study, as well the class Command of rubygems codebase. Here’s what I’ve learned:</summary></entry><entry><title type="html">Blog.new</title><link href="http://localhost:4000/2019/05/06/blog-new.html" rel="alternate" type="text/html" title="Blog.new" /><published>2019-05-06T22:00:00-03:00</published><updated>2019-05-06T22:00:00-03:00</updated><id>http://localhost:4000/2019/05/06/blog-new</id><content type="html" xml:base="http://localhost:4000/2019/05/06/blog-new.html">&lt;p&gt;Hello &lt;del&gt;world&lt;/del&gt; everyone! I’m Matheus Richard, a Software Engineering undergraduated student at &lt;a href=&quot;https://www.unb.br/&quot;&gt;UnB&lt;/a&gt; (Brazil). I’m an open source developer, I love music and my newfound passion is game development.&lt;/p&gt;
 
 &lt;p&gt;This is my personal blog, where I’ll share my experiences, things and lessons I’ve learned, and all sort of cool stuff. I believe that teaching is a great way to learn too, so this is a two-way learning process, right?&lt;/p&gt;
 

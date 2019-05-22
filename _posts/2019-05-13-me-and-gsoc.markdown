@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How I got accepted into GSoC 2019"
+title: "How I got accepted to GSoC 2019"
 date: 2019-05-13 22:00:00 -0300
 categories: gsoc
 ---
@@ -28,7 +28,6 @@ I took a look at [gem-web][gem-web]'s to see what it looks like and make some co
 Improving travis is an easy way to get started so this was my [first contribution][first-pr] to gem-web. This is very important: **don't be afraid of open source projects**. This contribution was so simple! Take a look, just one line:
 
 <img style="display: block; margin: 0 auto;" src="/img/first-pr.png">
-
 
 To get used to the codebase I thought that would be nice to add some tests, so I [added Simplecov][second-pr] first, and after I would write tests where gem-web was lacking.
 
