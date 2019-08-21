@@ -5,7 +5,7 @@ date: 2019-08-20 22:00:00 -0300
 categories: gsoc ruby rubygems cli
 ---
 
-Wow! GSoC is almost on the final evaluation period! Time really flied! I thing it's a good moment to talk a bit about my work.
+Wow! GSoC is almost on the final evaluation period! Time really flied! I think it's a good moment to talk a bit about my work.
 
 As I mentioned in [this post][gsoc-post], I'm working with Rubygems for GSoC 2019. [My Pull Request][pr] is still open, but I think it's stable enough to write about it (and the process of opening it).
 
