@@ -1,4 +1,80 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-05-22T09:26:44-03:00</updated><id>/feed.xml</id><title type="html">Matheus Richard</title><subtitle>Hi, I'm Matheus Richard, a Software Engineering Student at UnB (Brazil). I'm an open source dev, I love music and my newfound passion is game development.</subtitle><entry><title type="html">How I got accepted to GSoC 2019</title><link href="/gsoc/2019/05/13/me-and-gsoc.html" rel="alternate" type="text/html" title="How I got accepted to GSoC 2019" /><published>2019-05-13T22:00:00-03:00</published><updated>2019-05-13T22:00:00-03:00</updated><id>/gsoc/2019/05/13/me-and-gsoc</id><content type="html" xml:base="/gsoc/2019/05/13/me-and-gsoc.html">&lt;h1 id=&quot;my-background&quot;&gt;My background&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-08-20T23:46:37-03:00</updated><id>/feed.xml</id><title type="html">Matheus Richard</title><subtitle>Hi, I'm Matheus Richard, a Software Engineering Student at UnB (Brazil). I'm an open source dev, I love music and my newfound passion is game development.</subtitle><entry><title type="html">The Rubygems’ web command</title><link href="/gsoc/ruby/rubygems/cli/2019/08/20/rubygems-web-command.html" rel="alternate" type="text/html" title="The Rubygems' web command" /><published>2019-08-20T22:00:00-03:00</published><updated>2019-08-20T22:00:00-03:00</updated><id>/gsoc/ruby/rubygems/cli/2019/08/20/rubygems-web-command</id><content type="html" xml:base="/gsoc/ruby/rubygems/cli/2019/08/20/rubygems-web-command.html">&lt;p&gt;Wow! GSoC is almost on the final evaluation period! Time really flied! I thing it’s a good moment to talk a bit about my work.&lt;/p&gt;
+
+&lt;p&gt;As I mentioned in &lt;a href=&quot;/gsoc/2019/05/13/me-and-gsoc.html&quot;&gt;this post&lt;/a&gt;, I’m working with Rubygems for GSoC 2019. &lt;a href=&quot;https://github.com/rubygems/rubygems/pull/2835&quot;&gt;My Pull Request&lt;/a&gt; is still open, but I think it’s stable enough to write about it (and the process of opening it).&lt;/p&gt;
+
+&lt;p&gt;I’ve added a new command to Rubygems: the &lt;code class=&quot;highlighter-rouge&quot;&gt;web&lt;/code&gt; command. Its goal is to help developers to quickly find documentation about a particular gem.&lt;/p&gt;
+
+&lt;h1 id=&quot;how-does-it-look&quot;&gt;How does it look?&lt;/h1&gt;
+
+&lt;p&gt;It’s really simple to use this command. Take a look:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Do you wanna know what is the homepage for some gem?&lt;/strong&gt; Just type &lt;code class=&quot;highlighter-rouge&quot;&gt;gem web gem_name&lt;/code&gt; and it will output the URL.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Quickly access to the rubygems page?&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;gem web -r gem_name&lt;/code&gt; brings it.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Can’t remember what &lt;em&gt;that&lt;/em&gt; method does?&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;gem web -d gem_name&lt;/code&gt; will get the documentation URL for you.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Want to dive into that good old messy code?&lt;/strong&gt; Type &lt;code class=&quot;highlighter-rouge&quot;&gt;gem web -c gem_name&lt;/code&gt; to get its source code.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;I know, we’re too lazy to copy/paste the link:&lt;/strong&gt; Just set the environment variable &lt;code class=&quot;highlighter-rouge&quot;&gt;BROWSER&lt;/code&gt; (e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;export BROWSER=google-chrome&lt;/code&gt;) and it will automatically open the URL in the browser for you. (Pay &lt;a href=&quot;https://github.com/rubygems/rubygems/pull/2835#issuecomment-512542718&quot;&gt;André Arko&lt;/a&gt; a beer for this suggestion 😜)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;whats-happening-under-the-hood&quot;&gt;What’s happening under the hood?&lt;/h1&gt;
+&lt;p&gt;Adding a new method for Rubygems is not rocket science (I have a post on &lt;a href=&quot;/gsoc/ruby/rubygems/cli/2019/05/13/how-rubygems-commands-work.html&quot;&gt;how to do it&lt;/a&gt;). I’ll explain here a bit of how the &lt;code class=&quot;highlighter-rouge&quot;&gt;web&lt;/code&gt; command works (I will be short on some sections to keep this clearer).&lt;/p&gt;
+
+&lt;p&gt;The first thing this commands does when it’s called is to run the method &lt;code class=&quot;highlighter-rouge&quot;&gt;open_page(gem, options)&lt;/code&gt; from &lt;code class=&quot;highlighter-rouge&quot;&gt;Gem::Web::Executor&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The method will try to find locally a gemspec of the gem you’ve typed with:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;spec&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Gem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Specification&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;find_by_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The gemspec is important because it has all the info we need (homepage, documentation URI etc).&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This was one of the differences between the &lt;a href=&quot;https://github.com/bitboxer/gem-web&quot;&gt;original implementation&lt;/a&gt; of &lt;code class=&quot;highlighter-rouge&quot;&gt;gem-web&lt;/code&gt; and mine. It was also a suggestion from the community, for &lt;a href=&quot;https://github.com/rubygems/rubygems/pull/2835#issuecomment-512256175&quot;&gt;security reasons&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If the gem is not installed, a &lt;code class=&quot;highlighter-rouge&quot;&gt;Gem::MissingSpecError&lt;/code&gt; will be raised. In this case we have to search on the Rubygems API to find the gemspec.&lt;/p&gt;
+
+&lt;p&gt;The method &lt;code class=&quot;highlighter-rouge&quot;&gt;fetch_remote_spec(gem)&lt;/code&gt; is responsible to fetch a remote gemspec (if the gem exists):&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fetch_remote_spec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;dep&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Gem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Dependency&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;found&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Gem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;SpecFetcher&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;fetcher&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;spec_for_dependency&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Here's the request&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;If everything went well, we should have the gem specification now (otherwise it will output an error message). Now the command see what options the user selected (homepage, rubygems page, source code or documentation) and calls &lt;code class=&quot;highlighter-rouge&quot;&gt;open_browser(uri)&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;I think the implementation of this method is really simple, take a look:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;open_browser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;uri&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;browser&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ENV&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;BROWSER&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;browser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;nil?&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;browser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;empty?&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;uri&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;system&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;browser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;uri&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;If the &lt;code class=&quot;highlighter-rouge&quot;&gt;BROWSER&lt;/code&gt; environment variable is set, the command uses it to open your browser with the link. Else, it juts prints the URI. Pretty easy, right?&lt;/p&gt;
+
+&lt;p&gt;&lt;img style=&quot;display: block; margin: 0 auto;&quot; src=&quot;/img/goddamn-right.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;the-end&quot;&gt;The End&lt;/h1&gt;
+&lt;p&gt;Well, that’s it! I told you that it wasn’t hard at all. This was one of the last posts I’ll do about my work on GSoC, since it’s getting to the end. In the next update I’ll talk about the &lt;a href=&quot;#!&quot;&gt;lessons I’ve learned&lt;/a&gt; while contributing for Rubygems. ‘Till next time, folks!&lt;/p&gt;
+
+&lt;!-- # Lessons Learned
+Well, well, well... It's here where things get embarrassing (to me). As developers we tend to *overestimate* the problems we have, and this leads to *overcomplicated* solutions.
+
+#### Keep It Simple Stupid --&gt;</content><author><name></name></author><summary type="html">Wow! GSoC is almost on the final evaluation period! Time really flied! I thing it’s a good moment to talk a bit about my work.</summary></entry><entry><title type="html">How I got accepted to GSoC 2019</title><link href="/gsoc/2019/05/13/me-and-gsoc.html" rel="alternate" type="text/html" title="How I got accepted to GSoC 2019" /><published>2019-05-13T22:00:00-03:00</published><updated>2019-05-13T22:00:00-03:00</updated><id>/gsoc/2019/05/13/me-and-gsoc</id><content type="html" xml:base="/gsoc/2019/05/13/me-and-gsoc.html">&lt;h1 id=&quot;my-background&quot;&gt;My background&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.ruby-lang.org/&quot;&gt;Ruby&lt;/a&gt; is my favorite programming language. I’ve been working with it almost every day since 2016, whether on college projects or at work. I love how it is simple, clear, elegant and beautiful. Take a look at the code snippet bellow:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;my_list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
@@ -81,7 +157,7 @@
 &lt;p&gt;&lt;br /&gt;
 Well, that’s it for now. This text is longer than I expected it to be. Next post will be about my first steps on GSoC. Stay tunned and LET’S GO!&lt;/p&gt;
 
-&lt;p&gt;&lt;img style=&quot;display: block; margin: 0 auto;&quot; src=&quot;/img/letsgo.gif&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">My background Ruby is my favorite programming language. I’ve been working with it almost every day since 2016, whether on college projects or at work. I love how it is simple, clear, elegant and beautiful. Take a look at the code snippet bellow:</summary></entry><entry><title type="html">How Rubygems commands works</title><link href="/gsoc/rubygems/cli/2019/05/13/how-rubygems-commands-work.html" rel="alternate" type="text/html" title="How Rubygems commands works" /><published>2019-05-13T22:00:00-03:00</published><updated>2019-05-13T22:00:00-03:00</updated><id>/gsoc/rubygems/cli/2019/05/13/how-rubygems-commands-work</id><content type="html" xml:base="/gsoc/rubygems/cli/2019/05/13/how-rubygems-commands-work.html">&lt;p&gt;I’m currently working on GSoC, and I have to &lt;a href=&quot;/gsoc/2019/05/13/me-and-gsoc.html&quot;&gt;Integrate functionality from gem-web into RubyGems gem CLI&lt;/a&gt;. So, we’re going to add a new CLI option to &lt;code class=&quot;highlighter-rouge&quot;&gt;rubygems&lt;/code&gt;. As my first task on it, my mentor &lt;a href=&quot;http://github.com/zoras&quot;&gt;Saroj Maharjan&lt;/a&gt; (@zoras) sent me some PRs (&lt;a href=&quot;https://github.com/rubygems/rubygems/pull/1938&quot;&gt;#1938&lt;/a&gt; and &lt;a href=&quot;https://github.com/rubygems/rubygems/pull/1944&quot;&gt;#1944&lt;/a&gt;) to study, as well as the &lt;a href=&quot;https://github.com/rubygems/rubygems/blob/master/lib/rubygems/command.rb&quot;&gt;class&lt;/a&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Command&lt;/code&gt; of &lt;a href=&quot;https://github.com/rubygems/rubygems&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;rubygems&lt;/code&gt; codebase&lt;/a&gt;. Here’s a bit of what I’ve learned:&lt;/p&gt;
+&lt;p&gt;&lt;img style=&quot;display: block; margin: 0 auto;&quot; src=&quot;/img/letsgo.gif&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">My background Ruby is my favorite programming language. I’ve been working with it almost every day since 2016, whether on college projects or at work. I love how it is simple, clear, elegant and beautiful. Take a look at the code snippet bellow:</summary></entry><entry><title type="html">How Rubygems commands works</title><link href="/gsoc/ruby/rubygems/cli/2019/05/13/how-rubygems-commands-work.html" rel="alternate" type="text/html" title="How Rubygems commands works" /><published>2019-05-13T22:00:00-03:00</published><updated>2019-05-13T22:00:00-03:00</updated><id>/gsoc/ruby/rubygems/cli/2019/05/13/how-rubygems-commands-work</id><content type="html" xml:base="/gsoc/ruby/rubygems/cli/2019/05/13/how-rubygems-commands-work.html">&lt;p&gt;I’m currently working on GSoC, and I have to &lt;a href=&quot;/gsoc/2019/05/13/me-and-gsoc.html&quot;&gt;Integrate functionality from gem-web into RubyGems gem CLI&lt;/a&gt;. So, we’re going to add a new CLI option to &lt;code class=&quot;highlighter-rouge&quot;&gt;rubygems&lt;/code&gt;. As my first task on it, my mentor &lt;a href=&quot;http://github.com/zoras&quot;&gt;Saroj Maharjan&lt;/a&gt; (@zoras) sent me some PRs (&lt;a href=&quot;https://github.com/rubygems/rubygems/pull/1938&quot;&gt;#1938&lt;/a&gt; and &lt;a href=&quot;https://github.com/rubygems/rubygems/pull/1944&quot;&gt;#1944&lt;/a&gt;) to study, as well as the &lt;a href=&quot;https://github.com/rubygems/rubygems/blob/master/lib/rubygems/command.rb&quot;&gt;class&lt;/a&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Command&lt;/code&gt; of &lt;a href=&quot;https://github.com/rubygems/rubygems&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;rubygems&lt;/code&gt; codebase&lt;/a&gt;. Here’s a bit of what I’ve learned:&lt;/p&gt;
 
 &lt;h1 id=&quot;class-command&quot;&gt;Class Command&lt;/h1&gt;
 &lt;p&gt;The first thing I noticed on the PRs was that every command inherits from the class &lt;code class=&quot;highlighter-rouge&quot;&gt;Command&lt;/code&gt;. This class works like an &lt;code class=&quot;highlighter-rouge&quot;&gt;interface&lt;/code&gt; to the children classes, that is, the children must override its methods to work properly. The comment at &lt;a href=&quot;https://github.com/rubygems/rubygems/blob/master/lib/rubygems/command.rb#L13&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;lib/rubygems/command.rb&lt;/code&gt;&lt;/a&gt; sums this up:&lt;/p&gt;
@@ -195,7 +271,7 @@ Well, that’s it for now. This text is longer than I expected it to be. Next po
 
 &lt;p&gt;Besides that, this will be a way to track my evolution as a developer (and as a writer ;D).&lt;/p&gt;
 
-&lt;p&gt;I’m living a great time in my life, so there are many cool things happening at the same time. I’m currently working on &lt;a href=&quot;#!&quot;&gt;my first game&lt;/a&gt;, I &lt;a href=&quot;#!&quot;&gt;just got accepted on GSoC 2019&lt;/a&gt; and I’m making a &lt;a href=&quot;#!&quot;&gt;simple pascal compiler&lt;/a&gt;, to mention a few of them &lt;em&gt;(I’ll update all this links when I post something about them, so stay tunned!)&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;I’m living a great time in my life, so there are many cool things happening at the same time. I’m currently working on &lt;a href=&quot;https://github.com/rage-of-the-elders/rage-of-the-elders&quot;&gt;my first game&lt;/a&gt;, I &lt;a href=&quot;#!&quot;&gt;just got accepted on GSoC 2019&lt;/a&gt; and I’m making a &lt;a href=&quot;#!&quot;&gt;simple pascal compiler&lt;/a&gt;, to mention a few of them &lt;em&gt;(I’ll update all this links when I post something about them, so stay tunned!)&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;My intent is to share a bit of what I’ve learned on those things, and I hope this blog helps you! Have fun!&lt;/p&gt;
 

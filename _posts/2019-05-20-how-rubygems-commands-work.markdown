@@ -2,7 +2,7 @@
 layout: post
 title: "How Rubygems commands works"
 date: 2019-05-13 22:00:00 -0300
-categories: gsoc rubygems cli
+categories: gsoc ruby rubygems cli
 ---
 
 I'm currently working on GSoC, and I have to [Integrate functionality from gem-web into RubyGems gem CLI][gsoc-post]. So, we're going to add a new CLI option to `rubygems`. As my first task on it, my mentor [Saroj Maharjan][zoras-gh] (@zoras) sent me some PRs ([#1938][pr-1938] and [#1944][pr-1944]) to study, as well as the [class][command-class] `Command` of [`rubygems` codebase][rubygems]. Here's a bit of what I've learned:
