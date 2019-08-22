@@ -73,15 +73,9 @@ If the `BROWSER` environment variable is set, the command uses it to open your b
 # The End
 Well, that's it! I told you that it wasn't hard at all. This was one of the last posts I'll do about my work on GSoC, since it's getting to the end. In the next update I'll talk about the [lessons I've learned][lessons] while contributing for Rubygems. 'Till next time, folks!
 
-
-<!-- # Lessons Learned
-Well, well, well... It's here where things get embarrassing (to me). As developers we tend to *overestimate* the problems we have, and this leads to *overcomplicated* solutions.
-
-#### Keep It Simple Stupid -->
-
 [gsoc-post]: {% post_url 2019-05-13-me-and-gsoc %}
 [command]: {% post_url 2019-05-20-how-rubygems-commands-work %}
-[lessons]: #!
+[lessons]: {% post_url 2019-08-21-lessons-learned-on-gsoc-2019 %}
 [pr]: https://github.com/rubygems/rubygems/pull/2835
 [indirect]: https://github.com/rubygems/rubygems/pull/2835#issuecomment-512542718
 [original]: https://github.com/bitboxer/gem-web
