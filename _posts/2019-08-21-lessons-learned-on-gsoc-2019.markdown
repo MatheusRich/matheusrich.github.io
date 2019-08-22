@@ -92,7 +92,7 @@ def open_default_browser_cmd(local_os, version)
 end
 {% endhighlight %}
 
-Obviously this was a terrible solution (and I knew it), but I couldn't think on another way to accomplish (without external dependencies). So, I opened the Pull Request anyway, so the community could help out on this.
+Obviously this was a terrible solution (and I knew it), but I couldn't think on another way to accomplish it (without external dependencies). So, I opened the Pull Request anyway, so the community could help out on this.
 
 One of the things they said to me was that the `open_default_browser_cmd` was very hard to maintain, and "What if the user just want to see the URL, not opening it at all?". Then [André Arko][indirect] came with a simple, yet powerfull, solution that I haven't thought of: "just read the browser from an environment variable". This was perfect simple! Now users could choose if they want to open the browser automatically or not (and what command should do it). That awful code turned into this:
 

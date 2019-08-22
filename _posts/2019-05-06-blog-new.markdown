@@ -19,8 +19,8 @@ My intent is to share a bit of what I've learned on those things, and I hope thi
 
 _P.S.: You can find me on social media through the links in the footer. Get in touch!_
 
+[gsoc-link]: {% post_url 2019-05-13-me-and-gsoc %}
 [unb-link]: https://www.unb.br/
 [game-link]: https://github.com/rage-of-the-elders/rage-of-the-elders
-[gsoc-link]: #!
 [compiler-link]: #!
 

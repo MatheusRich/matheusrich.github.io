@@ -9,13 +9,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Wow! GSoC is almost on the final evaluation period! Time really flied! I think it’s a good moment to talk a bit about my work." />
 <meta property="og:description" content="Wow! GSoC is almost on the final evaluation period! Time really flied! I think it’s a good moment to talk a bit about my work." />
-<link rel="canonical" href="http://matheusrich.github.io/gsoc/ruby/rubygems/cli/2019/08/20/rubygems-web-command.html" />
-<meta property="og:url" content="http://matheusrich.github.io/gsoc/ruby/rubygems/cli/2019/08/20/rubygems-web-command.html" />
+<link rel="canonical" href="http://matheusrich.github.io/rubygems-web-command" />
+<meta property="og:url" content="http://matheusrich.github.io/rubygems-web-command" />
 <meta property="og:site_name" content="Matheus Richard" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-08-20T22:00:00-03:00" />
 <script type="application/ld+json">
-{"description":"Wow! GSoC is almost on the final evaluation period! Time really flied! I think it’s a good moment to talk a bit about my work.","mainEntityOfPage":{"@type":"WebPage","@id":"http://matheusrich.github.io/gsoc/ruby/rubygems/cli/2019/08/20/rubygems-web-command.html"},"@type":"BlogPosting","url":"http://matheusrich.github.io/gsoc/ruby/rubygems/cli/2019/08/20/rubygems-web-command.html","headline":"The Rubygems’ web command","dateModified":"2019-08-20T22:00:00-03:00","datePublished":"2019-08-20T22:00:00-03:00","@context":"http://schema.org"}</script>
+{"description":"Wow! GSoC is almost on the final evaluation period! Time really flied! I think it’s a good moment to talk a bit about my work.","mainEntityOfPage":{"@type":"WebPage","@id":"http://matheusrich.github.io/rubygems-web-command"},"@type":"BlogPosting","url":"http://matheusrich.github.io/rubygems-web-command","headline":"The Rubygems’ web command","dateModified":"2019-08-20T22:00:00-03:00","datePublished":"2019-08-20T22:00:00-03:00","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://matheusrich.github.io/feed.xml" title="Matheus Richard" /></head>
 <body><header class="site-header" role="banner">
@@ -47,7 +47,7 @@
   <div class="post-content e-content" itemprop="articleBody">
     <p>Wow! GSoC is almost on the final evaluation period! Time really flied! I think it’s a good moment to talk a bit about my work.</p>
 
-<p>As I mentioned in <a href="/gsoc/2019/05/13/me-and-gsoc.html">this post</a>, I’m working with Rubygems for GSoC 2019. <a href="https://github.com/rubygems/rubygems/pull/2835">My Pull Request</a> is still open, but I think it’s stable enough to write about it (and the process of opening it).</p>
+<p>As I mentioned in <a href="/me-and-gsoc">this post</a>, I’m working with Rubygems for GSoC 2019. <a href="https://github.com/rubygems/rubygems/pull/2835">My Pull Request</a> is still open, but I think it’s stable enough to write about it (and the process of opening it).</p>
 
 <p>I’ve added a new command to Rubygems: the <code class="highlighter-rouge">web</code> command. Its goal is to help developers to quickly find documentation about a particular gem.</p>
 
@@ -74,7 +74,7 @@
 </ul>
 
 <h1 id="whats-happening-under-the-hood">What’s happening under the hood?</h1>
-<p>Adding a new method for Rubygems is not rocket science (I have a post on <a href="/gsoc/ruby/rubygems/cli/2019/05/13/how-rubygems-commands-work.html">how to do it</a>). I’ll explain here a bit of how the <code class="highlighter-rouge">web</code> command works (I will be short on some sections to keep this clearer).</p>
+<p>Adding a new method for Rubygems is not rocket science (I have a post on <a href="/how-rubygems-commands-work">how to do it</a>). I’ll explain here a bit of how the <code class="highlighter-rouge">web</code> command works (I will be short on some sections to keep this clearer).</p>
 
 <p>The first thing this commands does when it’s called is to run the method <code class="highlighter-rouge">open_page(gem, options)</code> from <code class="highlighter-rouge">Gem::Web::Executor</code>.</p>
 
@@ -116,14 +116,14 @@
 <p><img style="display: block; margin: 0 auto;" src="/img/goddamn-right.gif" /></p>
 
 <h1 id="the-end">The End</h1>
-<p>Well, that’s it! I told you that it wasn’t hard at all. This was one of the last posts I’ll do about my work on GSoC, since it’s getting to the end. In the next update I’ll talk about the <a href="/gsoc/ruby/rubygems/2019/08/21/lessons-learned-on-gsoc-2019.html">lessons I’ve learned</a> while contributing for Rubygems. ‘Till next time, folks!</p>
+<p>Well, that’s it! I told you that it wasn’t hard at all. This was one of the last posts I’ll do about my work on GSoC, since it’s getting to the end. In the next update I’ll talk about the <a href="/lessons-learned-on-gsoc-2019">lessons I’ve learned</a> while contributing for Rubygems. ‘Till next time, folks!</p>
 
 
   </div><div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = 'http://matheusrich.github.io/gsoc/ruby/rubygems/cli/2019/08/20/rubygems-web-command.html';
-      this.page.identifier = 'http://matheusrich.github.io/gsoc/ruby/rubygems/cli/2019/08/20/rubygems-web-command.html';
+      this.page.url = 'http://matheusrich.github.io/rubygems-web-command';
+      this.page.identifier = 'http://matheusrich.github.io/rubygems-web-command';
     };
 
     (function() {
@@ -135,7 +135,7 @@
       (d.head || d.body).appendChild(s);
     })();
   </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><a class="u-url" href="/gsoc/ruby/rubygems/cli/2019/08/20/rubygems-web-command.html" hidden></a>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><a class="u-url" href="/rubygems-web-command" hidden></a>
 </article>
 
       </div>
