@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Lessons Learned on GSoC 2019"
-date: 2019-08-21 11:00:00 -0300
+date: 2019-08-21 23:00:00 -0300
 categories: gsoc ruby rubygems
 ---
 
