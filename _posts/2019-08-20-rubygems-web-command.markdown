@@ -25,6 +25,8 @@ It's really simple to use this command. Take a look:
 
 * **I know, we're too lazy to copy/paste the link:** Just set the environment variable `BROWSER` (e.g. `export BROWSER=google-chrome`) and it will automatically open the URL in the browser for you. (Pay [André Arko][indirect] a beer for this suggestion 😜)
 
+> Some options, like rubytoolbox, were dropped because they make this feature to bound to 3rd party services
+
 # What's happening under the hood?
 Adding a new method for Rubygems is not rocket science (I have a post on [how to do it][command]). I'll explain here a bit of how the `web` command works (I will be short on some sections to keep this clearer).
 
