@@ -4,7 +4,7 @@ title: "How I got accepted to GSoC 2019"
 date: 2019-05-13 22:00:00 -0300
 categories: gsoc
 ---
-# My background
+## My background
 [Ruby][ruby] is my favorite programming language. I've been working with it almost every day since 2016, whether on college projects or at work. I love how it is simple, clear, elegant and beautiful. Take a look at the code snippet bellow:
 
 {% highlight ruby %}
@@ -13,16 +13,16 @@ my_list = []
 if my_list.empty?
   puts "It's empty"
 end
-# No unnecessary braces, semicolons, etc
+## No unnecessary braces, semicolons, etc
 {% endhighlight %}
 
-# Choosing a project
+## Choosing a project
 
 I started web development and quickly discovered [Ruby on Rails][rails] and eventually ruby became one of my main tools. This was why I chose the [Ruby Org][ruby-org] when I was looking for projects to contribute before GSoC.
 
 I ran through its [ideas list][ideas] and I found some nice projects. One that catched my eye was to [Integrate functionality from gem-web into RubyGems gem CLI][project]. This seemed to be a project for me: kinda on my area, but challenging tho. I wanted to learn more about this project, so I could write a better proposal.
 
-# First contributions
+## First contributions
 I took a look at [gem-web][gem-web]'s to see what it looks like and make some contribution. Since there were no issues, I look at its files.
 
 Improving travis is an easy way to get started so this was my [first contribution][first-pr] to gem-web. This is very important: **don't be afraid of open source projects**. This contribution was so simple! Take a look, just one line:
@@ -33,18 +33,18 @@ To get used to the codebase I thought that would be nice to add some tests, so I
 
 I had to study a bit of the test structure of gem-web (which were written in [Rspec][rspec]), and the code of rubygems (especially [the Command class][rubygems]) and gem-web itself. This was my path to my [third contribution][third-pr].
 
-# My proposal
+## My proposal
 With the knowlegde adquired from my contribuitons I was able to write a proposal. Ruby provided an [application template for students][template], so I answered the questions, and wrote a Roadmap of my development process. I followed an advice from an ex-GSoCer to **add time to get feedback from the community** (particularly from non-linux users), so I add these "Feedback Moments". I added a **contingency time** too, because as software developers we know: _"Sh!t Happens"_. Here's [my proposal draft][draft].
 
 With the proposal finished I sent it to the mentors, and waited for feedback (actually they said that my proposal was good, so there are no changes between the draft and the final PDF).
 
-# Project #5260793296191488
+## Project #5260793296191488
 
 Well, as you know (the title has spoiled you), I [got accepted into GSoC][approved] ;) Here's the nice email that I've received:
 
 <img style="display: block; margin: 0 auto;" src="/assets/img/gsoc.png">
 
-# Final thoughts
+## Final thoughts
 Yes, I am very happy to be part of this program. I feel great about myself, because sometimes we feel like we can't do certain things, and I prove myself wrong. Well, I got accepted on my first try, so I'm not the most experieced about GSoC, but here some tips that may help you: 
 
 **My tips:**

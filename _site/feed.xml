@@ -5,8 +5,8 @@
     <description>Hi, I'm Matheus Richard, a Software Engineering from Brazil. I'm an open source dev, I love music and my newfound passion is game development.</description>
     <link>http://matheusrich.github.io/</link>
     <atom:link href="http://matheusrich.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 14 Mar 2020 17:16:45 -0300</pubDate>
-    <lastBuildDate>Sat, 14 Mar 2020 17:16:45 -0300</lastBuildDate>
+    <pubDate>Sat, 14 Mar 2020 17:37:55 -0300</pubDate>
+    <lastBuildDate>Sat, 14 Mar 2020 17:37:55 -0300</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       
@@ -19,10 +19,10 @@
 &lt;p&gt;&lt;img style=&quot;display: block; margin: 0 auto;&quot; src=&quot;/assets/img/no-pain-no-gain.gif&quot; /&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align: center;&quot;&gt;Well, I guess it's just the &quot;No pain, No gain&quot; rule. =)&lt;/p&gt;
 
-&lt;h1 id=&quot;lessons-learned&quot;&gt;Lessons Learned&lt;/h1&gt;
+&lt;h2 id=&quot;lessons-learned&quot;&gt;Lessons Learned&lt;/h2&gt;
 &lt;p&gt;Here’s some advice, so we (yes, I’m included) can avoid these mistakes in the future:&lt;/p&gt;
 
-&lt;h4 id=&quot;1-keep-it-simple-stupid&quot;&gt;1. Keep It Simple Stupid&lt;/h4&gt;
+&lt;h3 id=&quot;1-keep-it-simple-stupid&quot;&gt;1. Keep It Simple Stupid&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;p&gt;In case you didn’t know, &lt;a href=&quot;https://en.wikipedia.org/wiki/KISS_principle&quot;&gt;KISS&lt;/a&gt; is a “real thing”, not just a cool expression that I used&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -114,7 +114,7 @@
 
 &lt;p&gt;Again: &lt;strong&gt;Keep it simple, stupid!&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;2-communication&quot;&gt;2. Communication&lt;/h4&gt;
+&lt;h3 id=&quot;2-communication&quot;&gt;2. Communication&lt;/h3&gt;
 &lt;p&gt;One of the things I love about open source (and especially  about Ruby) is the community! Interacting with people, teaching, learning from them, this is so cool!&lt;/p&gt;
 
 &lt;p&gt;Do use this in your favor! Like what I did in the last section: I wasn’t sure about a feature, and the community guided me. They even showed me use cases that I didn’t think of. &lt;strong&gt;Don’t be shy to ask questions!&lt;/strong&gt;&lt;/p&gt;
@@ -123,10 +123,10 @@
 
 &lt;p&gt;Oh, and &lt;strong&gt;do not take things personally!&lt;/strong&gt; If someone adds a comment about your code, it’s just about your &lt;strong&gt;code&lt;/strong&gt;, don’t be sad about it, but use this an opportunity for learning something (or prove your point if you’re confident about your solution).&lt;/p&gt;
 
-&lt;h4 id=&quot;3-test-test-test&quot;&gt;3. Test test test&lt;/h4&gt;
+&lt;h3 id=&quot;3-test-test-test&quot;&gt;3. Test test test&lt;/h3&gt;
 &lt;p&gt;Never forget to add tests when you add new features to a project! It &lt;em&gt;heavily&lt;/em&gt; increases the odds of your changes being accepted. And, of course, it should help you to keep track when your code is working or not, and warn you if you insert any bug. Use a coverage tool to make sure &lt;strong&gt;every piece&lt;/strong&gt; of your code is being covered!&lt;/p&gt;
 
-&lt;h1 id=&quot;final-thoughts&quot;&gt;Final Thoughts&lt;/h1&gt;
+&lt;h2 id=&quot;final-thoughts&quot;&gt;Final Thoughts&lt;/h2&gt;
 &lt;p&gt;Yeah, this article was big! But it needed to. Being part of GSoC and contributing to such a big project like Rubygems was just a fantastic experience! I’ll carry the lessons I’ve learned for the rest of my career, and they will lead me to be a better programmer.&lt;/p&gt;
 
 &lt;p&gt;I have to thank Google so much for making this possible. I can’t describe how cool was this summer! I also have to thank Ruby and Rubygems for guiding me all the way through this. Thanks for the contributors that reviewed my PR (particularly &lt;a href=&quot;https://github.com/bronzdoc&quot;&gt;Luis&lt;/a&gt;, &lt;a href=&quot;https://github.com/duckinator&quot;&gt;Ellen&lt;/a&gt; and &lt;a href=&quot;https://github.com/simi&quot;&gt;Josef&lt;/a&gt;), and the support on Slack (&lt;a href=&quot;https://github.com/sonalkr132&quot;&gt;Aditya&lt;/a&gt; and &lt;a href=&quot;https://github.com/indirect&quot;&gt;Indirect&lt;/a&gt;).&lt;/p&gt;
@@ -170,33 +170,23 @@
 
 &lt;p&gt;I’ve added a new command to Rubygems: the &lt;code class=&quot;highlighter-rouge&quot;&gt;web&lt;/code&gt; command. Its goal is to help developers to quickly find documentation about a particular gem.&lt;/p&gt;
 
-&lt;h1 id=&quot;how-does-it-look&quot;&gt;How does it look?&lt;/h1&gt;
+&lt;h2 id=&quot;how-does-it-look&quot;&gt;How does it look?&lt;/h2&gt;
 
 &lt;p&gt;It’s really simple to use this command. Take a look:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Do you wanna know what is the homepage for some gem?&lt;/strong&gt; Just type &lt;code class=&quot;highlighter-rouge&quot;&gt;gem web gem_name&lt;/code&gt; and it will output the URL.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Quickly access to the rubygems page?&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;gem web -r gem_name&lt;/code&gt; brings it.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Can’t remember what &lt;em&gt;that&lt;/em&gt; method does?&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;gem web -d gem_name&lt;/code&gt; will get the documentation URL for you.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Want to dive into that good old messy code?&lt;/strong&gt; Type &lt;code class=&quot;highlighter-rouge&quot;&gt;gem web -c gem_name&lt;/code&gt; to get its source code.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;I know, we’re too lazy to copy/paste the link:&lt;/strong&gt; Just set the environment variable &lt;code class=&quot;highlighter-rouge&quot;&gt;BROWSER&lt;/code&gt; (e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;export BROWSER=google-chrome&lt;/code&gt;) and it will automatically open the URL in the browser for you. (Pay &lt;a href=&quot;https://github.com/rubygems/rubygems/pull/2835#issuecomment-512542718&quot;&gt;André Arko&lt;/a&gt; a beer for this suggestion 😜)&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Do you wanna know what is the homepage for some gem?&lt;/strong&gt; Just type &lt;code class=&quot;highlighter-rouge&quot;&gt;gem web gem_name&lt;/code&gt; and it will output the URL.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Quickly access to the rubygems page?&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;gem web -r gem_name&lt;/code&gt; brings it.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Can’t remember what &lt;em&gt;that&lt;/em&gt; method does?&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;gem web -d gem_name&lt;/code&gt; will get the documentation URL for you.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Want to dive into that good old messy code?&lt;/strong&gt; Type &lt;code class=&quot;highlighter-rouge&quot;&gt;gem web -c gem_name&lt;/code&gt; to get its source code.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;I know, we’re too lazy to copy/paste the link:&lt;/strong&gt; Just set the environment variable &lt;code class=&quot;highlighter-rouge&quot;&gt;BROWSER&lt;/code&gt; (e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;export BROWSER=google-chrome&lt;/code&gt;) and it will automatically open the URL in the browser for you. (Pay &lt;a href=&quot;https://github.com/rubygems/rubygems/pull/2835#issuecomment-512542718&quot;&gt;André Arko&lt;/a&gt; a beer for this suggestion 😜)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Some options, like rubytoolbox, were dropped because they make this feature to bound to 3rd party services&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h1 id=&quot;whats-happening-under-the-hood&quot;&gt;What’s happening under the hood?&lt;/h1&gt;
+&lt;h2 id=&quot;whats-happening-under-the-hood&quot;&gt;What’s happening under the hood?&lt;/h2&gt;
 &lt;p&gt;Adding a new method for Rubygems is not rocket science (I have a post on &lt;a href=&quot;/how-rubygems-commands-work/&quot;&gt;how to do it&lt;/a&gt;). I’ll explain here a bit of how the &lt;code class=&quot;highlighter-rouge&quot;&gt;web&lt;/code&gt; command works (I will be short on some sections to keep this clearer).&lt;/p&gt;
 
 &lt;p&gt;The first thing this commands does when it’s called is to run the method &lt;code class=&quot;highlighter-rouge&quot;&gt;open_page(gem, options)&lt;/code&gt; from &lt;code class=&quot;highlighter-rouge&quot;&gt;Gem::Web::Executor&lt;/code&gt;.&lt;/p&gt;
@@ -238,7 +228,7 @@
 
 &lt;p&gt;&lt;img style=&quot;display: block; margin: 0 auto;&quot; src=&quot;/assets/img/goddamn-right.gif&quot; /&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;the-end&quot;&gt;The End&lt;/h1&gt;
+&lt;h2 id=&quot;the-end&quot;&gt;The End&lt;/h2&gt;
 &lt;p&gt;Well, that’s it! I told you that it wasn’t hard at all. This was one of the last posts I’ll do about my work on GSoC, since it’s getting to the end. In the next update I’ll talk about the &lt;a href=&quot;/lessons-learned-on-gsoc-2019/&quot;&gt;lessons I’ve learned&lt;/a&gt; while contributing for Rubygems. ‘Till next time, folks!&lt;/p&gt;
 
 </description>
@@ -268,14 +258,14 @@
         <title>How Rubygems commands works</title>
         <description>&lt;p&gt;I’m currently working on GSoC, and I have to &lt;a href=&quot;/me-and-gsoc/&quot;&gt;Integrate functionality from gem-web into RubyGems gem CLI&lt;/a&gt;. So, we’re going to add a new CLI option to &lt;code class=&quot;highlighter-rouge&quot;&gt;rubygems&lt;/code&gt;. As my first task on it, my mentor &lt;a href=&quot;http://github.com/zoras&quot;&gt;Saroj Maharjan&lt;/a&gt; (@zoras) sent me some PRs (&lt;a href=&quot;https://github.com/rubygems/rubygems/pull/1938&quot;&gt;#1938&lt;/a&gt; and &lt;a href=&quot;https://github.com/rubygems/rubygems/pull/1944&quot;&gt;#1944&lt;/a&gt;) to study, as well as the &lt;a href=&quot;https://github.com/rubygems/rubygems/blob/master/lib/rubygems/command.rb&quot;&gt;class&lt;/a&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Command&lt;/code&gt; of &lt;a href=&quot;https://github.com/rubygems/rubygems&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;rubygems&lt;/code&gt; codebase&lt;/a&gt;. Here’s a bit of what I’ve learned:&lt;/p&gt;
 
-&lt;h1 id=&quot;class-command&quot;&gt;Class Command&lt;/h1&gt;
+&lt;h2 id=&quot;class-command&quot;&gt;Class Command&lt;/h2&gt;
 &lt;p&gt;The first thing I noticed on the PRs was that every command inherits from the class &lt;code class=&quot;highlighter-rouge&quot;&gt;Command&lt;/code&gt;. This class works like an &lt;code class=&quot;highlighter-rouge&quot;&gt;interface&lt;/code&gt; to the children classes, that is, the children must override its methods to work properly. The comment at &lt;a href=&quot;https://github.com/rubygems/rubygems/blob/master/lib/rubygems/command.rb#L13&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;lib/rubygems/command.rb&lt;/code&gt;&lt;/a&gt; sums this up:&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Base class for all Gem commands.  When creating a new gem command, define #initialize, #execute, #arguments, #defaults_str, #description and #usage (as appropriate).&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h1 id=&quot;overriding&quot;&gt;Overriding&lt;/h1&gt;
+&lt;h2 id=&quot;overriding&quot;&gt;Overriding&lt;/h2&gt;
 
 &lt;p&gt;So we need to override these methods to create our new command. Let’s take a look at them:&lt;/p&gt;
 
@@ -401,7 +391,7 @@
       
       <item>
         <title>How I got accepted to GSoC 2019</title>
-        <description>&lt;h1 id=&quot;my-background&quot;&gt;My background&lt;/h1&gt;
+        <description>&lt;h2 id=&quot;my-background&quot;&gt;My background&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.ruby-lang.org/&quot;&gt;Ruby&lt;/a&gt; is my favorite programming language. I’ve been working with it almost every day since 2016, whether on college projects or at work. I love how it is simple, clear, elegant and beautiful. Take a look at the code snippet bellow:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;my_list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
@@ -409,15 +399,15 @@
 &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;empty?&lt;/span&gt;
   &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;It's empty&quot;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# No unnecessary braces, semicolons, etc&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;span class=&quot;c1&quot;&gt;## No unnecessary braces, semicolons, etc&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;h1 id=&quot;choosing-a-project&quot;&gt;Choosing a project&lt;/h1&gt;
+&lt;h2 id=&quot;choosing-a-project&quot;&gt;Choosing a project&lt;/h2&gt;
 
 &lt;p&gt;I started web development and quickly discovered &lt;a href=&quot;https://rubyonrails.org/&quot;&gt;Ruby on Rails&lt;/a&gt; and eventually ruby became one of my main tools. This was why I chose the &lt;a href=&quot;httpst//summerofcode.withgoogle.com/organizations/5542255322988544/&quot;&gt;Ruby Org&lt;/a&gt; when I was looking for projects to contribute before GSoC.&lt;/p&gt;
 
 &lt;p&gt;I ran through its &lt;a href=&quot;https://github.com/rubygsoc/rubygsoc/wiki/Ideas-List&quot;&gt;ideas list&lt;/a&gt; and I found some nice projects. One that catched my eye was to &lt;a href=&quot;https://github.com/rubygsoc/rubygsoc/wiki/Ideas-for-RubyGems#integrate-functionality-from-gem-web-into-rubygems-gem-cli&quot;&gt;Integrate functionality from gem-web into RubyGems gem CLI&lt;/a&gt;. This seemed to be a project for me: kinda on my area, but challenging tho. I wanted to learn more about this project, so I could write a better proposal.&lt;/p&gt;
 
-&lt;h1 id=&quot;first-contributions&quot;&gt;First contributions&lt;/h1&gt;
+&lt;h2 id=&quot;first-contributions&quot;&gt;First contributions&lt;/h2&gt;
 &lt;p&gt;I took a look at &lt;a href=&quot;https://github.com/bitboxer/gem-web/&quot;&gt;gem-web&lt;/a&gt;’s to see what it looks like and make some contribution. Since there were no issues, I look at its files.&lt;/p&gt;
 
 &lt;p&gt;Improving travis is an easy way to get started so this was my &lt;a href=&quot;https://github.com/bitboxer/gem-web/pull/3&quot;&gt;first contribution&lt;/a&gt; to gem-web. This is very important: &lt;strong&gt;don’t be afraid of open source projects&lt;/strong&gt;. This contribution was so simple! Take a look, just one line:&lt;/p&gt;
@@ -428,18 +418,18 @@
 
 &lt;p&gt;I had to study a bit of the test structure of gem-web (which were written in &lt;a href=&quot;https://rspec.info/&quot;&gt;Rspec&lt;/a&gt;), and the code of rubygems (especially &lt;a href=&quot;https://github.com/rubygems/rubygems/blob/master/lib/rubygems/command.rb&quot;&gt;the Command class&lt;/a&gt;) and gem-web itself. This was my path to my &lt;a href=&quot;https://github.com/bitboxer/gem-web/pull/6&quot;&gt;third contribution&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h1 id=&quot;my-proposal&quot;&gt;My proposal&lt;/h1&gt;
+&lt;h2 id=&quot;my-proposal&quot;&gt;My proposal&lt;/h2&gt;
 &lt;p&gt;With the knowlegde adquired from my contribuitons I was able to write a proposal. Ruby provided an &lt;a href=&quot;https://github.com/rubygsoc/rubygsoc/wiki/Student-Application&quot;&gt;application template for students&lt;/a&gt;, so I answered the questions, and wrote a Roadmap of my development process. I followed an advice from an ex-GSoCer to &lt;strong&gt;add time to get feedback from the community&lt;/strong&gt; (particularly from non-linux users), so I add these “Feedback Moments”. I added a &lt;strong&gt;contingency time&lt;/strong&gt; too, because as software developers we know: &lt;em&gt;“Sh!t Happens”&lt;/em&gt;. Here’s &lt;a href=&quot;https://docs.google.com/document/d/1YB1-rBfI9fI9i7cy9_RWV-xD45DMMW3XLnuRWlp_kvg/edit?usp=sharing&quot;&gt;my proposal draft&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;With the proposal finished I sent it to the mentors, and waited for feedback (actually they said that my proposal was good, so there are no changes between the draft and the final PDF).&lt;/p&gt;
 
-&lt;h1 id=&quot;project-5260793296191488&quot;&gt;Project #5260793296191488&lt;/h1&gt;
+&lt;h2 id=&quot;project-5260793296191488&quot;&gt;Project #5260793296191488&lt;/h2&gt;
 
 &lt;p&gt;Well, as you know (the title has spoiled you), I &lt;a href=&quot;https://summerofcode.withgoogle.com/projects/#5260793296191488&quot;&gt;got accepted into GSoC&lt;/a&gt; ;) Here’s the nice email that I’ve received:&lt;/p&gt;
 
 &lt;p&gt;&lt;img style=&quot;display: block; margin: 0 auto;&quot; src=&quot;/assets/img/gsoc.png&quot; /&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;final-thoughts&quot;&gt;Final thoughts&lt;/h1&gt;
+&lt;h2 id=&quot;final-thoughts&quot;&gt;Final thoughts&lt;/h2&gt;
 &lt;p&gt;Yes, I am very happy to be part of this program. I feel great about myself, because sometimes we feel like we can’t do certain things, and I prove myself wrong. Well, I got accepted on my first try, so I’m not the most experieced about GSoC, but here some tips that may help you:&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;My tips:&lt;/strong&gt;&lt;/p&gt;
@@ -488,7 +478,7 @@ Well, that’s it for now. This text is longer than I expected it to be. Next po
 
 </description>
         
-          <description>&lt;h1 id=&quot;my-background&quot;&gt;My background&lt;/h1&gt;
+          <description>&lt;h2 id=&quot;my-background&quot;&gt;My background&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.ruby-lang.org/&quot;&gt;Ruby&lt;/a&gt; is my favorite programming language. I’ve been working with it almost every day since 2016, whether on college projects or at work. I love how it is simple, clear, elegant and beautiful. Take a look at the code snippet bellow:&lt;/p&gt;
 
 </description>
@@ -512,7 +502,7 @@ Well, that’s it for now. This text is longer than I expected it to be. Next po
 
 &lt;p&gt;Besides that, this will be a way to track my evolution as a developer (and as a writer ;D).&lt;/p&gt;
 
-&lt;p&gt;I’m living a great time in my life, so there are many cool things happening at the same time. I’m currently working on &lt;a href=&quot;https://github.com/rage-of-the-elders/rage-of-the-elders&quot;&gt;my first game&lt;/a&gt;, I &lt;a href=&quot;/me-and-gsoc/&quot;&gt;just got accepted on GSoC 2019&lt;/a&gt; and I’m making a &lt;a href=&quot;#!&quot;&gt;simple pascal compiler&lt;/a&gt;, to mention a few of them &lt;em&gt;(I’ll update all this links when I post something about them, so stay tunned!)&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;I’m living a great time in my life, so there are many cool things happening at the same time. I’m currently working on &lt;a href=&quot;https://github.com/rage-of-the-elders/rage-of-the-elders&quot;&gt;my first game&lt;/a&gt;, I &lt;a href=&quot;/me-and-gsoc/&quot;&gt;just got accepted on GSoC 2019&lt;/a&gt; and I’m making a simple pascal compiler, to mention a few of them &lt;em&gt;(I’ll update all this links when I post something about them, so stay tunned!)&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;My intent is to share a bit of what I’ve learned on those things, and I hope this blog helps you! Have fun!&lt;/p&gt;
 
@@ -530,6 +520,8 @@ Well, that’s it for now. This text is longer than I expected it to be. Next po
         <link>http://matheusrich.github.io/blog-new/</link>
         <guid isPermaLink="true">http://matheusrich.github.io/blog-new/</guid>
         
+        
+        <category>gsoc</category>
         
       </item>
       

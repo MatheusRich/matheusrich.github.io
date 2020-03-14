@@ -8,12 +8,12 @@ categories: gsoc ruby rubygems cli
 I'm currently working on GSoC, and I have to [Integrate functionality from gem-web into RubyGems gem CLI][gsoc-post]. So, we're going to add a new CLI option to `rubygems`. As my first task on it, my mentor [Saroj Maharjan][zoras-gh] (@zoras) sent me some PRs ([#1938][pr-1938] and [#1944][pr-1944]) to study, as well as the [class][command-class] `Command` of [`rubygems` codebase][rubygems]. Here's a bit of what I've learned:
 
 
-# Class Command
+## Class Command
 The first thing I noticed on the PRs was that every command inherits from the class `Command`. This class works like an `interface` to the children classes, that is, the children must override its methods to work properly. The comment at [`lib/rubygems/command.rb`][comment] sums this up:
 
 > Base class for all Gem commands.  When creating a new gem command, define #initialize, #execute, #arguments, #defaults_str, #description and #usage (as appropriate). 
 
-# Overriding
+## Overriding
 
 So we need to override these methods to create our new command. Let's take a look at them:
 

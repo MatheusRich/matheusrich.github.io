@@ -11,23 +11,19 @@ As I mentioned in [this post][gsoc-post], I'm working with Rubygems for GSoC 201
 
 I've added a new command to Rubygems: the `web` command. Its goal is to help developers to quickly find documentation about a particular gem.
 
-# How does it look?
+## How does it look?
 
 It's really simple to use this command. Take a look:
 
 * **Do you wanna know what is the homepage for some gem?** Just type `gem web gem_name` and it will output the URL.
-
 * **Quickly access to the rubygems page?** `gem web -r gem_name` brings it.
-
 * **Can't remember what _that_ method does?** `gem web -d gem_name` will get the documentation URL for you.
-
 * **Want to dive into that good old messy code?** Type `gem web -c gem_name` to get its source code.
-
 * **I know, we're too lazy to copy/paste the link:** Just set the environment variable `BROWSER` (e.g. `export BROWSER=google-chrome`) and it will automatically open the URL in the browser for you. (Pay [André Arko][indirect] a beer for this suggestion 😜)
 
 > Some options, like rubytoolbox, were dropped because they make this feature to bound to 3rd party services
 
-# What's happening under the hood?
+## What's happening under the hood?
 Adding a new method for Rubygems is not rocket science (I have a post on [how to do it][command]). I'll explain here a bit of how the `web` command works (I will be short on some sections to keep this clearer).
 
 The first thing this commands does when it's called is to run the method `open_page(gem, options)` from `Gem::Web::Executor`.
@@ -72,7 +68,7 @@ If the `BROWSER` environment variable is set, the command uses it to open your b
 
 <img style="display: block; margin: 0 auto;" src="/assets/img/goddamn-right.gif">
 
-# The End
+## The End
 Well, that's it! I told you that it wasn't hard at all. This was one of the last posts I'll do about my work on GSoC, since it's getting to the end. In the next update I'll talk about the [lessons I've learned][lessons] while contributing for Rubygems. 'Till next time, folks!
 
 [gsoc-post]: {% post_url 2019-05-13-me-and-gsoc %}

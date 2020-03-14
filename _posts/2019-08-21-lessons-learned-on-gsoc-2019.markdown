@@ -12,10 +12,10 @@ It turns out that it was an **extremely great experience**. My code wasn't "perf
 <img style="display: block; margin: 0 auto;" src="/assets/img/no-pain-no-gain.gif">
 <p style="text-align: center;">Well, I guess it's just the "No pain, No gain" rule. =)</p>
 
-# Lessons Learned
+## Lessons Learned
 Here's some advice, so we (yes, I'm included) can avoid these mistakes in the future:
 
-#### 1. Keep It Simple Stupid
+### 1. Keep It Simple Stupid
 > In case you didn't know, [KISS][kiss] is a "real thing", not just a cool expression that I used
 
 Well, well, well... It's here where things get embarrassing (to me). As developers, we tend to **overestimate** the problems we have, and this leads to **overcomplicated** solutions. This problem showed up on the initial code of my PR for Rubygems.
@@ -110,7 +110,7 @@ end
 
 Again: **Keep it simple, stupid!**
 
-#### 2. Communication
+### 2. Communication
 One of the things I love about open source (and especially  about Ruby) is the community! Interacting with people, teaching, learning from them, this is so cool!
 
 Do use this in your favor! Like what I did in the last section: I wasn't sure about a feature, and the community guided me. They even showed me use cases that I didn't think of. **Don't be shy to ask questions!**
@@ -119,10 +119,10 @@ And that fear about adding a _security bug_? Well, here the community can (and w
 
 Oh, and **do not take things personally!** If someone adds a comment about your code, it's just about your **code**, don't be sad about it, but use this an opportunity for learning something (or prove your point if you're confident about your solution).
 
-#### 3. Test test test
+### 3. Test test test
 Never forget to add tests when you add new features to a project! It *heavily* increases the odds of your changes being accepted. And, of course, it should help you to keep track when your code is working or not, and warn you if you insert any bug. Use a coverage tool to make sure **every piece** of your code is being covered!
 
-# Final Thoughts
+## Final Thoughts
 Yeah, this article was big! But it needed to. Being part of GSoC and contributing to such a big project like Rubygems was just a fantastic experience! I'll carry the lessons I've learned for the rest of my career, and they will lead me to be a better programmer.
 
 I have to thank Google so much for making this possible. I can't describe how cool was this summer! I also have to thank Ruby and Rubygems for guiding me all the way through this. Thanks for the contributors that reviewed my PR (particularly [Luis][bronzdoc], [Ellen][duckinator] and [Josef][simi]), and the support on Slack ([Aditya][aditya] and [Indirect][indirect-gh]).
