@@ -70,7 +70,7 @@ end
 
 If the `BROWSER` environment variable is set, the command uses it to open your browser with the link. Else, it juts prints the URI. Pretty easy, right?
 
-<img style="display: block; margin: 0 auto;" src="/img/goddamn-right.gif">
+<img style="display: block; margin: 0 auto;" src="/assets/img/goddamn-right.gif">
 
 # The End
 Well, that's it! I told you that it wasn't hard at all. This was one of the last posts I'll do about my work on GSoC, since it's getting to the end. In the next update I'll talk about the [lessons I've learned][lessons] while contributing for Rubygems. 'Till next time, folks!
