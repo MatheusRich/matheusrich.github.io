@@ -9,7 +9,7 @@ end
 # 
 # @param post_name [String] name of the post to be created.
 # @param tags [Array(String)] tags of the post.
-def post(post_name, tags: 'ruby')
+def post(post_name, tags: ['ruby'])
   time = Time.now
   file_name = time.to_date.to_s + '-' + Slugify.(post_name) + '.md'
 
