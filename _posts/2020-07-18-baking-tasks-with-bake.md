@@ -7,7 +7,7 @@ categories: ruby
 
 How many times have you searched how to pass arguments to a rake task? [`Bake`][bake-gh] makes it as easy as creating a simple method (**literally**). 
 
-For demonstration, we're gonna create a task that generates a new blogpost file for you.
+For demonstration, we're gonna create a task that generates a new blog post file for you.
 
 ## Setup
 1. First of all we need to install the gem. Make sure you have at least Ruby 2.5.0. Add **`Bake`** to your project's Gemfile and install it:
@@ -30,7 +30,7 @@ def new_post(post_name)
 end
 ```
 
-Thats it! Lets run it.
+That's it! Lets run it.
 
 ```bash
 $ bake new_post 'new post'
@@ -65,7 +65,7 @@ def new_post(post_name, extension = 'md', categories: '')
 end
 ```
 
-And you pass them like this:
+And you pass named arguments like this:
 ```bash
 $ bake new_post 'bake is awesome' categories='ruby bake'
 ```
@@ -89,7 +89,7 @@ def new_post(post_name, extension = 'md', categories: [])
 end
 ```
 
-Now, instad of wrapping our categories in quotes, we can pass it as comma separated values and it will be converted in an array of strings.
+Now, instead of wrapping our categories in quotes, we can pass them as comma separated values and they will be coerced into an array of strings.
 
 ```bash
 $ bake new_post 'bake is awesome' categories=ruby,bake
@@ -167,7 +167,7 @@ $ bake post:new 'Nested task!'
 ```
 
 #### Listing tasks
-To list all available tasks run
+To list all available tasks run:
   
 ```bash
 $ bake list
@@ -183,6 +183,6 @@ $ bake list post
 ```
 
 ## Wrapping up
-Bake makes really easy to create tasks. No DSL, no new syntax to learn. Just plain old Ruby methods! Give it some love by starring the repository [on Github][bake-gh].
+Bake makes really easy to create tasks. No DSL, no new syntax to learn. Just plain old Ruby methods! If you like it, give it some love by starring the repository [on Github][bake-gh].
 
 [bake-gh]: https://github.com/ioquatix/bake/
