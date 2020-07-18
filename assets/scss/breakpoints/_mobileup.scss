@@ -114,19 +114,18 @@ MENU STYLING
   -o-user-select: none;
   user-select: none;
   float: right;
-  // line-height: 2em;
-  // margin-top: .5em;
+  line-height: 0.9;
   background-color: $background-color;
   border-radius: 4px;
-  padding: 0 .5em;
+  padding: 1px .3em;
   color: white;
   text-decoration: none;
   position: relative;
   right: 2rem;
 	transition: all 0.2s ease-in-out;
 	font-weight: bolder;
-	margin-top: 0.2em;
-	font-size: 1.4em;
+	margin-top: 5px;
+	font-size: 2.5em;
 	right: 0.5rem;
 
   &:hover {
