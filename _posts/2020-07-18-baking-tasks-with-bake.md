@@ -7,14 +7,14 @@ categories: ruby
 
 How many times have you searched how to pass arguments to a rake task? [`Bake`][bake-gh] makes it as easy as creating a simple method (**literally**). 
 
-For demonstration, we're gonna create a task that generates a new blogpost file for your.
+For demonstration, we're gonna create a task that generates a new blogpost file for you.
 
 ## Setup
 1. First of all we need to install the gem. Make sure you have at least Ruby 2.5.0. Add **`Bake`** to your project's Gemfile and install it:
 ```bash
 $ bundle add bake
 ```
-1. Create a **`bake.rb`** file at the root of your project. This is where the top level taks will live.
+1. Create a **`bake.rb`** file at the root of your project. This is where the top level tasks will live.
 
 ### Baking you first task
 As I said earlier, just create a ruby method and it will do the job.
