@@ -173,7 +173,7 @@ To list all available tasks run:
 $ bake list
 ```
 
-<!-- <img style="display: block; margin: 0 auto;" src="/assets/img/bake-list.png"> -->
+<img style="display: block; margin: 0 auto;" src="/assets/img/bake-list.png">
 <p style="text-align: center;">Bake has this nice output when listing tasks</p>
 
 You can filter tasks by providing a pattern:
