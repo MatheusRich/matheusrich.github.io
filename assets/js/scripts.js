@@ -1,18 +1,17 @@
-// A $( document ).ready() block.
-$( document ).ready(function() {
+function onDocumentReady(fn) {
+  if (document.readyState === 'complete' || (document.readyState !== 'loading' && !document.documentElement.doScroll)) {
+    fn();
+  } else {
+    document.addEventListener('DOMContentLoaded', fn);
+  }
+}
 
-	// DropCap.js
-	// var dropcaps = document.querySelectorAll(".dropcap");
-	// window.Dropcap.layout(dropcaps, 2);
+onDocumentReady(function () {
+  responsiveNav('.nav-collapse');
 
-	// Responsive-Nav
-	var nav = responsiveNav(".nav-collapse");
-
-	// Round Reading Time
-    $(".time").text(function (index, value) {
-      return Math.round(parseFloat(value));
-    });
-
+  // Round Reading Time
+  // var timeSpan = document.querySelector('.time');
+  // if (!timeSpan) return;
+  // var time = timeSpan.textContent;
+  // timeSpan.textContent = Math.round(parseFloat(time));
 });
-
-
