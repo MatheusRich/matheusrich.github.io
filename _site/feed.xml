@@ -3,10 +3,10 @@
   <channel>
     <title>Rich Codes</title>
     <description>Hi, I'm Matheus Richard, a Software Engineering from Brazil. I'm an open source dev, I love music and my newfound passion is game development.</description>
-    <link>http://matheusrich.github.io/</link>
-    <atom:link href="http://matheusrich.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 30 Nov 2020 17:00:58 -0300</pubDate>
-    <lastBuildDate>Mon, 30 Nov 2020 17:00:58 -0300</lastBuildDate>
+    <link>http://matheusrich.com/</link>
+    <atom:link href="http://matheusrich.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 29 Dec 2020 19:36:02 -0300</pubDate>
+    <lastBuildDate>Tue, 29 Dec 2020 19:36:02 -0300</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       
@@ -192,8 +192,8 @@ Let’s add an optional argument to our task.&lt;/p&gt;
 </description>
         
         <pubDate>Sat, 18 Jul 2020 01:00:49 -0300</pubDate>
-        <link>http://matheusrich.github.io/baking-tasks-with-bake/</link>
-        <guid isPermaLink="true">http://matheusrich.github.io/baking-tasks-with-bake/</guid>
+        <link>http://matheusrich.com/baking-tasks-with-bake/</link>
+        <guid isPermaLink="true">http://matheusrich.com/baking-tasks-with-bake/</guid>
         
         
         <category>ruby</category>
@@ -339,8 +339,8 @@ Let’s add an optional argument to our task.&lt;/p&gt;
 </description>
         
         <pubDate>Wed, 21 Aug 2019 23:00:00 -0300</pubDate>
-        <link>http://matheusrich.github.io/lessons-learned-on-gsoc-2019/</link>
-        <guid isPermaLink="true">http://matheusrich.github.io/lessons-learned-on-gsoc-2019/</guid>
+        <link>http://matheusrich.com/lessons-learned-on-gsoc-2019/</link>
+        <guid isPermaLink="true">http://matheusrich.com/lessons-learned-on-gsoc-2019/</guid>
         
         
         <category>gsoc</category>
@@ -428,8 +428,8 @@ Let’s add an optional argument to our task.&lt;/p&gt;
 </description>
         
         <pubDate>Tue, 20 Aug 2019 22:00:00 -0300</pubDate>
-        <link>http://matheusrich.github.io/rubygems-web-command/</link>
-        <guid isPermaLink="true">http://matheusrich.github.io/rubygems-web-command/</guid>
+        <link>http://matheusrich.com/rubygems-web-command/</link>
+        <guid isPermaLink="true">http://matheusrich.com/rubygems-web-command/</guid>
         
         
         <category>gsoc</category>
@@ -563,8 +563,8 @@ Let’s add an optional argument to our task.&lt;/p&gt;
 </description>
         
         <pubDate>Mon, 13 May 2019 22:00:00 -0300</pubDate>
-        <link>http://matheusrich.github.io/how-rubygems-commands-work/</link>
-        <guid isPermaLink="true">http://matheusrich.github.io/how-rubygems-commands-work/</guid>
+        <link>http://matheusrich.com/how-rubygems-commands-work/</link>
+        <guid isPermaLink="true">http://matheusrich.com/how-rubygems-commands-work/</guid>
         
         
         <category>gsoc</category>
@@ -674,8 +674,8 @@ Well, that’s it for now. This text is longer than I expected it to be. Next po
 </description>
         
         <pubDate>Mon, 13 May 2019 22:00:00 -0300</pubDate>
-        <link>http://matheusrich.github.io/me-and-gsoc/</link>
-        <guid isPermaLink="true">http://matheusrich.github.io/me-and-gsoc/</guid>
+        <link>http://matheusrich.com/me-and-gsoc/</link>
+        <guid isPermaLink="true">http://matheusrich.com/me-and-gsoc/</guid>
         
         
         <category>gsoc</category>
@@ -707,8 +707,8 @@ Well, that’s it for now. This text is longer than I expected it to be. Next po
 </description>
         
         <pubDate>Mon, 06 May 2019 22:00:00 -0300</pubDate>
-        <link>http://matheusrich.github.io/blog-new/</link>
-        <guid isPermaLink="true">http://matheusrich.github.io/blog-new/</guid>
+        <link>http://matheusrich.com/blog-new/</link>
+        <guid isPermaLink="true">http://matheusrich.com/blog-new/</guid>
         
         
         <category>gsoc</category>
