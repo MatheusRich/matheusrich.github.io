@@ -14,7 +14,7 @@ BUTTON DEFAULTS
   font-weight: normal;
   padding: .5em 1.5em;
   border: 0;
-  border-radius: 4px; 
+  border-radius: 50px; 
   cursor: pointer;
   margin-bottom: .5em;
   transition: background-color 0.14s ease-in-out;
@@ -62,7 +62,7 @@ BUTTON DEFAULTS
 .button__outline {  
   @extend %btn;
   background-color: transparent;
-  border: 3px solid $primary-color;
+  border: 2px solid $primary-color;
   color: $primary-color;
 
   &:hover {
