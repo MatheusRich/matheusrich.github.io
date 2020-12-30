@@ -16,8 +16,20 @@ def post(post_name, tags: ['ruby'])
   File.write(POSTS_PATH + file_name, FileContent.(post_name, time, tags))
 end
 
+# Creates a new draft
+# 
+# @param draft_name [String] name of the draft to be created.
+# @param tags [Array(String)] tags of the draft.
+def draft(draft_name, tags: ['ruby'])
+  time = Time.now
+  file_name = Slugify.(draft_name) + '.md'
+
+  File.write(DRAFTS_PATH + file_name, FileContent.(draft_name, time, tags))
+end
+
 # Constants
 POSTS_PATH = '_posts/'
+DRAFTS_PATH = '_drafts/'
 
 # Helpers
 Slugify = ->(str) { str.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '') }

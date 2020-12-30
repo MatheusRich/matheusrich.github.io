@@ -7,7 +7,7 @@ var cssnano 		= require('gulp-cssnano');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
-    jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
+    jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build --drafts'
 };
 
 /**
@@ -15,8 +15,7 @@ var messages = {
  */
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
-    return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
-        .on('close', done);
+    return cp.spawn(jekyll, ['build', '--drafts'], {stdio: 'inherit'}).on('close', done);
 });
 
 /**
@@ -59,7 +58,7 @@ gulp.task('sass', function () {
  */
 gulp.task('watch', function () {
     gulp.watch(['assets/scss/*.scss', 'assets/scss/*/*.scss'], ['sass']);
-    gulp.watch(['*.html', '_layouts/*.html', '_posts/*', '_includes/*', 'about.md'], ['jekyll-rebuild']);
+    gulp.watch(['*.html', '_layouts/*.html', '_posts/*', '_drafts/*', '_includes/*', 'about.md'], ['jekyll-rebuild']);
 });
 
 /**
