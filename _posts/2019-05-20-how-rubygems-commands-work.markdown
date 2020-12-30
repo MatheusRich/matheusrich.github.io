@@ -107,7 +107,7 @@ As you may have noticed, adding a new command to `rubygems` is not rocket scienc
 
 BTW, the tests from [`rubygems`][rubygems] are written in [Minitest][minitest], whereas [`gem-web`][gem-web]'s are in [Rspec][rspec], so I'll need to convert them before integrating `gem-web` into `rubygems`. I'll probably talk about this in next week's post. Stay tuned! I'm out!
 
-<img style="display: block; margin: 0 auto;" src="/assets/img/thats-all.gif">
+<img loading="lazy" style="display: block; margin: 0 auto;" src="/assets/img/thats-all.gif">
 
 
 [zoras-gh]: http://github.com/zoras

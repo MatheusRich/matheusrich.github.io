@@ -9,7 +9,7 @@ Opening a Pull Request for Rubygems, a part of the Ruby language seemed like a t
 
 It turns out that it was an **extremely great experience**. My code wasn't "perfect" (if such thing exists), and I made a lot of mistakes, but I've learned so many things in the process that **really worth it**!
 
-<img style="display: block; margin: 0 auto;" src="/assets/img/no-pain-no-gain.gif">
+<img loading="lazy" style="display: block; margin: 0 auto;" src="/assets/img/no-pain-no-gain.gif">
 <p style="text-align: center;">Well, I guess it's just the "No pain, No gain" rule. =)</p>
 
 ## Lessons Learned
@@ -135,7 +135,7 @@ If you're wondering being part of GSoC 2020, **start contributing now!** Have no
 
 That's it, guys! If you made it until here, you're the MVP. I hope something here helps you! And if it does, let me know! 'Till next time! Bye!
 
-<img style="display: block; margin: 0 auto;" src="/assets/img/thanks.gif">
+<img loading="lazy" style="display: block; margin: 0 auto;" src="/assets/img/thanks.gif">
 
 
 [tips]: {% post_url 2019-05-13-me-and-gsoc %}

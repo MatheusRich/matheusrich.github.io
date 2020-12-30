@@ -27,7 +27,7 @@ I took a look at [gem-web][gem-web]'s to see what it looks like and make some co
 
 Improving travis is an easy way to get started so this was my [first contribution][first-pr] to gem-web. This is very important: **don't be afraid of open source projects**. This contribution was so simple! Take a look, just one line:
 
-<img style="display: block; margin: 0 auto;" src="/assets/img/first-pr.png">
+<img loading="lazy" style="display: block; margin: 0 auto;" src="/assets/img/first-pr.png">
 
 To get used to the codebase I thought that would be nice to add some tests, so I [added Simplecov][second-pr] first, and after I would write tests where gem-web was lacking.
 
@@ -42,7 +42,7 @@ With the proposal finished I sent it to the mentors, and waited for feedback (ac
 
 Well, as you know (the title has spoiled you), I [got accepted into GSoC][approved] ;) Here's the nice email that I've received:
 
-<img style="display: block; margin: 0 auto;" src="/assets/img/gsoc.png">
+<img loading="lazy" style="display: block; margin: 0 auto;" src="/assets/img/gsoc.png">
 
 ## Final thoughts
 Yes, I am very happy to be part of this program. I feel great about myself, because sometimes we feel like we can't do certain things, and I prove myself wrong. Well, I got accepted on my first try, so I'm not the most experieced about GSoC, but here some tips that may help you: 
@@ -66,7 +66,7 @@ Yes, I am very happy to be part of this program. I feel great about myself, beca
 <br>
 Well, that's it for now. This text is longer than I expected it to be. Next post will be about my first steps on GSoC. Stay tunned and LET'S GO!
 
-<img style="display: block; margin: 0 auto;" src="/assets/img/letsgo.gif">
+<img loading="lazy" style="display: block; margin: 0 auto;" src="/assets/img/letsgo.gif">
 
 [ruby]: https://www.ruby-lang.org/
 [rails]: https://rubyonrails.org/

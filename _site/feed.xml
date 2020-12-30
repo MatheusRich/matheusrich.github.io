@@ -5,8 +5,8 @@
     <description>Hi, I'm Matheus Richard, a Software Engineering from Brazil. I'm an open source dev, I love music and my newfound passion is game development.</description>
     <link>http://matheusrich.com/</link>
     <atom:link href="http://matheusrich.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 29 Dec 2020 20:02:23 -0300</pubDate>
-    <lastBuildDate>Tue, 29 Dec 2020 20:02:23 -0300</lastBuildDate>
+    <pubDate>Tue, 29 Dec 2020 22:52:03 -0300</pubDate>
+    <lastBuildDate>Tue, 29 Dec 2020 22:52:03 -0300</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       
@@ -174,7 +174,7 @@ Let’s add an optional argument to our task.&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;The result:
-&lt;img style=&quot;display: block; margin: 0 auto;&quot; src=&quot;/assets/img/bake-list.png&quot; /&gt;&lt;/p&gt;
+&lt;img loading=&quot;lazy&quot; style=&quot;display: block; margin: 0 auto;&quot; src=&quot;/assets/img/bake-list.png&quot; /&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align: center;&quot;&gt;Bake has this nice output when listing tasks&lt;/p&gt;
 
 &lt;p&gt;You can filter tasks by providing a pattern:&lt;/p&gt;
@@ -208,7 +208,7 @@ Let’s add an optional argument to our task.&lt;/p&gt;
 
 &lt;p&gt;It turns out that it was an &lt;strong&gt;extremely great experience&lt;/strong&gt;. My code wasn’t “perfect” (if such thing exists), and I made a lot of mistakes, but I’ve learned so many things in the process that &lt;strong&gt;really worth it&lt;/strong&gt;!&lt;/p&gt;
 
-&lt;p&gt;&lt;img style=&quot;display: block; margin: 0 auto;&quot; src=&quot;/assets/img/no-pain-no-gain.gif&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&quot;lazy&quot; style=&quot;display: block; margin: 0 auto;&quot; src=&quot;/assets/img/no-pain-no-gain.gif&quot; /&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align: center;&quot;&gt;Well, I guess it's just the &quot;No pain, No gain&quot; rule. =)&lt;/p&gt;
 
 &lt;h2 id=&quot;lessons-learned&quot;&gt;Lessons Learned&lt;/h2&gt;
@@ -331,7 +331,7 @@ Let’s add an optional argument to our task.&lt;/p&gt;
 
 &lt;p&gt;That’s it, guys! If you made it until here, you’re the MVP. I hope something here helps you! And if it does, let me know! ‘Till next time! Bye!&lt;/p&gt;
 
-&lt;p&gt;&lt;img style=&quot;display: block; margin: 0 auto;&quot; src=&quot;/assets/img/thanks.gif&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&quot;lazy&quot; style=&quot;display: block; margin: 0 auto;&quot; src=&quot;/assets/img/thanks.gif&quot; /&gt;&lt;/p&gt;
 
 </description>
         
@@ -417,7 +417,7 @@ Let’s add an optional argument to our task.&lt;/p&gt;
 
 &lt;p&gt;If the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;BROWSER&lt;/code&gt; environment variable is set, the command uses it to open your browser with the link. Else, it juts prints the URI. Pretty easy, right?&lt;/p&gt;
 
-&lt;p&gt;&lt;img style=&quot;display: block; margin: 0 auto;&quot; src=&quot;/assets/img/goddamn-right.gif&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&quot;lazy&quot; style=&quot;display: block; margin: 0 auto;&quot; src=&quot;/assets/img/goddamn-right.gif&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;the-end&quot;&gt;The End&lt;/h2&gt;
 &lt;p&gt;Well, that’s it! I told you that it wasn’t hard at all. This was one of the last posts I’ll do about my work on GSoC, since it’s getting to the end. In the next update I’ll talk about the &lt;a href=&quot;/lessons-learned-on-gsoc-2019/&quot;&gt;lessons I’ve learned&lt;/a&gt; while contributing for Rubygems. ‘Till next time, folks!&lt;/p&gt;
@@ -554,7 +554,7 @@ Let’s add an optional argument to our task.&lt;/p&gt;
 
 &lt;p&gt;BTW, the tests from &lt;a href=&quot;https://github.com/rubygems/rubygems&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rubygems&lt;/code&gt;&lt;/a&gt; are written in &lt;a href=&quot;https://github.com/seattlerb/minitest&quot;&gt;Minitest&lt;/a&gt;, whereas &lt;a href=&quot;https://github.com/bitboxer/gem-web/&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem-web&lt;/code&gt;&lt;/a&gt;’s are in &lt;a href=&quot;https://rspec.info/&quot;&gt;Rspec&lt;/a&gt;, so I’ll need to convert them before integrating &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem-web&lt;/code&gt; into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rubygems&lt;/code&gt;. I’ll probably talk about this in next week’s post. Stay tuned! I’m out!&lt;/p&gt;
 
-&lt;p&gt;&lt;img style=&quot;display: block; margin: 0 auto;&quot; src=&quot;/assets/img/thats-all.gif&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&quot;lazy&quot; style=&quot;display: block; margin: 0 auto;&quot; src=&quot;/assets/img/thats-all.gif&quot; /&gt;&lt;/p&gt;
 
 </description>
         
@@ -602,7 +602,7 @@ Let’s add an optional argument to our task.&lt;/p&gt;
 
 &lt;p&gt;Improving travis is an easy way to get started so this was my &lt;a href=&quot;https://github.com/bitboxer/gem-web/pull/3&quot;&gt;first contribution&lt;/a&gt; to gem-web. This is very important: &lt;strong&gt;don’t be afraid of open source projects&lt;/strong&gt;. This contribution was so simple! Take a look, just one line:&lt;/p&gt;
 
-&lt;p&gt;&lt;img style=&quot;display: block; margin: 0 auto;&quot; src=&quot;/assets/img/first-pr.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&quot;lazy&quot; style=&quot;display: block; margin: 0 auto;&quot; src=&quot;/assets/img/first-pr.png&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;To get used to the codebase I thought that would be nice to add some tests, so I &lt;a href=&quot;https://github.com/bitboxer/gem-web/pull/5&quot;&gt;added Simplecov&lt;/a&gt; first, and after I would write tests where gem-web was lacking.&lt;/p&gt;
 
@@ -617,7 +617,7 @@ Let’s add an optional argument to our task.&lt;/p&gt;
 
 &lt;p&gt;Well, as you know (the title has spoiled you), I &lt;a href=&quot;https://summerofcode.withgoogle.com/projects/#5260793296191488&quot;&gt;got accepted into GSoC&lt;/a&gt; ;) Here’s the nice email that I’ve received:&lt;/p&gt;
 
-&lt;p&gt;&lt;img style=&quot;display: block; margin: 0 auto;&quot; src=&quot;/assets/img/gsoc.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&quot;lazy&quot; style=&quot;display: block; margin: 0 auto;&quot; src=&quot;/assets/img/gsoc.png&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;final-thoughts&quot;&gt;Final thoughts&lt;/h2&gt;
 &lt;p&gt;Yes, I am very happy to be part of this program. I feel great about myself, because sometimes we feel like we can’t do certain things, and I prove myself wrong. Well, I got accepted on my first try, so I’m not the most experieced about GSoC, but here some tips that may help you:&lt;/p&gt;
@@ -664,7 +664,7 @@ Let’s add an optional argument to our task.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;
 Well, that’s it for now. This text is longer than I expected it to be. Next post will be about my first steps on GSoC. Stay tunned and LET’S GO!&lt;/p&gt;
 
-&lt;p&gt;&lt;img style=&quot;display: block; margin: 0 auto;&quot; src=&quot;/assets/img/letsgo.gif&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&quot;lazy&quot; style=&quot;display: block; margin: 0 auto;&quot; src=&quot;/assets/img/letsgo.gif&quot; /&gt;&lt;/p&gt;
 
 </description>
         
@@ -696,7 +696,7 @@ Well, that’s it for now. This text is longer than I expected it to be. Next po
 
 &lt;p&gt;My intent is to share a bit of what I’ve learned on those things, and I hope this blog helps you! Have fun!&lt;/p&gt;
 
-&lt;p&gt;&lt;img style=&quot;display: block; margin: 0 auto;&quot; src=&quot;https://media.giphy.com/media/l1J3CbFgn5o7DGRuE/giphy.gif&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&quot;lazy&quot; style=&quot;display: block; margin: 0 auto;&quot; src=&quot;https://media.giphy.com/media/l1J3CbFgn5o7DGRuE/giphy.gif&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;P.S.: You can find me on social media through the links in the footer. Get in touch!&lt;/em&gt;&lt;/p&gt;
 

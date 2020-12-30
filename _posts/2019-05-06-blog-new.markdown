@@ -15,7 +15,7 @@ I'm living a great time in my life, so there are many cool things happening at t
 
 My intent is to share a bit of what I've learned on those things, and I hope this blog helps you! Have fun!
 
-<img style="display: block; margin: 0 auto;" src="https://media.giphy.com/media/l1J3CbFgn5o7DGRuE/giphy.gif">
+<img loading="lazy" style="display: block; margin: 0 auto;" src="https://media.giphy.com/media/l1J3CbFgn5o7DGRuE/giphy.gif">
 
 _P.S.: You can find me on social media through the links in the footer. Get in touch!_
 
