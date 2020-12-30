@@ -3,7 +3,7 @@ GLOBAL STYLES
 ***************/
 
 body {
-  font-size: 125%;
+  font-size: 120%;
 }
 
 .content {
@@ -227,4 +227,10 @@ CONTACT PAGE STYLING
     float: right;
     margin-right: 0;
 	}
+}
+
+.post pre.highlight {
+	margin: 0;
+	padding: 0;
+	font-size: 0.7em
 }

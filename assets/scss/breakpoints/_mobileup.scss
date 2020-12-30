@@ -284,6 +284,12 @@ POST STYLING
 		margin-bottom: 2rem;
 	}
 
+	pre.highlight {
+		margin: 0;
+		padding: 0;
+		font-size: 0.9em
+	}
+
 	.dropcap {
 		color: $primary-color;
 		margin-right: .45rem;
