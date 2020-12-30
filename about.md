@@ -6,7 +6,7 @@ title: About Me
 <div class="post">
   <h1 class="pageTitle">About Me</h1>
   <div class="profilePic">
-    <img loading="lazy" src="{{ '/assets/img/me.jpg' | prepend: site.baseurl }}" alt="Profile picture of Matheus Richard">
+    <img loading="lazy" width=300 height=300 src="{{ '/assets/img/me.jpg' | prepend: site.baseurl }}" alt="Profile picture of Matheus Richard">
   </div>
   <p class="intro">Hello, my name is Matheus! I'm a Software Engineer from Brazil. I'm an open source dev, I love music and my newfound passion is game development.</p>
   <p>You can find me online using the links in the footer. Cya!</p>
