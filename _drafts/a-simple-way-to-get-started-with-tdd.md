@@ -11,8 +11,7 @@ birds with one stone).
 
 <small>_OBS: the code snippets are below are in ruby, but they apply for any dinamically typed language._</small>
 
-Oh no! You got a bug in production. Your monitoring tool is screaming at you the most famous Ruby
-error of all: `NoMethodError: undefined method 'split' for nil:NilClass`
+Oh no! You got a bug in production. Your monitoring tool is screaming at you the famous [Billion Dollar Mistake][null]: `NoMethodError: undefined method 'split' for nil:NilClass`
 
 You look at the logs a see where this exception raised:
 
@@ -24,11 +23,7 @@ your_app/models/user.rb:7:in `first_name'
 Something went wrong on that User model. Let's check its code:
 
 ```ruby
-class User
-  def initialize(name:)
-    @name = name
-  end
-
+class User < BaseModel
   def first_name
     @name.split.first # <-- The error ocurred here
   end
@@ -45,20 +40,16 @@ class User
 end
 ```
 
-So, somehow the user has a `nil` name.
+So, somehow an user has a `nil` name. We have a validation, but it only check if name is not empty.
+Well, this is probably the  bug: it shouldn't allow `nil` values too.
+
+
 
 ```ruby
-puts 'asdf'
-```
-
-```crystal
-puts 'asdf'
-```
-
-```python
-print('asdf')
 ```
 
 ## Next steps
 
 Well, now our model doesn't allow creating user with `nil` names, but the database still allows it. Write a migration to add a constraint to reject null values. Plus, now we may have invalid data on database, that's a bummer! It's probably a good idea to add a default value for all users without a name too.
+
+[null]: https://en.wikipedia.org/wiki/Null_pointer#History:~:text=History,-%5B
