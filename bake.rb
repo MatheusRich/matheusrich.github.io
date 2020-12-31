@@ -2,6 +2,7 @@ require 'date'
 
 # Runs development server
 def s
+  system 'nvm use 11'
   system 'npx gulp'
 end
 
