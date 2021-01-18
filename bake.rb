@@ -1,8 +1,8 @@
 require 'date'
+require 'fileutils'
 
 # Runs development server
 def s
-  system 'nvm use 11'
   system 'npx gulp'
 end
 
@@ -26,6 +26,20 @@ def draft(draft_name, tags: ['ruby'])
   file_name = Slugify.(draft_name) + '.md'
 
   File.write(DRAFTS_PATH + file_name, FileContent.(draft_name, time, tags))
+end
+
+# Publishes a draft
+# 
+# @param draft_name [String] name of the draft to be published. If not given, the first one from `_drafts` will be published.
+def publish(draft_name = nil)
+  time = Time.now
+  article_name = Dir["_drafts/*.md"].first.split('/').last
+  old_file_path = "_drafts/#{article_name}"
+  new_file_path = "_posts/#{time.to_date}-#{article_name}"
+
+  FileUtils.mv(old_file_path, new_file_path)
+  new_content = File.open(new_file_path, &:read).gsub(/date: \K(.*)/, time.to_s)
+  File.write(new_file_path, new_content)
 end
 
 # Constants
