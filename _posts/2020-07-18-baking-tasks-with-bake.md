@@ -5,16 +5,16 @@ date: 2020-07-18 01:00:49 -0300
 categories: ruby
 ---
 
-How many times have you searched how to pass arguments to a rake task? [`Bake`][bake-gh] makes it as easy as creating a simple method (**literally**). 
+How many times have you searched how to pass arguments to a rake task? [Bake][bake-gh] makes it as easy as creating a simple method (**literally**). 
 
 For demonstration, we're gonna create a task that generates a new blog post file for you.
 
 ## Setup
-1. First of all we need to install the gem. Make sure you have at least Ruby 2.5.0. Add **`Bake`** to your project's Gemfile and install it:
+1. First of all we need to install the gem. Make sure you have at least Ruby 2.5.0. Add `Bake` to your project's Gemfile and install it:
 ```bash
 $ bundle add bake
 ```
-1. Create a **`bake.rb`** file at the root of your project. This is where the top level tasks will live.
+1. Create a `bake.rb` file at the root of your project. This is where the top level tasks will live.
 
 ### Baking you first task
 As I said earlier, just create a ruby method and it will do the job.
@@ -71,7 +71,7 @@ $ bake new_post 'bake is awesome' categories='ruby bake'
 ```
 
 #### It's 2020, I need types!
-Sometimes it's useful to coerce the task inputs in other types, since they are always strings. No prob, **`Bake`** got you!
+Sometimes it's useful to coerce the task inputs in other types, since they are always strings. No prob, `Bake` got you!
 
 Just add some documenting comments above your method and you're good to go:
 
@@ -134,7 +134,7 @@ end
 Yeah, that looks much better. And now we can use those methods in other tasks too 😉.
 
 #### Nested commands
-If we want to replace Rake, we need to have nested commands. They're called recipes in **`Bake`**. The tasks are namespaced by their file names. So, let's do it.
+If we want to replace Rake, we need to have nested commands. They're called recipes in `Bake`. The tasks are namespaced by their file names. So, let's do it.
 
 1. Create a dir `bake/` and a file `post.rb` there.
 2. Copy all the content of `bake.rb` and move to `post.rb` (keep `bake.rb` empty on the root).
