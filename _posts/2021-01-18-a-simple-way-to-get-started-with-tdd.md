@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'A Simple Way To Get Started With TDD'
-date: 2020-12-29 23:42:37 -0300
+date: 2021-01-18 10:49:33 -0300
 categories: testing tdd ruby
 ---
 
