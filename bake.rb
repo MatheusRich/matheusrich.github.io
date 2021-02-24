@@ -7,7 +7,7 @@ def s
 end
 
 # Creates a new post
-# 
+#
 # @param post_name [String] name of the post to be created.
 # @param tags [Array(String)] tags of the post.
 def post(post_name, tags: ['ruby'])
@@ -18,7 +18,7 @@ def post(post_name, tags: ['ruby'])
 end
 
 # Creates a new draft
-# 
+#
 # @param draft_name [String] name of the draft to be created.
 # @param tags [Array(String)] tags of the draft.
 def draft(draft_name, tags: ['ruby'])
@@ -29,7 +29,7 @@ def draft(draft_name, tags: ['ruby'])
 end
 
 # Publishes a draft
-# 
+#
 # @param draft_name [String] name of the draft to be published. If not given, the first one from `_drafts` will be published.
 def publish(draft_name = nil)
   time = Time.now
