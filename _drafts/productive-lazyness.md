@@ -1,16 +1,16 @@
 ---
 layout: post
-title: 'Productive Lazyness'
+title: 'Productive Laziness'
 date: 2021-02-12 19:32:29 -0300
 categories: productivity
 ---
 
-> You're tired. Really exhausted. Your mind simply isn't responding. You stare at the code, it
-> stares back at you. You type some code. It doesn't work. You delete it. The clock says: `04:30
-> PM`. <br>You know what you need: **a break**.
+> You're tired. Exhausted. Your mind simply isn't responding. You stare at the code; it stares back
+> at you. You type something. It doesn't work. You delete it. The clock says: `04:00 PM`. <br>You
+> know what you need: **a break**.
 
 Working when we're tired is **really dangerous** (to us and our applications). We write buggy code,
-make silly mistakes, that frustrate us, and, finally, _we burn out_. Everyone has been there.So,
+make silly mistakes, they frustrate us, and, finally, _we burn out_. Everyone has been there. So,
 what to do rather than keep hammering your head on the keyboard?
 
 In fact, you got a lot of options:
@@ -25,15 +25,15 @@ In fact, you got a lot of options:
 - At least go drink some water! You get hydrated and [it may boost your productivity!][water]
 
 The important part is to get some distance from the problem you're facing. **Context switch is
-really important**. You may think that breaks will kill your flow, and in fact it's easy to convice
-yourself that you don't have time for them, but hear me out: **they work!** Well, you don't have to
-trust me, [science has shown this over and over again][science].
+really important**. You may think that breaks will kill your flow, and it's easy to convince yourself
+that you don't have time for them, but hear me out: **they work!** Well, you don't have to trust me,
+[science has shown this over and over again][science].
 
 ## I can't take a nap! I'm working!
 
-I realize not everyone has the freedom/opportunity to do those things. Or you may not be confortable
+I realize not everyone has the freedom/opportunity to do those things. Or you may not be comfortable
 doing them during work time, and I get it. So, I'll list some alternative tasks you can do instead.
-I call them _productive lazyness_, because even thought they're not your main task, they're still
+I call them _productive laziness_ because even though they're not your primary task, they're still
 useful (for you and your app)!
 
 ### Productive laziness tasks
@@ -41,12 +41,16 @@ useful (for you and your app)!
 #### Review Pull Requests from libraries you like
 
 You don't need to be a maintainer to do this! OSS folks have _lots of work_ to do, so go ahead and
-give them some help (and maybe you _do_ end up as a maintainer).
+give them some help (and maybe you _do_ end up as a maintainer). You don't need to be an expert in
+the project. Just knowing the programming language behind it can help you! You can suggest better
+variable/method names or methods with better performance, for instance. But please, **be kind**.
 
 #### Open Pull Requests for libraries you like
 
-If you're feeling brave enough, you can help OSS folks too! Fix . Search for issues with tags like
-`good-first-issue`, `easy`, `beginner` or `first-time-contributor`.
+If you're feeling brave, you can help OSS ever further! Fix some bug reported into their issue
+tracker. Maybe a refactor or performance improvement? Search for issues with tags like
+`good-first-issue`, `easy`, `beginner` or `first-time-contributor`. That's how I got my [first
+contribution merged into Rails][rails]!
 
 #### Read docs from languages/libraries you use
 
@@ -62,11 +66,11 @@ have some marked as "read later" somewhere.
 #### Write a blog post
 
 I'm pretty sure you have something to tell. Don't worry, you don't have to finish it right away.
-Just put some raw ideas in the paper. You'll perfect it later.
+Just put some basic ideas in the paper. You'll perfect it later.
 
 #### Learn some keybindings on your text editor
 
-Consider this a investment: a couple of minutes today saves you a life of keystrokes! You can learn
+Consider this an investment: a couple of minutes today saves you a life of keystrokes! You can learn
 some terminal tricks too! It is the same idea.
 
 #### Reply that one email you've been postponing
@@ -79,7 +83,7 @@ This is _by far_ my favorite alternative task. Here you can do what you like the
 
 - Fix [N+1 queries][n_plus_one];
 - Add tests to improve your test coverage;
-- Improve the loading time for some page in your webapp (using lighthouse and other devtools);
+- Improve the loading time for some page in your web app (using lighthouse and other dev tools);
 - Fix that one exception that your monitoring tool reported. This might be a good opportunity to
   start TDDing. [Here's how][tdd].
 - Solve some simple CSS problem: alignments or spacing issues, for example;
@@ -90,18 +94,21 @@ Remember:
 
 > "A refactor a day keeps the rewrite away!" - _Developer Granny_
 
-You may not fix that nasty bug by the end of the day, but a lest _your app will be faster/cleaner/have more tests_! I think that's a nice trade-off.
+You may not fix that nasty bug by the end of the day, but a least _your app will be
+faster/cleaner/have more tests_! I think that's a nice trade-off.
 
-### Wrapping up
+### It's all about incentives!
 
-These short tasks give us small wins, and they motivate us to keep working on annoying chores. You
+These short tasks give us small wins, and that motivates us to keep working on annoying chores. You
 have ... Here's a _keep-eye_:
 
-Be sure to **make the lazyness time-boxed**, tho! You don't want to spend the whole day in a
+Be sure to **make the laziness time-boxed**! You don't want to spend the whole day in a
 alternative task 😜.
+
+Well, I hope this works for you too! Cya! ✌️
 
 [science]: https://thewellbeingthesis.org.uk/foundations-for-success/importance-of-taking-breaks-and-having-other-interests/#:~:text=Taking%20breaks%20has%20been%20shown,and%20cardiovascular%20disease%20%5B2%5D.
 [water]: https://arthur.ludus.club/en/hacking/productivity/2020/02/02/habit-drink-water.html
 [n_plus_one]: https://stackoverflow.com/questions/97197/what-is-the-n1-selects-problem-in-orm-object-relational-mapping
-
+[rails]: https://github.com/rails/rails/pull/41335
 [tdd]: {% post_url 2021-01-18-a-simple-way-to-get-started-with-tdd %}
