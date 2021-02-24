@@ -8,7 +8,12 @@ layout: default
       </div>
   {% endif %}
   <h1 class="postTitle">{{ page.title }}</h1>
-  <p class="meta">{{ page.date | date: '%B %d, %Y' }} | <span class="time">{{ page.content | number_of_words | divided_by:180 | at_least: 1 }}</span> minute read</p>
+  <p class="meta">
+    {{ page.date | date: '%B %d, %Y' }} | <span class="time">{{ page.content | number_of_words | divided_by:200 | at_least: 1 }}</span> minute read
+    {% if jekyll.environment != "production" %}
+      | <span class="time">{{ page.content | number_of_words }} words</span>
+    {% endif %}
+  </p>
 
   {{ content }}
 
