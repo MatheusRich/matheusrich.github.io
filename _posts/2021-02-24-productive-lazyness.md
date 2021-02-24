@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Productive Laziness'
-date: 2021-02-12 19:32:29 -0300
+date: 2021-02-24 10:57:55 -0300
 categories: productivity
 ---
 
