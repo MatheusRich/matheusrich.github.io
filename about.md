@@ -13,22 +13,68 @@ title: About Me
 
   <h2>Open source projects</h2>
 
-  <h4>Lit lang <a href="https://github.com/lit-lang/lit">(Github)</a></h4>
+  <h3>Lit lang <a href="https://github.com/lit-lang/lit">(Github)</a></h3>
 
   <p>My first attempt on programming language design. Lit is a simple functional programming language.</p>
 
   <p>Here's a sample of its (current) syntax:</p>
 
-  {% highlight rust %}
-  let fib = fn { |n|
-    if (n < 2) { return n; }
+{% highlight rust %}
+let fib = fn { |n|
+  if (n < 2) { return n; }
 
-    return fib(n - 1) + fib(n - 2);
-  }
+  return fib(n - 1) + fib(n - 2);
+}
 
-  let n = gets();
+let n = gets();
 
-  puts("The # {n} fibonacci number is {fib(n)}")
-  {% endhighlight %}
+puts("The # {n} fibonacci number is {fib(n)}")
+{% endhighlight %}
 
+  <h3>Benchable <a href="https://github.com/MatheusRich/benchable">(Github)</a></h3>
+
+  <p>Benchable aims to make creating Ruby benchamarks easier.</p>
+
+{% highlight ruby %}
+Benchable.bench do
+  setup do
+    @array = (1..1000000).map { rand }
+  end
+
+  bench 'sort' do
+    @array.dup.sort
+  end
+
+  bench 'sort!' do
+    @array.dup.sort!
+  end
+end
+# Output:
+#                            user     system      total        real
+# Sort                   0.400133   0.011995   0.412128 (  0.412339)
+# Sort!                  0.388636   0.003980   0.392616 (  0.393054)
+{% endhighlight %}
+
+  <p>There are 4 benchmark types available: <code class="language-plaintext highlighter-rouge">bm</code>, <code class="language-plaintext highlighter-rouge">bmbm</code>, <code class="language-plaintext highlighter-rouge">ips</code> and <code class="language-plaintext highlighter-rouge">memory</code>.</p>
+
+
+  <h3>EzAttributes <a href="https://github.com/MatheusRich/EzAttributes">(Github)</a></h3>
+
+  <p>Easily define initializers with keyword args (in Ruby).</p>
+
+{% highlight ruby %}
+class User
+  extend EzAttributes
+
+  # Here name and age are required, and email has a default value, so it is optional.
+  attributes :name, :age, email: 'guest@user.com'
+end
+
+user = User.new(name: 'Matz', age: 22)
+# => #<User:0x000055bac152f130 @name="Matz", @age=22, @email="guest@user.com">
+
+# EzAttributes will add getters for all fields too.
+user.name
+# => "Matz"
+{% endhighlight %}
 </div>
