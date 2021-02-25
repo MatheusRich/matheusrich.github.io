@@ -97,15 +97,13 @@ Remember:
 You may not fix that nasty bug by the end of the day, but a least _your app will be
 faster/cleaner/have more tests_! I think that's a nice trade-off.
 
-### It's all about incentives!
+### It’s all about incentives!
 
-These short tasks give us small wins, and that motivates us to keep working on annoying chores. You
-have ... Here's a _keep-eye_:
+These short tasks give us small wins, and they motivates us to keep working on annoying chores.
 
-Be sure to **make the laziness time-boxed**! You don't want to spend the whole day in a
-alternative task 😜.
+Here’s something to keep an eye on: be sure to **make the laziness time-boxed**! You don’t want to spend the whole day in a alternative task 😜.
 
-Well, I hope this works for you too! Cya! ✌️
+Finally, no matter how your day goes, be kind to yourself. Some days are amazing, some days are terrible, but most days are just doing the work of life. Do your best to enjoy them!
 
 [science]: https://thewellbeingthesis.org.uk/foundations-for-success/importance-of-taking-breaks-and-having-other-interests/#:~:text=Taking%20breaks%20has%20been%20shown,and%20cardiovascular%20disease%20%5B2%5D.
 [water]: https://arthur.ludus.club/en/hacking/productivity/2020/02/02/habit-drink-water.html
