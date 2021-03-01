@@ -33,7 +33,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
         server: {
             baseDir: '_site'
         },
-        port: 3003
+        port: 3005
     });
 });
 
