@@ -11,7 +11,7 @@ title: About Me
   <p class="intro">Hello, my name is Matheus! I'm a Software Engineer from Brazil. I'm an open source contributor, I love music and my newfound passion is game development.</p>
   <p>You can find me online using the links in the footer. Cya!</p>
 
-  <h2>Open source projects</h2>
+  <h2 id="open-source">Open source projects</h2>
 
   <h3>Lit lang <a href="https://github.com/lit-lang/lit">(Github)</a></h3>
 
