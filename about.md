@@ -33,7 +33,7 @@ puts("The # {n} fibonacci number is {fib(n)}")
 
   <h3>Benchable <a href="https://github.com/MatheusRich/benchable">(Github)</a></h3>
 
-  <p>Benchable aims to make creating Ruby benchamarks easier.</p>
+  <p>Benchable aims to make creating Ruby benchmarks easier.</p>
 
 {% highlight ruby %}
 Benchable.bench do
