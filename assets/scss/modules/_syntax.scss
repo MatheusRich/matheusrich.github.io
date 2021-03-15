@@ -1,9 +1,3 @@
-/***************
-  Darkly Pygments Theme
-  (c) 2014 Sourcey
-  http://sourcey.com
-***************/
-
 .highlight {
   white-space: pre;
   overflow: auto;
@@ -12,7 +6,7 @@
   -webkit-border-radius: 3px;
   border-radius: 3px;
   padding: 20px;
-  background: #343642;
+  background: #282c34;
   color: #c1c2c3;
 }
 .highlight .hll {
@@ -44,7 +38,7 @@
 .highlight .cm,
 .highlight .c1,
 .highlight .cs {
-  color: #8d9684;
+  color: #8c8c8c;
 }
 .highlight .err,
 .highlight .g,
@@ -58,11 +52,9 @@
 .highlight .gt,
 .highlight .ld,
 .highlight .s,
-.highlight .nc,
 .highlight .nd,
 .highlight .ne,
 .highlight .nl,
-.highlight .nn,
 .highlight .nx,
 .highlight .py,
 .highlight .ow,
@@ -70,49 +62,67 @@
 .highlight .sb,
 .highlight .sc,
 .highlight .sd,
-.highlight .s2,
 .highlight .se,
 .highlight .sh,
-.highlight .si,
 .highlight .sx,
 .highlight .sr,
-.highlight .s1,
-.highlight .ss,
 .highlight .bp {
   color: #c1c2c3;
 }
-.highlight .k,
-.highlight .kc,
-.highlight .kd,
-.highlight .kn,
-.highlight .kp,
-.highlight .kr,
-.highlight .nt {
-  color: #729fcf;
+
+// Literal.String.Symbol
+.highlight .ss {
+  color: #d49c60;
 }
-.highlight .cp,
-.highlight .gh,
-.highlight .gu,
-.highlight .na,
+
+// Strings
+.highlight .s1,
+.highlight .s2 {
+  color: #97c475;
+}
+
+.highlight .k,  // Keyword
+.highlight .kc, // Keyword.Constant
+.highlight .kd, // Keyword.Declaration
+.highlight .kn, //
+.highlight .kp, // Keyword.Pseudo
+.highlight .kr, // Keyword.Reserved
+.highlight .nt, // Name.Tag
+.highlight .si  // Literal.String.Interpol
+{
+  color: #c775df;
+}
+.highlight .cp, // Comment.Preproc
+.highlight .gh, // Generic.Heading
+.highlight .gu, // Generic.Subheading
+.highlight .na, // Name.Attribute
 .highlight .nf {
-  color: #e9a94b;
+  color: #5daef2;
 }
-.highlight .m,
-.highlight .nb,
-.highlight .no,
-.highlight .mf,
-.highlight .mh,
-.highlight .mi,
-.highlight .mo,
-.highlight .il {
-  color: #8ae234;
+
+.highlight .o, // Operator
+.highlight .nb // Name.Builtin
+{
+  color: #40b9c4;
 }
-.highlight .o {
-  color: #989daa;
+
+.highlight .m,  // Literal.Number
+.highlight .mf, // Literal.Number.Float
+.highlight .mh, // Literal.Number.Hex
+.highlight .mi, // Literal.Number.Integer
+.highlight .mo, // Literal.Number.Oct
+.highlight .nc, // Name.Class
+.highlight .nn, // Name.Namespace
+.highlight .no, // Name.Constant
+.highlight .il  // Literal.Number.Integer.Long
+{
+  color: #e5c674;
 }
-.highlight .nv,
-.highlight .vc,
-.highlight .vg,
-.highlight .vi {
-  color: #fff;
+
+.highlight .nv, // Name.Variable
+.highlight .vc, // Name.Variable.Class
+.highlight .vg, // Name.Variable.Global
+.highlight .vi  // Name.Variable.Instance
+{
+  color: #eb5872;
 }
