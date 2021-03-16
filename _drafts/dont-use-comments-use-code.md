@@ -52,7 +52,7 @@ end
 
 ```
 
-## Don't tell what the is doing. Do the thing!
+## Don't tell what the code is doing. Do the thing!
 
 This is probably the most common case for comments. If we have the principle ["Tell, don't
 ask"][tell] in OOP, for commenting it should be **"Do, don't tell"**. Extracting behavior into
@@ -114,6 +114,42 @@ def notify
   send_slack_msg 'Hello world!', channel: CHANNEL_IDS.general
 end
 ```
+
+## Comments for measurement units
+
+Some people think this kind of comment is OK. I think that, as most of these sections, a simple function replaces them. This is the kind of thing that spreads quickly throughout your code, but it's easy to avoid:
+
+```ruby
+### DON'T ###
+
+module RecurringJob
+  def perform
+    do_important_stuff
+
+    seconds = 60 * 60 * 6 # 6 hours
+    RecurringJob.run_in(seconds)
+  end
+end
+
+### DO ###
+
+module Seconds
+  def self.from_hours(hours)
+    hours * 3600
+  end
+end
+
+module RecurringJob
+  def perform
+    do_important_stuff
+
+    seconds = Seconds.from_hours(6)
+    RecurringJob.run_in(seconds)
+  end
+end
+```
+
+Using a module like that opens the possibility for other converstions, like `from_minutes`, `from_days`, etc.
 
 ## Don't use comments to separate things
 
@@ -260,13 +296,16 @@ instant performance without changing your code.
 
 ## Don't use comments as backup
 
-This just mess up your code. You don't need to keep your code. That's why we have Version Control
-Systems like Git. If you're not using any VCS, what are you doing?!
+Developers shouldn't fear deleting code. Commented code just muddles everthing around it. Do you
+think you may need it later? Short answer: _you'll probably don't_. And even if you do, that's why we
+have Version Control Systems like Git <small>(If you're not using a VCS, what are you doing?!)</small>.
 
 ```ruby
+### DON'T ###
+
 # NOTE: Maybe I'll need this someday
 # def my_algorithm
-#   old(implementation, here)
+#   old(implementation)
 # end
 
 def my_algorithm
