@@ -96,3 +96,10 @@ blockquote {
     line-height: 1.45833333; // 35px / 24px
   }
 }
+
+code,
+kbd,
+samp,
+pre {
+  font-family: $monospace;
+}
