@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Don't Use Comments! Use Code."
+title: "Don't use comments! Use code."
 date: 2021-03-15 08:52:14 -0300
 categories: code refactoring comments
 ---
@@ -31,8 +31,8 @@ module Dungeon
     # Initializes an empty array of rooms
     arr = []
 
-    # Creates five retangular rooms and add them the `rooms` variable
-    5.times { arr << retangle(10, 12) }
+    # Creates five rooms with the given width and height and add them the `arr` variable
+    5.times { arr << create_room(10, 12) }
 
     # ...
  end
@@ -49,14 +49,13 @@ module Dungeon
     # ...
  end
 end
-
 ```
 
-## Don't tell what the code is doing. Do the thing!
+## Just do it
 
 This is probably the most common case for comments. If we have the principle ["Tell, don't
 ask"][tell] in OOP, for commenting it should be **"Do, don't tell"**. Extracting behavior into
-modules/functions makes searching, modifying and testing far better than comments.
+modules/functions makes searching, modifying and testing far easier than when using comments.
 
 ```ruby
 ### DON'T ###
@@ -88,8 +87,9 @@ end
 
 ## No magic numbers!
 
-Fixing those is pretty simple: add a constant. You can use a simple type like an integer, or get
-fancy with hash-tables and objects if needed.
+I'll admit this: comments are a bit better than _nothing_ in this case. But we can do better!Fixing
+those is pretty simple: add a constant. You can use a simple type like an integer, or get fancy with
+hash-tables, structs and objects if needed.
 
 ```ruby
 ### DON'T ###
@@ -153,11 +153,10 @@ Using a module like that opens the possibility for other converstions, like `fro
 
 ## Don't use comments to separate things
 
-If you're using comments to separate sections of a file, this may indicate that this file does too
+If you're using comments to divide a file in sections, this may indicate that this file does too
 much. It's better to split it into several modules:
 
 ```ruby
-
 ### DON'T ###
 
 module Utils
@@ -167,7 +166,7 @@ module Utils
     # ...
   end
 
-  def file_exists?
+  def file_exists?(path)
     # ...
   end
 
@@ -189,18 +188,18 @@ module Utils::FS
     # ...
   end
 
-  def file_exists?
+  def file_exists?(path)
     # ...
   end
 end
 
 module Utils::Format
   def bold(str)
-    #
+    # ...
   end
 
   def italic(str)
-    #
+    # ...
   end
 end
 ```
@@ -213,23 +212,33 @@ cares about it. Do it now!
 ```ruby
 ### DON'T ###
 
-# TODO: add
-def notify
-  send_msg "Hello world!", channel: 0 # General
+# TODO: handle exceptions
+def tweet(msg)
+  TwitterClient.tweet(msg)
+end
+
+### DO ###
+
+def tweet(msg)
+  TwitterClient.tweet(msg)
+rescue TwitterClient => e
+  log_error(e)
 end
 ```
 
 Don't have time to deal with it? **Open an issue** instead. Issues are prioritized and end up in
-your development pipeline (or maybe in some OSS contributor). Those comments will be forgotten as
-soon as your code goes to production.
+your development pipeline (or maybe in some OSS contributor's). Those TODO comments will be
+forgotten as soon as your code goes to production.
 
 ## Don't add deprecation notes
+
+Deprecating code with comments is not efficient. Specially in libraries, developers won't read
+source code before using it. Be proactive and do something actionable (like a warning) rightaway.
 
 ```ruby
 ### DON'T ###
 
-# deprecated use `puts` instead
-
+# DEPRECATED: use `puts` instead
 def printf(str)
   # ...
 end
@@ -240,16 +249,20 @@ def deprecate(target, alternative:)
   Log.warning("[DEPRECATION] `#{target}` is deprecated. Use #{alternative} instead.")
 end
 
-deprecate(:printf, alternative: :puts)
 
 def printf(str)
+  deprecate(:printf, alternative: :puts)
+
   # ...
 end
 ```
 
+Are you using comments to generate documentation information? Read [this
+section](#when-comments-are-ok).
+
 ## Don't add after-update notes
 
-This is the same principle as the one before. Codify your comments.
+This is the same principle as the one before: codify your comments.
 
 ```ruby
 ### DON'T ###
@@ -272,7 +285,7 @@ class Post < BaseModel
 end
 ```
 
-If an Exception is too hard for you, you can just give a warning.
+If an `exception` is too harsh for you, you can just give a warning.
 
 You could go ever further:
 
@@ -296,8 +309,8 @@ instant performance without changing your code.
 
 ## Don't use comments as backup
 
-Developers shouldn't fear deleting code. Commented code just muddles everthing around it. Do you
-think you may need it later? Short answer: _you'll probably don't_. And even if you do, that's why we
+Developers shouldn't fear deleting code. Commented code just muddles everything around it. Do you
+think you may need it later? Short answer: _you probably won't_. And even if you do, that's why we
 have Version Control Systems like Git <small>(If you're not using a VCS, what are you doing?!)</small>.
 
 ```ruby
@@ -311,20 +324,20 @@ have Version Control Systems like Git <small>(If you're not using a VCS, what ar
 def my_algorithm
   new(implementation)
 end
-
 ```
 
 ## When comments are OK
+
 Languages like Ruby doesn't ()
 
 ## Comments are not code!
 
-Comments tend to get lost and collect dust. When you're in a big refactor, you'll rarely think in
-refactoring comments too. Comments _are not tested_, so they end up with typos, wrong information,
-and worse: **bugs**.
+Comments tend to get lost and collect dust. When we're in a big refactor, we'll rarely think in
+refactoring comments too. Comments _are not tested_, so they end up outdated, with typos, wrong
+information, and worse: **bugs**.
 
-Codifying your comments, on the other hand, brings all code benefits: syntax hightlighting,
-grepping, compile/runtime checks, _testing_!
+Using code, on the other hand, has several benefits: syntax hightlighting, grepping, compile/runtime
+checks, _testing_!
 
 Comments are a confession that we were unable to represent our ideas with code. That happens
 sometimes, but try your best to avoid them.
