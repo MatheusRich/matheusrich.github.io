@@ -31,9 +31,9 @@ end
 # Publishes a draft
 #
 # @param draft_name [String] name of the draft to be published. If not given, the first one from `_drafts` will be published.
-def publish(draft_name = nil)
+def publish(draft_name: "")
   time = Time.now
-  article_name = Dir["_drafts/*.md"].first.split('/').last
+  article_name = Dir["_drafts/*#{draft_name}*.md"].sort.first.split('/').last
   old_file_path = "_drafts/#{article_name}"
   new_file_path = "_posts/#{time.to_date}-#{article_name}"
 
