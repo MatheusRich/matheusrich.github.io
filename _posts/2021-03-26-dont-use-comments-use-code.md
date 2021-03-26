@@ -7,8 +7,8 @@ categories: code refactoring comments
 
 > Let's get this straight: **comments are a code smell**.
 
-Whenever I feel like commenting something in my code I stop and ask myself: _"Is there any way to
-NOT use comments here and use code instead?"_. Often the answer is _"yes"_.
+Whenever I feel like adding comments to my code I stop and ask myself: _"Is there any way to NOT use
+comments here and use code instead?"_. Often the answer is _"yes"_.
 
 Comments are a lazy solution for developers. They spare us from thinking about abstractions and
 naming (which is [one of the hardest things][hard] in Computer Science indeed), and that's why
@@ -17,10 +17,10 @@ they're so tempting.
 However, we can easily avoid (most) comments! As the saying goes _"Talk is cheap, show me the
 code"_. So, here we go:
 
-## Describind the obvious
+## Describing the obvious
 
 Let's get this one out of the way: these "describing" comments are just useless. They're just
-duplication and add no value. On the contrary, they encourage other developers to do the same! Just
+duplications and add no value. On the contrary, they encourage other developers to do the same! Just
 get rid of them. Good variable and function naming is the way to go here.
 
 ```ruby
@@ -56,7 +56,7 @@ end
 
 Probably the most common use of comments: explaining what the code does. If we have the principle ["Tell, don't
 ask"][tell] in OOP, for commenting it should be **"Do, don't tell"**. Extracting behavior into modules/functions makes
-searching, modifying and testing far easier than when using comments.
+searching, modifying, and testing far easier than when using comments.
 
 ```ruby
 ### DON'T ###
@@ -118,7 +118,7 @@ end
 
 ## Comments for measurement units
 
-Some people think this kind of comment is OK. I think, as most of the cases, that a simple function replaces them. This
+Some people think this kind of comment is OK. I think, as in most of the cases, that a simple function replaces them. This
 is the kind of thing that spreads quickly throughout your code, but it's easy to avoid:
 
 ```ruby
@@ -151,11 +151,11 @@ module RecurringJob
 end
 ```
 
-Using a module like that opens the possibility for other converstions, like `from_minutes`, `from_days`, etc.
+Using a module like that opens the possibility for other conversions, like `from_minutes`, `from_days`, etc.
 
 ## Don't use comments to separate things
 
-If you're using comments to divide a file in sections, this may indicate that this file does too
+If you're using comments to divide a file into sections, this may indicate that this file does too
 much. It's better to split it into several modules:
 
 ```ruby
@@ -208,7 +208,7 @@ end
 
 ## Don't add TODO's
 
-These kind of TODO's rarely get done. If you're the one adding the comment, you're the one that
+These kinds of TODO's rarely get done. If you're the one adding the comment, you're the one that
 cares about it. Do it now!
 
 ```ruby
@@ -234,8 +234,8 @@ forgotten as soon as your code goes to production.
 
 ## Don't add deprecation notes
 
-Deprecating code with comments is not efficient. Specially in libraries, developers won't read
-source code before using it. Be proactive and do something actionable (like a warning) rightaway.
+Deprecating code with comments is not efficient. Especially in libraries, developers won't read
+source code before using it. Be proactive and do something actionable (like a warning) right away.
 
 ```ruby
 ### DON'T ###
@@ -288,7 +288,7 @@ end
 
 If an `exception` is too harsh for you, you can just give a warning.
 
-You could go ever further:
+You could go even further:
 
 ```ruby
 ### DO² ###
@@ -305,7 +305,7 @@ class Post < BaseModel
 end
 ```
 
-This is specially usefull if the new method is more performant than the older one. You'll get
+This is especially useful if the new method is more performant than the older one. You'll get
 instant performance without changing your code.
 
 ## Don't use comments as backup
@@ -329,12 +329,12 @@ end
 
 ## When comments are OK
 
-I'm not here to say that _every_ comment is bad. There's some cases when they're the last resource. If _no code_ can do
-what you want, don't be ashamed to add a comment. Some examples:
+I'm not here to say that _every_ comment is bad. There are some cases when they're the last
+resource. If _no code_ can do what you want, don't be ashamed to add a comment. Some examples:
 
 ### 1. Comments as documentation
 
-Most languages have tools to generate documentation using code comments. That is nice, because it keeps the docs near
+Most languages have tools to generate documentation using code comments. That is nice because it keeps the docs near
 the code it refers to. Here's an example of [YARD][yard], a Ruby documentation tool:
 
 ```ruby
@@ -354,8 +354,8 @@ Sometimes comments are _actually_ code. That is, they can be used to produce som
 
 #### Magic comments
 
-Ruby has [magic comments][magic-comments] that changes the behavior the interpreter in some ways. Just put them in the
-beginning of the file, and it will take effect. For exemple:
+Ruby has [magic comments][magic-comments] that change the behavior of the interpreter in some ways. Just put them in the
+beginning of the file, and it will take effect. For example:
 
 - This comment makes the interpreter warns about wrong indentation:
 
@@ -394,7 +394,7 @@ def new_post(post_name, categories: [])
 end
 ```
 
-This way it parses input from terminal and automatically coerce params into the desired type.
+This way it parses input from the terminal and automatically coerces params into the desired type.
 
 ```shell
 $ bake new_post 'test-post' categories=ruby,testing
@@ -417,7 +417,7 @@ def fetch_foos
 end
 ```
 
-Do you have any other good case for comments? Let me know in the comments!
+Do you have any other good cases for comments? Let me know in the comments!
 
 ## Comments are not code!
 
@@ -425,7 +425,7 @@ Comments tend to get lost and collect dust. When we're in a big refactor, we'll 
 refactoring comments too. Comments _are not tested_, so they end up outdated, with typos, wrong
 information, and worse: **bugs**.
 
-Using code, on the other hand, has several benefits: syntax hightlighting, grepping, compile/runtime
+Using code, on the other hand, has several benefits: syntax highlighting, grepping, compile/runtime
 checks, _testing_!
 
 Comments are a confession that we were unable to represent our ideas with code. That happens
