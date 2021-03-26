@@ -332,7 +332,7 @@ end
 I'm not here to say that _every_ comment is bad. There's some cases when they're the last resource. If _no code_ can do
 what you want, don't be ashamed to add a comment. Some examples:
 
-### Comments as documentation
+### 1. Comments as documentation
 
 Most languages have tools to generate documentation using code comments. That is nice, because it keeps the docs near
 the code it refers to. Here's an example of [YARD][yard], a Ruby documentation tool:
@@ -348,21 +348,22 @@ def reverse(contents)
 end
 ```
 
-### Comments as code (wut?)
+### 2. Comments as code (wut?)
 
 Sometimes comments are _actually_ code. That is, they can be used to produce some behavior.
 
 #### Magic comments
 
-Ruby has [magic comments][magic-comments] that changes the behavior the interpreter in some ways:
+Ruby has [magic comments][magic-comments] that changes the behavior the interpreter in some ways. Just put them in the
+beginning of the file, and it will take effect. For exemple:
 
-This comment makes the interpreter warns about wrong indentation:
+- This comment makes the interpreter warns about wrong indentation:
 
 ```ruby
 # warn_indent: true
 ```
 
-You can change the file’s encoding:
+- You can change the file’s encoding:
 
 ```ruby
 # encoding: utf-8
@@ -370,15 +371,40 @@ You can change the file’s encoding:
 
 #### Parsing comments
 
-The library [Bake][bake] parses documentation comments to get information about type coercions.
+Some libraries parse comments too. Linters often use comments to disable rules momentarily:
 
+```ruby
+# rubocop:disable Layout/LineLength
+def this_could_be_a_very_long_line_that_extends_forever_into_infinity
+  # ...
+end
+# rubocop:enable Layout/LineLength
+```
 
+Another example is the library [Bake][bake], which parses documentation comments to get information about type
+coercions.
 
+```ruby
+# Creates a new post
+#
+# @param post_name [String] name of the post to be created.
+# @param categories [Array(Symbol)] categories of the post.
+def new_post(post_name, categories: [])
+  pp categories
+end
+```
 
-Type inference via Comments (even though sorbet, [rbs][rbs], and [several others][type-checking]
-have shown that type checking is possible with code)
+This way it parses input from terminal and automatically coerce params into the desired type.
 
-### When you have no other tool
+```shell
+$ bake new_post 'test-post' categories=ruby,testing
+# output: [:ruby, :testing]
+```
+
+OBS: even though type checking _can_ be implemented with comments, [sorbet][sorbet], [rbs][rbs], and [several
+others][type-checking] have shown that type checking is possible with code.
+
+### 3. When you have no other tool
 
 Sometimes there are some things that you cannot explain with code. I'm not talking about how you
 did, but _why_ you did them.
@@ -409,6 +435,7 @@ sometimes, but try your best to avoid them.
 
 [hard]: https://martinfowler.com/bliki/TwoHardThings.html
 [tell]: https://martinfowler.com/bliki/TellDontAsk.html
+[sorbet]: https://sorbet.org/
 [rbs]: https://github.com/ruby/rbs
 [type-checking]: https://www.ruby-toolbox.com/search?display=compact&q=type+check
 [bake]: {% post_url 2020-07-18-baking-tasks-with-bake %}
