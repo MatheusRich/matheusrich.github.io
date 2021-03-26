@@ -402,7 +402,7 @@ $ bake new_post 'test-post' categories=ruby,testing
 ```
 
 OBS: even though type checking _can_ be implemented with comments, [sorbet][sorbet], [rbs][rbs], and [several
-others][type-checking] have shown that type checking is possible with code.
+others][type-checking] have shown that type checking dynamic-typed languages is possible with code.
 
 ### 3. When you have no other tool
 
