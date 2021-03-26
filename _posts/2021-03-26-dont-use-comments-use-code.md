@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Don't use comments! Use code."
-date: 2021-03-15 08:52:14 -0300
+date: 2021-03-26 17:56:17 -0300
 categories: code refactoring comments
 ---
 
