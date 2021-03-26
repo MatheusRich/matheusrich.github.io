@@ -5,21 +5,21 @@ date: 2021-03-15 08:52:14 -0300
 categories: code refactoring comments
 ---
 
-> Let's get this straight: comments are a code smell.
+> Let's get this straight: **comments are a code smell**.
 
-Whenever I feel like commenting something in my code I stop and ask myself: _"Is there any way
-to NOT use comments here and use code instead?"_. Often the answer is "yes".
+Whenever I feel like commenting something in my code I stop and ask myself: _"Is there any way to
+NOT use comments here and use code instead?"_. Often the answer is _"yes"_.
 
 Comments are a lazy solution for developers. They spare us from thinking about abstractions and
-naming (which is [one of the hardest things][hard] in Computer Science), and that's why they're so
-tempting.
+naming (which is [one of the hardest things][hard] in Computer Science indeed), and that's why
+they're so tempting.
 
-However, we can avoid (most) comments using simple code! As the saying goes _"Talk is cheap, show me the
+However, we can easily avoid (most) comments! As the saying goes _"Talk is cheap, show me the
 code"_. So, here we go:
 
 ## Describind the obvious
 
-Let's get this out of the way: these "describing" comments are just useless. They're just
+Let's get this one out of the way: these "describing" comments are just useless. They're just
 duplication and add no value. On the contrary, they encourage other developers to do the same! Just
 get rid of them. Good variable and function naming is the way to go here.
 
@@ -27,6 +27,7 @@ get rid of them. Good variable and function naming is the way to go here.
 ### DON'T ###
 
 module Dungeon
+  # Generates an array of rooms
  def generate_arr
     # Initializes an empty array of rooms
     arr = []
@@ -53,9 +54,9 @@ end
 
 ## Just do it
 
-This is probably the most common case for comments. If we have the principle ["Tell, don't
-ask"][tell] in OOP, for commenting it should be **"Do, don't tell"**. Extracting behavior into
-modules/functions makes searching, modifying and testing far easier than when using comments.
+Probably the most common use of comments: explaining what the code does. If we have the principle ["Tell, don't
+ask"][tell] in OOP, for commenting it should be **"Do, don't tell"**. Extracting behavior into modules/functions makes
+searching, modifying and testing far easier than when using comments.
 
 ```ruby
 ### DON'T ###
@@ -87,7 +88,7 @@ end
 
 ## No magic numbers!
 
-I'll admit this: comments are a bit better than _nothing_ in this case. But we can do better!Fixing
+I'll admit this: comments are a _bit_ better than **nothing** in this case. But we can do better! Fixing
 those is pretty simple: add a constant. You can use a simple type like an integer, or get fancy with
 hash-tables, structs and objects if needed.
 
@@ -117,7 +118,8 @@ end
 
 ## Comments for measurement units
 
-Some people think this kind of comment is OK. I think that, as most of these sections, a simple function replaces them. This is the kind of thing that spreads quickly throughout your code, but it's easy to avoid:
+Some people think this kind of comment is OK. I think, as most of the cases, that a simple function replaces them. This
+is the kind of thing that spreads quickly throughout your code, but it's easy to avoid:
 
 ```ruby
 ### DON'T ###
@@ -257,8 +259,7 @@ def printf(str)
 end
 ```
 
-Are you using comments to generate documentation information? Read [this
-section](#when-comments-are-ok).
+Are you using comments to generate deprecation documentation? Read [this section](#when-comments-are-ok).
 
 ## Don't add after-update notes
 
@@ -328,7 +329,69 @@ end
 
 ## When comments are OK
 
-Languages like Ruby doesn't ()
+I'm not here to say that _every_ comment is bad. There's some cases when they're the last resource. If _no code_ can do
+what you want, don't be ashamed to add a comment. Some examples:
+
+### Comments as documentation
+
+Most languages have tools to generate documentation using code comments. That is nice, because it keeps the docs near
+the code it refers to. Here's an example of [YARD][yard], a Ruby documentation tool:
+
+```ruby
+# Reverses the contents of a String or IO object.
+#
+# @param contents [String, #read] the contents to reverse
+# @return [String] the contents reversed lexically
+def reverse(contents)
+  contents = contents.read if contents.respond_to? :read
+  contents.reverse
+end
+```
+
+### Comments as code (wut?)
+
+Sometimes comments are _actually_ code. That is, they can be used to produce some behavior.
+
+#### Magic comments
+
+Ruby has [magic comments][magic-comments] that changes the behavior the interpreter in some ways:
+
+This comment makes the interpreter warns about wrong indentation:
+
+```ruby
+# warn_indent: true
+```
+
+You can change the file’s encoding:
+
+```ruby
+# encoding: utf-8
+```
+
+#### Parsing comments
+
+The library [Bake][bake] parses documentation comments to get information about type coercions.
+
+
+
+
+Type inference via Comments (even though sorbet, [rbs][rbs], and [several others][type-checking]
+have shown that type checking is possible with code)
+
+### When you have no other tool
+
+Sometimes there are some things that you cannot explain with code. I'm not talking about how you
+did, but _why_ you did them.
+
+```ruby
+def fetch_foos
+  # NOTE: We're disabling params sorting because the FooAPI requires
+  #       params to be in the following order: foo, bar, baz
+  HTTP.get('/foo-api', params: { foo: true, bar: false, baz: false }, sort_params: false)
+end
+```
+
+Do you have any other good case for comments? Let me know in the comments!
 
 ## Comments are not code!
 
@@ -346,3 +409,8 @@ sometimes, but try your best to avoid them.
 
 [hard]: https://martinfowler.com/bliki/TwoHardThings.html
 [tell]: https://martinfowler.com/bliki/TellDontAsk.html
+[rbs]: https://github.com/ruby/rbs
+[type-checking]: https://www.ruby-toolbox.com/search?display=compact&q=type+check
+[bake]: {% post_url 2020-07-18-baking-tasks-with-bake %}
+[yard]: https://yardoc.org/
+[magic-comments]: https://docs.ruby-lang.org/en/3.0.0/doc/syntax/comments_rdoc.html#label-Magic+Comments
