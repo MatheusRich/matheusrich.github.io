@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 'On learning Rust'
-date: 2021-03-26 19:49:41 -0300
-categories: rust beginner
+date: 2021-03-27 17:46:58 -0300
+categories: rust
 ---
 
 As of March 26th of 2021, I decided to learn Rust. I've heard of it a couple of years ago but never
