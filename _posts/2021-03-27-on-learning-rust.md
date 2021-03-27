@@ -56,7 +56,7 @@ I won't establish goals, or study ours. I have a full-time job, an undergraduate
 and a family. This should be as fun as playing God of War on my PS4.
 
 I'll document the process if I find something interesting to share (like differences between Rust
-and Ruby) in my experience, or how one language influenced how I code on the other.
+and Ruby in my experience), or how one language influenced how I code on the other.
 
 ## Evaluating my results
 
