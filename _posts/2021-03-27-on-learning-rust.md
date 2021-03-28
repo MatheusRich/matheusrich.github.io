@@ -24,7 +24,7 @@ really fits my way of thinking and it's my go-to tool. But, _because_ I know it 
 flaws too.
 
 With that in mind, I wanted to have a "complementary" tool at my disposal. Instead of a
-dynamic-typed, scripting language, this time I need a statically-typed, fast, compiled language.
+dynamically-typed, scripting language, this time I need a statically-typed, fast, compiled language.
 
 I did some C/C++ in the past, but I feel like they're stuck in the past. I know [Crystal][crystal]
 and even started to [build an interpreter][lit] with it. It was pretty easy to get started with it,
