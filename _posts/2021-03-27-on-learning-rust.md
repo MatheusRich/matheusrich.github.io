@@ -52,7 +52,7 @@ Since I have no professional goals with Rust, my study will be guided by my curi
 way I like to study things. I'll read the docs, tutorials, make small programs and games just for
 fun.
 
-I won't establish goals, or study ours. I have a full-time job, an undergraduate thesis to finish,
+I won't establish goals, or study hours. I have a full-time job, an undergraduate thesis to finish,
 and a family. This should be as fun as playing God of War on my PS4.
 
 I'll document the process if I find something interesting to share (like differences between Rust
