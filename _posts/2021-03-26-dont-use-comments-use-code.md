@@ -2,7 +2,7 @@
 layout: post
 title: "Don't use comments! Use code."
 date: 2021-03-26 17:56:17 -0300
-categories: code refactoring comments
+categories: refactoring comments
 ---
 
 > Let's get this straight: **comments are a code smell**.
