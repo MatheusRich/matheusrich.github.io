@@ -48,27 +48,50 @@ code.language-plaintext.highlighter-rouge {
 
 .Tag {
   color: white;
-  background-color: gray;
+  background-color: darken($primary-color, 10%);
   padding: 0 10px;
   border-radius: 999px;
   font-size: 1rem;
   font-weight: bold;
   display: inline;
   vertical-align: middle;
+
+  &--outlined {
+    background: white;
+    color: currentColor;
+    border: 2px solid currentColor;
+  }
 }
 
-.align-middle	{
+.align-middle {
   vertical-align: middle;
 }
 
-.font-bold	{
+.font-bold {
   font-weight: bold;
 }
 
-.font-normal	{
+.font-normal {
   font-weight: normal;
 }
 
 .font-xl {
   font-size: 1.5rem;
+}
+
+.Categories {
+  margin-bottom: 2rem;
+
+  h1 {
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .Tag {
+
+  }
 }

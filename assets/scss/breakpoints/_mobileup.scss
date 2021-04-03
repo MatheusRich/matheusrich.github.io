@@ -4,6 +4,7 @@ GLOBAL STYLES
 
 html {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 *,
 *:before,
@@ -131,6 +132,7 @@ MENU STYLING
 	font-weight: bolder;
 	margin-top: 5px;
 	font-size: 2.5em;
+	font-weight: normal;
 	right: 0.5rem;
 
 	&:hover {

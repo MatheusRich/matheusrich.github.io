@@ -7,14 +7,16 @@ title: Categories
 <section>
   <h1 class="pageTitle">Categories</h1>
 
-  {% for category in (site.categories | sort) %}
+  {% assign sorted_categories = site.categories | sort %}
+  {% for category in sorted_categories %}
 
   {% capture category_name %}{{ category | first }}{% endcapture %}
 
   <h2 id="{{ category_name }}">#{{category_name}}</h2>
 
   <ul class="posts noList">
-    {% for post in site.categories[category_name] %}
+    {% assign sorted_posts = site.categories[category_name] | sort: 'title' %}
+    {% for post in sorted_posts %}
     <li>
       <h3 class="font-xl">
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>

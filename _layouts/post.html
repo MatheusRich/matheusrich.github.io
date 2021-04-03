@@ -4,14 +4,18 @@ layout: default
 <div class="post">
   {% if page.image %}
     <div class="featuredImage">
-        <img loading="lazy" src="{{ '/assets/img/' | prepend: site.baseurl | append: page.image }}" alt="" />
-      </div>
+      <img loading="lazy" src="{{ '/assets/img/' | prepend: site.baseurl | append: page.image }}" alt="" />
+    </div>
   {% endif %}
-  <h1 class="postTitle">{{ page.title }}</h1>
-  <p class="meta">
+
+  <h1 class="postTitle">
     {% if page.draft %}
-      <span class="time font-bold">DRAFT</span> |
+      <span class="time font-bold">(DRAFT)</span>
     {% endif %}
+    {{ page.title }}
+  </h1>
+
+  <p class="meta">
     {{ page.date | date: '%B %d, %Y' }} | <span class="time">{{ page.content | number_of_words | divided_by:200 | at_least: 1 }}</span> minute read
     {% if jekyll.environment != "production" %}
       | <span class="time">{{ page.content | number_of_words }} words</span>
@@ -19,6 +23,15 @@ layout: default
   </p>
 
   {{ content }}
+
+
+  <div class="Categories">
+    <h1>Categories</h1>
+
+    {% for category in (page.categories | sort) %}
+      <a href="/categories/#{{category}}"><span class="Tag Tag--outlined">{{ category }}</span></a>
+    {% endfor %}
+  </div>
 
   <!-- POST NAVIGATION -->
   <div class="postNav clearfix">
