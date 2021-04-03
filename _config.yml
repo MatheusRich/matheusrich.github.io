@@ -17,6 +17,10 @@ navigation:
     url: /
   - title: About
     url: /about/
+  - title: Categories
+    url: /categories/
+  - title: All posts
+    url: /all/
 
 social:
   twitter: matheusrich

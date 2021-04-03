@@ -1,0 +1,28 @@
+---
+layout: default
+permalink: /categories/
+title: Categories
+---
+
+<section>
+  <h1 class="pageTitle">Categories</h1>
+
+  {% for category in (site.categories | sort) %}
+
+  {% capture category_name %}{{ category | first }}{% endcapture %}
+
+  <h2 id="{{ category_name }}">#{{category_name}}</h2>
+
+  <ul class="posts noList">
+    {% for post in site.categories[category_name] %}
+    <li>
+      <h3 class="font-xl">
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <span class="date">{{ post.date | date: "%Y/%m/%d" }}</span>
+        {% if post.draft %} <span class="Tag">Draft</span> {% endif %}
+      </h3>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+</section>
