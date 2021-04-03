@@ -45,3 +45,22 @@ code.language-plaintext.highlighter-rouge {
   padding: 1px 8px;
   border-radius: 8px;
 }
+
+.Tag {
+  color: white;
+  background-color: gray;
+  padding: 0 10px;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline;
+  vertical-align: middle;
+}
+
+.align-middle	{
+  vertical-align: middle;
+}
+
+.font-bold	{
+  font-weight: bold;
+}
