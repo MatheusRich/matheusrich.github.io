@@ -19,7 +19,7 @@ const logScreenOpened = async screenName => {
 When I got to testing, I wanted to change the logger behavior in each test case, but I was
 struggling with [Jest mocks][jest-mocks]. It was taking more time than I wanted to, so I gave up and
 came up with other solution. Not a fancy solution, neither adding another mocking library. It was,
-in fact, a very old one (and very   known among Java devs): Dependency Injection (DI for short).
+in fact, a very old one (and very known among Java devs): Dependency Injection (DI for short).
 
 ```js
 // src/screen.js
