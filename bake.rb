@@ -3,7 +3,7 @@ require 'fileutils'
 
 # Runs development server
 def s
-  system 'npx gulp'
+  system '. ~/.nvm/nvm.sh && nvm use 11 && npx gulp'
 end
 
 # Creates a new post
