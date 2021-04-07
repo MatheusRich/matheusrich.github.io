@@ -28,7 +28,8 @@ layout: default
   <div class="Categories">
     <h1>Categories</h1>
 
-    {% for category in (page.categories | sort) %}
+    {% assign categories = page.categories | sort %}
+    {% for category in categories %}
       <a href="/categories/#{{category}}"><span class="Tag Tag--outlined">{{ category }}</span></a>
     {% endfor %}
   </div>
