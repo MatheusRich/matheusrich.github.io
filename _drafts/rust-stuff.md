@@ -14,3 +14,21 @@ I always look for things that may not exist in a language
   <img loading="lazy" style="display: block; margin: 0 auto;" src="/assets/img/rust.png" alt="">
 
 - return last line by default (similar to Ruby)
+
+### 2021/04/09
+
+Unlike Ruby, rust allow trailing (and multiple) underscores in numbers:
+
+```rust
+// Both examples work like a charm
+let a = 1_;
+let b = 1_____;
+```
+
+```ruby
+a = 1_
+# SyntaxError: trailing `_' in number
+
+b = 1__2
+# Syntax error too
+```
