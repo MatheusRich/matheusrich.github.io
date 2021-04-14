@@ -35,7 +35,7 @@ describe('logScreenOpened', () => {
     logScreenOpened('HomeScreen');
 
     // TODO: expect logger to have received `logScreenView` with `{ screen: 'HomeScreen' }`
-  })
+  });
 
   it('logs to console if logger raises an error', () => {
     // TODO: mock logger's `logScreenView` to raise a error
@@ -43,8 +43,8 @@ describe('logScreenOpened', () => {
     logScreenOpened(null);
 
     // TODO: expect console to have received .error
-  })
-})
+  });
+});
 
 const logScreenOpened = async screenName => {
   await FirebaseLogger.logScreenView({screen: screenName});
@@ -55,29 +55,67 @@ It was taking more time than I wanted to, so I gave up and
 came up with other solution. Not a fancy solution, neither changing the mocking library. It was, in
 fact, a very old one (and very known among Java devs): **Dependency Injection** (DI for short).
 
+## Injecting dependencies
+
+So, instead of accessing `FirebaseLogger` directly, we'll provide it as an _argument_ of our function:
+
 ```js
 // src/screen.js
 
-const logScreenOpened = async (screenName, logger = Firebase) => {
+const logScreenOpened = async (screenName, logger = FirebaseLogger) => {
   await logger.logScreenView({screen: screenName});
 };
 ```
 
-You don't have to always inject the dependency directly in your methods. You could go fancy and have
-a logging module that gives you different loggers depending on which environment you're working on.
+This function is almost the same of the previous implementation, but receiving `logger` as an
+argument gives us some flexibility.
+
+Here's the thing: the `logScreenOpened` function don't need to know what `logger` is. As long as it
+is an object that responds to `logScreenView`, we're good. That's the only thing we care about. This
+is known as duck-typing (or interfaces).
+
+Back to testing: now we can change the logger implementation as we wish:
+
+```js
+describe('logScreenOpened', () => {
+  it('logs in firebase a screen view', () => {
+    const logScreenViewMock = jest.fn();
+    const fakeLogger = {logScreenView: logScreenViewMock};
+
+    logScreenOpened('HomeScreen', fakeLogger);
+
+    expect(logScreenViewMock).toHaveBeenCalledWith({screen: 'HomeScreen'});
+  });
+
+  it('logs to console if logger raises an error', () => {
+    const logScreenViewMock = () => {
+      throw 'Some error!';
+    };
+
+    logScreenOpened('HomeScreen', fakeLogger);
+
+    // ...
+  });
+});
+```
+
+## Going ✨ fancy ✨
+
+We don't have to always inject the dependency directly in our methods. We could go fancy and have a
+logging module that gives us different loggers depending on which environment we're working on.
 Something like this:
 
 ```js
 // config/log.js
 import {FirebaseLogger} from 'firebase-logger';
 const TestLogger = {
-  /* simplified code to run in tests */
+  // simplified code to run in tests
 };
 
 export const logger = process.env.NODE_ENV === 'test' ? TestLogger : FirebaseLogger;
 ```
 
-And in your app code you just import it:
+And in the app code we just import it:
 
 ```js
 // src/screen.js
@@ -89,7 +127,58 @@ const logScreenOpened = async screenName => {
 };
 ```
 
-In fact, [Elixir][elixir]'s guides [encourages this very approach][elixir-mocks]!
+## Speeding up
+
+Refactors like this are nice when you want to to improve test performance too. Our fake logger is
+very lightweight, so those test are blazing fast! Use this to your advantage!
+
+Let's say we have an
+
+```js
+function doStuff() {
+  Lib.veryHeavyComputation('some', 'params');
+
+  doMoreStuff();
+}
+```
+
+Let's do the same thing here: inject dependencies.
+
+```js
+function doStuff(lib = Lib) {
+  lib.veryHeavyComputation('some', 'params');
+
+  doMoreStuff();
+}
+```
+
+So, in our tests:
+
+```js
+describe('doStuff', () => {
+  const fastLib = {veryHeavyComputation: jest.fn()};
+
+  doStuff(fastLib);
+
+  expect(fastLib).toHaveBeenCalledWith('some', 'params');
+
+  // other expectations
+});
+```
+
+Now we have fast tests but guaranteeing the same API!
+
+## Wrap up
+
+Don't be afraid of this kind of code! As I said, there's nothing _new_ here. Is an old techniche
+used everywhere. In fact, [Elixir][elixir]'s guides [encourages this very approach][elixir-mocks]!
+They call it "mocks-as-a-noun" (in opposition of mock-as-a-verb).
+
+One think to keep in mind: **we must keep the API of our fake logger in sync with the original**
+one. This is important because we don't want our tests passing but our production code failing. So
+is it good to have a integration test covering the usage of that mock too!
+
+That's it, happy mocking! (wait, that's a verb)
 
 [jest-mocks]: https://jestjs.io/docs/manual-mocks
 [elixir]: https://elixir-lang.org/
