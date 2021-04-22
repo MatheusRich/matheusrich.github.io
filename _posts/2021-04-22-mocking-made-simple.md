@@ -175,7 +175,7 @@ Now we have fast tests but guaranteeing the same API!
 
 Don't be afraid of this kind of code! As I said, there's nothing _new_ here. Is an old techniche
 used everywhere. In fact, [Elixir][elixir]'s guides [encourages this very approach][elixir-mocks]!
-They call it "mocks-as-a-noun" (in opposition of mock-as-a-verb).
+They call it "mock-as-a-noun" (in opposition of "mock-as-a-verb").
 
 One think to keep in mind: **we must keep the API of our fake logger in sync with the original
 one**. This is important because we don't want our tests passing but our production code failing. So
