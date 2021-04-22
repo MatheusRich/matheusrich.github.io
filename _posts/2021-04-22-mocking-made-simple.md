@@ -5,7 +5,7 @@ date: 2021-04-22 09:23:40 -0300
 categories: testing refactoring mocks quicktip
 ---
 
-> **TD;DR:** Inject dependencies instead of mocking functions.
+> **TL;DR:** Inject dependencies instead of mocking functions.
 
 I was refactoring some React Native code the other day and ended up extracting the following
 function:
@@ -51,7 +51,7 @@ const logScreenOpened = async screenName => {
 };
 ```
 
-It was taking more time than I wanted to, so I gave up and
+It was taking more time than I intended, so I gave up and
 came up with other solution. Not a fancy solution, neither changing the mocking library. It was, in
 fact, a very old one (and very known among Java devs): **Dependency Injection** (DI for short).
 
@@ -132,10 +132,10 @@ const logScreenOpened = async screenName => {
 
 ## Speeding up
 
-Refactors like this are nice when you want to to improve test performance too. Our fake logger is
-very lightweight, so those test are blazing fast! Use this to your advantage!
+Refactors like this are nice when you want to improve test performance too. Our fake logger is very
+lightweight, so those test are blazing fast! Use this to your advantage!
 
-Let's say we have an function that does some heavy computation:
+Let's say we have a function that does some heavy computation:
 
 ```js
 function doStuff() {
@@ -155,7 +155,7 @@ function doStuff(lib = Lib) {
 }
 ```
 
-So, in our tests we swap the implementation:
+Then, in our tests we swap the implementation:
 
 ```js
 describe('doStuff', () => {
@@ -173,13 +173,13 @@ Now we have fast tests but guaranteeing the same API!
 
 ## Wrap up
 
-Don't be afraid of this kind of code! As I said, there's nothing _new_ here. Is an old techniche
+Don't be afraid of this kind of code! As I said, there's nothing _new_ here. Is an old technique
 used everywhere. In fact, [Elixir][elixir]'s guides [encourages this very approach][elixir-mocks]!
 They call it "mock-as-a-noun" (in opposition of "mock-as-a-verb").
 
 One think to keep in mind: **we must keep the API of our fake logger in sync with the original
 one**. This is important because we don't want our tests passing but our production code failing. So
-is it good to have a integration test covering the usage of that mock too!
+it is good to have a integration test covering the usage of that mock too!
 
 That's it, happy mocking! <small>(wait, that's a verb!)</small>
 
