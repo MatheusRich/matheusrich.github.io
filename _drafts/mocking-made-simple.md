@@ -29,7 +29,7 @@ struggling with [Jest mocks][jest-mocks]. I wanted to do something like this:
 // tests/screen-test.js
 
 describe('logScreenOpened', () => {
-  it('logs in firebase a screen view', () => {
+  it('logs a screen view', () => {
     // TODO: mock logger's `logScreenView`
 
     logScreenOpened('HomeScreen');
@@ -78,7 +78,7 @@ Back to testing: now we can change the logger implementation as we wish:
 
 ```js
 describe('logScreenOpened', () => {
-  it('logs in firebase a screen view', () => {
+  it('logs a screen view', () => {
     const logScreenViewMock = jest.fn();
     const fakeLogger = {logScreenView: logScreenViewMock};
 
@@ -91,13 +91,16 @@ describe('logScreenOpened', () => {
     const logScreenViewMock = () => {
       throw 'Some error!';
     };
+    console.error = jest.fn();
 
     logScreenOpened('HomeScreen', fakeLogger);
 
-    // ...
+    expect(console.error).toHaveBeenCalledWith(`Could not log screen view. Error: Some error!`);
   });
 });
 ```
+
+<small>OBS: We could've injected the `console.error` bit too, but for this post I decided to keep things simple.</small>
 
 ## Going ✨ fancy ✨
 
@@ -132,7 +135,7 @@ const logScreenOpened = async screenName => {
 Refactors like this are nice when you want to to improve test performance too. Our fake logger is
 very lightweight, so those test are blazing fast! Use this to your advantage!
 
-Let's say we have an
+Let's say we have an function that does some heavy computation:
 
 ```js
 function doStuff() {
@@ -142,7 +145,7 @@ function doStuff() {
 }
 ```
 
-Let's do the same thing here: inject dependencies.
+We don't want our tests to be slow, so let's do the same thing here: inject dependencies.
 
 ```js
 function doStuff(lib = Lib) {
@@ -152,7 +155,7 @@ function doStuff(lib = Lib) {
 }
 ```
 
-So, in our tests:
+So, in our tests we swap the implementation:
 
 ```js
 describe('doStuff', () => {
@@ -174,11 +177,11 @@ Don't be afraid of this kind of code! As I said, there's nothing _new_ here. Is 
 used everywhere. In fact, [Elixir][elixir]'s guides [encourages this very approach][elixir-mocks]!
 They call it "mocks-as-a-noun" (in opposition of mock-as-a-verb).
 
-One think to keep in mind: **we must keep the API of our fake logger in sync with the original**
-one. This is important because we don't want our tests passing but our production code failing. So
+One think to keep in mind: **we must keep the API of our fake logger in sync with the original
+one**. This is important because we don't want our tests passing but our production code failing. So
 is it good to have a integration test covering the usage of that mock too!
 
-That's it, happy mocking! (wait, that's a verb)
+That's it, happy mocking! <small>(wait, that's a verb!)</small>
 
 [jest-mocks]: https://jestjs.io/docs/manual-mocks
 [elixir]: https://elixir-lang.org/
