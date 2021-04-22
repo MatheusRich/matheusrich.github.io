@@ -7,7 +7,7 @@ GEM
       samovar (~> 2.1)
     colorator (1.1.0)
     concurrent-ruby (1.1.8)
-    console (1.10.2)
+    console (1.11.1)
       fiber-local
     em-websocket (0.5.2)
       eventmachine (>= 0.12.9)
