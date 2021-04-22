@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Mocking Made Simple'
-date: 2021-04-01 11:16:28 -0300
+date: 2021-04-22 09:23:40 -0300
 categories: testing refactoring mocks quicktip
 ---
 
