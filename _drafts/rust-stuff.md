@@ -45,3 +45,16 @@ seems to be solved with this magical compiler. Let's see how easy will be coding
 ```rust
 println!("{}", (1..10).count() // => 9
 ```
+
+### 2021/04/12
+
+I decided to start learning Rust by (I know, I should've picked somthing simple, but I don't like
+putting effort in something "not usable") building a LISP (Make a Lisp)
+
+#### 2021/04/24
+
+- 4 spaces tab is hurting me
+- Weird having to think about memory in every line of code
+- kinda confused about modules
+- when I should borrow and when I should move?
+- String vs &str vs str?
