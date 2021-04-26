@@ -56,5 +56,7 @@ putting effort in something "not usable") building a LISP (Make a Lisp)
 - 4 spaces tab is hurting me
 - Weird having to think about memory in every line of code
 - kinda confused about modules
-- when I should borrow and when I should move?
+- when I should borrow and when I should move? My default is borrow everything
 - String vs &str vs str?
+- It's really nice to know that I got a typechecker having my back.
+- Some constructors are really well thought out: enums, if let, while let. They fit as glove.
