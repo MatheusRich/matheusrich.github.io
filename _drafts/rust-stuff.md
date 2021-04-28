@@ -60,3 +60,8 @@ putting effort in something "not usable") building a LISP (Make a Lisp)
 - String vs &str vs str?
 - It's really nice to know that I got a typechecker having my back.
 - Some constructors are really well thought out: enums, if let, while let. They fit as glove.
+
+#### 2021/04/27
+
+- String confusion is a bit better
+  - Thanks to https://www.brandons.me/blog/why-rust-strings-seem-hard and [@PotHix](http://github.com/pothix)
