@@ -15,7 +15,11 @@ Rust has borrow checker
 Rust "string confusion"
 Rust has structs and implementations (aka interfaces)
 Rust has "sum types" and no null
-I actually have to think in lower-level concerns (str vs Strings, array vs 
+I actually have to think in lower-level concerns (str vs Strings, array vs Vector)
+
+pattern matching!
+  if let/while let
+much better tooling (at least in vscode)
 
 Crystal is OOP
 Crystal has sum types AND uses it to handle null values (maybe not as powerful, but enough for the majority of cases?)
