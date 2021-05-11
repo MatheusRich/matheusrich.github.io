@@ -9,9 +9,16 @@
   background: #282c34;
   color: #c1c2c3;
 }
+
+// Highlighted lines
 .highlight .hll {
-  background-color: #ffc;
+  margin: 0 -20px;
+  padding: 0 14px;
+  border-left: 6px solid black;
+  background-color: darken(#282c34, 6%);
+  display: block;
 }
+
 .highlight .gd {
   color: #2e3436;
   background-color: #0e1416;
