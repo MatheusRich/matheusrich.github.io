@@ -46,6 +46,13 @@ code.language-plaintext.highlighter-rouge {
   border-radius: 8px;
 }
 
+div.blob {
+  code span {
+    background-color: currentColor;
+    border-radius: 999px;
+  }
+}
+
 .Tag {
   color: white;
   background-color: darken($primary-color, 10%);
