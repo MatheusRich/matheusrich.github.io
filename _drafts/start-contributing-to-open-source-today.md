@@ -2,7 +2,7 @@
 layout: post
 title: 'Different Ways to Contribute to Open Source'
 date: 2021-04-25 22:17:04 -0300
-categories: oss
+categories: oss beginner
 ---
 
 OSS is a wonderful thing! I was so grateful for the things I used that I started contributing to OSS
@@ -23,7 +23,6 @@ went wrong, **don't keep it to yourself**! Open a PR!
 Some bug fixes I did:
 
 - [Ameba GH Action - Prevent linter to run on external libraries code](https://github.com/crystal-ameba/github-action/pull/9)
-
 - [Ameba - Handle duplicated files when running linter](https://github.com/crystal-ameba/ameba/pull/151)
 
 ## ✨ New features
@@ -108,40 +107,49 @@ Sometimes the behavior is not a problem, but a deliberate choice.
 
 (Readme, fix typos, rewrite confusing sections, add docs where it's missing) Improve as you read
 
-[Lucky - Fix long links in small screens](https://github.com/luckyframework/website/pull/305)
-
-[Crystal Book - Use simpler algorithm in docs](https://github.com/crystal-lang/crystal-book/pull/394)
-
-[Amber - Fix broken links in README](https://github.com/amberframework/amber/pull/1153)
+- [Lucky - Fix long links in small screens](https://github.com/luckyframework/website/pull/305)
+- [Crystal Book - Use simpler algorithm in docs](https://github.com/crystal-lang/crystal-book/pull/394)
+- [Amber - Fix broken links in README](https://github.com/amberframework/amber/pull/1153)
 
 ### 🎨 Use your imagination!
 
-[Adding a logo for Commit Helper](https://github.com/andre-filho/commit-helper/pull/27)
+As I said earlier, OSS is not only about code! Any skill you have may be useful to someone! If you're a musician or
+artist, for example, there's plenty of things you can contribute to. Here's an example of a PR where I created a logo
+for a project of a friend of mine:
+
+- [Commit Helper - Add logo](https://github.com/andre-filho/commit-helper/pull/27)
 
 ## 🎯 General advices
 
-- **Be patient:** Maintainers have life too! Many of them make **no money** from OSS, so please be patient if your PR
-  takes a while until being reviewed/approved this is another reason to help review Pull Requests and Issues);
-- **Be kind:**
-- **Not everything you do will/needs to be approved:** . Maybe the code you wrote can live as a
-  plugin/extension. Even thought you made something faster, maybe readability is more important in
-  that case.
-- **It's not about you:** Do not take things personally! If someone adds a comment about your code, it’s just about your
-  code, don’t be sad about it, but use it as an opportunity for learning something (or prove your point if you’re
-  confident about your solution).
-- **Read contributing guide and code of conduct**
+- **Read contributing guide and code of conduct** This should be your first step before actually doing some
+  contribution. Reading those guidelines will help you understand what contribution are accepted, how to make them, and
+  what is necessary for approving them. Those are generally the files CONTRIBUTING.md and CODE_OF_CONDUCT.md;
+- **Be patient and kind:** Maintainers have lives too! Most of them make **no money** from OSS, so please be patient if your PR takes a while until being reviewed/approved;
+- **It's not about you:** Do not take things personally! If someone adds a comment about your code, it's just about your
+  code, don't be sad about it, but use it as an opportunity to learn something;
+- **Not everything you do will/needs to be approved:** Sometimes our contributions don't match the projects needs/vision
+  and end up not accepted, and **that's okay**. This is part of open source and we have to understand it. The code you
+  wrote can always live as a plugin/extension too. Here's three unapproved PRs I did:
+  - [Rust Book - Improve example][unapproved-rustbook]
+  - [Parslet - Convert README to markdown][unapproved-parslet]
+  - [Rubygems - Add `web` command][unapproved-rubygems]
 
 ## 💪 Yes, you can
 
 First of all, contributing to open source is not a _experienced-developer-only_ thing. Many of the contributions I did
 were _because_ I was a beginner on the language/tool. **Use this as your advantage**: beginners have sharp eyes for
-missing or confusing docs, for example. Your trajectory can help future beginners have a smoother onboarding.
+missing or confusing docs, for example. Your trajectory can help future beginners have a smoother onboarding!
 
-tags: first-timers-only, easy, beginner, good first issue
+Look for issues with the tags [first-timers-only-issue], [easy][easy-issue], [beginner][beginner-issue] and [good first
+issue][good-issue]. And here's a [list of beginner-friendly projects](https://github.com/MunGell/awesome-for-beginners).
 
-https://github.com/MunGell/awesome-for-beginners
+Now grab your cup of coffee, streach your hands and go do something awesome 😉!
 
-[bug-issues]: https://github.com/search?q=label%3Abug&type=Issues&ref=advsearch&l=&l=
+[bug-issues]: https://github.com/search?q=label%3Abug&type=Issues
+[easy-issue]: https://github.com/search?q=label%3Aeasy&type=Issues
+[beginner-issue]: https://github.com/search?q=label%3Abeginner&type=Issues
+[good-issue]: https://github.com/search?q=label%3A%22good+first+issue%22&type=Issues
+[first-timers-only-issue]: https://github.com/search?q=label%3Afirst-timers-only&type=Issues
 [unapproved-rustbook]: https://github.com/rust-lang/book/pull/2673
 [unapproved-parslet]: https://github.com/kschiess/parslet/pull/200
 [unapproved-rubygems]: https://github.com/rubygems/rubygems/pull/2835
