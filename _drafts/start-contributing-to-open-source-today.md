@@ -28,7 +28,7 @@ Some bug fixes I did:
 
 ## ✨ New features
 
-Did you need that library to do X for you? Don't expect maintainers will do it for you. Code it and
+Do you wish that a library did X for you? Don't expect maintainers will do it for you. Code it and
 submit a PR! Maybe you already have something in your codebase that could be pushed upstream. That
 is what happened with the following contributions:
 
@@ -37,11 +37,19 @@ is what happened with the following contributions:
 - [tiptap - Add support to history custom settings](https://github.com/ueberdosis/tiptap/pull/213)
 - [mintest-stub_any_instance - Allow stubbing without a value](https://github.com/codeodor/minitest-stub_any_instance/pull/13/files)
 
-You may open an issue first, asking maintainers if they like your feature idea.
+That is one of the nicest things about open source: you can contribute back to projects that helped
+you! You may open an issue first, asking maintainers if they like your feature idea.
 
 ## ⚡ Improve performance / Refactor code
 
-If you're experienced in a language you probably know some patterns, . You can do some refactoring too: deleting unused code, fixing deprecation notes/methods, untangling some nested `if/else` with [guard clauses][guards], etc.
+If you're experienced in a language you probably know some patterns or methods that are more performant than others,
+i.e, they run faster and/or with less memory. For instance, in Ruby using `each + push` [is slower][each-map] than using
+`map`. This is an opportunity to find those patterns and replace them with the more performant alternatives. When you do
+this kind of contribution, don't forget to add benchmarks to your PR to make it more compeling.
+
+You can do some refactoring too: deleting unused code, fixing deprecation notes/methods, untangling some nested
+`if/else` with [guard clauses][guards], etc. Making the code easier to read is important to add new features and finding
+bugs in the future.
 
 Here's some PRs I did for [Ruby on Rails](https://rubyonrails.org/) in this category:
 
@@ -51,48 +59,79 @@ Here's some PRs I did for [Ruby on Rails](https://rubyonrails.org/) in this cate
 
 ## 🧪 Add tests
 
-Adding a test coverage tool is another
+Tests make us feel more confident about the code we write and the changes we make. Well tested OSS benefits everyone
+using it! So, you can help yourself and the whole community by adding tests to a project! Adding a test coverage tool is
+another way to contribute in this topic. Setting up a coverage tool helps to understand which areas of the core aren't
+tested.
 
-https://github.com/bitboxer/gem-web/pull/5
+This was exactly what I did for `gem-web`. I added [simplecov](https://github.com/simplecov-ruby/simplecov) and with the
+coverage tool properly configured, I added tests for the missing parts:
 
-https://github.com/bitboxer/gem-web/pull/6
+- [gem-web - Add test coverage tool](https://github.com/bitboxer/gem-web/pull/5)
+- [gem-web - Add tests](https://github.com/bitboxer/gem-web/pull/6)
 
 ## 🐋 DevOps
 
-- CI, docker/docker-compose, linters
+Adding a Docker/Docker Compose setup is a nice way to help newcomers onboard a project, especially when the project is
+an app with several moving parts (core, database, cache services etc). Setting up all that may be hard, but running
+`docker-compose up` is _far_ easier.
 
-- [zynaddsubfx - Add Dockerfile](https://github.com/zynaddsubfx/zyn-fusion-build/pull/29/files)
+There's other things you can contribute: almost every project nowadays has a Continuous Integration (CI) pipeline
+(Gitlab CI, GitHub Actions, Travis CI, Circle CI, Jenkins etc). Setting up a pipeline is an contribution in itself, but
+you can go further and set up linters, security checks and even a staging build in some cases!
 
-## OSS is more than code!
+Here's an example of a PR where I introduced a Dockerfile as an alternative setup build script:
 
-As developers we love to code, but OSS is far beyond just coding. Maintainer have to deal with a variety of different
-problems: documentation, helping beginners, handling poor written issues, spams, reviewing Pull Requests, etc.
+- [zynaddsubfx - Add Dockerfile](https://github.com/zynaddsubfx/zyn-fusion-build/pull/29)
 
-- **Review PRs:** You don't need to be a maintainer to do that! I took much time to understand this. Just be kind .
-  Here's [more tips on good code reviews](https://stackoverflow.blog/2019/09/30/how-to-make-good-code-reviews-better/).
-- **Try reproducing issues**
-- **Improve documentation:** (Readme, fix typos, rewrite confusing sections, add docs where it's missing) Improve as you read
+## 👩‍💻 OSS is more than code!
 
-[pr Lucky](https://github.com/luckyframework/website/pull/305)
+As developers we love to code, but OSS is far beyond just coding! Maintainers have to deal with a variety of different
+problems: documentation, helping beginners, handling poor written issues, spams, reviewing Pull Requests, etc. We can do
+OSS by helping them with these tasks!
 
-[pr Crystal](https://github.com/crystal-lang/crystal-book/pull/394)
+### 👍 Reviewing PRs
 
-[Fixing broken links in README](https://github.com/amberframework/amber/pull/1153)
+You don't need to be a maintainer to do that! I took much time to understand this. Reviewing PRs also helps the
+contributor to not feel bad about their work not being reviewed for many days, and you help address issues faster
+(typos, changing naming, refactorings, adding docs, etc). Just **be kind** and helpful. Here's [more tips on good code
+reviews](https://stackoverflow.blog/2019/09/30/how-to-make-good-code-reviews-better/).
+
+### 🕵️‍♂️ Reproducing issues
+
+If you've been part of a reasonably used OSS project, then you know how hard is to handle issues. Many of them don't
+even have enough information to reproduce and diagnose its causes. Help maintainers by trying to reproduce issues. You
+may have to ask users for more information (OS, language, library versions, for example), or steps to reproduce it.
+Sometimes the behavior is not a problem, but a deliberate choice.
+
+### 📝 Improving documentation
+
+(Readme, fix typos, rewrite confusing sections, add docs where it's missing) Improve as you read
+
+[Lucky - Fix long links in small screens](https://github.com/luckyframework/website/pull/305)
+
+[Crystal Book - Use simpler algorithm in docs](https://github.com/crystal-lang/crystal-book/pull/394)
+
+[Amber - Fix broken links in README](https://github.com/amberframework/amber/pull/1153)
+
+### 🎨 Use your imagination!
 
 [Adding a logo for Commit Helper](https://github.com/andre-filho/commit-helper/pull/27)
 
-## General advices
+## 🎯 General advices
 
 - **Be patient:** Maintainers have life too! Many of them make **no money** from OSS, so please be patient if your PR
   takes a while until being reviewed/approved this is another reason to help review Pull Requests and Issues);
 - **Be kind:**
-- **Not everything you do will/needs to be approved:** . Maybe the code you wrote can live as a plugin/extension.
+- **Not everything you do will/needs to be approved:** . Maybe the code you wrote can live as a
+  plugin/extension. Even thought you made something faster, maybe readability is more important in
+  that case.
 - **It's not about you:** Do not take things personally! If someone adds a comment about your code, it’s just about your
   code, don’t be sad about it, but use it as an opportunity for learning something (or prove your point if you’re
   confident about your solution).
 - **Read contributing guide and code of conduct**
 
-## Yes, you can
+## 💪 Yes, you can
 
 First of all, contributing to open source is not a _experienced-developer-only_ thing. Many of the contributions I did
 were _because_ I was a beginner on the language/tool. **Use this as your advantage**: beginners have sharp eyes for
@@ -107,3 +146,4 @@ https://github.com/MunGell/awesome-for-beginners
 [unapproved-parslet]: https://github.com/kschiess/parslet/pull/200
 [unapproved-rubygems]: https://github.com/rubygems/rubygems/pull/2835
 [guards]: https://refactoring.com/catalog/replaceNestedConditionalWithGuardClauses.html
+[each-map]: https://github.com/JuanitoFatas/fast-ruby#enumerableeach--push-vs-enumerablemap-code
