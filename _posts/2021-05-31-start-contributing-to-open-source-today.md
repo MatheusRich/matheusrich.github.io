@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Different Ways to Contribute to Open Source'
-date: 2021-04-25 22:17:04 -0300
+date: 2021-05-31 23:38:00 -0300
 categories: oss beginner
 ---
 
@@ -105,7 +105,11 @@ Sometimes the behavior is not a problem, but a deliberate choice.
 
 ### 📝 Improving documentation
 
-(Readme, fix typos, rewrite confusing sections, add docs where it's missing) Improve as you read
+This is one of my preferred ways to contributo to OSS. Here we have a lot of options: fixing typos, rewriting confusing
+sections, adding docs where it's missing. The best is that you can improve documentation as you read it! If you're
+learning a new tool, this may be the simplest way to start contributing!
+
+The contributions bellow were made just as I started studying the tools:
 
 - [Lucky - Fix long links in small screens](https://github.com/luckyframework/website/pull/305)
 - [Crystal Book - Use simpler algorithm in docs](https://github.com/crystal-lang/crystal-book/pull/394)
