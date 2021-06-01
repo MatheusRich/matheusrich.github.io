@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Different Ways to Contribute to Open Source'
-date: 2021-05-31 23:38:00 -0300
+date: 2021-05-31 20:00:00 -0300
 categories: oss beginner
 ---
 
