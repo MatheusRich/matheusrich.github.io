@@ -6,15 +6,15 @@ categories: oss beginner
 ---
 
 OSS is a wonderful thing! I was so grateful for the things I used that I started contributing to OSS
-as a retribution! If you want to get started with OSS contributions, here's several ways to do it.
+as retribution! If you want to get started with OSS contributions, here are several ways to do it.
 
 In each section I'm going to present a topic, explain it, and link some Pull Request that I did in
 that "category" so you can take a look to get inspired/learn something.
 
 ## 🐛 Bugfixes
 
-If you fix a bug, maintainers will **love** you. It can be a bug you found, or a issue tagged with a
-[`bug`][bug-issues] label. It is a good opportunity to fix that 1px misaligned item that is
+If you fix a bug, maintainers will **love** you. It can be a bug you found, or an issue tagged with
+a [`bug`][bug-issues] label. It is a good opportunity to fix that 1px misaligned item that is
 bothering you since forever.
 
 Or maybe you tried something and it didn't work quite well on your machine. If you figure out what
@@ -27,12 +27,12 @@ Some bug fixes I did:
 
 ## ✨ New features
 
-Do you wish that a library did X for you? Don't expect maintainers will do it for you. Code it and
+Do you wish that a library did X for you? Don't expect maintainers do it for you. Code it and
 submit a PR! Maybe you already have something in your codebase that could be pushed upstream. That
 is what happened with the following contributions:
 
 - [RSpec - Allow ordering specs by modification time](https://github.com/rspec/rspec-core/pull/2778)
-- [Long Haul - Add support for disqus comments](https://github.com/brianmaierjr/long-haul/pull/78)
+- [Long Haul - Add support for Disqus comments](https://github.com/brianmaierjr/long-haul/pull/78)
 - [tiptap - Add support to history custom settings](https://github.com/ueberdosis/tiptap/pull/213)
 - [mintest-stub_any_instance - Allow stubbing without a value](https://github.com/codeodor/minitest-stub_any_instance/pull/13/files)
 
@@ -43,8 +43,8 @@ you! You may open an issue first, asking maintainers if they like your feature i
 
 If you're experienced in a language you probably know some patterns or methods that are more performant than others,
 i.e, they run faster and/or with less memory. For instance, in Ruby using `each + push` [is slower][each-map] than using
-`map`. This is an opportunity to find those patterns and replace them with the more performant alternatives. When you do
-this kind of contribution, don't forget to add benchmarks to your PR to make it more compeling.
+`map`. This is an opportunity to find those patterns and replace them with more performant alternatives. When you do
+this kind of contribution, don't forget to add benchmarks to your PR to make it more compelling.
 
 You can do some refactoring too: deleting unused code, fixing deprecation notes/methods, untangling some nested
 `if/else` with [guard clauses][guards], etc. Making the code easier to read is important to add new features and finding
@@ -58,9 +58,9 @@ Here's some PRs I did for [Ruby on Rails](https://rubyonrails.org/) in this cate
 
 ## 🧪 Add tests
 
-Tests make us feel more confident about the code we write and the changes we make. Well tested OSS benefits everyone
+Tests make us feel more confident about the code we write and the changes we make. Well-tested OSS benefits everyone
 using it! So, you can help yourself and the whole community by adding tests to a project! Adding a test coverage tool is
-another way to contribute in this topic. Setting up a coverage tool helps to understand which areas of the core aren't
+another way to contribute to this topic. Setting up a coverage tool helps to understand which areas of the core aren't
 tested.
 
 This was exactly what I did for `gem-web`. I added [simplecov](https://github.com/simplecov-ruby/simplecov) and with the
@@ -85,8 +85,8 @@ Here's an example of a PR where I introduced a Dockerfile as an alternative setu
 
 ## 👩‍💻 OSS is more than code!
 
-As developers we love to code, but OSS is far beyond just coding! Maintainers have to deal with a variety of different
-problems: documentation, helping beginners, handling poor written issues, spams, reviewing Pull Requests, etc. We can do
+As developers, we love to code, but OSS is far beyond just coding! Maintainers have to deal with a variety of different
+problems: documentation, helping beginners, handling poorly written issues, spams, reviewing Pull Requests, etc. We can do
 OSS by helping them with these tasks!
 
 ### 👍 Reviewing PRs
@@ -105,11 +105,11 @@ Sometimes the behavior is not a problem, but a deliberate choice.
 
 ### 📝 Improving documentation
 
-This is one of my preferred ways to contributo to OSS. Here we have a lot of options: fixing typos, rewriting confusing
+This is one of my preferred ways to contribute to OSS. Here we have a lot of options: fixing typos, rewriting confusing
 sections, adding docs where it's missing. The best is that you can improve documentation as you read it! If you're
 learning a new tool, this may be the simplest way to start contributing!
 
-The contributions bellow were made just as I started studying the tools:
+The contributions below were made just as I started studying the tools:
 
 - [Lucky - Fix long links in small screens](https://github.com/luckyframework/website/pull/305)
 - [Crystal Book - Use simpler algorithm in docs](https://github.com/crystal-lang/crystal-book/pull/394)
@@ -123,15 +123,15 @@ for a project of a friend of mine:
 
 - [Commit Helper - Add logo](https://github.com/andre-filho/commit-helper/pull/27)
 
-## 🎯 General advices
+## 🎯 General advice
 
 - **Read contributing guide and code of conduct** This should be your first step before actually doing some
-  contribution. Reading those guidelines will help you understand what contribution are accepted, how to make them, and
+  contribution. Reading those guidelines will help you understand what contributions are accepted, how to make them, and
   what is necessary for approving them. Those are generally the files CONTRIBUTING.md and CODE_OF_CONDUCT.md;
 - **Be patient and kind:** Maintainers have lives too! Most of them make **no money** from OSS, so please be patient if your PR takes a while until being reviewed/approved;
 - **It's not about you:** Do not take things personally! If someone adds a comment about your code, it's just about your
   code, don't be sad about it, but use it as an opportunity to learn something;
-- **Not everything you do will/needs to be approved:** Sometimes our contributions don't match the projects needs/vision
+- **Not everything you do will/needs to be approved:** Sometimes our contributions don't match the project's needs/vision
   and end up not accepted, and **that's okay**. This is part of open source and we have to understand it. The code you
   wrote can always live as a plugin/extension too. Here's three unapproved PRs I did:
   - [Rust Book - Improve example][unapproved-rustbook]
@@ -147,7 +147,7 @@ missing or confusing docs, for example. Your trajectory can help future beginner
 Look for issues with the tags [first-timers-only-issue], [easy][easy-issue], [beginner][beginner-issue] and [good first
 issue][good-issue]. And here's a [list of beginner-friendly projects](https://github.com/MunGell/awesome-for-beginners).
 
-Now grab your cup of coffee, streach your hands and go do something awesome 😉!
+Now grab your cup of coffee, stretch your hands and go do something awesome 😉!
 
 [bug-issues]: https://github.com/search?q=label%3Abug&type=Issues
 [easy-issue]: https://github.com/search?q=label%3Aeasy&type=Issues
