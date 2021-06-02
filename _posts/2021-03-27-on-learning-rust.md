@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'On learning Rust'
+series: On Learning Rust
 date: 2021-03-27 17:46:58 -0300
 categories: rust
 ---
