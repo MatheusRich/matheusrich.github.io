@@ -47,9 +47,9 @@ interpreter][interpreter] following [Lisperator.net's tutorial][tutorial-lang].
 
 To be honest, my first 100 lines of Rust were the basic algorithms in Chapters 01 and 02 of The
 Book, just to test out my setup and get to know a bit of the syntax. Four-space tabs and semicolons
-everywhere were kinda weird for me, but at least it doesn't require explicit returns (and can avoid
-semicolons in the last expression too). `rustfmt` was a neat addition, since I don't have to care
-about how my code should be indented. 👍 for Rust here too!
+everywhere were kinda weird for me, but at least Rust doesn't require explicit returns (and can
+avoid semicolons in the last expression too). `rustfmt` was a neat addition, since I don't have to
+care about how my code should be indented. 👍 for Rust here too!
 
 I was looking for things that were different in Rust and Ruby. Here are some examples of what I
 found:
@@ -73,7 +73,7 @@ b = 1_____2
 
 ### ❓ Rust has no ternary operator
 
-We can use `if/else` expressions (which I'm very familiar with, coming from Ruby), so I didn't care
+We can use `if/else` expressions --- which I'm very familiar with, coming from Ruby ---, so I didn't care
 not having it in Rust.
 
 <figure>
@@ -121,7 +121,7 @@ traits, enums, tips, and examples.
 
 ### 🤝 The compiler is my friend
 
-After a long time writing in an interpreted dynamic typed language like Ruby, Rust compiler was a
+After a long time writing in an interpreted dynamic typed language like Ruby, Rust's compiler was a
 breath of fresh air. It's **so good** to know that I got a type checker having my back when I screw
 things up. I feel like I have to write fewer tests but still have the feeling that everything is
 working.
@@ -171,13 +171,13 @@ I just found out [📎 Clippy](https://github.com/rust-lang/rust-clippy), which 
 ## 🔮 Future
 
 I plan to keep writing my interpreter in Rust to learn more about this language. One thing I didn't
-explore yet is testing in Rust. Since I'm a [big fan of TDD][tdd] I hope Rust has a good test
-support. I have an interest in digging a bit in game development with the [Bevy game engine][bevy].
+explore yet is testing. Since I'm a [big fan of TDD][tdd] I hope Rust has a good test support. I
+have an interest in digging a bit in game development with the [Bevy game engine][bevy].
 
 I'll also make a post comparing Rust with [Crystal](https://crystal-lang.org/) showing my experience
 with both languages.
 
-Oh, and if you're a rustacean, feel free to give me any advice or tip you think it's useful! Bye 🦀!
+Oh, and if you're a rustacean, feel free to give me any advice or tip you think is useful! Bye 🦀!
 
 [the-book]: https://doc.rust-lang.org/book/
 [by-example]: https://doc.rust-lang.org/rust-by-example/
