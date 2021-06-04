@@ -18,7 +18,7 @@ I always look for things that may not exist in a language
 
 ### 2021/04/09
 
-Unlike Ruby, rust allow trailing (and multiple) underscores in numbers:
+Unlike Ruby, rust allows trailing (and multiple) underscores in numbers:
 
 ```rust
 // Both examples work like a charm
@@ -64,4 +64,8 @@ putting effort in something "not usable") building a LISP (Make a Lisp)
 #### 2021/04/27
 
 - String confusion is a bit better
-  - Thanks to https://www.brandons.me/blog/why-rust-strings-seem-hard and [@PotHix](http://github.com/pothix)
+  - Thanks to [this blog post](https://www.brandons.me/blog/why-rust-strings-seem-hard) and my
+    rustacean friend [@PotHix](http://github.com/pothix)
+
+#### 2021/05/06
+- Discovered https://github.com/rust-lang/rust-clippy. Imma start using it to help me become more rustacean
