@@ -26,9 +26,9 @@ At least 50% of the times I'll screw up while typing something like `bundle exec
 Using autocomplete at your favor
 
 IDE
-  - Compilers (C/C++ exemple)
-  - Linters (Rubocop Exemple)
-  - LanguageServers (Ruby class Exemple)
+  - Compilers (Rust example)
+  - Linters (Rubocop Example)
+  - LanguageServers (Ruby class Example)
 
 
 zsh-autocomplete ()
