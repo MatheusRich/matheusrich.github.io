@@ -2,7 +2,7 @@
 layout: post
 title: "My First Month (or so) With Rust"
 series: On Learning Rust
-date: 2021-06-01 11:52:53 -0300
+date: 2021-06-03 22:21:25 -0300
 categories: rust learn-in-public
 ---
 
