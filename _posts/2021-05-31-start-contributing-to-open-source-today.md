@@ -5,10 +5,11 @@ date: 2021-05-31 20:00:00 -0300
 categories: oss beginner
 ---
 
-OSS is a wonderful thing! I was so grateful for the things I used that I started contributing to OSS
-as retribution! If you want to get started with OSS contributions, here are several ways to do it.
+OSS is a wonderful thing! I was so grateful for the OSS tools I used in my projects, that I started
+contributing to OSS as retribution! If you want to get started with OSS contributions, here are
+several ways to do it.
 
-In each section I'm going to present a topic, explain it, and link some Pull Request that I did in
+In each section, I'm going to present a topic, explain it, and link some Pull Request that I did in
 that "category" so you can take a look to get inspired/learn something.
 
 ## 🐛 Bugfixes
@@ -98,10 +99,11 @@ reviews](https://stackoverflow.blog/2019/09/30/how-to-make-good-code-reviews-bet
 
 ### 🕵️‍♂️ Reproducing issues
 
-If you've been part of a reasonably used OSS project, then you know how hard is to handle issues. Many of them don't
-even have enough information to reproduce and diagnose its causes. Help maintainers by trying to reproduce issues. You
-may have to ask users for more information (OS, language, library versions, for example), or steps to reproduce it.
-Sometimes the behavior is not a problem, but a deliberate choice.
+If you've been part of a reasonably used OSS project, then you know how hard is to handle issues.
+Many of them don't even have enough information to reproduce and diagnose its causes. You can help
+maintainers by trying to reproduce issues! You may have to ask users for more information (OS,
+language, library versions, for example), or steps to reproduce it. Sometimes the behavior is not a
+problem, but a deliberate choice.
 
 ### 📝 Improving documentation
 
