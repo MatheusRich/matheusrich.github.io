@@ -134,7 +134,7 @@ them quite easy. About that, some constructors were **really well** thought out,
 ### 🦀 Rusty Code
 
 It's funny to learn a new language because I can't tell what is idiomatic or not yet. For example,
-while coding my interpreter, I create the following function:
+while coding my interpreter, I created the following function:
 
 ```rust
 fn is_punctuation(c: &char) -> bool {
