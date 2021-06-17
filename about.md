@@ -15,7 +15,7 @@ title: About Me
 
   <h3>Lit lang <a href="https://github.com/lit-lang/lit">(Github)</a></h3>
 
-  <p>My first attempt on programming language design. Lit is a simple functional programming language.</p>
+  <p>My first attempt at programming language design. Lit is a simple functional programming language.</p>
 
   <p>Here's a sample of its (current) syntax:</p>
 
