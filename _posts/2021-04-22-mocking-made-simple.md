@@ -2,7 +2,7 @@
 layout: post
 title: 'Mocking Made Simple'
 date: 2021-04-22 09:23:40 -0300
-categories: testing refactoring mocks quicktip
+categories: testing refactoring mocks quick-tip
 ---
 
 > **TL;DR:** Inject dependencies instead of mocking functions.

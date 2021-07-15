@@ -3,7 +3,10 @@ layout: post
 title: 'Rust-stuff'
 date: 2021-04-01 22:34:29 -0300
 categories: rust
+published: false
 ---
+
+### Post 1
 
 ### 2021/04/01
 
@@ -51,7 +54,7 @@ println!("{}", (1..10).count() // => 9
 I decided to start learning Rust by (I know, I should've picked somthing simple, but I don't like
 putting effort in something "not usable") building a LISP (Make a Lisp)
 
-#### 2021/04/24
+### 2021/04/24
 
 - 4 spaces tab is hurting me
 - Weird having to think about memory in every line of code
@@ -61,11 +64,39 @@ putting effort in something "not usable") building a LISP (Make a Lisp)
 - It's really nice to know that I got a typechecker having my back.
 - Some constructors are really well thought out: enums, if let, while let. They fit as glove.
 
-#### 2021/04/27
+### 2021/04/27
 
 - String confusion is a bit better
   - Thanks to [this blog post](https://www.brandons.me/blog/why-rust-strings-seem-hard) and my
     rustacean friend [@PotHix](http://github.com/pothix)
 
-#### 2021/05/06
+### 2021/05/06
+
 - Discovered https://github.com/rust-lang/rust-clippy. Imma start using it to help me become more rustacean
+
+## Post 2
+
+### 2021/06/05
+
+- Hashmaps in rust are hard lol
+
+### 2021/06/06
+
+- No kwargs, no hash literal, no anonymous struct. =(
+
+### 2021/06/08
+
+- I hate this box thing.
+- It seems to be pretty common to use this for linked lists:
+  https://rust-unofficial.github.io/too-many-lists/second-final.html
+
+### 2021/07/05
+
+- I'm more comfortable with RUst;
+- I did most of the lisperator's net tutorial but failed to implement environments correctly.
+  - Could not implement a linked list
+  - Tried something with references but got lifetimes everywhere and suddenly I didn't know what I was doing.
+  - After a couple of days of failures, I declared bankruptcy and stopped this project. Note to self: start with some tutorials in the lang before trying to translate other language tutorials without know the current language lol
+  - Started RISP and it was FAAAR easier to follow. Now I'm even extending the language because it's
+    fun (and I really dug a LISP lang so I started copying Clojure's features);
+  - Clippy helps me to not make some dumb stuff;
