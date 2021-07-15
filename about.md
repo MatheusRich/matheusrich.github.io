@@ -8,7 +8,7 @@ title: About Me
   <div class="profilePic">
     <img loading="lazy" width=200 height=200 src="{{ '/assets/img/me.jpg' | prepend: site.baseurl }}" alt="Profile picture of Matheus Richard">
   </div>
-  <p class="intro">Hello, my name is Matheus! I'm a Software Engineer from Brazil. I'm an open source contributor, I love music and my newfound passion is game development.</p>
+  <p class="intro">Hello, my name is Matheus! I'm a Software Engineer from Brazil. I'm an open source contributor, I love music, games and creating programming languages.</p>
   <p>You can find me online using the links in the footer. Cya!</p>
 
   <h2 id="open-source">Open source projects</h2>
