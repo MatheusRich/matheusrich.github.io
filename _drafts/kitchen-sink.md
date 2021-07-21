@@ -15,11 +15,11 @@ _"let's add another method to that class"_, _"let's add another parameter to tha
 code for the 10th time... What? Don't look at me, it's how everyone does this!"_.
 
 Giant classes/functions/modules are like magnets: they attract all responsibilities to themselves and tend to get even
-bigger! They have so many things stuffed inside that everything seems to fit in there. That creates a sort of blackhole
+bigger! There are so much code stuffed inside that everything seems to fit in there. That creates a sort of black hole
 that won't stop growing.
 
 I'm not saying you should abstract early. I'm all aboard with [ma'am Sandi Metz][sandi] on _"duplication is far cheaper
-than the wrong abstraction"_. I'm just saying that abstraction will have to exist at some point.
+than the wrong abstraction"_. I'm just saying that an abstraction will have to exist at some point.
 
 ## 🚪 A way out
 
@@ -42,13 +42,15 @@ Bad code attracts (more) bad code. Developers, especially when they're new in a 
 way, when a piece of code is not that great, expect it to influence similar instances. To prevent this we must resist
 inertia. Yeah, it's easy just to follow what everyone's been doing, but this approach won't work forever.
 
-How to do it? Don't just add a new line of that huge method. Don't nest another `if/else` statement. Don't be afraid to
-create a small class or extract a small private method. There's no problem with that. Did you touch a function? How can
-you improve it? Does it have tests?
+How to do this? Following the [boy-scout rule][b-rule] "always leave the code behind in a better state than you found
+it" helps to create a good mindset for it. We'll think twice before just adding a new line of that huge method or
+nesting another `if/else` statement.
 
-Did you just understand a piece of spaghetti code? Don't keep it to yourself! Materialize this knowledge in the code by
-renaming variables, functions, extracting small methods to clarify intention, etc. Follow the [boy-scout rule][b-rule] and
-always leave the code behind in a better state than you found it.
+This rule helps us not to be afraid of taking small actions to improve the code. Did we touch a function? How can we
+improve it? Does it have tests? Can we [use code to get rid of some comments][comments]? When we finally understand
+_that_ piece of spaghetti code, we won't keep it to ourselves! We have to materialize this knowledge in the code itself
+by renaming variables, functions, extracting small methods to clarify intention, etc. It costs us a bit today, but will
+save a ton of time for the next developers (that can be ourselves in 6 months).
 
 Those simple actions can be powerful in the long run! One glass a day, that pile gets smaller. You can even have some
 partners joining this quest! Soon enough, that sink will be shining, and when it is clean, no one will want to be the
@@ -59,3 +61,4 @@ first to leave a dirty dish there.
 [d-patterns]: https://en.wikipedia.org/wiki/Software_design_pattern
 [refactoring]: https://martinfowler.com/books/refactoring.html
 [b-rule]: https://martinfowler.com/bliki/OpportunisticRefactoring.html
+[comments]: {% post_url 2021-03-26-dont-use-comments-use-code %}
