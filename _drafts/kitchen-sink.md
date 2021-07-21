@@ -29,27 +29,33 @@ smart folks like Martin Fowler taught us patterns for dealing with this very sit
 Pattern][strangler], for example, allows us to refactor big classes (or even applications) incrementally, without
 breaking backward compatibility!
 
-The point is, in the same way that there are [design patterns][d-patterns] for creating new, there are .
+The point is, in the same way that there are [design patterns][d-patterns] for creating new code and addressing issues,
+there [is a list of code smells and refactoring techniques][refactoring] to deal with them as well. Refactoring should
+be part of our daily work, not something _special_. We should study, learn and teach others about it. The more we do it,
+the easier (and natural) it gets!
 
 > "A refactor a day keeps the rewrite away!" - _Developer Granny_
 
 ## 🎸 Gravity is working against me
 
 Bad code attracts (more) bad code. Developers, especially when they're new in a codebase, tend to repeat patterns. That
-way, if a piece of code is not that great, it will probably influence similar instances.
+way, when a piece of code is not that great, expect it to influence similar instances. To prevent this we must resist
+inertia. Yeah, it's easy just to follow what everyone's been doing, but this approach won't work forever.
 
-To prevent this we must resist inertia. Yeah, it's easy just to follow what everyone's been doing, but .
-
-Don't just add a new line of that huge method. Don't nest another `if/else` statement. Don't be afraid to create a small
-class. There's no problem with that. Did you touch a function? How can you improve it? Does it have tests?
+How to do it? Don't just add a new line of that huge method. Don't nest another `if/else` statement. Don't be afraid to
+create a small class or extract a small private method. There's no problem with that. Did you touch a function? How can
+you improve it? Does it have tests?
 
 Did you just understand a piece of spaghetti code? Don't keep it to yourself! Materialize this knowledge in the code by
-renaming variables, functions, extracting small methods to clarify intention, etc.
+renaming variables, functions, extracting small methods to clarify intention, etc. Follow the [boy-scout rule][b-rule] and
+always leave the code behind in a better state than you found it.
 
 Those simple actions can be powerful in the long run! One glass a day, that pile gets smaller. You can even have some
-partners joining this quest! Soon enough, that sink will be shining. And when it's clean, no one will want to be the
+partners joining this quest! Soon enough, that sink will be shining, and when it is clean, no one will want to be the
 first to leave a dirty dish there.
 
 [sandi]: https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction
 [strangler]: https://martinfowler.com/bliki/StranglerFigApplication.html
 [d-patterns]: https://en.wikipedia.org/wiki/Software_design_pattern
+[refactoring]: https://martinfowler.com/books/refactoring.html
+[b-rule]: https://martinfowler.com/bliki/OpportunisticRefactoring.html
