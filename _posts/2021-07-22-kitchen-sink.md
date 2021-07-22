@@ -15,7 +15,7 @@ _"let's add another method to that class"_, _"let's add another parameter to tha
 code for the 10th time... What? Don't look at me, it's how everyone does this!"_.
 
 Giant classes/functions/modules are like magnets: they attract all responsibilities to themselves and tend to get even
-bigger! There are so much code stuffed inside that everything seems to fit in there. That creates a sort of black hole
+bigger! There is so much code stuffed inside that everything seems to fit in there. That creates a sort of black hole
 that won't stop growing.
 
 I'm not saying you should abstract early. I'm all aboard with [ma'am Sandi Metz][sandi] on
@@ -51,7 +51,7 @@ comments][comments]?
 
 When we finally understand _that piece of spaghetti code_ (everyone has at least one in mind), we won't keep it to
 ourselves! We have to materialize this knowledge in the code itself by renaming variables, functions, extracting small
-methods to clarify intention, etc. It costs us a bit today, but will save a ton of time for other developers (or
+methods to clarify intention, etc. It costs us a bit today but will save a ton of time for other developers (or
 ourselves in 6 months).
 
 Those simple actions can be powerful in the long run! One glass a day, that dirty pile gets smaller. You may even have
