@@ -19,7 +19,7 @@ permalink: /all/
 
   {% assign n_words = 0 %}
   {% for post in site.posts  %}
-    {% assign post_words = post.content | number_of_words  %}
+    {% assign post_words = post.content | number_of_words %}
     {% assign n_words = n_words | plus: post_words %}
   {% endfor  %}
 
