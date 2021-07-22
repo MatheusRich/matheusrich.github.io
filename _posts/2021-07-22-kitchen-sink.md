@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Kitchen Sink"
-date: 2021-04-30 17:32:41 -0300
+date: 2021-07-22 17:13:13 -0300
 categories: refactoring
 ---
 
@@ -18,8 +18,9 @@ Giant classes/functions/modules are like magnets: they attract all responsibilit
 bigger! There are so much code stuffed inside that everything seems to fit in there. That creates a sort of black hole
 that won't stop growing.
 
-I'm not saying you should abstract early. I'm all aboard with [ma'am Sandi Metz][sandi] on _"duplication is far cheaper
-than the wrong abstraction"_. I'm just saying that an abstraction will have to exist at some point.
+I'm not saying you should abstract early. I'm all aboard with [ma'am Sandi Metz][sandi] on
+_"duplication is far cheaper than the wrong abstraction"_, but an abstraction will _have_ to exist
+at some point.
 
 ## 🚪 A way out
 
@@ -31,7 +32,7 @@ breaking backward compatibility!
 
 The point is, in the same way that there are [design patterns][d-patterns] for creating new code and addressing issues,
 there [is a list of code smells and refactoring techniques][refactoring] to deal with them as well. Refactoring should
-be part of our daily work, not something _special_. We should study, learn and teach others about it. The more we do it,
+be part of our daily work, not something _~special~_. We should study, learn and teach others about it. The more we do it,
 the easier (and natural) it gets!
 
 > "A refactor a day keeps the rewrite away!" - _Developer Granny_
@@ -39,22 +40,23 @@ the easier (and natural) it gets!
 ## 🎸 Gravity is working against me
 
 Bad code attracts (more) bad code. Developers, especially when they're new in a codebase, tend to repeat patterns. That
-way, when a piece of code is not that great, expect it to influence similar instances. To prevent this we must resist
-inertia. Yeah, it's easy just to follow what everyone's been doing, but this approach won't work forever.
+way, expect a bad piece of code to influence similar instances. To prevent this **we must resist inertia**. Yeah, it's easy
+just to follow what everyone's been doing, but this approach won't work forever.
 
-How to do this? Following the [boy-scout rule][b-rule] "always leave the code behind in a better state than you found
-it" helps to create a good mindset for it. We'll think twice before just adding a new line of that huge method or
-nesting another `if/else` statement.
+How to do this? Following the [boy-scout rule][b-rule] _"always leave the code behind in a better state than you found
+it"_ helps to create a good mindset for it. We'll think twice before just adding a new line of that huge method or
+nesting another `if/else` statement. This rule helps us not to be afraid of taking small actions to improve the code.
+Did we touch a function? How can we improve it? Does it have tests? Can we [use code to get rid of some
+comments][comments]?
 
-This rule helps us not to be afraid of taking small actions to improve the code. Did we touch a function? How can we
-improve it? Does it have tests? Can we [use code to get rid of some comments][comments]? When we finally understand
-_that_ piece of spaghetti code, we won't keep it to ourselves! We have to materialize this knowledge in the code itself
-by renaming variables, functions, extracting small methods to clarify intention, etc. It costs us a bit today, but will
-save a ton of time for the next developers (that can be ourselves in 6 months).
+When we finally understand _that piece of spaghetti code_ (everyone has at least one in mind), we won't keep it to
+ourselves! We have to materialize this knowledge in the code itself by renaming variables, functions, extracting small
+methods to clarify intention, etc. It costs us a bit today, but will save a ton of time for other developers (or
+ourselves in 6 months).
 
-Those simple actions can be powerful in the long run! One glass a day, that pile gets smaller. You can even have some
-partners joining this quest! Soon enough, that sink will be shining, and when it is clean, no one will want to be the
-first to leave a dirty dish there.
+Those simple actions can be powerful in the long run! One glass a day, that dirty pile gets smaller. You may even have
+some partners joining this quest! Soon enough, that sink will be shining, and when it is clean, no one will want to be
+the first to leave a dirty dish there.
 
 [sandi]: https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction
 [strangler]: https://martinfowler.com/bliki/StranglerFigApplication.html
