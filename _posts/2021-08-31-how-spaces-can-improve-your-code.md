@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 'How Spaces Can Improve Your Code'
-date: 2021-08-13 11:58:53 -0300
-categories: code quick-tip
+date: 2021-08-31 12:53:10 -0300
+categories: code quick-tip refactoring
 ---
 
 Writing code is similar to writing an essay: it consists of many small parts that interact.
@@ -42,8 +42,8 @@ fn it_sums_two_numbers() {
 }
 ```
 
-While this test follows the [four-phase pattern][test-phases], separating each of test phase makes
-them more clear (thus, easier to spot, change, etc):
+While this test follows the [four-phase pattern][test-phases], separating each test phase makes
+them more clear:
 
 ```rust
 #[test]
@@ -90,8 +90,8 @@ end
 ```
 
 Here, we grouped each section by its "theme" (mixins, associations, validations, query methods,
-etc.). The spacing helps us see the logical separation between each section, speeding us up when
-we're searching where to add and change code.
+etc.). The spacing helps us see the logical separation between each section, which speeds us up when
+searching where to add and change code.
 
 ### Separate calculations from the return value
 
