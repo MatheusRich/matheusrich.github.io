@@ -16,9 +16,9 @@ paragraphs. The same technique can benefit our code. Here's how.
 > _--- Wikipedia_
 
 The critical thing in this definition is "dealing with a particular point or idea". Structuring our
-code with logical blocks means we group related things and **visually separate** them from the others.
-A simple new line makes a huge difference in readability. Let's look at some examples to clarify
-this idea.
+code with paragraphs (i.e., logical blocks) means we group related things and **visually separate**
+them from the others. A simple new line makes a huge difference in readability. Let's look at some
+examples to clarify this idea.
 
 ### Separate test phases
 
@@ -59,9 +59,23 @@ fn it_sums_two_numbers() {
 
 ### Grouping related concerns
 
-Programmers often use structures like modules and classes to tie code together.
+Programmers often use structures like modules and classes to tie code together. It is a great
+technique, but can lead to clutter if we're not careful.
 
-For example: splitting mixins, associations, validations, or query methods in a Rails model.
+Check out this Rails model. Even though it's only a few lines long, it's a bit hard to parse this
+class.
+
+```ruby
+class User < ApplicationRecord
+  include Clearance::User
+  has_many :books
+  belongs_to :organization
+  validates :name, presence: true
+  validates :email, presence: true, uniqueness: true
+end
+```
+
+See how different it looks when we separate its logical blocks:
 
 ```ruby
 class User < ApplicationRecord
@@ -75,24 +89,30 @@ class User < ApplicationRecord
 end
 ```
 
-Each section here is grouped by its "theme," and it's separated from the others with spaces. This
-makes it easier for developers to know where to look, add and change code.
+Here, we grouped each section by its "theme" (mixins, associations, validations, query methods,
+etc.). The spacing helps us see the logical separation between each section, speeding us up when
+we're searching where to add and change code.
 
 ### Separate calculations from the return value
 
-This technique is beneficial when the language allows omitting the `return` keyword.
+Another great opportunity to use code blocks is in function bodies. We often do some preparation
+work before return the result, so it's good to split those two parts up. This technique is especially
+beneficial when the language allows omitting the `return` keyword.
+
+_OBS: I'm omitting some details in this Rust implementation to keep it simpler._
 
 ```rust
-enum Format {
+enum FileFormat {
   HTML,
   Latex,
-  Markdown
+  Markdown,
+  // ...
 }
 
-fn render_markdown_to(markdown_content: &str, format_to_convert_to: Format) -> String {
+fn render_markdown_to(markdown_content: &str, format_to_convert_to: FileFormat) -> String {
   let renderer = match format_to_convert_to {
-    Format::HTML => HTMLRenderer::new(),
-    Format::Latex => LatexRenderer::new(),
+    FileFormat::HTML => HTMLRenderer::new(),
+    FileFormat::Latex => LatexRenderer::new(),
     other => panic!("Cannot convert markdown to {}", other),
   };
   renderer.render(markdown_content)
@@ -104,10 +124,10 @@ return value. It's a subtle detail that is easy to miss. Adding a new line here 
 evident where the calculations end and what is the actual return value.
 
 ```rust
-fn render_markdown_to(markdown_content: &str, format_to_convert_to: Format) -> String {
+fn render_markdown_to(markdown_content: &str, format_to_convert_to: FileFormat) -> String {
   let renderer: Renderer = match format_to_convert_to {
-    Format::HTML => HTMLRenderer::new(),
-    Format::Latex => LatexRenderer::new(),
+    FileFormat::HTML => HTMLRenderer::new(),
+    FileFormat::Latex => LatexRenderer::new(),
     other => panic!("Cannot convert markdown to {}", other),
   };
 
@@ -121,16 +141,16 @@ grouped lines probably will move together. Looking at the last example, we could
 expression to its own function:
 
 ```rust
-fn render_markdown_to(markdown_content: &str, format_to_convert_to: Format) -> String {
+fn render_markdown_to(markdown_content: &str, format_to_convert_to: FileFormat) -> String {
   let renderer = renderer_for_format(format_to_convert_to);
 
   renderer.render(markdown_content)
 }
 
-fn renderer_for_format(format: Format) -> Renderer {
+fn renderer_for_format(format: FileFormat) -> Box<Renderer> {
   match format {
-    Format::HTML => HTMLRenderer::new(),
-    Format::Latex => LatexRenderer::new(),
+    FileFormat::HTML => Box::new(HTMLRenderer::new()),
+    FileFormat::Latex => Box::new(LatexRenderer::new()),
     other => panic!("Cannot convert markdown to {}", other),
   }
 }
@@ -139,6 +159,6 @@ fn renderer_for_format(format: Format) -> Renderer {
 
 Separating logical blocks is a technique that is really simple but highly effective in making code
 more maintainable. Remember, we read code more than we write, so optimize your code for reading. A
-little effort today can save you team hours in the future.
+little effort today can save your team hours in the future.
 
 [test-phases]: https://thoughtbot.com/blog/four-phase-test
