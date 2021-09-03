@@ -99,7 +99,7 @@ Another great opportunity to use code blocks is in function bodies. We often do 
 work before return the result, so it's good to split those two parts up. This technique is especially
 beneficial when the language allows omitting the `return` keyword.
 
-_OBS: I'm omitting some details in this Rust implementation to keep it simpler._
+_FYI: I'm omitting some details in this Rust implementation to keep it simpler._
 
 ```rust
 enum FileFormat {
