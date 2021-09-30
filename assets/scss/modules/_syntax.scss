@@ -1,3 +1,5 @@
+// Tokens: https://github.com/rouge-ruby/rouge/wiki/List-of-tokens
+// VsCode colors: https://github.com/rouge-ruby/rouge/wiki/List-of-tokens
 .highlight {
   white-space: pre;
   overflow: auto;
@@ -21,16 +23,16 @@
 }
 
 .highlight .gd {
-  color: #2e3436;
-  background-color: #0e1416;
+  color: #fff;
+  background-color: #e06c7588;
 }
 .highlight .gr {
   color: #eeeeec;
   background-color: #c00;
 }
 .highlight .gi {
-  color: #babdb6;
-  background-color: #1f2b2d;
+  color: #fff;
+  background-color: rgba(#98c379, 0.8);
 }
 .highlight .go {
   color: #2c3032;
