@@ -86,7 +86,11 @@ HEADER STYLING
 
 				&.current {
 					padding-bottom: 0.25em;
-					border-bottom: 4px solid rgba(255, 255, 255, 0.4);
+					border-bottom: 4px solid rgba(#fff, 0.5);
+
+					@media (prefers-color-scheme: dark) {
+						border-bottom: 4px solid invert($primary-color);
+					}
 				}
 			}
 		}
