@@ -6,6 +6,7 @@ url: 'http://matheusrich.com' # the base hostname & protocol for your site, e.g.
 baseurl: '' # the subpath of your site, e.g. /blog
 paginate_path: '/page:num/'
 permalink: /:title/
+repo_url: https://github.com/MatheusRich/matheusrich.github.io
 
 markdown: kramdown
 highlighter: rouge
