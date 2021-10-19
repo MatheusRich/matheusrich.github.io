@@ -1147,15 +1147,4 @@ FOOTER STYLES
   .footer .container {
     padding: 1rem 0;
     max-width: 800px; }
-  /***************
-CONTACT PAGE STYLING
-***************/
-  .contactContent {
-    max-width: 48%;
-    margin-right: 2%;
-    float: left; }
-  #contact form {
-    max-width: 48%;
-    width: 48%;
-    float: right;
-    margin-right: 0; } }
+ }

@@ -3,20 +3,20 @@ GLOBAL STYLES
 ***************/
 
 body {
-	font-size: 120%;
+  font-size: 120%;
 }
 
 .content {
-	padding-top: 0;
-	position: relative;
-	z-index: 1;
+  padding-top: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .container {
-	max-width: 880px;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0;
+  max-width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
 }
 
 /***************
@@ -24,17 +24,17 @@ HOMEPAGE STYLING
 ***************/
 
 #home {
-	.posts,
-	.pageTitle,
-	.pagination {
-		width: 90%;
-		float: none;
-		margin: 0 auto 1.5em;
-	}
+  .posts,
+  .pageTitle,
+  .pagination {
+    width: 90%;
+    float: none;
+    margin: 0 auto 1.5em;
+  }
 
-	.pageTitle {
-		margin: 2rem auto 1em;
-	}
+  .pageTitle {
+    margin: 2rem auto 1em;
+  }
 }
 
 /***************
@@ -42,59 +42,59 @@ HEADER STYLING
 ***************/
 
 .header {
-	height: 8em;
-	position: relative;
+  height: 8em;
+  position: relative;
 
-	.container {
-		position: relative;
-		top: 50%;
-		transform: translateY(-50%);
-		max-width: 800px;
-		overflow: hidden;
-	}
+  .container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 800px;
+    overflow: hidden;
+  }
 
-	h1 {
-		font-size: 3em;
-		line-height: 1;
-		letter-spacing: -3px;
-		padding-left: 0;
-	}
+  h1 {
+    font-size: 3em;
+    line-height: 1;
+    letter-spacing: -3px;
+    padding-left: 0;
+  }
 
-	nav {
-		float: left;
-		clear: left;
+  nav {
+    float: left;
+    clear: left;
 
-		ul {
-			margin: 0;
-			li {
-				display: inline;
-				line-height: 3em;
-				background: none;
-				padding: 0 5px;
-				border: none;
+    ul {
+      margin: 0;
+      li {
+        display: inline;
+        line-height: 3em;
+        background: none;
+        padding: 0 5px;
+        border: none;
 
-				a {
-					color: white;
-					font-size: 0.9em;
-					text-decoration: none;
-					padding: 0 0.25em;
+        a {
+          color: white;
+          font-size: 0.9em;
+          text-decoration: none;
+          padding: 0 0.25em;
 
-					&:hover {
-						color: darken(white, 20%);
-					}
-				}
+          &:hover {
+            color: darken(white, 20%);
+          }
+        }
 
-				&.current {
-					padding-bottom: 0.25em;
-					border-bottom: 4px solid rgba(#fff, 0.5);
+        &.current {
+          padding-bottom: 0.25em;
+          border-bottom: 4px solid rgba(#fff, 0.5);
 
-					@media (prefers-color-scheme: dark) {
-						border-bottom: 4px solid invert($primary-color);
-					}
-				}
-			}
-		}
-	}
+          @media (prefers-color-scheme: dark) {
+            border-bottom: 4px solid invert($primary-color);
+          }
+        }
+      }
+    }
+  }
 }
 
 /***************
@@ -102,22 +102,22 @@ MENU STYLING
 ***************/
 
 .js {
-	.nav-collapse {
-		position: relative;
-		max-height: none;
+  .nav-collapse {
+    position: relative;
+    max-height: none;
 
-		&.closed {
-			max-height: none;
-		}
+    &.closed {
+      max-height: none;
+    }
 
-		ul li a {
-			display: inline-block;
-		}
-	}
+    ul li a {
+      display: inline-block;
+    }
+  }
 }
 
 .nav-toggle {
-	display: none;
+  display: none;
 }
 
 /***************
@@ -125,73 +125,73 @@ POST STYLING
 ***************/
 
 .post {
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6,
-	p,
-	ul,
-	ol,
-	dl,
-	.pageTitle {
-		width: 90%;
-		float: none;
-		margin: 0 auto 2rem;
-	}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  dl,
+  .pageTitle {
+    width: 90%;
+    float: none;
+    margin: 0 auto 2rem;
+  }
 
-	h1,
-	.h1,
-	h2,
-	.h2,
-	h3,
-	.h3,
-	h4,
-	.h4,
-	h5,
-	.h5,
-	h6,
-	.h6 {
-		margin: 1rem auto;
-	}
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  .h4,
+  h5,
+  .h5,
+  h6,
+  .h6 {
+    margin: 1rem auto;
+  }
 
-	p {
-		text-align: justify;
-	}
+  p {
+    text-align: justify;
+  }
 
-	.pageTitle {
-		margin: 2rem auto 1em;
-	}
+  .pageTitle {
+    margin: 2rem auto 1em;
+  }
 
-	.featuredImage {
-		position: relative;
-		margin-top: 2rem;
+  .featuredImage {
+    position: relative;
+    margin-top: 2rem;
 
-		&:before {
-			background: white;
-			content: "";
-			display: block;
-			width: 100%;
-			height: 4em;
-			position: absolute;
-			top: -2em;
-			left: 0;
-			transform: skewY(-2deg);
-			transform-origin: bottom left;
-		}
-	}
+    &:before {
+      background: white;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 4em;
+      position: absolute;
+      top: -2em;
+      left: 0;
+      transform: skewY(-2deg);
+      transform-origin: bottom left;
+    }
+  }
 }
 
 .js .nav-collapse {
-	clip: rect(0 0 0 0);
-	max-height: 0;
-	position: absolute;
-	display: block;
-	overflow: hidden;
-	zoom: 1;
-	clear: both;
-	width: 100%;
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+  clear: both;
+  width: 100%;
 }
 
 /***************
@@ -199,20 +199,20 @@ POST NAV STYLING
 ***************/
 
 .postNav {
-	.prev,
-	.next {
-		width: 50%;
-	}
+  .prev,
+  .next {
+    width: 50%;
+  }
 
-	.prev {
-		float: left;
-		text-align: left;
-	}
+  .prev {
+    float: left;
+    text-align: left;
+  }
 
-	.next {
-		text-align: right;
-		float: right;
-	}
+  .next {
+    text-align: right;
+    float: right;
+  }
 }
 
 /***************
@@ -220,42 +220,23 @@ FOOTER STYLES
 ***************/
 
 .footer {
-	&-links {
-		float: right;
-	}
+  &-links {
+    float: right;
+  }
 
-	.copy {
-		float: left;
-	}
+  .copy {
+    float: left;
+  }
 
-	.container {
-		padding: 1rem 0;
-		max-width: 800px;
-	}
-}
-
-/***************
-CONTACT PAGE STYLING
-***************/
-
-.contactContent {
-	max-width: 48%;
-	margin-right: 2%;
-	float: left;
-}
-
-#contact {
-	form {
-		max-width: 48%;
-		width: 48%;
-		float: right;
-		margin-right: 0;
-	}
+  .container {
+    padding: 1rem 0;
+    max-width: 800px;
+  }
 }
 
 .post figure.highlight > pre,
 .post pre.highlight {
-	margin: 0;
-	padding: 0;
-	font-size: 0.7em;
+  margin: 0;
+  padding: 0;
+  font-size: 0.7em;
 }

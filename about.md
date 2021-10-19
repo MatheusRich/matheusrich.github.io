@@ -13,7 +13,7 @@ title: About Me
 
   <h2 id="open-source">Open source projects</h2>
 
-  <h3>Lit lang <a href="https://github.com/lit-lang/lit">(Github)</a></h3>
+  <h3>Lit lang <a class="dark-safe" href="https://github.com/lit-lang/lit">(Github)</a></h3>
 
   <p>My first attempt at programming language design. Lit is a simple functional programming language.</p>
 
@@ -31,7 +31,7 @@ let n = gets();
 puts("The # {n} fibonacci number is {fib(n)}")
 {% endhighlight %}
 
-  <h3>Benchable <a href="https://github.com/MatheusRich/benchable">(Github)</a></h3>
+  <h3>Benchable <a class="dark-safe" href="https://github.com/MatheusRich/benchable">(Github)</a></h3>
 
   <p>Benchable aims to make creating Ruby benchmarks easier.</p>
 
@@ -58,7 +58,7 @@ end
   <p>There are 4 benchmark types available: <code class="language-plaintext highlighter-rouge">bm</code>, <code class="language-plaintext highlighter-rouge">bmbm</code>, <code class="language-plaintext highlighter-rouge">ips</code> and <code class="language-plaintext highlighter-rouge">memory</code>.</p>
 
 
-  <h3>EzAttributes <a href="https://github.com/MatheusRich/EzAttributes">(Github)</a></h3>
+  <h3>EzAttributes <a class="dark-safe" href="https://github.com/MatheusRich/EzAttributes">(Github)</a></h3>
 
   <p>Easily define initializers with keyword args (in Ruby).</p>
 
