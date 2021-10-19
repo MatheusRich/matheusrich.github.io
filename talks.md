@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Talks
+title: Talks | Rich Codes
 ---
 
 <div id="articles">

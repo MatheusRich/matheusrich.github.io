@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About Me
+title: About Me | Rich Codes
 ---
 
 <div class="post">
