@@ -58,5 +58,6 @@ talks:
       TDD is awesome, but can be scary. Learn how to start practicing it in 5 minutes by fixing bugs, so
       we can kill two birds with one stone!
     date: 2021-07-28 -0300
+    slides_url: https://speakerdeck.com/matheusrich/start-tdding-in-5-minutes
     video_url: https://www.youtube.com/embed/c6PY_t17iPk?start=1695
 
