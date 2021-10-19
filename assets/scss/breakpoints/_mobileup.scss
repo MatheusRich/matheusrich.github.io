@@ -472,17 +472,6 @@ POST LIST STYLING
 .posts {
 	li {
 		margin-bottom: 4rem;
-		position: relative;
-
-		&:before {
-			content: "";
-			position: absolute;
-			bottom: -2rem;
-			left: 0;
-			background: darken(white, 10%);
-			height: 2px;
-			width: 60px;
-		}
 
 		a {
 			text-decoration: none;
@@ -506,13 +495,13 @@ POST LIST STYLING
 }
 
 .embedded-video {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 
-  iframe {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16/9;
-    max-width: 800px;
-  }
+	iframe {
+		width: 100%;
+		height: auto;
+		aspect-ratio: 16/9;
+		max-width: 800px;
+	}
 }
