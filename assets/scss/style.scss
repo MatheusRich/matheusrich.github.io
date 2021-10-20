@@ -39,13 +39,6 @@
   }
 }
 
-code.language-plaintext.highlighter-rouge {
-  background-color: #f2f2f5;
-  color: $primary-color;
-  padding: 1px 8px;
-  border-radius: 8px;
-}
-
 div.blob {
   code span {
     background-color: currentColor;
@@ -55,7 +48,7 @@ div.blob {
 
 .Tag {
   color: white;
-  background-color: darken($primary-color, 10%);
+  background-color: var(--primary-color-dk);
   padding: 0 10px;
   border-radius: 999px;
   font-size: 1rem;
@@ -64,7 +57,7 @@ div.blob {
   vertical-align: middle;
 
   &--outlined {
-    background: white;
+    background: transparent;
     color: currentColor;
     border: 2px solid currentColor;
   }
@@ -107,6 +100,12 @@ div.blob {
   height: auto;
 }
 
+.dark-safe {
+  @media (prefers-color-scheme: dark) {
+    filter: invert(100%);
+  }
+}
+
 .Categories {
   margin-bottom: 2rem;
 
@@ -117,58 +116,5 @@ div.blob {
 
   a {
     text-decoration: none;
-  }
-}
-
-// DARK MODE
-@media (prefers-color-scheme: dark) {
-  // Invert everything
-  html {
-    background-color: white;
-    filter: invert(100%);
-  }
-
-  // Undo some
-  div.highlight,
-  figure.highlight,
-  .header,
-  .dark-safe,
-  .post h2,
-  .post h3,
-  .post h4,
-  iframe,
-  img {
-    filter: invert(100%);
-  }
-
-  // Custom
-  .post h2,
-  .post h3,
-  .post h4 {
-    color: #eee;
-  }
-
-  .post .meta {
-    color: #0c0a0a;
-  }
-
-  code.language-plaintext.highlighter-rouge {
-    background-color: rgba(#000, 0.15);
-  }
-
-  .header {
-    background: none;
-
-    & .nav-toggle {
-      background: #374151;
-    }
-  }
-  .nav-collapse ul li {
-    background: #374151;
-    border-bottom-color: #111827;
-  }
-
-  a:hover {
-    color: lighten($link-color, 15%);
   }
 }

@@ -38,7 +38,7 @@ disqus:
   shortname: matheusrich
 
 talks:
-  - title: Taming God Objects (<span class="dark-safe">🇧🇷</span>)
+  - title: Taming God Objects (🇧🇷)
     description: >
       Everyone has worked with an app with <strong>enormous classes</strong>, filled with mixed
       responsibilities. They're hard to understand, hard to change and hard to
@@ -47,14 +47,14 @@ talks:
     date: 2021-01-27 -0300
     video_url: https://www.youtube.com/embed/fNZviKKU_lI?start=521
     slides_url: https://speakerdeck.com/matheusrich/taming-god-objects-easy-incremental-and-secure
-  - title: 3 Steps Every Test Should Take — lightning talk (<span class="dark-safe">🇧🇷</span>)
+  - title: 3 Steps Every Test Should Take — lightning talk (🇧🇷)
     description: >
       Good tests tell a story, and this story is made of 4 acts. In this talk I present a
       technique to make tests easy to read, write, and understand.
     date: 2021-07-28 -0300
     video_url: https://www.youtube.com/embed/c6PY_t17iPk?start=517
     slides_url: https://speakerdeck.com/matheusrich/3-steps-every-test-should-take
-  - title: Start TDDing in 5 minutes — lightning talk (<span class="dark-safe">🇧🇷</span>)
+  - title: Start TDDing in 5 minutes — lightning talk (🇧🇷)
     description: >
       TDD is awesome, but can be scary. Learn how to start practicing it in 5 minutes by fixing bugs, so
       we can kill two birds with one stone!

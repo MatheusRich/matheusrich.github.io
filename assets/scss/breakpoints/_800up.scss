@@ -89,7 +89,7 @@ HEADER STYLING
           border-bottom: 4px solid rgba(#fff, 0.5);
 
           @media (prefers-color-scheme: dark) {
-            border-bottom: 4px solid invert($primary-color);
+            border-bottom: 4px solid var(--primary-color);
           }
         }
       }

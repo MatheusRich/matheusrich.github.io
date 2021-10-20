@@ -12,9 +12,9 @@ title: Talks | Rich Codes
         <span class="date">{{ talk.date | date_to_string }}</span>
         <h3>{{ talk.title }}</h3>
         <p>
-          <a href="{{ talk.video_url }}" target="_blank"><span class="dark-safe">🖥️</span> Watch it</a>
+          <a href="{{ talk.video_url }}" target="_blank">🖥️ Watch it</a>
           <span style="display:inline-block;width: 5px"></span>
-          <a href="{{ talk.slides_url }}" target="_blank"><span class="dark-safe">🃏</span> Presentation slides</a>
+          <a href="{{ talk.slides_url }}" target="_blank">🃏 Presentation slides</a>
         </p>
         <p class="description">{{ talk.description }}</p>
         <div class="embedded-video">

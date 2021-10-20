@@ -149,7 +149,7 @@ missing or confusing docs, for example. Your trajectory can help future beginner
 Look for issues with the tags [first-timers-only-issue], [easy][easy-issue], [beginner][beginner-issue] and [good first
 issue][good-issue]. And here's a [list of beginner-friendly projects](https://github.com/MunGell/awesome-for-beginners).
 
-Now grab your cup of coffee, stretch your hands and go do something awesome <span class="dark-safe">😉</span>!
+Now grab your cup of coffee, stretch your hands and go do something awesome 😉!
 
 [bug-issues]: https://github.com/search?q=label%3Abug&type=Issues
 [easy-issue]: https://github.com/search?q=label%3Aeasy&type=Issues

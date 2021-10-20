@@ -3,7 +3,7 @@ BUTTON DEFAULTS
 ***************/
 
 %btn {
-  background-color: $primary-color;
+  background-color: var(--primary-color);
   display: inline-block;
   position: relative;
   font-family: $sans-serif;
@@ -24,7 +24,7 @@ BUTTON DEFAULTS
   &:focus {
     color: $white;
     text-decoration: none;
-    background-color: darken($primary-color, 10%);
+    background-color: var(--primary-color-dk);
   } // end hover
 
   // clicking on the button
@@ -36,35 +36,20 @@ BUTTON DEFAULTS
 // Default button class
 .button {
   @extend %btn;
-
-  &-secondary {
-    @extend %btn;
-    background-color: $secondary-color;
-
-    &:hover {
-      background-color: darken($secondary-color, 10%);
-    }
-  }
-
-  &-tertiary {
-    @extend %btn;
-    background-color: $tertiary-color;
-
-    &:hover {
-      background-color: darken($tertiary-color, 10%);
-    }
-  }
 }
 
 // Outline Button
 .button__outline {
   @extend %btn;
   background-color: transparent;
-  border: 2px solid $primary-color;
-  color: $primary-color;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
 
   &:hover {
-    background-color: $primary-color;
-    color: $white;
+    background-color: var(--primary-color);
+    color: white;
+    @media (prefers-color-scheme: dark) {
+      color: black;
+    }
   }
 }

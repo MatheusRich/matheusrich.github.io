@@ -2,22 +2,11 @@
 COLOR VARIABLES
 ***************/
 
-// Better default colors
-// Cool
-// $aqua:  #7FDBFF;
-$blue: #0074d9;
-// $navy:  #001F3F;
-// $teal:  #39CCCC;
-$green: #2ecc40;
-// $olive: #3D9970;
-// $lime:  #01FF70;
-// Warm
-$yellow: #ffdc00;
-$orange: #ff851b;
 $red: #ff4136;
 $fuchsia: #f012be;
 $purple: #b10dc9;
 $maroon: #85144b;
+
 // Gray Scale
 $white: #fff;
 $silver: #ddd;
@@ -25,16 +14,25 @@ $grey: #aaa;
 $black: #111;
 
 // Color variables
-$primary-color: #0f4c82;
-$secondary-color: #233e5b;
-$tertiary-color: #aaa;
-$link-color: $primary-color;
-$background-color: $primary-color;
+:root {
+  --primary-color: #0f4c82;
+  --primary-color-dk: #0d4475;
+  --primary-color-lt: #125fa2;
+  --background-color: var(--primary-color);
+  --background-color-dk: var(--primary-color-dk);
+  --background-color-lt: var(--primary-color-lt);
+  --link-color: var(--primary-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #f0b37d;
+    --primary-color-dk: #e99042;
+    --primary-color-lt: #f1ba8a;
+  }
+}
 
 $bad-color: $red; // Bad color for errors, validation etc.
-$good-color: $green; // Good color for success etc.
-$info-color: $blue; // Good color for success etc.
-$warning-color: $orange; // Good color for success etc.
 $subtle-color: $grey; // Subtle color for subtle text
 
 /***************
