@@ -26,23 +26,6 @@ body {
   }
 }
 
-// Text Selection Styling
-::-moz-selection {
-  background: var(--primary-color);
-  color: white;
-  @media (prefers-color-scheme: dark) {
-    color: black;
-  }
-}
-
-::selection {
-  background: var(--primary-color);
-  color: white;
-  @media (prefers-color-scheme: dark) {
-    color: black;
-  }
-}
-
 // Media Styling
 img,
 video,
