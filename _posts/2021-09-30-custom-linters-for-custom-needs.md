@@ -3,6 +3,7 @@ layout: post
 title: "Custom Linters For Custom Needs"
 date: 2021-09-30 15:17:47 -0300
 categories: ruby rails rubocop linters
+description: Parsers, grepping, ASCII art, and how that helps you automating boring stuff.
 ---
 
 I'm working on a project that heavily relies on Feature Flags. Whenever we add a new feature or fix
