@@ -506,7 +506,7 @@ POST LIST STYLING
 }
 
 code.language-plaintext.highlighter-rouge {
-  background-color: #f2f2f5;
+  background-color: var(--inline-code-background-color);
   color: var(--primary-color);
   padding: 1px 8px;
   border-radius: 8px;
@@ -542,9 +542,5 @@ code.language-plaintext.highlighter-rouge {
 
   .footer .container {
     border-top-color: lighten(black, 20%);
-  }
-
-  code.language-plaintext.highlighter-rouge {
-    background-color: #282c34;
   }
 }

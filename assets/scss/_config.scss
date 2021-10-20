@@ -14,6 +14,8 @@ $grey: #aaa;
   --background-color-dk: var(--primary-color-dk);
   --background-color-lt: var(--primary-color-lt);
   --link-color: var(--primary-color);
+  --code-background-color: #282c34;
+  --inline-code-background-color: #f2f2f5;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,6 +23,7 @@ $grey: #aaa;
     --primary-color: #f0b37d;
     --primary-color-dk: #e99042;
     --primary-color-lt: #f1ba8a;
+    --inline-code-background-color: var(--code-background-color);
   }
 }
 
