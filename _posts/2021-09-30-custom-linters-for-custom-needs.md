@@ -131,13 +131,13 @@ us. Here's the final pattern we're going to use to search our code:
 
 ## Actually writing a cop
 
-To create a custom Rubocop cop, we create a class that subclasses `RuboCop::Cop::Cop`. Then we
+To create a custom Rubocop cop, we create a class that subclasses `RuboCop::Cop::Base`. Then we
 need to hop on one of the hooks Rubocop runs while reading our code, like
 `on_class`, `on_if`, `on_send`. In this case, we're going to use `on_send`:
 
 ```ruby
 module CustomCops
-  class UnknownFeatureFlag < RuboCop::Cop::Cop
+  class UnknownFeatureFlag < RuboCop::Cop::Base
     def on_send(node)
       # do stuff with the AST node
     end
@@ -151,7 +151,7 @@ back the captured symbol to the block so that we can use it.
 
 ```ruby
 module CustomCops
-  class UnknownFeatureFlag < RuboCop::Cop::Cop
+  class UnknownFeatureFlag < RuboCop::Cop::Base
     def_node_matcher :on_feature_flag, <<~PATTERN
       (send (const nil :Feature) :enabled? (sym $_))
     PATTERN
@@ -169,7 +169,7 @@ Now we check if this flag exists in our file and register an offense if it doesn
 
 ```ruby
 module CustomCops
-  class UnknownFeatureFlag < RuboCop::Cop::Cop
+  class UnknownFeatureFlag < RuboCop::Cop::Base
     def_node_matcher :on_feature_flag, <<~PATTERN
       (send (const nil :Feature) :enabled? (sym $_))
     PATTERN
