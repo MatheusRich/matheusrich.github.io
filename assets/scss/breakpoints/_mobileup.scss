@@ -16,7 +16,7 @@ body {
   font-family: $serif;
   line-height: 1.7;
   font-size: 110%;
-  color: $black;
+  color: black;
   overflow-x: hidden;
   margin: 0;
 
@@ -281,7 +281,7 @@ POST STYLING
       text-align: center;
       margin-top: 4px;
       font-size: 0.9em;
-      color: lighten($black, 30%);
+      color: lighten(black, 30%);
     }
 
     img {
