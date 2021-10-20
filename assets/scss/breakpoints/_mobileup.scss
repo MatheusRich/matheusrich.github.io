@@ -49,9 +49,18 @@ LINK STYLING
 
 a {
   color: var(--primary-color);
+  text-decoration: none;
 
   &:hover {
     color: var(--primary-color-dk);
+  }
+
+  code.language-plaintext.highlighter-rouge {
+    text-decoration: underline;
+
+    &:hover {
+      color: var(--primary-color-dk);
+    }
   }
 }
 
@@ -471,14 +480,6 @@ POST LIST STYLING
 .posts {
   li {
     margin-bottom: 4rem;
-
-    a {
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
 
     .date {
       color: lighten(black, 20%);
