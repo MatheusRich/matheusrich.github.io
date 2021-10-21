@@ -39,7 +39,7 @@ BUTTON DEFAULTS
 }
 
 // Outline Button
-.button__outline {
+.button--outlined {
   @extend %btn;
   background-color: transparent;
   border: 2px solid var(--primary-color);
