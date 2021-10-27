@@ -5,7 +5,7 @@ date: 2020-07-18 01:00:49 -0300
 categories: ruby
 ---
 
-How many times have you searched how to pass arguments to a rake task? [Bake][bake-gh] makes it as easy as creating a simple method (**literally**). 
+How many times have you searched how to pass arguments to a rake task? [Bake][bake-gh] makes it as easy as creating a simple method (**literally**).
 
 For demonstration, we're gonna create a task that generates a new blog post file for you.
 
@@ -168,7 +168,7 @@ $ bake post:new 'Nested task!'
 
 #### Listing tasks
 To list all available tasks run:
-  
+
 ```bash
 $ bake list
 ```
@@ -184,6 +184,6 @@ $ bake list post
 ```
 
 ## Wrapping up
-Bake makes really easy to create tasks. No DSL, no new syntax to learn. Just plain old Ruby methods! If you like it, give it some love by starring the repository [on Github][bake-gh].
+Bake makes really easy to create tasks. No DSL, no new syntax to learn. Just plain old Ruby methods! If you like it, give it some love by starring the repository [on GitHub][bake-gh].
 
 [bake-gh]: https://github.com/ioquatix/bake/
