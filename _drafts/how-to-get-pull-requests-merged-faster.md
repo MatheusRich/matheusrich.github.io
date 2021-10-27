@@ -1,26 +1,46 @@
 ---
 layout: post
-title: "How To Get Pull Requests Merged Faster"
+title: 'How To Get Pull Requests Merged Faster'
 date: 2021-06-23 17:29:34 -0300
-categories: quick-tip productivity
+categories: quick-tip productivity code
 ---
 
-No one likes large Pull Requests. Reviewers have a harder time reading them, bugs sneak in, they
-took ages to get merged, other branches get merged and conflicts pop everywhere... It's a nightmare.
-There's a better way to handle this. Listen carefully, it's a secret:
+No one likes huge Pull Requests. Reviewers have a hard time reading them, bugs sneak in, they took
+ages to get merged and conflicts pop everywhere... It's a nightmare. There's a better way to handle
+this. Listen carefully. It's a secret:
 
 🤫 _<small>make them small.</small>_
 
-## Make them small
+## 🎩 Wear one hat at a time
 
-split refactorings and new features.
+"How do I do that?" - You may ask. Well,
 
-## 🎩 Wear one hat at a time!
+Changing behavior / changing structure
 
+Split refactoring and new features.
 
-### Split (view) components
+> For each desired change, make the change easy (warning: this may be hard), then make the easy change -- Kent Beck
 
-## Good description
+preparatory refactoring
 
-## Screenshots
-## Usage
+I understand that your workflow may change lots of files, but the thing is that **you don't need to
+add all of them to the same PR**.
+
+## 💅 Nice presentation
+
+Stepping out from the code side a bit, if you want to make a good PR, make sure to make it
+appealing. Some file changes with no context at all won't make a reviewer happy. Here are some
+things you can do to put a smile on their faces.
+
+### Good description
+
+What is this PR doing? Bugfix, new feature, refactoring.
+
+any breaking change?
+
+Benchmarks? Usage?
+
+📸 Screenshots
+
+## 🧪 Tests!
+
