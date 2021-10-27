@@ -22,7 +22,7 @@ title: Recent Posts | Rich Codes
         <h3>
           <a class="post-link align-middle" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           {% if post.draft %}
-            <span class="Tag align-middle">Draft</span>
+            {% include draft_tag.html %}
           {% endif %}
         </h3>
         <p>{% if post.description %}{{ post.description }}{% else %}{{ post.excerpt | strip_html }}{% endif %}</p>
