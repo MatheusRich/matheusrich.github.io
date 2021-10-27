@@ -8,24 +8,26 @@ title: Recent Posts | Rich Codes
   <ul class="posts noList">
     {% for post in paginator.posts %}
       <li>
-        <span>
-          <span class="date">{{ post.date | date: '%B %d, %Y' }} –</span>
-          {% assign categories = post.categories | sort %}
-          {% for category in categories %}
-            <a class="font-sm" href="/categories/#{{category}}">{{ category }}</a>
+        <article>
+          <span>
+            <span class="date">{{ post.date | date: '%B %d, %Y' }} –</span>
+            {% assign categories = post.categories | sort %}
+            {% for category in categories %}
+              <a class="font-sm" href="/categories/#{{category}}">{{ category }}</a>
 
-            {% if forloop.last == false %}
-              <span class="font-sm">,</span>
+              {% if forloop.last == false %}
+                <span class="font-sm">,</span>
+              {% endif %}
+            {% endfor %}
+          </span>
+          <h3>
+            <a class="post-link align-middle" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            {% if post.draft %}
+              {% include draft_tag.html %}
             {% endif %}
-          {% endfor %}
-        </span>
-        <h3>
-          <a class="post-link align-middle" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          {% if post.draft %}
-            {% include draft_tag.html %}
-          {% endif %}
-        </h3>
-        <p>{% if post.description %}{{ post.description }}{% else %}{{ post.excerpt | strip_html }}{% endif %}</p>
+          </h3>
+          <p>{% if post.description %}{{ post.description }}{% else %}{{ post.excerpt | strip_html }}{% endif %}</p>
+        </article>
       </li>
     {% endfor %}
   </ul>

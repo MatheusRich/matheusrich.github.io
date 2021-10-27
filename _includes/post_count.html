@@ -1,0 +1,25 @@
+{% assign years = "" | split: ',' %}
+{% for post in site.posts %}
+  {% assign post_year = post.date | date: "%Y" %}
+  {% assign years = years | push: post_year %}
+{% endfor %}
+{% assign years = years | sort %}
+{% assign first_y = years | first %}
+{% assign last_y = years | last %}
+{% assign n_years = last_y | minus: first_y %}
+
+{% assign n_articles = site.posts | size %}
+
+{% assign n_words = 0 %}
+{% for post in site.posts  %}
+  {% assign post_words = post.content | number_of_words %}
+  {% assign n_words = n_words | plus: post_words %}
+{% endfor  %}
+
+<p>
+  I've written for {{n_years}} years, across {{n_articles}} articles and {{n_words}} words! Check out all my posts
+bellow.
+</p>
+<p>
+  I also have some articles on <a href="https://robots.thoughtbot.com/authors/matheus-richard">thoughtbot's blog</a>.
+</p>
