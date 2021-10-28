@@ -262,7 +262,7 @@ POST STYLING
     font-weight: 300;
     color: lighten(black, 10%);
     @media (prefers-color-scheme: dark) {
-      color: lighten(black, 80%);
+      color: lighten(black, 70%);
     }
   }
 
@@ -270,10 +270,13 @@ POST STYLING
     margin: 3rem 0;
 
     figcaption {
+      margin-top: -1rem;
       text-align: center;
-      margin-top: 4px;
-      font-size: 0.9em;
+      font-size: 0.8em;
       color: lighten(black, 30%);
+      @media (prefers-color-scheme: dark) {
+        color: lighten(black, 70%);
+      }
     }
 
     img {
@@ -295,6 +298,12 @@ POST STYLING
     margin: 0;
     padding: 0;
     font-size: 0.8em;
+  }
+
+  @media only screen and (max-width: 800px) {
+    figure.highlight {
+      font-size: 0.8em;
+    }
   }
 
   .dropcap {
