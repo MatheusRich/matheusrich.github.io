@@ -22,7 +22,7 @@ end
 # @param draft_name [String] name of the draft to be created.
 # @param tags [Array(String)] tags of the draft.
 def draft(draft_name, tags: ['ruby'])
-  time = Time.now
+  time = nil
   file_name = Slugify.(draft_name) + '.md'
 
   File.write(DRAFTS_PATH + file_name, FileContent.(draft_name, time, tags))
@@ -54,7 +54,7 @@ FileContent = ->(post_name, time, tags) do
   ---
   layout: post
   title: "#{Titleize.(post_name)}"
-  date: #{time.to_s}
+  #{if !!time then "date: #{time.to_s}" end}
   categories: #{tags.join(' ')}
   ---
   CONTENT
