@@ -8,6 +8,12 @@ permalink: /all/
 
   {% include post_count.html %}
 
+  {%- if jekyll.environment != "production" -%}
+    {% assign draft_posts = site.posts | where: 'draft', 'true' %}
+    {% include post_category.html name="drafts" posts=draft_posts %}
+  {% endif %}
+
+
   {% for post in site.posts  %}
     {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
     {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
@@ -17,11 +23,14 @@ permalink: /all/
       <ul class="posts noList">
     {% endif %}
 
+    {% if post.draft %}
+      {% continue %}
+    {% endif %}
+
     <li>
       <h3 class="font-xl">
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         <span class="date">{{ post.date | date: "%B %-d" }}</span>
-        {% if post.draft %} <span class="Tag">Draft</span> {% endif %}
       </h3>
     </li>
 
