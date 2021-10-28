@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'How To Get Pull Requests Merged Faster'
-date: 2021-06-23 17:29:34 -0300
 categories: quick-tip productivity code
 ---
 

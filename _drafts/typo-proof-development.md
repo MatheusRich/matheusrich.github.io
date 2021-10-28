@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Typo-proof Development"
-date: 2021-03-01 11:37:46 -0300
 categories: productivity
 ---
 

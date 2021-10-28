@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'The Value Of Small Refactors'
-date: 2021-04-25 21:26:48 -0300
 categories: refactoring
 ---
 

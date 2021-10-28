@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Rust-stuff'
-date: 2021-04-01 22:34:29 -0300
 categories: rust
 published: false
 ---

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Crystal Vs Rust"
-date: 2021-04-27 16:19:32 -0300
 categories: crystal rust
 ---
 
