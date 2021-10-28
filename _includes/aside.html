@@ -1,0 +1,18 @@
+<aside class="Note Note--{{include.type}}">
+  <div class="icon-box">
+    <span class="icon">
+      {% if include.type == "info" %}
+        i
+      {% elsif include.type == "warn" %}
+        !
+      {% else %}
+        ✖
+      {% endif %} </span>
+  </div>
+
+  {% if include.title != nil %}
+    <strong class="title">{{include.title}}</strong>
+  {% endif %}
+
+  {{include.content | markdownify | replace: '<p', '<p class="content"'}}
+</aside>
