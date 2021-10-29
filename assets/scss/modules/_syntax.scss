@@ -22,6 +22,7 @@
   border-left: 4px solid $highlight-color;
   background-color: rgba($highlight-color, 0.15);
   display: block;
+  min-width: fit-content;
 }
 
 .highlight .gd {
