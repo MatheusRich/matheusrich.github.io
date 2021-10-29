@@ -71,7 +71,7 @@ gulp.task('watch', function () {
       '_includes/*',
       '*.md',
       '_config.yml',
-      'assets/js/scripts.js',
+      'assets/js/*.js',
     ],
     ['jekyll-rebuild']
   );

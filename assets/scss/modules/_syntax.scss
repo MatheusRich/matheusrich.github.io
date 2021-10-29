@@ -16,10 +16,9 @@
 .highlight .hll {
   $highlight-color: #97c475;
 
-  filter: none;
   margin: 0 -20px;
-  padding: 0 16px;
-  border-left: 4px solid $highlight-color;
+  padding: 0 18px;
+  border-left: 2px solid $highlight-color;
   background-color: rgba($highlight-color, 0.15);
   display: block;
   min-width: fit-content;
