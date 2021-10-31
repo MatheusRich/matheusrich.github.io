@@ -1,7 +1,9 @@
 name: GitHub Pages publication
 
 on:
-  push
+  push:
+    branches:
+    - main
 
 jobs:
   jekyll:
