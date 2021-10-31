@@ -1,9 +1,11 @@
 const gulp = require('gulp');
+const autoprefixer = require('autoprefixer');
 const browserSync = require('browser-sync');
-const sass = require('gulp-sass')(require('sass'));
-const prefix = require('gulp-autoprefixer');
 const cp = require('child_process');
-const cssnano = require('gulp-cssnano');
+const cssnano = require('cssnano');
+const postcss = require('gulp-postcss');
+const sass = require('gulp-sass')(require('sass'));
+const sourcemaps = require('gulp-sourcemaps');
 
 var jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -33,19 +35,22 @@ gulp.task(
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
  */
 gulp.task('sass', () => {
-  return gulp
-    .src('assets/scss/style.scss')
-    .pipe(
-      sass({
-        includePaths: ['scss'],
-        onError: browserSync.notify,
-      })
-    )
-    .pipe(prefix(['last 3 versions'], {cascade: true}))
-    .pipe(cssnano())
-    .pipe(gulp.dest('_site/assets/css'))
-    .pipe(browserSync.reload({stream: true}))
-    .pipe(gulp.dest('assets/css'));
+  return (
+    gulp
+      .src('assets/scss/style.scss')
+      .pipe(sourcemaps.init())
+      .pipe(
+        sass({
+          includePaths: ['scss'],
+          onError: browserSync.notify,
+        })
+      )
+      .pipe(postcss([autoprefixer(), cssnano()]))
+      .pipe(sourcemaps.write('.'))
+      .pipe(gulp.dest('_site/assets/css'))
+      .pipe(browserSync.reload({stream: true}))
+      .pipe(gulp.dest('assets/css'))
+  );
 });
 
 /**
