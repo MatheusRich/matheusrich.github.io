@@ -200,9 +200,6 @@ HEADER STYLING
     padding-left: 2rem;
     font-size: 1em;
     line-height: 3em;
-    font-family: $sans-serif;
-    font-weight: 800;
-    text-transform: uppercase;
 
     a {
       color: white;
@@ -643,4 +640,59 @@ kbd {
   border-bottom-color: var(--inline-code-background-color);
   border-radius: 6px;
   box-shadow: inset 0 -1px 0 var(--inline-code-background-color);
+}
+
+.logo {
+  font-family: $monospace;
+
+  .shell {
+    color: var(--blue-lt);
+  }
+
+  .dir {
+    color: var(--green);
+  }
+
+  .text {
+    display: inline-flex;
+    line-height: 1em;
+    border-right: 0.5rem solid transparent;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 0.1em 0 0 0 var(--highlight-color);
+
+    --blink-cursor-animation: blink-cursor 1.25s step-end 2s infinite;
+    animation: typing-small 1.75s steps(9, end), var(--blink-cursor-animation);
+    @media only screen and (min-width: 800px) {
+      animation: typing-large 1.75s steps(9, end), var(--blink-cursor-animation);
+    }
+
+    @keyframes typing-small {
+      from {
+        width: 14%;
+      }
+      to {
+        width: 84%;
+      }
+    }
+
+    @keyframes typing-large {
+      from {
+        width: 11%;
+      }
+      to {
+        width: 84%;
+      }
+    }
+
+    @keyframes blink-cursor {
+      from,
+      to {
+        box-shadow: none;
+      }
+      50% {
+        box-shadow: 0.1em 0 0 0 var(--highlight-color);
+      }
+    }
+  }
 }
