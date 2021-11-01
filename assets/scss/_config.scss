@@ -2,7 +2,6 @@
 COLOR VARIABLES
 ***************/
 
-$red: #ff4136;
 $grey: #aaa;
 
 // Color variables
@@ -48,9 +47,6 @@ $grey: #aaa;
     --highlight-color: var(--primary-color);
   }
 }
-
-$bad-color: $red; // Bad color for errors, validation etc.
-$subtle-color: $grey; // Subtle color for subtle text
 
 /***************
 CONSISTENT SETTINGS
