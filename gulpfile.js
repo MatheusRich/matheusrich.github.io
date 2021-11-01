@@ -35,22 +35,20 @@ gulp.task(
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
  */
 gulp.task('sass', () => {
-  return (
-    gulp
-      .src('assets/scss/style.scss')
-      .pipe(sourcemaps.init())
-      .pipe(
-        sass({
-          includePaths: ['scss'],
-          onError: browserSync.notify,
-        })
-      )
-      .pipe(postcss([autoprefixer(), cssnano()]))
-      .pipe(sourcemaps.write('.'))
-      .pipe(gulp.dest('_site/assets/css'))
-      .pipe(browserSync.reload({stream: true}))
-      .pipe(gulp.dest('assets/css'))
-  );
+  return gulp
+    .src('assets/scss/style.scss')
+    .pipe(sourcemaps.init())
+    .pipe(
+      sass({
+        includePaths: ['scss'],
+        onError: browserSync.notify,
+      })
+    )
+    .pipe(postcss([autoprefixer(), cssnano()]))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('_site/assets/css'))
+    .pipe(browserSync.reload({stream: true}))
+    .pipe(gulp.dest('assets/css'));
 });
 
 /**
@@ -76,7 +74,17 @@ gulp.task(
 gulp.task('watch', done => {
   gulp.watch(['assets/scss/*.scss', 'assets/scss/*/*.scss'], gulp.series('sass'));
   gulp.watch(
-    ['*.html', '_layouts/*.html', '_posts/*', '_drafts/*', '_includes/*', '*.md', '_config.yml', 'assets/js/*.js'],
+    [
+      '*.html',
+      '_layouts/*.html',
+      '_posts/*',
+      '_drafts/*',
+      '_includes/*',
+      '*.md',
+      '_config.yml',
+      'assets/js/*.js',
+      'assets/js/*/*.js',
+    ],
     gulp.series('jekyll-rebuild')
   );
 });
