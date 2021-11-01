@@ -2,7 +2,6 @@
 COLOR VARIABLES
 ***************/
 
-$red: #ff4136;
 $grey: #aaa;
 
 // Color variables
@@ -44,9 +43,6 @@ $grey: #aaa;
     --page-bg-color: black;
   }
 }
-
-$bad-color: $red; // Bad color for errors, validation etc.
-$subtle-color: $grey; // Subtle color for subtle text
 
 /***************
 CONSISTENT SETTINGS
