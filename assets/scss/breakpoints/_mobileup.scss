@@ -630,3 +630,17 @@ code.language-plaintext.highlighter-rouge {
     }
   }
 }
+
+kbd {
+  font-size: 1rem;
+  padding: 3px 5px;
+  display: inline-block;
+  line-height: 1rem;
+  vertical-align: middle;
+  background-color: var(--page-bg-color);
+  background-color: #00000005;
+  border: solid 1px var(--inline-code-background-color);
+  border-bottom-color: var(--inline-code-background-color);
+  border-radius: 6px;
+  box-shadow: inset 0 -1px 0 var(--inline-code-background-color);
+}
