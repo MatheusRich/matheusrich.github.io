@@ -99,6 +99,14 @@ div.blob {
   height: auto;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.max-w-sm {
+  max-width: 24rem;
+}
+
 .dark-safe {
   @media (prefers-color-scheme: dark) {
     filter: invert(100%);
