@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-family: $serif;
+  font-family: var(--serif-font);
   line-height: 1.7;
   font-size: 110%;
   color: black;
@@ -255,7 +255,7 @@ POST STYLING
 
   .meta {
     text-align: center;
-    font-family: $sans-serif;
+    font-family: var(--sans-serif-font);
     font-weight: 300;
     color: lighten(black, 10%);
     @media (prefers-color-scheme: dark) {
@@ -334,7 +334,7 @@ POST NAV STYLING
     height: 5rem;
     overflow: hidden;
     position: relative;
-    font-family: $sans-serif;
+    font-family: var(--sans-serif-font);
     font-weight: 800;
     font-size: 0.9em;
     text-transform: uppercase;
@@ -489,7 +489,7 @@ POST LIST STYLING
 
     .date {
       color: lighten(black, 20%);
-      font-family: $sans-serif;
+      font-family: var(--sans-serif-font);
       font-weight: 300;
       font-size: 0.8em;
     }
@@ -643,7 +643,7 @@ kbd {
 }
 
 .logo {
-  font-family: $monospace;
+  font-family: var(--monospace-font);
 
   .shell {
     color: var(--blue-lt);

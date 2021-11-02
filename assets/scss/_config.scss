@@ -4,8 +4,11 @@ COLOR VARIABLES
 
 $grey: #aaa;
 
-// Color variables
 :root {
+  --serif-font: "Open Sans", Helvetica, Arial, sans-serif;
+  --sans-serif-font: var(--serif-font);
+  --monospace-font: "JetBrains Mono", monospace;
+
   --blue: #0f4c82;
   --blue-lt: #8fcbff;
   --blue-dk: #093154;
@@ -47,20 +50,3 @@ $grey: #aaa;
     --highlight-color: var(--primary-color);
   }
 }
-
-/***************
-CONSISTENT SETTINGS
-***************/
-
-$br: 5px; // Border-radius
-$btn-br: 5px; // Button border-radius
-$padding: 40px; // Padding and margins
-$line-height: 44px; // Consistent height for buttons, inputs etc.
-
-/***************
-TYPE SETTINGS
-***************/
-
-$serif: "Open Sans", Helvetica, Arial, sans-serif;
-$sans-serif: $serif;
-$monospace: "JetBrains Mono", monospace;
