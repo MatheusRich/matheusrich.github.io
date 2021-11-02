@@ -1,0 +1,15 @@
+<figure>
+  <img
+    class="block mx-auto rounded h-auto {{ include.class }}"
+    loading="lazy"
+    src="/assets/img/{{ include.src }}"
+    width="{{ include.width | default: '100%' }}"
+    height="{{ include.height | default: 'auto' }}"
+  >
+
+  {% if include.caption %}
+    <figcaption>
+      {{ include.caption }}
+    </figcaption>
+  {% endif %}
+</figure>
