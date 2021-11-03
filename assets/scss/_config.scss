@@ -24,8 +24,6 @@ $grey: #aaa;
   --primary-color-dk: var(--blue-dk);
   --background-color: var(--primary-color);
   --background-color-dk: var(--primary-color-dk);
-  --background-color-lt: var(--primary-color-lt);
-  --link-color: var(--primary-color);
   --code-background-color: #282c34;
   --inline-code-color: var(--primary-color);
   --inline-code-background-color: var(--muted-color);
@@ -42,8 +40,6 @@ $grey: #aaa;
   --secondary-text-color: #4d4d4d;
   --nav-background-color: #fffd;
   --nav-background-image: url("../img/code.webp");
-  --nav-text-color: black;
-  --button-text-color: black;
   --footer-border-color: #eee;
 
   --dark-safe: unset;
@@ -68,8 +64,6 @@ body[data-theme="dark"] {
   --background-color: var(--cool-grey);
   --nav-background-color: #14181eee;
   --nav-background-image: none;
-  --nav-text-color: white;
-  --button-text-color: white;
   --footer-border-color: #333;
 
   --dark-safe: invert(100%);
