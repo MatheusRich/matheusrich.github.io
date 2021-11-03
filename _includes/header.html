@@ -11,11 +11,24 @@
     <nav class="nav-collapse" style="visibility: hidden">
         <ul class="noList">
           {% for link in site.navigation %}
-            <li class="element {% if forloop.first %}first{% endif %} {% if page.url == link.url %} current {% endif %} {% if forloop.last %}last{% endif %}">
+            <li class="element {% if forloop.first %}first{% endif %} {% if page.url == link.url %} current {% endif %}">
               <a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
             </li>
           {% endfor %}
+          <li class="element last">
+            <button class="theme-toggle" data-theme="dark" onclick="toggleTheme()">Toggle theme</button>
+          </li>
         </ul>
     </nav>
   </div>
 </div><!-- end .header -->
+
+<script>
+  function toggleTheme(e) {
+    const body = document.querySelector('body');
+    const newTheme = body.dataset.theme === 'light' ? 'dark' : 'light';
+    body.dataset.theme = newTheme;
+
+    document.querySelector('.nav-collapse [data-theme]').dataset.theme = newTheme;
+  }
+</script>

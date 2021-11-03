@@ -22,7 +22,6 @@ $grey: #aaa;
   --muted-color: #f2f2f5;
   --primary-color: var(--blue);
   --primary-color-dk: var(--blue-dk);
-  --primary-color-lt: var(--blue-lt);
   --background-color: var(--primary-color);
   --background-color-dk: var(--primary-color-dk);
   --background-color-lt: var(--primary-color-lt);
@@ -40,7 +39,7 @@ $grey: #aaa;
   --highlight-color: var(--blue-lt);
   --nav-background-color: #fffd;
   --nav-text-color: black;
-  --toggle-theme-icon: '🌒';
+  --toggle-theme-icon: "🌙 ";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -55,6 +54,9 @@ $grey: #aaa;
     --background-color: var(--cool-grey);
     --nav-background-color: #14181eee;
     --nav-text-color: white;
-    --toggle-theme-icon: '🌞';
+  }
+
+  body[data-theme="dark"] {
+    --toggle-theme-icon: "☀️ ";
   }
 }

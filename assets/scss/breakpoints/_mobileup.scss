@@ -89,7 +89,18 @@ MENU STYLING
       width: 100%;
       display: block;
 
-      a {
+      button.theme-toggle {
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        &:before {
+          content: var(--toggle-theme-icon);
+        }
+      }
+
+      a,
+      button {
         color: var(--nav-text-color);
         font-size: 1.5rem;
         font-weight: 100;
