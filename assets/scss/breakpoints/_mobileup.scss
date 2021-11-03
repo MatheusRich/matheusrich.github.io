@@ -16,7 +16,8 @@ body {
   font-family: var(--serif-font);
   line-height: 1.7;
   font-size: 110%;
-  color: black;
+  color: var(--primary-text-color);
+  background-color: var(--page-bg-color);
   overflow-x: hidden;
   margin: 0;
 
@@ -90,6 +91,8 @@ MENU STYLING
       display: block;
 
       button.theme-toggle {
+        width: 100%;
+        text-align: inherit;
         background: none;
         border: none;
         cursor: pointer;
@@ -202,8 +205,7 @@ HEADER STYLING
 ***************/
 
 .header {
-  background-color: var(--background-color);
-  background-image: url("../img/code.webp");
+  background-image: var(--nav-background-image);
   background-size: cover;
   background-position: center center;
   color: white;
@@ -278,10 +280,7 @@ POST STYLING
     text-align: center;
     font-family: var(--sans-serif-font);
     font-weight: 300;
-    color: lighten(black, 10%);
-    @media (prefers-color-scheme: dark) {
-      color: lighten(black, 70%);
-    }
+    color: var(--secondary-text-color);
   }
 
   figure {
@@ -291,10 +290,7 @@ POST STYLING
       margin-top: 1rem;
       text-align: center;
       font-size: 0.8em;
-      color: lighten(black, 30%);
-      @media (prefers-color-scheme: dark) {
-        color: lighten(black, 70%);
-      }
+      color: var(--secondary-text-color);
     }
 
     img {
@@ -344,8 +340,8 @@ POST NAV STYLING
 ***************/
 
 .postNav {
-  border-top: 1px solid darken(white, 10%);
-  border-bottom: 1px solid darken(white, 10%);
+  border-top: 1px solid var(--footer-border-color);
+  border-bottom: 1px solid var(--footer-border-color);
   overflow: hidden;
 
   .prev,
@@ -422,7 +418,7 @@ FOOTER STYLING
   clear: both;
 
   .container {
-    border-top: 4px solid darken(white, 15%);
+    border-top: 4px solid var(--footer-border-color);
     padding-top: 0.5em;
     max-width: 90%;
   }
@@ -464,10 +460,7 @@ FOOTER STYLING
             }
 
             .inner-shape {
-              fill: white;
-              @media (prefers-color-scheme: dark) {
-                fill: black;
-              }
+              fill: var(--page-bg-color);
             }
           }
         }
@@ -509,7 +502,7 @@ POST LIST STYLING
     margin-bottom: 4rem;
 
     .date {
-      color: lighten(black, 20%);
+      color: var(--secondary-text-color);
       font-family: var(--sans-serif-font);
       font-weight: 300;
       font-size: 0.8em;
@@ -538,30 +531,6 @@ code.language-plaintext.highlighter-rouge {
   color: var(--inline-code-color);
   padding: 1px 8px;
   border-radius: 8px;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: black;
-    color: #eee;
-  }
-
-  .posts li .date {
-    color: #ccc;
-  }
-
-  .postNav {
-    border-top: 1px solid lighten(black, 20%);
-    border-bottom: 1px solid lighten(black, 20%);
-  }
-
-  .header {
-    background: none;
-  }
-
-  .footer .container {
-    border-top-color: lighten(black, 20%);
-  }
 }
 
 .Note {

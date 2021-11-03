@@ -37,26 +37,41 @@ $grey: #aaa;
   --bg-error-color: #d3405933;
   --page-bg-color: white;
   --highlight-color: var(--blue-lt);
+
+  --primary-text-color: black;
+  --secondary-text-color: #4d4d4d;
   --nav-background-color: #fffd;
+  --nav-background-image: url("../img/code.webp");
   --nav-text-color: black;
+  --button-text-color: black;
+  --footer-border-color: #eee;
+
+  --dark-safe: unset;
+
   --toggle-theme-icon: "🌙 ";
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --primary-color: var(--orange);
-    --primary-color-dk: var(--orange-dk);
-    --primary-color-lt: var(--orange-lt);
-    --inline-code-background-color: var(--code-background-color);
-    --info-color: var(--blue-lt);
-    --page-bg-color: black;
-    --highlight-color: var(--primary-color);
-    --background-color: var(--cool-grey);
-    --nav-background-color: #14181eee;
-    --nav-text-color: white;
-  }
+body[data-theme="dark"] {
+  --primary-color: var(--orange);
+  --primary-color-dk: var(--orange-dk);
+  --primary-color-lt: var(--orange-lt);
+  --inline-code-background-color: var(--code-background-color);
+  --info-color: var(--blue-lt);
+  --page-bg-color: black;
+  --highlight-color: var(--primary-color);
+  --inline-code-color: var(--primary-color);
 
-  body[data-theme="dark"] {
-    --toggle-theme-icon: "☀️ ";
-  }
+  --primary-text-color: #eee;
+  --secondary-text-color: #b3b3b3;
+
+  --background-color: var(--cool-grey);
+  --nav-background-color: #14181eee;
+  --nav-background-image: none;
+  --nav-text-color: white;
+  --button-text-color: white;
+  --footer-border-color: #333;
+
+  --dark-safe: invert(100%);
+
+  --toggle-theme-icon: "☀️ ";
 }

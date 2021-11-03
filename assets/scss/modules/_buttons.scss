@@ -47,9 +47,6 @@ BUTTON DEFAULTS
 
   &:hover {
     background-color: var(--primary-color);
-    color: white;
-    @media (prefers-color-scheme: dark) {
-      color: black;
-    }
+    color: var(--button-text-color);
   }
 }
