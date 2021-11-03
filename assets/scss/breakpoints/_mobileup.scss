@@ -80,8 +80,10 @@ MENU STYLING
     list-style: none;
     background: var(--nav-background-color);
     backdrop-filter: blur(0.5rem);
+    height: 100vh;
 
     @media only screen and (min-width: 800px) {
+      height: unset;
       background: none;
       backdrop-filter: none;
     }
@@ -99,6 +101,10 @@ MENU STYLING
 
         &:before {
           content: var(--toggle-theme-icon);
+        }
+
+        &:after {
+          content: var(--toggle-theme-word);
         }
       }
 

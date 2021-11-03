@@ -49,6 +49,7 @@ $grey: #aaa;
   --dark-safe: unset;
 
   --toggle-theme-icon: "🌙 ";
+  --toggle-theme-word: " off";
 }
 
 body[data-theme="dark"] {
@@ -74,4 +75,5 @@ body[data-theme="dark"] {
   --dark-safe: invert(100%);
 
   --toggle-theme-icon: "☀️ ";
+  --toggle-theme-word: " on";
 }
