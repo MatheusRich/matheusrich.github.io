@@ -14,15 +14,15 @@ plugins: [jekyll-paginate]
 paginate: 10
 
 navigation:
-  - title: Home
+  - title: 🏠 Home
     url: /
-  - title: About me
+  - title: 👨‍💻 About me
     url: /about/
-  - title: Categories
+  - title: 🏷️ Categories
     url: /categories/
-  - title: All posts
+  - title: 📝 All posts
     url: /all/
-  - title: Talks
+  - title: 🎙️ Talks
     url: /talks/
 
 social:
