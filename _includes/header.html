@@ -25,9 +25,9 @@
 
 <script>
   function toggleTheme(e) {
-    const body = document.querySelector('body');
-    const newTheme = body.dataset.theme === 'light' ? 'dark' : 'light';
-    body.dataset.theme = newTheme;
+    const htmlTag = document.documentElement;
+    const newTheme = htmlTag.dataset.theme === 'dark' ? 'light' : 'dark';
+    htmlTag.dataset.theme = newTheme;
 
     document.querySelector('.nav-collapse [data-theme]').dataset.theme = newTheme;
   }
