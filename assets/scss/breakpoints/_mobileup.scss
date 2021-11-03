@@ -77,18 +77,28 @@ MENU STYLING
     width: 100%;
     display: block;
     list-style: none;
+    background: var(--nav-background-color);
+    backdrop-filter: blur(0.5rem);
+
+    @media only screen and (min-width: 800px) {
+      background: none;
+      backdrop-filter: none;
+    }
 
     li {
       width: 100%;
       display: block;
-      background: var(--background-color);
-      border-bottom: 2px solid var(--background-color-lt);
 
       a {
-        color: white;
+        color: var(--nav-text-color);
+        font-size: 1.5rem;
+        font-weight: 100;
+        @media only screen and (min-width: 800px) {
+          font-weight: normal;
+        }
         text-decoration: none;
         display: block;
-        padding: 5px 2rem;
+        padding: 1rem 2rem;
       }
     }
   }
@@ -536,15 +546,6 @@ code.language-plaintext.highlighter-rouge {
 
   .header {
     background: none;
-
-    & .nav-toggle {
-      background: #374151;
-    }
-  }
-
-  .nav-collapse ul li {
-    background: #374151;
-    border-bottom-color: #111827;
   }
 
   .footer .container {
