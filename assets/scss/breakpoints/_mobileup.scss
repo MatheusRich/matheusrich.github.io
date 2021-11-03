@@ -151,7 +151,7 @@ MENU STYLING
   line-height: 0.9;
   background-color: var(--background-color);
   border-radius: 4px;
-  padding: 0px 0.3em 2px;
+  padding: 2px 0;
   color: white;
   text-decoration: none;
   position: relative;
@@ -161,10 +161,22 @@ MENU STYLING
   font-size: 2.15em;
   font-weight: normal;
   right: 0.5rem;
+  width: 2.75rem;
+  text-align: center;
 
   &:hover {
     color: white;
     background-color: var(--background-color-dk);
+  }
+
+  &:after {
+    content: "≡";
+  }
+
+  &.active {
+    &:after {
+      content: "×";
+    }
   }
 }
 
