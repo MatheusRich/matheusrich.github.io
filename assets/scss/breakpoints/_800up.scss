@@ -49,7 +49,7 @@ HEADER STYLING
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    max-width: 800px;
+    max-width: 880px;
     overflow: hidden;
   }
 
@@ -73,28 +73,24 @@ HEADER STYLING
         padding: 0 5px;
         border: none;
 
-        a {
+        a, button {
           color: white;
           font-size: 0.9em;
           text-decoration: none;
           padding: 0 0.25em;
 
           &:hover {
-            color: var(--primary-color-lt);
-
-            @media (prefers-color-scheme: dark) {
-              color: var(--primary-color);
-            }
+            color: var(--highlight-color)
           }
+        }
+
+        .theme-toggle {
+          width: fit-content;
         }
 
         &.current {
           padding-bottom: 0.25em;
-          border-bottom: 4px solid var(--primary-color-lt);
-
-          @media (prefers-color-scheme: dark) {
-            border-bottom-color: var(--primary-color);
-          }
+          border-bottom: 4px solid var(--highlight-color);
         }
       }
     }
@@ -114,7 +110,7 @@ MENU STYLING
       max-height: none;
     }
 
-    ul li a {
+    ul li a, button {
       display: inline-block;
     }
   }
@@ -235,7 +231,7 @@ FOOTER STYLES
 
   .container {
     padding: 1rem 0;
-    max-width: 800px;
+    max-width: 880px;
   }
 }
 

@@ -4,7 +4,7 @@ COLOR VARIABLES
 
 $grey: #aaa;
 
-:root {
+@mixin light-theme {
   --serif-font: "Open Sans", Helvetica, Arial, sans-serif;
   --sans-serif-font: var(--serif-font);
   --monospace-font: "JetBrains Mono", monospace;
@@ -18,15 +18,13 @@ $grey: #aaa;
   --green: #97c475;
   --red: #d34059;
   --cool-grey: #374151;
+  --cool-grey-dk: #2b3646;
 
   --muted-color: #f2f2f5;
   --primary-color: var(--blue);
   --primary-color-dk: var(--blue-dk);
-  --primary-color-lt: var(--blue-lt);
   --background-color: var(--primary-color);
   --background-color-dk: var(--primary-color-dk);
-  --background-color-lt: var(--primary-color-lt);
-  --link-color: var(--primary-color);
   --code-background-color: #282c34;
   --inline-code-color: var(--primary-color);
   --inline-code-background-color: var(--muted-color);
@@ -38,23 +36,62 @@ $grey: #aaa;
   --bg-error-color: #d3405933;
   --page-bg-color: white;
   --highlight-color: var(--blue-lt);
+
+  --primary-text-color: black;
+  --secondary-text-color: #4d4d4d;
   --nav-background-color: #fffd;
-  --nav-text-color: black;
-  --toggle-theme-icon: '🌒';
+  --nav-background-image: url("../img/code.webp");
+  --footer-border-color: #eee;
+
+  --dark-safe: unset;
+
+  --toggle-theme-icon: "🌙 ";
+  --toggle-theme-word: " off";
+}
+
+@mixin dark-theme {
+  --primary-color: var(--orange);
+  --primary-color-dk: var(--orange-dk);
+  --primary-color-lt: var(--orange-lt);
+  --inline-code-background-color: var(--code-background-color);
+  --info-color: var(--blue-lt);
+  --page-bg-color: black;
+  --highlight-color: var(--primary-color);
+  --inline-code-color: var(--primary-color);
+
+  --primary-text-color: #eee;
+  --secondary-text-color: #b3b3b3;
+
+  --background-color: var(--cool-grey);
+  --background-color-dk: var(--cool-grey-dk);
+  --nav-background-color: #14181eee;
+  --nav-background-image: none;
+  --footer-border-color: #333;
+
+  --dark-safe: invert(100%);
+
+  --toggle-theme-icon: "☀️ ";
+  --toggle-theme-word: " on";
+
+  color-scheme: dark;
+}
+
+html,
+html[data-theme="light"] {
+  @include light-theme();
+}
+
+html[data-theme="dark"] {
+  @include dark-theme();
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --primary-color: var(--orange);
-    --primary-color-dk: var(--orange-dk);
-    --primary-color-lt: var(--orange-lt);
-    --inline-code-background-color: var(--code-background-color);
-    --info-color: var(--blue-lt);
-    --page-bg-color: black;
-    --highlight-color: var(--primary-color);
-    --background-color: var(--cool-grey);
-    --nav-background-color: #14181eee;
-    --nav-text-color: white;
-    --toggle-theme-icon: '🌞';
+  html,
+  html[data-theme="dark"] {
+    @include dark-theme();
+  }
+
+  html[data-theme="light"] {
+    @include light-theme();
   }
 }

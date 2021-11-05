@@ -16,7 +16,8 @@ body {
   font-family: var(--serif-font);
   line-height: 1.7;
   font-size: 110%;
-  color: black;
+  color: var(--primary-text-color);
+  background-color: var(--page-bg-color);
   overflow-x: hidden;
   margin: 0;
 
@@ -69,7 +70,7 @@ MENU STYLING
 ***************/
 
 .nav-collapse {
-  z-index: 1;
+  z-index: 100;
 
   ul {
     margin: 0;
@@ -79,8 +80,10 @@ MENU STYLING
     list-style: none;
     background: var(--nav-background-color);
     backdrop-filter: blur(0.5rem);
+    height: calc(100vh - 3em);
 
     @media only screen and (min-width: 800px) {
+      height: unset;
       background: none;
       backdrop-filter: none;
     }
@@ -89,8 +92,25 @@ MENU STYLING
       width: 100%;
       display: block;
 
-      a {
-        color: var(--nav-text-color);
+      button.theme-toggle {
+        width: 100%;
+        text-align: inherit;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        &:before {
+          content: var(--toggle-theme-icon);
+        }
+
+        &:after {
+          content: var(--toggle-theme-word);
+        }
+      }
+
+      a,
+      button {
+        color: var(--primary-text-color);
         font-size: 1.5rem;
         font-weight: 100;
         @media only screen and (min-width: 800px) {
@@ -131,7 +151,7 @@ MENU STYLING
   line-height: 0.9;
   background-color: var(--background-color);
   border-radius: 4px;
-  padding: 0px 0.3em 2px;
+  padding: 2px 0;
   color: white;
   text-decoration: none;
   position: relative;
@@ -141,10 +161,22 @@ MENU STYLING
   font-size: 2.15em;
   font-weight: normal;
   right: 0.5rem;
+  width: 2.75rem;
+  text-align: center;
 
   &:hover {
     color: white;
     background-color: var(--background-color-dk);
+  }
+
+  &:after {
+    content: "≡";
+  }
+
+  &.active {
+    &:after {
+      content: "×";
+    }
   }
 }
 
@@ -191,8 +223,7 @@ HEADER STYLING
 ***************/
 
 .header {
-  background-color: var(--background-color);
-  background-image: url("../img/code.webp");
+  background-image: var(--nav-background-image);
   background-size: cover;
   background-position: center center;
   color: white;
@@ -267,10 +298,7 @@ POST STYLING
     text-align: center;
     font-family: var(--sans-serif-font);
     font-weight: 300;
-    color: lighten(black, 10%);
-    @media (prefers-color-scheme: dark) {
-      color: lighten(black, 70%);
-    }
+    color: var(--secondary-text-color);
   }
 
   figure {
@@ -280,10 +308,7 @@ POST STYLING
       margin-top: 1rem;
       text-align: center;
       font-size: 0.8em;
-      color: lighten(black, 30%);
-      @media (prefers-color-scheme: dark) {
-        color: lighten(black, 70%);
-      }
+      color: var(--secondary-text-color);
     }
 
     img {
@@ -333,8 +358,8 @@ POST NAV STYLING
 ***************/
 
 .postNav {
-  border-top: 1px solid darken(white, 10%);
-  border-bottom: 1px solid darken(white, 10%);
+  border-top: 1px solid var(--footer-border-color);
+  border-bottom: 1px solid var(--footer-border-color);
   overflow: hidden;
 
   .prev,
@@ -411,7 +436,7 @@ FOOTER STYLING
   clear: both;
 
   .container {
-    border-top: 4px solid darken(white, 15%);
+    border-top: 4px solid var(--footer-border-color);
     padding-top: 0.5em;
     max-width: 90%;
   }
@@ -453,10 +478,7 @@ FOOTER STYLING
             }
 
             .inner-shape {
-              fill: white;
-              @media (prefers-color-scheme: dark) {
-                fill: black;
-              }
+              fill: var(--page-bg-color);
             }
           }
         }
@@ -498,7 +520,7 @@ POST LIST STYLING
     margin-bottom: 4rem;
 
     .date {
-      color: lighten(black, 20%);
+      color: var(--secondary-text-color);
       font-family: var(--sans-serif-font);
       font-weight: 300;
       font-size: 0.8em;
@@ -527,30 +549,6 @@ code.language-plaintext.highlighter-rouge {
   color: var(--inline-code-color);
   padding: 1px 8px;
   border-radius: 8px;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: black;
-    color: #eee;
-  }
-
-  .posts li .date {
-    color: #ccc;
-  }
-
-  .postNav {
-    border-top: 1px solid lighten(black, 20%);
-    border-bottom: 1px solid lighten(black, 20%);
-  }
-
-  .header {
-    background: none;
-  }
-
-  .footer .container {
-    border-top-color: lighten(black, 20%);
-  }
 }
 
 .Note {
