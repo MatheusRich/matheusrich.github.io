@@ -4,7 +4,7 @@ COLOR VARIABLES
 
 $grey: #aaa;
 
-:root {
+@mixin light-theme {
   --serif-font: "Open Sans", Helvetica, Arial, sans-serif;
   --sans-serif-font: var(--serif-font);
   --monospace-font: "JetBrains Mono", monospace;
@@ -49,7 +49,7 @@ $grey: #aaa;
   --toggle-theme-word: " off";
 }
 
-html[data-theme="dark"] {
+@mixin dark-theme {
   --primary-color: var(--orange);
   --primary-color-dk: var(--orange-dk);
   --primary-color-lt: var(--orange-lt);
@@ -74,4 +74,24 @@ html[data-theme="dark"] {
   --toggle-theme-word: " on";
 
   color-scheme: dark;
+}
+
+html,
+html[data-theme="light"] {
+  @include light-theme();
+}
+
+html[data-theme="dark"] {
+  @include dark-theme();
+}
+
+@media (prefers-color-scheme: dark) {
+  html,
+  html[data-theme="dark"] {
+    @include dark-theme();
+  }
+
+  html[data-theme="light"] {
+    @include light-theme();
+  }
 }

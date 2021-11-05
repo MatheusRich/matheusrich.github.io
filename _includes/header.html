@@ -3,32 +3,51 @@
     <h1 class="logo">
       <a href="{{ site.baseurl }}/">
         <span class="dir">~</span>
-        <span class="text">
-          {{ site.title | upcase }}
-        </span>
+        <span class="text"> {{ site.title | upcase }} </span>
       </a>
     </h1>
     <nav class="nav-collapse" style="visibility: hidden">
-        <ul class="noList">
-          {% for link in site.navigation %}
-            <li class="element {% if forloop.first %}first{% endif %} {% if page.url == link.url %} current {% endif %}">
-              <a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
-            </li>
-          {% endfor %}
-          <li class="element last">
-            <button class="theme-toggle" data-theme="dark" onclick="toggleTheme()">Turn lights</button>
-          </li>
-        </ul>
+      <ul class="noList">
+        {% for link in site.navigation %}
+        <li class="element {% if forloop.first %}first{% endif %} {% if page.url == link.url %} current {% endif %}">
+          <a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+        </li>
+        {% endfor %}
+        <li class="element last">
+          <button class="theme-toggle" data-theme="dark" onclick="toggleTheme()">Turn lights</button>
+        </li>
+      </ul>
     </nav>
   </div>
-</div><!-- end .header -->
+</div>
+<!-- end .header -->
 
 <script>
-  function toggleTheme(e) {
-    const htmlTag = document.documentElement;
-    const newTheme = htmlTag.dataset.theme === 'dark' ? 'light' : 'dark';
-    htmlTag.dataset.theme = newTheme;
+  function toggleTheme() {
+    const systemInitiatedDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const currentOverridenTheme = sessionStorage.getItem('theme');
 
-    document.querySelector('.nav-collapse [data-theme]').dataset.theme = newTheme;
+    if (currentOverridenTheme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'light');
+      sessionStorage.setItem('theme', 'light');
+    } else if (currentOverridenTheme === 'light') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      sessionStorage.setItem('theme', 'dark');
+    } else if (systemInitiatedDark.matches) {
+      document.documentElement.setAttribute('data-theme', 'light');
+      sessionStorage.setItem('theme', 'light');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      sessionStorage.setItem('theme', 'dark');
+    }
+  }
+
+  const overridenTheme = sessionStorage.getItem('theme');
+  if (overridenTheme === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    sessionStorage.setItem('theme', 'dark');
+  } else if (overridenTheme === 'light') {
+    document.documentElement.setAttribute('data-theme', 'light');
+    sessionStorage.setItem('theme', 'light');
   }
 </script>
