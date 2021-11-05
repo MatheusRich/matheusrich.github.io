@@ -25,3 +25,6 @@ Crystal has sum types AND uses it to handle null values (maybe not as powerful, 
 Crystal I don't think in memory management at all
 I dont feel like i'm in a "low level language". To me it just feels like "Typed-Ruby"
 
+is it even a fair comparisson? maybe i should compare crystal to something like
+Go (since it's also garbage collected). Those were my thoughts, let me know what you think.
+
