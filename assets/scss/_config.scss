@@ -25,7 +25,6 @@ $grey: #aaa;
   --primary-color-dk: var(--blue-dk);
   --background-color: var(--primary-color);
   --background-color-dk: var(--primary-color-dk);
-  --code-background-color: #282c34;
   --inline-code-color: var(--primary-color);
   --inline-code-background-color: var(--muted-color);
   --info-color: var(--blue);
@@ -37,6 +36,26 @@ $grey: #aaa;
   --page-bg-color: white;
   --highlight-color: var(--blue-lt);
 
+  // Syntax highlighting
+  --code-background-color: #fafafa;
+  --code-foreground-color: #383a42;
+  --code-keyword-color: #a626a4;
+  --code-number-color: #986801;
+  --code-class-color: #c18401;
+  --code-builtin-color: #0184bc;
+  --code-method-call-color: #4078f2;
+  --code-comments-color: #a0a1a7;
+  --code-string-color: #50a14f;
+  --code-symbol-color: #986801;
+  --code-name-color: #383a42;
+  --code-parameter-color: #383a42;
+  --code-diff-deleted-background-color: transparent;
+  --code-diff-deleted-foreground-color: #e45649;
+  --code-diff-added-background-color: transparent;
+  --code-diff-added-foreground-color: #50a14f;
+
+  --code-opacity: 0.6;
+
   --primary-text-color: black;
   --secondary-text-color: #4d4d4d;
   --nav-background-color: #fffd;
@@ -47,6 +66,8 @@ $grey: #aaa;
 
   --toggle-theme-icon: "🌙 ";
   --toggle-theme-word: " off";
+
+  color-scheme: light;
 }
 
 @mixin dark-theme {
@@ -58,6 +79,26 @@ $grey: #aaa;
   --page-bg-color: black;
   --highlight-color: var(--primary-color);
   --inline-code-color: var(--primary-color);
+
+  // Syntax highlighting
+  --code-background-color: #282c34;
+  --code-foreground-color: #c1c2c3;
+  --code-keyword-color: #c775df;
+  --code-class-color: #e5c674;
+  --code-number-color: #e5c674;
+  --code-builtin-color: #40b9c4;
+  --code-method-call-color: #5daef2;
+  --code-comments-color: #8c8c8c;
+  --code-string-color: #97c475;
+  --code-symbol-color: #d49c60;
+  --code-name-color: #c1c2c3;
+  --code-parameter-color: #c1c2c3;
+  --code-diff-deleted-background-color: #e06c7588;
+  --code-diff-deleted-foreground-color: #fff;
+  --code-diff-added-background-color: #98c379cc;
+  --code-diff-added-foreground-color: #fff;
+
+  --code-opacity: 0.5;
 
   --primary-text-color: #eee;
   --secondary-text-color: #b3b3b3;
