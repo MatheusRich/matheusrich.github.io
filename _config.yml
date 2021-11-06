@@ -1,7 +1,7 @@
 title: Rich Codes
 description: >- # this means to ignore newlines until "baseurl:"
   Hi, I'm Matheus Richard, a Software Engineering from Brazil.
-  I'm an open source dev, I love music, games and creating programming languages.
+  I love open source, music, games and creating programming languages.
 url: 'http://matheusrich.com' # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: '' # the subpath of your site, e.g. /blog
 paginate_path: '/page:num/'
