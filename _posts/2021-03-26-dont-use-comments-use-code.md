@@ -232,6 +232,13 @@ Don't have time to deal with it? **Open an issue** instead. Issues are prioritiz
 your development pipeline (or maybe in some OSS contributor's). Those TODO comments will be
 forgotten as soon as your code goes to production.
 
+{%
+  include aside.html
+    type="info"
+    title="TODO or die!"
+    content="If you're using Ruby, check out the gem [todo or die](https://github.com/searls/todo_or_die). It helps you keep those TODO's done."
+%}
+
 ## Don't add deprecation notes
 
 Deprecating code with comments is not efficient. Especially in libraries, developers won't read
