@@ -30,7 +30,7 @@ end
 
 # Publishes a draft
 #
-# @param draft_name [String] name of the draft to be published. If not given, the first one from `_drafts` will be published.
+# @param draft [String] name of the draft to be published. If not given, the first one from `_drafts` will be published.
 def publish(draft: "")
   time = Time.now
   article_name = Dir["_drafts/*#{draft}*.md"].sort.first.split('/').last
