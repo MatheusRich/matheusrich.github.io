@@ -2,7 +2,7 @@
 layout: post
 title: 'How Spaces Can Improve Your Code'
 date: 2021-08-31 12:53:10 -0300
-categories: code quick-tip refactoring
+categories: quick-tip refactoring
 ---
 
 Writing code is similar to writing an essay: it consists of many small parts that interact.
