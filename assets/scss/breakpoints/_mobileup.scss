@@ -562,17 +562,40 @@ code.language-plaintext.highlighter-rouge {
   font-size: 1rem;
 
   & .title {
+    font-size: 1.1rem;
     margin-bottom: 1rem;
     display: block;
   }
 
-  & p.content {
-    margin: 0;
+  & > p.content, details p {
     padding: 0;
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
   }
 
   a {
     text-decoration: underline;
+  }
+
+  summary {
+    cursor: pointer;
+    font-weight: bold;
+    list-style: none;
+  }
+
+  details {
+    summary::after {
+      content: "Show more »";
+    }
+
+    &[open] {
+      summary::after {
+        content: "";
+      }
+    }
   }
 
   & .icon-box {
@@ -623,6 +646,16 @@ code.language-plaintext.highlighter-rouge {
     & .icon {
       color: var(--error-color);
       box-shadow: 0 0 0 3px var(--error-color);
+    }
+  }
+
+  &--success {
+    background: var(--bg-success-color);
+    border-left-color: var(--success-color);
+
+    & .icon {
+      color: var(--success-color);
+      box-shadow: 0 0 0 3px var(--success-color);
     }
   }
 }

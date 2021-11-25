@@ -10,12 +10,18 @@
 {% endcomment %}
 
 
-<aside class="Note Note--{{include.type}}">
+
+
+{% assign aside_type = include.type | default: 'info' %}
+
+<aside class="Note Note--{{aside_type}}">
   <div class="icon-box">
     <span class="icon">
-      {% if include.type == "info" %}
+      {% if aside_type == "info" %}
         i
-      {% elsif include.type == "warn" %}
+      {% elsif aside_type == "success" %}
+        ✓
+      {% elsif aside_type == "warn" %}
         !
       {% else %}
         ✖
@@ -27,4 +33,11 @@
   {% endif %}
 
   {{include.content | markdownify | replace: '<p', '<p class="content"'}}
+
+  {% if include.more != nil %}
+    <details>
+      <summary></summary>
+      {{include.more | markdownify | replace: '<p', '<p class="content"'}}
+    </details>
+  {% endif %}
 </aside>
