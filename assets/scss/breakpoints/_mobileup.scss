@@ -567,7 +567,8 @@ code.language-plaintext.highlighter-rouge {
     display: block;
   }
 
-  & > p.content, details p {
+  & > p.content,
+  details p {
     padding: 0;
     margin: 0;
 
@@ -587,13 +588,28 @@ code.language-plaintext.highlighter-rouge {
   }
 
   details {
+    @keyframes arrows {
+      0% {
+        content: "Show more";
+      }
+      50% {
+        content: "Show more ›";
+      }
+      100% {
+        content: "Show more ››";
+      }
+    }
+
+    summary:hover::after {
+      animation: arrows 1.25s;
+    }
     summary::after {
-      content: "Show more »";
+      content: "Show more ››";
     }
 
     &[open] {
       summary::after {
-        content: "";
+        content: "" !important;
       }
     }
   }
