@@ -10,7 +10,7 @@ title: Talks | Rich Codes
     {% for talk in sorted_talks %}
       <li>
         <span class="date">{{ talk.date | date_to_string }}</span>
-        <h3>{{ talk.title }}</h3>
+        <h3 id="{{ talk.title | slugify }}">{{ talk.title }}</h3>
         <p>
           <a href="{{ talk.video_url }}" target="_blank">🖥️ Watch it</a>
           <span style="display:inline-block;width: 5px"></span>
