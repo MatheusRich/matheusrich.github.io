@@ -1,4 +1,4 @@
-<h2 id="{{include.name}}">#{{include.name}}</h2>
+<h2 id="{{include.name}}">#{{include.name}}{% if jekyll.environment != "production" %} <span style="color: var(--secondary-text-color)">({{include.posts | size}})</span>{% endif %}</h2>
 <ul class="posts noList">
   {% for post in include.posts %}
   <li>
