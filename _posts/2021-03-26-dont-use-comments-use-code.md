@@ -96,7 +96,7 @@ hash-tables, structs and objects if needed.
 ### DON'T ###
 
 def notify
-  send_msg "Hello world!", channel: 0 # General
+  send_slack_msg "Hello world!", channel_id: 0 # General
 end
 
 ### DO ###
@@ -104,7 +104,7 @@ end
 GENERAL_CHANNEL_ID = 0
 
 def notify
-  send_slack_msg 'Hello world!', channel: GENERAL_CHANNEL_ID
+  send_slack_msg 'Hello world!', channel_id: GENERAL_CHANNEL_ID
 end
 
 ### DO² ###
@@ -112,7 +112,7 @@ end
 CHANNEL_IDS = OpenStruct.new(general: 0).freeze
 
 def notify
-  send_slack_msg 'Hello world!', channel: CHANNEL_IDS.general
+  send_slack_msg 'Hello world!', channel_id: CHANNEL_IDS.general
 end
 ```
 
