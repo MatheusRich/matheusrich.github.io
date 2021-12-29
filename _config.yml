@@ -34,8 +34,8 @@ social:
 # google_analytics: "UA-58263416-1"
 
 # Disqus Comments
-disqus:
-  shortname: matheusrich
+# disqus:
+#   shortname: matheusrich
 
 talks:
   - title: Taming God Objects (🇧🇷)
