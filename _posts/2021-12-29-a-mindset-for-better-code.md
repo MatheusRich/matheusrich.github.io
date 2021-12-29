@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'A Mindset for Better Code'
-
 categories: refactoring quick-tip
 description: The key for better code is making it easy to delete.
 ---
