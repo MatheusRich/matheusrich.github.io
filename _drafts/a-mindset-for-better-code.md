@@ -54,10 +54,10 @@ content="
 Yeah, naming things is one of the [hardest things] on Computer Science, and
 that's precisely why it's important.
 
-Names reveal the intent of the code. Good naming matters because not always the
-implementation matches the original purpose. This is especially relevant for
-languages without type annotations like Ruby since naming is the only way to
-reveal intent to the reader.
+Names reveal the intent of the code. Good naming matters because the
+implementation does not always match the original purpose. This is especially
+relevant for languages without type annotations like Ruby since naming is the
+only way to reveal intent to the reader.
 
 [hardest things]: https://martinfowler.com/bliki/TwoHardThings.html"
 %}
@@ -66,7 +66,8 @@ Vague names in important places like `data`, `value`, for example, would make
 our jobs much harder
 
 ```ruby
-# Literally everything in code is data. And what in the world is `process?`
+# Literally everything in code is data.
+# And what in the world is `process`?
 # This method could do anything!
 def process_data(data)
   # ...
