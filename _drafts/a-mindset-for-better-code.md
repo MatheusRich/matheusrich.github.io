@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'A Mindset for Better Coding'
+title: 'A Mindset for Better Code'
 
 categories: refactoring quick-tip
 description: The key for better code is making it easy to delete.
@@ -20,48 +20,50 @@ What would be the side-effects of doing this?
 
 ## More code == More work
 
-First of all, we would hate large blocks of code. For the simple reason that
-they would require us to write more when changing it. Also, it's more code read
-and understand before rewriting it.
+First of all, we would despise large blocks of code. For the simple reason that
+they would require us to write more when changing it. Also, it's more code to
+read and understand before rewriting it.
 
 To make things easier, we would split a large function/class into a couple of
 small, meaningful ones, so we would avoid rewriting the whole thing when
 changing a single one.
 
-Oh, sure we would think more about [YAGNI] and [KISS] more often.
+Oh, sure, we would think more about [YAGNI] and [KISS] more often.
 
-## Less dependencies
+## Fewer dependencies
 
-Code with lots of dependency is a pain to maintain. Everything is related to
-everything else! Imagine replacing an HTTP client that's used all throughout the
+Code with lots of dependencies is a pain to maintain. Everything is related to
+everything else! Imagine replacing an HTTP client that's used throughout the
 app. We would essentially have to rewrite the entire app!
 
 That's definitely not ideal, so we'd be sure to have external libraries like
-that wrapped in a internal module/class, so we could update them in a single
+that wrapped in an internal module/class, so we could update them in a single
 place.
 
 Our code would probably be using more [dependency injection] too.
 
 ## Well named things
 
-Before we start rewriting something, we would first need to read it and
-understand it. This is harder when code is not well named.
+Before changing something, we first need to read it and
+understand it. This is harder when the code is not well named.
 
 {%
 include aside.html
+title= "Naming is intention"
 content="
 Yeah, naming things is one of the [hardest things] on Computer Science, and
-that's exactly why it's important.
+that's precisely why it's important.
 
-Names reveal the _intent_ of the code, this matters because not always the
-implementation matches the original intent.
+Names reveal the intent of the code. Good naming matters because not always the
+implementation matches the original purpose. This is especially relevant for
+languages without type annotations like Ruby since naming is the only way to
+reveal intent to the reader.
 
 [hardest things]: https://martinfowler.com/bliki/TwoHardThings.html"
-
 %}
 
-We would avoid vague names in important places like `data`, `value`, for
-example:
+Vague names in important places like `data`, `value`, for example, would make
+our jobs much harder
 
 ```ruby
 # Literally everything in code is data. And what in the world is `process?`
@@ -71,7 +73,7 @@ def process_data(data)
 end
 ```
 
-Instead, we could do:
+If, instead, we had
 
 ```ruby
 def convert_to_json(user)
@@ -80,10 +82,10 @@ end
 ```
 
 Small change, but this is _way_ easier to understand what's going on, even
-without the method body. The name hints at what the method does and we'd know
+without the method body. The name hints at what the method does, and we'd know
 what to expect from it.
 
-When poorly named, even small variables start bothering us
+When poorly named, even small variables would bother us
 
 ```rust
 // What the heck is this number?
@@ -102,8 +104,8 @@ Remember, this is not a rule but an exercise. What's essential is understanding
 what makes a codebase easy to work with: small, well-named, self-contained
 parts.
 
-Doing this exercise is future-proofing ourselves because one thing is sure:
-**things will change**, and when they do, we'll want our code to be easy to
+Doing this exercise is future-proofing ourselves because we can be sure:
+**things will change**. And when they do, we want our code to be easy to
 change as well.
 
 [kiss]: https://thoughtbot.com/blog/ruby-and-kiss-sitting-in-a-tree
