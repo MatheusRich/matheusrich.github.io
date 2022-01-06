@@ -3,6 +3,7 @@ layout: post
 title: "TIL: Object#presence_in"
 date: 2022-01-05 21:47:30 -0300
 categories: TIL rails
+description: A small Rails addition that helps creating allow/block lists.
 ---
 
 {%
