@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "TIL: Javascript's void Operator"
+title: "TIL: JavaScript's void Operator"
 date: 2022-01-20 11:54:45 -0300
 categories: TIL javascript
 ---
 
 Today I discovered the [`void`
 operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void#immediately_invoked_function_expressions)
-in Javascript. It evaluates an expression but always returns `undefined`.
+in JavaScript. It evaluates an expression but always returns `undefined`.
 
 ```js
 console.log(void "hello world") // prints `undefined`
