@@ -10,7 +10,7 @@ operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Oper
 in Javascript. It evaluates an expression but always returns `undefined`.
 
 ```js
-console.log(void "hello world") // logs `undefined`
+console.log(void "hello world") // prints `undefined`
 ```
 
 It can be used on a
@@ -38,7 +38,7 @@ function() {
 // SyntaxError
 ```
 
-This operator is also useful to ensure an arrow function always return `undefined`:
+This operator is also useful to ensure that an arrow function always return `undefined`:
 
 ```js
 // changes to the return value of `doSomething` won't affect this code
