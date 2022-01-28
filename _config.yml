@@ -22,8 +22,9 @@ navigation:
     url: /categories/
   - title: 📝 All posts
     url: /all/
-  - title: 🎙️ Talks
+  - title: 🎙️ Talking
     url: /talks/
+    redirect: /talking/
 
 social:
   twitter: matheusrich
@@ -61,4 +62,10 @@ talks:
     date: 2021-07-28 -0300
     slides_url: https://speakerdeck.com/matheusrich/start-tdding-in-5-minutes
     video_url: https://www.youtube.com/embed/c6PY_t17iPk?start=1695
+  - title: Comments are the devil - Ruby Rogues Podcast
+    description: >
+      Inspired by the article <a href="/dont-use-comments-use-code/">Don’t use comments! Use code</a>,
+      I was invited to talk about the dangers of comments in the Ruby Rogues podcast.
+    date: 2022-01-26 -0300
+    audio_url: https://rubyrogues.com/comments-are-the-devil-ruby-532
 

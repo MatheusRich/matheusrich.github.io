@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Talks | Rich Codes
+title: Talking | Rich Codes
 ---
 
 <div id="articles">
-  <h1 class="pageTitle">Talks</h1>
+  <h1 class="pageTitle">Talking</h1>
   <ul class="posts noList">
     {% assign sorted_talks = site.talks | sort: 'date' | reverse %}
     {% for talk in sorted_talks %}
@@ -12,14 +12,24 @@ title: Talks | Rich Codes
         <span class="date">{{ talk.date | date_to_string }}</span>
         <h3 id="{{ talk.title | slugify }}">{{ talk.title }}</h3>
         <p>
-          <a href="{{ talk.video_url }}" target="_blank">🖥️ Watch it</a>
+          {% if talk.audio_url %}
+            <a href="{{ talk.audio_url }}" target="_blank">🎧 Hear it</a>
+          {% endif %}
+          {% if talk.slides_url %}
+            <a href="{{ talk.video_url }}" target="_blank">🖥️ Watch it</a>
+          {% endif %}
           <span style="display:inline-block;width: 5px"></span>
-          <a href="{{ talk.slides_url }}" target="_blank">🃏 Presentation slides</a>
+          {% if talk.slides_url %}
+            <a href="{{ talk.slides_url }}" target="_blank">🃏 Presentation slides</a>
+          {% endif %}
         </p>
         <p class="description">{{ talk.description }}</p>
-        <div class="embedded-video">
-          <iframe src="{{ talk.video_url }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+
+        {% if talk.slides_url %}
+          <div class="embedded-video">
+            <iframe src="{{ talk.video_url }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        {% endif %}
       </li>
     {% endfor %}
   </ul>
