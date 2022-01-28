@@ -10,20 +10,23 @@
 {% endcomment %}
 
 {% assign aside_type = include.type | default: 'info' %}
+{% assign should_show_icon = include.icon != false %}
 
 <aside class="Note Note--{{aside_type}}">
-  <div class="icon-box">
-    <span class="icon">
-      {% if aside_type == "info" %}
-        i
-      {% elsif aside_type == "success" %}
-        ✓
-      {% elsif aside_type == "warn" %}
-        !
-      {% else %}
-        ✖
-      {% endif %} </span>
-  </div>
+  {% if include.type and should_show_icon %}
+    <div class="icon-box">
+      <span class="icon">
+        {% if aside_type == "info" %}
+          i
+        {% elsif aside_type == "success" %}
+          ✓
+        {% elsif aside_type == "warn" %}
+          !
+        {% else %}
+          ✖
+        {% endif %} </span>
+    </div>
+  {% endif %}
 
   {% if include.title != nil %}
     <strong class="title">{{include.title}}</strong>
