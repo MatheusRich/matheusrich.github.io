@@ -10,7 +10,9 @@ repo_url: https://github.com/MatheusRich/matheusrich.github.io
 
 markdown: kramdown
 highlighter: rouge
-plugins: [jekyll-paginate]
+plugins:
+  - jekyll-paginate
+  - jekyll-redirect-from
 paginate: 10
 
 navigation:
@@ -24,7 +26,6 @@ navigation:
     url: /all/
   - title: 🎙️ Talking
     url: /talks/
-    redirect: /talking/
 
 social:
   twitter: matheusrich
@@ -68,4 +69,3 @@ talks:
       I was invited to talk about the dangers of comments in the Ruby Rogues podcast.
     date: 2022-01-26 -0300
     audio_url: https://rubyrogues.com/comments-are-the-devil-ruby-532
-
