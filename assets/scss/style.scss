@@ -91,6 +91,23 @@
   display: block;
 }
 
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
