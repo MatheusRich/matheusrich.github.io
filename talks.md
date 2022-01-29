@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Talking | Rich Codes
+redirect_from: /talking
 ---
 
 <div id="articles">
@@ -32,5 +33,6 @@ title: Talking | Rich Codes
         {% endif %}
       </li>
     {% endfor %}
+
   </ul>
 </div>
