@@ -15,16 +15,16 @@ description: From resurrecting this blog to contributing to Ruby itself, 2021 wa
 
 Since 2018 I have been writing down things that happened in my life,
 particularly the good stuff, as we tend too often to forget about them and
-focus on the bad stuff.
+focus on the bad events.
 
 2021 was such a surprising year for me that I figured I could use some of those
 notes to reflect and review the year in a blog post.
 
 ## Where things started
 
-Some context, before 2021, I...
+For some context, before 2021, I...
 
-- was working in my first full-time job at [Brazilian startup];
+- was working in my first full-time job with an incredible team at [Brazilian startup];
 - had just created my [first](https://github.com/Fretadao/f_service)
   [three](https://rubygems.org/gems/benchable)
   [gems](https://rubygems.org/gems/ez_attributes) and I was pretty excited about
@@ -56,19 +56,17 @@ Kinda out of nowhere, I decided to [learn Rust](/on-learning-rust). I'm delighte
 picked one very different (statically typed and compiled). Not exactly the
 easiest way to learn a new language, but as one of my first projects, I created
 [Lana](https://github.com/MatheusRich/lana), a LISP implemented in Rust
-influenced by Clojure. It was a fun project, but I left a [lot of ideas]
-unimplemented.
+influenced by Clojure.
 
 [don't use comments! use code.]: /dont-use-comments-use-code/
 [podcast]: /talks/#comments-are-the-devil-ruby-rogues-podcast
-[lot of ideas]: https://github.com/MatheusRich/lana/issues
 
 ### Career
 
 I was used to doing internal presentations at my previous job, but I gave talks
 elsewhere for the first time this year. They were on the [3rd] and [5th]
 editions of [ada.rb], alongside people like [Rafael França], who has always been
-a role model for me (even more because he's Brazilian).
+a role model for me.
 
 [3rd]: /talks/#taming-god-objects
 [5th]: /talks/#start-tdding-in-5-minutes-lightning-talk
@@ -89,7 +87,7 @@ otherworldly working with people I always admired, like [Josh Clayton], [Steph
 Viccari], and [Joël Quenneville] (to not mention all the other **amazing** folks
 I met after I joined). For sure, this was one of the best decisions I've made in my life.
 
-From the technologies side, I still got to work with Ruby, which I absolutely
+On the technology aspect, I still got to work with Ruby, which I absolutely
 _love_, but I got the chance to work with other tools as well, like Next.js and
 TypeScript.
 
@@ -103,7 +101,7 @@ TypeScript.
     </li>
     <li>
       <a href="https://nextjs.org/">Next.js</a>: it's slick and has great docs, but I'm still skeptical about it.
-      It felt like overengineering for most cases. I still think that
+      It felt like overengineering for most cases. I think that
       something like <a href="https://hotwired.dev/">Hotwire</a> or
       <a href="https://github.com/phoenixframework/phoenix_live_view">LiveView</a> are saner approaches
       (especially for small teams).
@@ -197,7 +195,7 @@ reading Ultimate Marvel!
   include figure.html
     src="2021-in-review/webdev-parker.jpeg"
     width="800px"
-    caption="Did you know that Peter Parker is a web developer? He needs to freshen up his DevOps skills, tho."
+    caption="Did you know that Peter Parker is a web developer (no pun intended)? He needs to freshen up his DevOps skills, tho."
 %}
 
 ### Health
@@ -231,7 +229,7 @@ The consistency made me be featured on RubyWeekly 3 times [^1] <sup>∙</sup> [^
 too!
 
 Contributing to Rails and especially Ruby were my personal highlights of 2021.
-I've always wanted to do this! I'm really pleased with those achievements.
+I've always wanted to do this! I'm really happy with those achievements.
 
 [^1]: Ruby Cards [in RubyWeekly](https://rubyweekly.com/issues/546#:~:text=around%20the%C2%A0corner.-,%40RubyCards,-is%20a%20Twitter)
 [^2]: Thread about Matz's view on what's coming after Ruby 3.0 [in RubyWeekly](https://rubyweekly.com/issues/556#:~:text=you%20can%20enjoy-,Matheus%20Richard%27s,-Twitter%20notes%20of)
@@ -267,7 +265,8 @@ decision.
 
 ## 2022
 
-My main goal with 2022 is to keep doing what went well last year and improve what didn't work.
+My main goal with 2022 is to keep doing what went well last year and improve
+what didn't work.
 
 I wanna keep getting involved in Ruby's development and keep working on my
 health. I'll leave game development on hold for a while and focus on programming
