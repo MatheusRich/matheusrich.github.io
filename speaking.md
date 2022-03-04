@@ -1,11 +1,13 @@
 ---
 layout: default
-title: Talking | Rich Codes
-redirect_from: /talking
+title: Speaking | Rich Codes
+redirect_from:
+  - /talking
+  - /talks
 ---
 
 <div id="articles">
-  <h1 class="pageTitle">Talking</h1>
+  <h1 class="pageTitle">Speaking</h1>
   <ul class="posts noList">
     {% assign sorted_talks = site.talks | sort: 'date' | reverse %}
     {% for talk in sorted_talks %}

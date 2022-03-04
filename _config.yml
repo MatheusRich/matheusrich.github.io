@@ -24,8 +24,8 @@ navigation:
     url: /categories/
   - title: 📝 All posts
     url: /all/
-  - title: 🎙️ Talking
-    url: /talks/
+  - title: 🎙️ Speaking
+    url: /speaking/
 
 social:
   twitter: matheusrich
