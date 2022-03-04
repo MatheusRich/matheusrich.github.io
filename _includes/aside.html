@@ -10,10 +10,9 @@
 {% endcomment %}
 
 {% assign aside_type = include.type | default: 'info' %}
-{% assign should_show_icon = include.icon != false %}
 
 <aside class="Note Note--{{aside_type}}">
-  {% if include.type and should_show_icon %}
+  {% if include.type and include.icon != false %}
     <div class="icon-box">
       <span class="icon">
         {% if aside_type == "info" %}
