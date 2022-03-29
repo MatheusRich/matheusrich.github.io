@@ -66,6 +66,6 @@ talks:
   - title: Comments are the devil - Ruby Rogues Podcast
     description: >
       Inspired by the article <a href="/dont-use-comments-use-code/">Don’t use comments! Use code</a>,
-      I was invited to talk about the dangers of comments in the Ruby Rogues podcast.
+      I was invited to talk in the Ruby Rogues podcast about the dangers of comments.
     date: 2022-01-26 -0300
     audio_url: https://rubyrogues.com/comments-are-the-devil-ruby-532

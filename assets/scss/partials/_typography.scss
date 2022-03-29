@@ -97,6 +97,16 @@ blockquote {
   }
 }
 
+cite {
+  font-size: 1.25rem; // 20px / 16px
+}
+
+@media (min-width: 43.75em) {
+  cite {
+    font-size: 1.25rem;
+  }
+}
+
 code,
 kbd,
 samp,

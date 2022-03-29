@@ -267,31 +267,44 @@ POST STYLING
     padding: 0;
     line-height: 1.8;
     position: relative;
+    color: var(--secondary-text-color);
 
     p {
+      font-style: italic;
       text-align: center;
+      margin: 0 2rem;
+    }
+
+    cite {
+      display: block;
+      text-align: right;
+      color: var(--primary-color-lt);
+
+      &:before {
+        content: "— ";
+      }
     }
 
     &:before {
-      content: "";
-      position: absolute;
-      top: -1.25em;
-      background: var(--primary-color);
-      display: block;
-      height: 2px;
-      width: 150px;
-      left: calc(50% - 75px);
+      content: "“";
+      left: -8px;
     }
 
     &:after {
-      content: "";
+      content: "”";
+      right: 0px;
+
+      @media only screen and (min-width: 800px) {
+        right: 15px;
+      }
+    }
+
+    &:before,
+    &:after {
       position: absolute;
-      bottom: -1.25em;
-      background: var(--primary-color);
-      display: block;
-      height: 2px;
-      width: 150px;
-      left: calc(50% - 75px);
+      top: -20px;
+      font: italic 4rem var(--serif-font);
+      color: var(--primary-color-lt);
     }
   }
 

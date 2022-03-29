@@ -5,9 +5,15 @@ date: 2021-02-24 10:57:55 -0300
 categories: productivity
 ---
 
-> You're tired. Exhausted. Your mind simply isn't responding. You stare at the code; it stares back
-> at you. You type something. It doesn't work. You delete it. The clock says: `04:00 PM`. <br>You
-> know what you need: **a break**.
+<div class="intro">
+  <p>
+    You're tired. Exhausted. Your mind simply isn't responding. You stare at the code; it stares back
+    at you. You type something. It doesn't work. You delete it.
+    The clock says: <code class="language-plaintext highlighter-rouge">04:00 PM</code>.
+    <br>
+    You know what you need: <strong>a break</strong>.
+  </p>
+</div>
 
 Working when we're tired is **really dangerous** (to us and our applications). We write buggy code,
 make silly mistakes, they frustrate us, and, finally, _we burn out_. Everyone has been there. So,
