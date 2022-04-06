@@ -120,6 +120,10 @@ MENU STYLING
         text-decoration: none;
         display: block;
         padding: 1rem 2rem;
+
+        &:hover {
+          color: var(--highlight-color);
+        }
       }
     }
   }
