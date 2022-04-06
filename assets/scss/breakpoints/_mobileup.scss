@@ -773,12 +773,31 @@ h3[id],
 h4[id],
 h5[id],
 h6[id] {
+  display: flex;
+  align-items: center;
+
   & > a {
     color: var(--primary-text-color);
 
     &:hover {
       text-decoration: underline;
     }
+  }
+  &::before {
+    display: none;
+    content: "#";
+    color: var(--primary-color-lt);
+    font-size: 0.7em;
+    position: absolute;
+    margin-left: -0.75em;
+
+    @media screen and (min-width: 800px) {
+      margin-left: -1em;
+      font-size: 0.8em;
+    }
+  }
+  &:hover::before {
+    display: block;
   }
 }
 
