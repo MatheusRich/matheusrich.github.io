@@ -267,7 +267,7 @@ POST STYLING
     padding: 0;
     line-height: 1.8;
     position: relative;
-    color: var(--secondary-text-color);
+    color: var(--primary-color);
 
     p {
       font-style: italic;
@@ -278,7 +278,7 @@ POST STYLING
     cite {
       display: block;
       text-align: right;
-      color: var(--primary-color-lt);
+      color: var(--primary-color);
 
       &:before {
         opacity: 0.4;
