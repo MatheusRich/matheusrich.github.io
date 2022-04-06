@@ -281,6 +281,7 @@ POST STYLING
       color: var(--primary-color-lt);
 
       &:before {
+        opacity: 0.4;
         content: "— ";
       }
     }
@@ -302,6 +303,7 @@ POST STYLING
     &:before,
     &:after {
       position: absolute;
+      opacity: 0.4;
       top: -20px;
       font: italic 4rem var(--serif-font);
       color: var(--primary-color-lt);
