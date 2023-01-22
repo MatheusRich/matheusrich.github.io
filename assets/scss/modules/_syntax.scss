@@ -12,6 +12,13 @@
   color: var(--code-foreground-color);
 }
 
+figure.highlight,
+div.highlight {
+  $shadow-color: rgb(0 0 0 / 0.05);
+  border: 1px solid $shadow-color;
+  box-shadow: 0 1px 2px 0 $shadow-color;
+}
+
 // Highlighted lines
 .highlight .hll {
   $highlight-color: #97c475;

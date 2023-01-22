@@ -271,7 +271,7 @@ POST STYLING
     padding: 0;
     line-height: 1.8;
     position: relative;
-    color: var(--primary-color);
+    color: var(--secondary-text-color);
 
     p {
       font-style: italic;
@@ -282,7 +282,7 @@ POST STYLING
     cite {
       display: block;
       text-align: right;
-      color: var(--primary-color);
+      color: var(--secondary-text-color);
 
       &:before {
         opacity: 0.4;
@@ -588,6 +588,15 @@ code.language-plaintext.highlighter-rouge {
     display: block;
   }
 
+  & blockquote {
+    width: 100% !important;
+
+    & p {
+      width: 90% !important;
+      margin: 0 auto;
+    }
+  }
+
   & > p.content,
   details p {
     padding: 0;
@@ -595,6 +604,16 @@ code.language-plaintext.highlighter-rouge {
 
     &:not(:last-child) {
       margin-bottom: 1rem;
+    }
+  }
+
+  > h3,
+  h4,
+  h5,
+  h6 {
+    &:first-child {
+      margin-top: 0;
+      margin-left: 0;
     }
   }
 
