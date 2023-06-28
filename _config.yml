@@ -13,6 +13,7 @@ highlighter: rouge
 plugins:
   - jekyll-paginate
   - jekyll-redirect-from
+  - jekyll-seo-tag
 paginate: 10
 
 navigation:
