@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="en" class="no-js lt-ie9 lt-ie8" <![endif]-->
+<!--[if IE 8]><html lang="en" class="no-js lt-ie9" <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Different Ways to Contribute to Open Source</title>
+
+    <!-- Open Graph Meta -->
+    <meta content="Rich Codes" property="og:site_name">
+    
+      <meta content="Different Ways to Contribute to Open Source" property="og:title">
+    
+    
+      <meta content="article" property="og:type">
+    
+    
+      <meta content="Hi, I'm Matheus Richard, a Software Engineering from Brazil. I love open source, music, games and creating programming languages." property="og:description">
+    
+    
+      <meta content="http://matheusrich.com/start-contributing-to-open-source-today/" property="og:url">
+    
+    
+      <meta content="2021-05-31T23:00:00+00:00" property="article:published_time">
+      <meta content="http://matheusrich.com/about/" property="article:author">
+    
+    
+      <meta content="http://matheusrich.com/assets/img/code.webp" property="og:image">
+    
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@matheusrich">
+    <meta name="twitter:creator" content="@matheusrich">
+    
+      <meta name="twitter:title" content="Different Ways to Contribute to Open Source">
+    
+    
+      <meta name="twitter:url" content="http://matheusrich.com/start-contributing-to-open-source-today/">
+    
+    
+      <meta name="twitter:description" content="Hi, I'm Matheus Richard, a Software Engineering from Brazil. I love open source, music, games and creating programming languages.">
+    
+    
+      <meta name="twitter:image:src" content="http://matheusrich.com/assets/img/code.webp">
+    
+
+    <meta name="theme-color" content="#111" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+
+    <!-- Come and get me RSS readers -->
+    <link rel="alternate" type="application/rss+xml" title="Rich Codes" href="http://matheusrich.com/feed.xml" />
+
+    <!-- Stylesheet -->
+    <link async rel="stylesheet" href="/assets/css/style.css">
+    <!--[if IE 8]><link rel="stylesheet" href="/assets/css/ie.css"><![endif]-->
+
+    <link rel="canonical" href="http://matheusrich.com/start-contributing-to-open-source-today/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Different Ways to Contribute to Open Source | Rich Codes</title>
+<meta name="generator" content="Jekyll v4.2.1" />
+<meta property="og:title" content="Different Ways to Contribute to Open Source" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="OSS is a wonderful thing! I was so grateful for the OSS tools I used in my projects, that I started contributing to OSS as retribution! If you want to get started with OSS contributions, here are several ways to do it." />
+<meta property="og:description" content="OSS is a wonderful thing! I was so grateful for the OSS tools I used in my projects, that I started contributing to OSS as retribution! If you want to get started with OSS contributions, here are several ways to do it." />
+<link rel="canonical" href="http://matheusrich.com/start-contributing-to-open-source-today/" />
+<meta property="og:url" content="http://matheusrich.com/start-contributing-to-open-source-today/" />
+<meta property="og:site_name" content="Rich Codes" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-05-31T23:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Different Ways to Contribute to Open Source" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2021-05-31T23:00:00+00:00","datePublished":"2021-05-31T23:00:00+00:00","description":"OSS is a wonderful thing! I was so grateful for the OSS tools I used in my projects, that I started contributing to OSS as retribution! If you want to get started with OSS contributions, here are several ways to do it.","headline":"Different Ways to Contribute to Open Source","mainEntityOfPage":{"@type":"WebPage","@id":"http://matheusrich.com/start-contributing-to-open-source-today/"},"url":"http://matheusrich.com/start-contributing-to-open-source-today/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+
+<body>
+
+   <div class="header">
+  <div class="container">
+    <h1 class="logo">
+      <a href="/">
+        <span class="dir">~</span>
+        <span class="text"> RICH CODES </span>
+      </a>
+    </h1>
+    <nav class="nav-collapse" style="visibility: hidden">
+      <ul class="noList">
+        
+        <li class="element first ">
+          <a href="/">🏠 Home</a>
+        </li>
+        
+        <li class="element  ">
+          <a href="/about/">👨‍💻 About me</a>
+        </li>
+        
+        <li class="element  ">
+          <a href="/categories/">🏷️ Categories</a>
+        </li>
+        
+        <li class="element  ">
+          <a href="/all/">📝 All posts</a>
+        </li>
+        
+        <li class="element  ">
+          <a href="/speaking/">🎙️ Speaking</a>
+        </li>
+        
+        <li class="element last">
+          <button class="theme-toggle" data-theme="dark" onclick="toggleTheme()">Turn lights</button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<!-- end .header -->
+
+<script>
+  function toggleTheme() {
+    const systemInitiatedDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const currentOverridenTheme = sessionStorage.getItem('theme');
+
+    if (currentOverridenTheme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'light');
+      sessionStorage.setItem('theme', 'light');
+    } else if (currentOverridenTheme === 'light') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      sessionStorage.setItem('theme', 'dark');
+    } else if (systemInitiatedDark.matches) {
+      document.documentElement.setAttribute('data-theme', 'light');
+      sessionStorage.setItem('theme', 'light');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      sessionStorage.setItem('theme', 'dark');
+    }
+  }
+
+  const overridenTheme = sessionStorage.getItem('theme');
+  if (overridenTheme === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    sessionStorage.setItem('theme', 'dark');
+  } else if (overridenTheme === 'light') {
+    document.documentElement.setAttribute('data-theme', 'light');
+    sessionStorage.setItem('theme', 'light');
+  }
+</script>
+
+
+   <div class="content">
+      <div class="container">
+         <article class="post">
+  
+
+  <h1 class="postTitle">
+    Different Ways to Contribute to Open Source
+  </h1>
+
+  <p class="meta">
+    May 31, 2021 | <span class="time">6</span> minute read
+    
+
+    
+      | ✍🏼
+        <a href="https://github.com/MatheusRich/matheusrich.github.io/blob/main/_posts/2021-05-31-start-contributing-to-open-source-today.md">
+          Fix typo
+        </a>
+    
+
+    
+  </p>
+
+  <p>OSS is a wonderful thing! I was so grateful for the OSS tools I used in my projects, that I started
+contributing to OSS as retribution! If you want to get started with OSS contributions, here are
+several ways to do it.</p>
+
+<p>In each section, I’m going to present a topic, explain it, and link some Pull Request that I did in
+that “category” so you can take a look to get inspired/learn something.</p>
+
+<h2 id="-bugfixes"><a href="#-bugfixes">🐛 Bugfixes</a></h2>
+
+<p>If you fix a bug, maintainers will <strong>love</strong> you. It can be a bug you found, or an issue tagged with
+a <a href="https://github.com/search?q=label%3Abug&amp;type=Issues"><code class="language-plaintext highlighter-rouge">bug</code></a> label. It is a good opportunity to fix that 1px misaligned item that is
+bothering you since forever.</p>
+
+<p>Or maybe you tried something and it didn’t work quite well on your machine. If you figure out what
+went wrong, <strong>don’t keep it to yourself</strong>! Open a PR!</p>
+
+<p>Some bug fixes I did:</p>
+
+<ul>
+  <li><a href="https://github.com/crystal-ameba/github-action/pull/9">Ameba GH Action - Prevent linter to run on external libraries code</a></li>
+  <li><a href="https://github.com/crystal-ameba/ameba/pull/151">Ameba - Handle duplicated files when running linter</a></li>
+</ul>
+
+<h2 id="-new-features"><a href="#-new-features">✨ New features</a></h2>
+
+<p>Do you wish that a library did X for you? Don’t expect maintainers do it for you. Code it and
+submit a PR! Maybe you already have something in your codebase that could be pushed upstream. That
+is what happened with the following contributions:</p>
+
+<ul>
+  <li><a href="https://github.com/rspec/rspec-core/pull/2778">RSpec - Allow ordering specs by modification time</a></li>
+  <li><a href="https://github.com/brianmaierjr/long-haul/pull/78">Long Haul - Add support for Disqus comments</a></li>
+  <li><a href="https://github.com/ueberdosis/tiptap/pull/213">tiptap - Add support to history custom settings</a></li>
+  <li><a href="https://github.com/codeodor/minitest-stub_any_instance/pull/13/files">mintest-stub_any_instance - Allow stubbing without a value</a></li>
+</ul>
+
+<p>That is one of the nicest things about open source: you can contribute back to projects that helped
+you! You may open an issue first, asking maintainers if they like your feature idea.</p>
+
+<h2 id="-improve-performance--refactor-code"><a href="#-improve-performance--refactor-code">⚡ Improve performance / Refactor code</a></h2>
+
+<p>If you’re experienced in a language you probably know some patterns or methods that are more performant than others,
+i.e, they run faster and/or with less memory. For instance, in Ruby using <code class="language-plaintext highlighter-rouge">each + push</code> <a href="https://github.com/JuanitoFatas/fast-ruby#enumerableeach--push-vs-enumerablemap-code">is slower</a> than using
+<code class="language-plaintext highlighter-rouge">map</code>. This is an opportunity to find those patterns and replace them with more performant alternatives. When you do
+this kind of contribution, don’t forget to add benchmarks to your PR to make it more compelling.</p>
+
+<p>You can do some refactoring too: deleting unused code, fixing deprecation notes/methods, untangling some nested
+<code class="language-plaintext highlighter-rouge">if/else</code> with <a href="https://refactoring.com/catalog/replaceNestedConditionalWithGuardClauses.html">guard clauses</a>, etc. Making the code easier to read is important to add new features and finding
+bugs in the future.</p>
+
+<p>Here’s some PRs I did for <a href="https://rubyonrails.org/">Ruby on Rails</a> in this category:</p>
+
+<ul>
+  <li><a href="https://github.com/rails/rails/pull/42054">Replace <code class="language-plaintext highlighter-rouge">gsub</code> with <code class="language-plaintext highlighter-rouge">tr</code></a></li>
+  <li><a href="https://github.com/rails/rails/pull/42053">Replace <code class="language-plaintext highlighter-rouge">map + compact</code> with <code class="language-plaintext highlighter-rouge">filter_map</code></a></li>
+  <li><a href="https://github.com/rails/rails/pull/41335">Reduce memory allocations</a></li>
+</ul>
+
+<h2 id="-add-tests"><a href="#-add-tests">🧪 Add tests</a></h2>
+
+<p>Tests make us feel more confident about the code we write and the changes we make. Well-tested OSS benefits everyone
+using it! So, you can help yourself and the whole community by adding tests to a project! Adding a test coverage tool is
+another way to contribute to this topic. Setting up a coverage tool helps to understand which areas of the core aren’t
+tested.</p>
+
+<p>This was exactly what I did for <code class="language-plaintext highlighter-rouge">gem-web</code>. I added <a href="https://github.com/simplecov-ruby/simplecov">simplecov</a> and with the
+coverage tool properly configured, I added tests for the missing parts:</p>
+
+<ul>
+  <li><a href="https://github.com/bitboxer/gem-web/pull/5">gem-web - Add test coverage tool</a></li>
+  <li><a href="https://github.com/bitboxer/gem-web/pull/6">gem-web - Add tests</a></li>
+</ul>
+
+<h2 id="-devops"><a href="#-devops">🐋 DevOps</a></h2>
+
+<p>Adding a Docker/Docker Compose setup is a nice way to help newcomers onboard a project, especially when the project is
+an app with several moving parts (core, database, cache services etc). Setting up all that may be hard, but running
+<code class="language-plaintext highlighter-rouge">docker-compose up</code> is <em>far</em> easier.</p>
+
+<p>There’s other things you can contribute: almost every project nowadays has a Continuous Integration (CI) pipeline
+(Gitlab CI, GitHub Actions, Travis CI, Circle CI, Jenkins etc). Setting up a pipeline is an contribution in itself, but
+you can go further and set up linters, security checks and even a staging build in some cases!</p>
+
+<p>Here’s an example of a PR where I introduced a Dockerfile as an alternative setup build script:</p>
+
+<ul>
+  <li><a href="https://github.com/zynaddsubfx/zyn-fusion-build/pull/29">zynaddsubfx - Add Dockerfile</a></li>
+</ul>
+
+<h2 id="-oss-is-more-than-code"><a href="#-oss-is-more-than-code">👩‍💻 OSS is more than code!</a></h2>
+
+<p>As developers, we love to code, but OSS is far beyond just coding! Maintainers have to deal with a variety of different
+problems: documentation, helping beginners, handling poorly written issues, spams, reviewing Pull Requests, etc. We can do
+OSS by helping them with these tasks!</p>
+
+<h3 id="-reviewing-prs"><a href="#-reviewing-prs">👍 Reviewing PRs</a></h3>
+
+<p>You don’t need to be a maintainer to do that! I took much time to understand this. Reviewing PRs also helps the
+contributor to not feel bad about their work not being reviewed for many days, and you help address issues faster
+(typos, changing naming, refactorings, adding docs, etc). Just <strong>be kind</strong> and helpful. Here’s <a href="https://stackoverflow.blog/2019/09/30/how-to-make-good-code-reviews-better/">more tips on good code
+reviews</a>.</p>
+
+<h3 id="️️-reproducing-issues">🕵️‍♂️ Reproducing issues</h3>
+
+<p>If you’ve been part of a reasonably used OSS project, then you know how hard is to handle issues.
+Many of them don’t even have enough information to reproduce and diagnose its causes. You can help
+maintainers by trying to reproduce issues! You may have to ask users for more information (OS,
+language, library versions, for example), or steps to reproduce it. Sometimes the behavior is not a
+problem, but a deliberate choice.</p>
+
+<h3 id="-improving-documentation"><a href="#-improving-documentation">📝 Improving documentation</a></h3>
+
+<p>This is one of my preferred ways to contribute to OSS. Here we have a lot of options: fixing typos, rewriting confusing
+sections, adding docs where it’s missing. The best is that you can improve documentation as you read it! If you’re
+learning a new tool, this may be the simplest way to start contributing!</p>
+
+<p>The contributions below were made just as I started studying the tools:</p>
+
+<ul>
+  <li><a href="https://github.com/luckyframework/website/pull/305">Lucky - Fix long links in small screens</a></li>
+  <li><a href="https://github.com/crystal-lang/crystal-book/pull/394">Crystal Book - Use simpler algorithm in docs</a></li>
+  <li><a href="https://github.com/amberframework/amber/pull/1153">Amber - Fix broken links in README</a></li>
+</ul>
+
+<h3 id="-use-your-imagination"><a href="#-use-your-imagination">🎨 Use your imagination!</a></h3>
+
+<p>As I said earlier, OSS is not only about code! Any skill you have may be useful to someone! If you’re a musician or
+artist, for example, there’s plenty of things you can contribute to. Here’s an example of a PR where I created a logo
+for a project of a friend of mine:</p>
+
+<ul>
+  <li><a href="https://github.com/andre-filho/commit-helper/pull/27">Commit Helper - Add logo</a></li>
+</ul>
+
+<h2 id="-general-advice"><a href="#-general-advice">🎯 General advice</a></h2>
+
+<ul>
+  <li><strong>Read contributing guide and code of conduct</strong> This should be your first step before actually doing some
+contribution. Reading those guidelines will help you understand what contributions are accepted, how to make them, and
+what is necessary for approving them. Those are generally the files CONTRIBUTING.md and CODE_OF_CONDUCT.md;</li>
+  <li><strong>Be patient and kind:</strong> Maintainers have lives too! Most of them make <strong>no money</strong> from OSS, so please be patient if your PR takes a while until being reviewed/approved;</li>
+  <li><strong>It’s not about you:</strong> Do not take things personally! If someone adds a comment about your code, it’s just about your
+code, don’t be sad about it, but use it as an opportunity to learn something;</li>
+  <li><strong>Not everything you do will/needs to be approved:</strong> Sometimes our contributions don’t match the project’s needs/vision
+and end up not accepted, and <strong>that’s okay</strong>. This is part of open source and we have to understand it. The code you
+wrote can always live as a plugin/extension too. Here’s three unapproved PRs I did:
+    <ul>
+      <li><a href="https://github.com/rust-lang/book/pull/2673">Rust Book - Improve example</a></li>
+      <li><a href="https://github.com/kschiess/parslet/pull/200">Parslet - Convert README to markdown</a></li>
+      <li><a href="https://github.com/rubygems/rubygems/pull/2835">Rubygems - Add <code class="language-plaintext highlighter-rouge">web</code> command</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="-yes-you-can"><a href="#-yes-you-can">💪 Yes, you can</a></h2>
+
+<p>First of all, contributing to open source is not a <em>experienced-developer-only</em> thing. Many of the contributions I did
+were <em>because</em> I was a beginner on the language/tool. <strong>Use this as your advantage</strong>: beginners have sharp eyes for
+missing or confusing docs, for example. Your trajectory can help future beginners have a smoother onboarding!</p>
+
+<p>Look for issues with the tags <a href="https://github.com/search?q=label%3Afirst-timers-only&amp;type=Issues">first-timers-only-issue</a>, <a href="https://github.com/search?q=label%3Aeasy&amp;type=Issues">easy</a>, <a href="https://github.com/search?q=label%3Abeginner&amp;type=Issues">beginner</a> and <a href="https://github.com/search?q=label%3A%22good+first+issue%22&amp;type=Issues">good first
+issue</a>. And here’s a <a href="https://github.com/MunGell/awesome-for-beginners">list of beginner-friendly projects</a>.</p>
+
+<p>Now grab your cup of coffee, stretch your hands and go do something awesome 😉!</p>
+
+
+
+
+  <div class="Categories">
+    <h2>Categories</h2>
+
+    
+    
+      <a href="/categories/#beginner"><span class="Tag Tag--outlined">beginner</span></a>
+    
+      <a href="/categories/#oss"><span class="Tag Tag--outlined">oss</span></a>
+    
+  </div>
+
+  <!-- POST NAVIGATION -->
+  <div class="postNav clearfix">
+    
+      <a class="prev" href="/mocking-made-simple/"><span>&laquo;&nbsp;Mocking Made Simple</span>
+      
+    </a>
+    
+    
+      <a class="next" href="/my-first-month-or-so-with-rust/"><span>My First Month (or so) With Rust&nbsp;&raquo;</span>
+      
+      </a>
+    
+  </div>
+</article>
+      </div>
+   </div><!-- end .content -->
+
+   <div class="footer">
+   <div class="container">
+      <p class="copy"></a> Powered by <a href="http://jekyllrb.com">Jekyll</a> ❤️</p>
+
+      <div class="footer-links">
+         <ul class="noList">
+            
+            
+            <li><a href="https://twitter.com/matheusrich">
+                  <svg id="twitter" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" style="height: 30px; width: 30px;"><circle class="outer-shape" cx="50" cy="50" r="48" style="opacity: 1;"></circle>
+                  <path class="inner-shape" style="opacity: 1;" transform="translate(25,25) scale(0.5)" d="M99.001,19.428c-3.606,1.608-7.48,2.695-11.547,3.184c4.15-2.503,7.338-6.466,8.841-11.189 c-3.885,2.318-8.187,4-12.768,4.908c-3.667-3.931-8.893-6.387-14.676-6.387c-11.104,0-20.107,9.054-20.107,20.223 c0,1.585,0.177,3.128,0.52,4.609c-16.71-0.845-31.525-8.895-41.442-21.131C6.092,16.633,5.1,20.107,5.1,23.813 c0,7.017,3.55,13.208,8.945,16.834c-3.296-0.104-6.397-1.014-9.106-2.529c-0.002,0.085-0.002,0.17-0.002,0.255 c0,9.799,6.931,17.972,16.129,19.831c-1.688,0.463-3.463,0.71-5.297,0.71c-1.296,0-2.555-0.127-3.783-0.363 c2.559,8.034,9.984,13.882,18.782,14.045c-6.881,5.424-15.551,8.657-24.971,8.657c-1.623,0-3.223-0.096-4.796-0.282 c8.898,5.738,19.467,9.087,30.82,9.087c36.982,0,57.206-30.817,57.206-57.543c0-0.877-0.02-1.748-0.059-2.617 C92.896,27.045,96.305,23.482,99.001,19.428z"></path>
+                  </svg>
+            </a></li>
+            
+            
+            <li><a href="https://github.com/matheusrich">
+                  <svg id="github" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" style="height: 30px; width: 30px;"><circle class="outer-shape" cx="50" cy="50" r="48" style="opacity: 1;"></circle>
+                  <path class="inner-shape" style="opacity: 1;" transform="translate(25,25) scale(0.5)" d="M50,1C22.938,1,1,22.938,1,50s21.938,49,49,49s49-21.938,49-49S77.062,1,50,1z M79.099,79.099 c-3.782,3.782-8.184,6.75-13.083,8.823c-1.245,0.526-2.509,0.989-3.79,1.387v-7.344c0-3.86-1.324-6.699-3.972-8.517 c1.659-0.16,3.182-0.383,4.57-0.67c1.388-0.287,2.855-0.702,4.402-1.245c1.547-0.543,2.935-1.189,4.163-1.938 c1.228-0.75,2.409-1.723,3.541-2.919s2.082-2.552,2.847-4.067s1.372-3.334,1.818-5.455c0.446-2.121,0.67-4.458,0.67-7.01 c0-4.945-1.611-9.155-4.833-12.633c1.467-3.828,1.308-7.991-0.478-12.489l-1.197-0.143c-0.829-0.096-2.321,0.255-4.474,1.053 c-2.153,0.798-4.57,2.105-7.249,3.924c-3.797-1.053-7.736-1.579-11.82-1.579c-4.115,0-8.039,0.526-11.772,1.579 c-1.69-1.149-3.294-2.097-4.809-2.847c-1.515-0.75-2.727-1.26-3.637-1.532c-0.909-0.271-1.754-0.439-2.536-0.503 c-0.782-0.064-1.284-0.079-1.507-0.048c-0.223,0.031-0.383,0.064-0.478,0.096c-1.787,4.53-1.946,8.694-0.478,12.489 c-3.222,3.477-4.833,7.688-4.833,12.633c0,2.552,0.223,4.889,0.67,7.01c0.447,2.121,1.053,3.94,1.818,5.455 c0.765,1.515,1.715,2.871,2.847,4.067s2.313,2.169,3.541,2.919c1.228,0.751,2.616,1.396,4.163,1.938 c1.547,0.543,3.014,0.957,4.402,1.245c1.388,0.287,2.911,0.511,4.57,0.67c-2.616,1.787-3.924,4.626-3.924,8.517v7.487 c-1.445-0.43-2.869-0.938-4.268-1.53c-4.899-2.073-9.301-5.041-13.083-8.823c-3.782-3.782-6.75-8.184-8.823-13.083 C9.934,60.948,8.847,55.56,8.847,50s1.087-10.948,3.231-16.016c2.073-4.899,5.041-9.301,8.823-13.083s8.184-6.75,13.083-8.823 C39.052,9.934,44.44,8.847,50,8.847s10.948,1.087,16.016,3.231c4.9,2.073,9.301,5.041,13.083,8.823 c3.782,3.782,6.75,8.184,8.823,13.083c2.143,5.069,3.23,10.457,3.23,16.016s-1.087,10.948-3.231,16.016 C85.848,70.915,82.88,75.317,79.099,79.099L79.099,79.099z"></path>
+                  </svg>
+            </a></li>
+            
+            
+            <li><a href="https://www.linkedin.com/in/matheus-richard">
+                  <svg id="linkedin" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" style="height: 30px; width: 30px;"><circle class="outer-shape" cx="50" cy="50" r="48" style="opacity: 1;"></circle>
+                  <path class="inner-shape" style="opacity: 1;" transform="translate(30,25) scale(1.8)" d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+                  </svg>
+            </a></li>
+            
+            <li>
+               <a href="https://dev.to/matheusrich" class="dark-safe">
+                 <img src="/assets/img/dev-to-badge.svg" alt="Matheus Richard's DEV Profile" height="30" width="30">
+               </a>
+            </li>
+            
+            <li><a href="mailto:matheusrichardt@gmail.com">
+                  <svg id="mail" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" style="height: 30px; width: 30px;"><circle class="outer-shape" cx="50" cy="50" r="48" style="opacity: 1;"></circle>
+                  <path class="inner-shape" style="opacity: 1;" transform="translate(25,25) scale(0.5)" d="M50,1C22.938,1,1,22.938,1,50s21.938,49,49,49s49-21.938,49-49S77.062,1,50,1z M25.5,25.5h49 c0.874,0,1.723,0.188,2.502,0.542L50,57.544L22.998,26.041C23.777,25.687,24.626,25.499,25.5,25.5L25.5,25.5z M19.375,68.375v-36.75 c0-0.128,0.005-0.256,0.014-0.383l17.96,20.953L19.587,69.958C19.448,69.447,19.376,68.916,19.375,68.375L19.375,68.375z M74.5,74.5 h-49c-0.541,0-1.072-0.073-1.583-0.212l17.429-17.429L50,66.956l8.653-10.096l17.429,17.429C75.572,74.427,75.041,74.5,74.5,74.5 L74.5,74.5z M80.625,68.375c0,0.541-0.073,1.072-0.211,1.583L62.652,52.195l17.96-20.953c0.008,0.127,0.014,0.255,0.014,0.383 L80.625,68.375L80.625,68.375z"></path>
+                  </svg>
+            </a></li>
+            
+         </ul>
+      </div>
+   </div>
+</div><!-- end .footer -->
+
+
+   <script defer src="/assets/js/responsive-nav.min.js"></script>
+<script defer type="module" src="/assets/js/scripts.js"></script>
+
+
+</body>
+
+</html>

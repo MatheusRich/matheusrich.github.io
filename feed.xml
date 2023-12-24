@@ -1,0 +1,1866 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rich Codes</title>
+    <description>Hi, I'm Matheus Richard, a Software Engineering from Brazil. I love open source, music, games and creating programming languages.</description>
+    <link>http://matheusrich.com/</link>
+    <atom:link href="http://matheusrich.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 24 Dec 2023 20:27:33 +0000</pubDate>
+    <lastBuildDate>Sun, 24 Dec 2023 20:27:33 +0000</lastBuildDate>
+    <generator>Jekyll v4.2.1</generator>
+    
+      
+      <item>
+        <title>2022 In Review</title>
+        <description>&lt;p&gt;Two thousand and twenty two is over, so, &lt;a href=&quot;/categories/#year-in-review&quot;&gt;as usual&lt;/a&gt;, I took some time to reflect
+a bit on the things that happened (or didn’t happen) during the year.&lt;/p&gt;
+
+&lt;aside class=&quot;Note Note--info&quot;&gt;
+  
+
+  
+
+  &lt;p class=&quot;content&quot;&gt;Inspired by my friend &lt;a href=&quot;https://pothix.com/&quot;&gt;@PotHix&lt;/a&gt;, I’m including a bit more data (i.e., numbers) in this year’s review. I’m nowhere close to what &lt;a href=&quot;https://pothix.com/2020/&quot;&gt;he does&lt;/a&gt;, but it’s useful anyway.&lt;/p&gt;
+
+
+  
+&lt;/aside&gt;
+
+&lt;h2 id=&quot;career&quot;&gt;Career&lt;/h2&gt;
+
+&lt;p&gt;It has been a great year at thoughtbot. It’s the best place I’ve worked in, and
+I feel like everyone is trying to make it the best it can be. I get to work with
+great people and with cool projects. Working with Mozilla was one of the
+highlights for me this year. I got promoted and was a mentor in &lt;a href=&quot;https://thoughtbot.com/jobs#jobs&quot;&gt;the
+apprenticeship program&lt;/a&gt;, which was a great
+experience. I wish more places did something similar.&lt;/p&gt;
+
+&lt;aside class=&quot;Note&quot;&gt;
+  &lt;h4&gt;Quick takes:&lt;/h4&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;https://nestjs.com/&quot;&gt;Nest.js&lt;/a&gt;: I hated it! I felt like to get anything done I'd have to do a lot of pumbling. The test infra is not ideal. All the system test examples I saw would mock the DB (which is great for speed), but nothing ever touched the DB which felt really weird. There was no way of knowing if things were actually working. Also, no transactions between tests, so you have to roll back the data on your own.
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;https://openai.com/&quot;&gt;Open AI&lt;/a&gt;: I haven't done much work with it yet, so take this with a grain of salt. I'm also not interested in Q&amp;amp;A or chatting. I've used it for things like keyword extraction and text summarization, which it handled really well.
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/aside&gt;
+
+&lt;h3 id=&quot;name-pronunciations&quot;&gt;Name pronunciations&lt;/h3&gt;
+
+&lt;p&gt;Because I don’t have a “traditional name”, I’m often asked how to pronounce
+it. I figured other folks probably experienced the same, so I added support for
+uploading your name pronunciation to an internal thoughtbot tool. Thus, before
+going to a meeting with somebody new, you could check how to pronounce their
+name.&lt;/p&gt;
+
+&lt;p&gt;Turns out this feature was very appreciated, and I even got a shout-out on the
+&lt;a href=&quot;https://www.bikeshed.fm/323&quot;&gt;BikeShed podcast&lt;/a&gt; for that. This DEI theme
+would appear again in a blog post later in the year.&lt;/p&gt;
+
+&lt;h3 id=&quot;mining-gold&quot;&gt;Mining gold&lt;/h3&gt;
+
+&lt;p&gt;We have a lot of interesting discussions on thoughtbot’s Slack. I thought those
+could also benefit the community in some way, so I created a tool called
+GoldMiner that searches those conversations and turns them into &lt;a href=&quot;https://thoughtbot.com/blog/tags/this-week-in-dev&quot;&gt;blog
+posts&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I’m happy with the results, and I’m working on making it open-source.&lt;/p&gt;
+
+&lt;aside class=&quot;Note Note--info&quot;&gt;
+  
+    &lt;div class=&quot;icon-box&quot;&gt;
+      &lt;span class=&quot;icon&quot;&gt;
+        
+          i
+         &lt;/span&gt;
+    &lt;/div&gt;
+  
+
+  
+
+  &lt;p class=&quot;content&quot;&gt;2023 update: it’s now open-source! Check it out at &lt;a href=&quot;https://github.com/thoughtbot/gold_miner&quot;&gt;thoughtbot/gold_miner&lt;/a&gt;.&lt;/p&gt;
+
+
+  
+&lt;/aside&gt;
+
+&lt;h3 id=&quot;summits&quot;&gt;Summits&lt;/h3&gt;
+
+&lt;h4 id=&quot;brighton--london&quot;&gt;Brighton / London&lt;/h4&gt;
+
+&lt;p&gt;In May this year, I flew to Brighton (UK) to meet my coworkers in person for the
+first time! It also was my first international trip, which was scary and
+exciting. The impostor syndrome hit hard before getting there (I was suddenly
+afraid I wouldn’t be able to communicate properly 🤷🏽), but everything was
+fine. I had a wonderful time there. I also spent an extra week in London since I
+was so close.&lt;/p&gt;
+
+&lt;div class=&quot;flex flex-wrap flex-center gap-4&quot;&gt;
+  &lt;figure&gt;
+  &lt;img class=&quot;block mx-auto rounded h-auto &quot; loading=&quot;lazy&quot; src=&quot;/assets/img/2022-in-review/tower-bridge.png&quot; width=&quot;400px&quot; height=&quot;auto&quot; /&gt;
+
+  
+&lt;/figure&gt;
+
+
+  &lt;figure&gt;
+  &lt;img class=&quot;block mx-auto rounded h-auto &quot; loading=&quot;lazy&quot; src=&quot;/assets/img/2022-in-review/london-eye.png&quot; width=&quot;400px&quot; height=&quot;auto&quot; /&gt;
+
+  
+&lt;/figure&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Some thoughts about being in the UK:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Having sun at 9 PM was almost unbelievable to me. I knew this happened in
+other places, but actually seeing it was cool.&lt;/li&gt;
+  &lt;li&gt;Yeah, eating beans for breakfast is weird;&lt;/li&gt;
+  &lt;li&gt;Walking in the streets at night or with my phone in my hands was something…
+different.
+    &lt;ul&gt;
+      &lt;li&gt;After getting back to Brazil, I started noticing some things I did all the
+time, like always looking over my shoulders, not pulling my phone out of my
+pocket when there was some stranger too close in the streets, or rushing to
+get in/out of the car as fast as possible.&lt;/li&gt;
+      &lt;li&gt;I know there’s no perfect place, but it felt good to have a different
+lifestyle for a couple of days.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;azores&quot;&gt;Azores&lt;/h4&gt;
+
+&lt;p&gt;In October, we had another meeting, this time in the Azores (Portugal). Being in
+a different country but still speaking Portuguese was weird. It was confusing to
+switch from English to Portuguese all the time. I would often speak with a
+waiter in Portuguese and then in English two minutes later, for example.&lt;/p&gt;
+
+&lt;p&gt;Aside from amazing people, friends, and food, I did some hiking and went to the
+hot springs.&lt;/p&gt;
+
+&lt;div class=&quot;flex flex-wrap flex-center gap-4&quot;&gt;
+  &lt;figure&gt;
+  &lt;img class=&quot;block mx-auto rounded h-auto &quot; loading=&quot;lazy&quot; src=&quot;/assets/img/2022-in-review/lake.jpg&quot; width=&quot;400px&quot; height=&quot;auto&quot; /&gt;
+
+  
+    &lt;figcaption&gt;
+      You can really see a “volcano shape” in this picture.
+
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+
+  &lt;div&gt;
+    &lt;figure&gt;
+  &lt;img class=&quot;block mx-auto rounded h-auto &quot; loading=&quot;lazy&quot; src=&quot;/assets/img/2022-in-review/sea.jpg&quot; width=&quot;400px&quot; height=&quot;auto&quot; /&gt;
+
+  
+    &lt;figcaption&gt;
+      The sea was angry, no swimming for me.
+
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+
+    &lt;figure&gt;
+  &lt;img class=&quot;block mx-auto rounded h-auto &quot; loading=&quot;lazy&quot; src=&quot;/assets/img/2022-in-review/baos.jpg&quot; width=&quot;400px&quot; height=&quot;auto&quot; /&gt;
+
+  
+    &lt;figcaption&gt;
+      These baos (and the taco behind them) were ✨ A M A Z I N G ✨!
+
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Thoughts on being in the Azores:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;It’s weird to think I was basically at the top of a volcano.&lt;/li&gt;
+  &lt;li&gt;The architecture left me with an unsettling feeling: everything felt similar
+(like in a Brazilian town), but… &lt;em&gt;European&lt;/em&gt; in some way. Maybe it was the
+weather or the asphalt. Also, the beaches had black sand 🤔.&lt;/li&gt;
+  &lt;li&gt;The accent can be &lt;strong&gt;so difficult&lt;/strong&gt; to understand. They will generally soften
+their accent when speaking to a tourist, but when they talk between
+themselves… I couldn’t get a word!&lt;/li&gt;
+  &lt;li&gt;My favorite restaurant was TukáTulá, by far! It has a great view and great
+food.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;open-source&quot;&gt;Open-source&lt;/h2&gt;
+
+&lt;p&gt;Overall, I didn’t do much open-source work this year, but I’m happy with what I
+did.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;block mx-auto rounded h-auto &quot; loading=&quot;lazy&quot; src=&quot;/assets/img/2022-in-review/rubygems-2022.png&quot; width=&quot;600px&quot; height=&quot;auto&quot; /&gt;
+
+  
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;end-of-life&quot;&gt;End of Life&lt;/h3&gt;
+
+&lt;p&gt;January this year, I released my fourth gem:
+&lt;a href=&quot;https://github.com/MatheusRich/end_of_life&quot;&gt;end_of_life&lt;/a&gt;, a gem that helps you
+find which projects you have that use a deprecated Ruby version. It was one of
+those ideas I couldn’t take out of my head, so I hacked the first version during
+a weekend. It is pretty simple, but I think it has a nice UI, and I like how I
+&lt;a href=&quot;https://github.com/MatheusRich/end_of_life/blob/da5dc945fb69a735a4dc8d8fb947ac2ed31a680e/lib/end_of_life.rb#L39-L44&quot;&gt;handled errors using
+monads&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-rb highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# simplified version of the code that searches for repos with deprecated Ruby&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;check_eol_ruby_on_repositories&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;fetch_repositories&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;fmap&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;repositories&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;filter_repositories_with_end_of_life&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;repositories&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;fmap&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eol_repositories&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;print_diagnose_for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eol_repositories&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;error_msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I like this pipeline, and I don’t think it looks weird in Ruby. IMO, it’s much
+better than exceptions, which I first started using, and they didn’t play nice
+with Threads; then I had to do all sorts of workarounds, and suddenly everything
+was a mess.&lt;/p&gt;
+
+&lt;h3 id=&quot;rails&quot;&gt;Rails&lt;/h3&gt;
+
+&lt;p&gt;I’ve got one &lt;a href=&quot;https://github.com/rails/rails/pull/44085&quot;&gt;PR merged into Rails&lt;/a&gt;.
+It’s a small convenience and will be out on Rails 7.1.&lt;/p&gt;
+
+&lt;div class=&quot;language-rb highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Now it's possible to write&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;audio_tag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;audio_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;video_tag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;video_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Instead of&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;audio_tag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;polymorphic_path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;audio_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;video_tag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;polymorphic_path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;video_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I expected this to work, and I was surprised it didn’t. I believe most of my
+contributions to Rails will be similar to this.&lt;/p&gt;
+
+&lt;p&gt;I also participated in a few discussions/PR reviews. Some of those PRs &lt;a href=&quot;https://github.com/rails/rails/pull/43945&quot;&gt;got
+merged&lt;/a&gt;, and others &lt;a href=&quot;https://github.com/rails/rails/pull/45991&quot;&gt;were
+rejected&lt;/a&gt; in a few minutes. There are
+also the &lt;a href=&quot;https://github.com/rails/rails/pull/46863&quot;&gt;ones I don’t know yet&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;dry-monads&quot;&gt;Dry Monads&lt;/h3&gt;
+
+&lt;p&gt;I opened &lt;a href=&quot;https://github.com/dry-rb/dry-monads/pull/160&quot;&gt;a PR&lt;/a&gt; adding a new
+feature to dry-monads, but it was rejected. That happens sometimes, and it’s
+okay.&lt;/p&gt;
+
+&lt;h3 id=&quot;blogging&quot;&gt;Blogging&lt;/h3&gt;
+
+&lt;p&gt;I had the resolution to write one blog post per month in 2021 to force myself to
+get back to writing. That worked well, but I hated the pressure all the time.
+For this year, I felt that I would naturally write (especially during
+&lt;a href=&quot;https://thoughtbot.com/blog/investment-time&quot;&gt;Investment Days&lt;/a&gt;), so I didn’t
+force anything. I wrote when I felt like it and had time.&lt;/p&gt;
+
+&lt;p&gt;Turns out that this worked well. I wrote 14 articles throughout the year (one
+more than &lt;a href=&quot;https://www.matheusrich.com/all/#2021-ref&quot;&gt;last year&lt;/a&gt;). The
+difference is that (aside from two TILs articles and &lt;a href=&quot;https://www.matheusrich.com/2021-in-review/&quot;&gt;2021 In Review&lt;/a&gt;) all of
+them were written in &lt;a href=&quot;https://thoughtbot.com/blog/authors/matheus-richardc&quot;&gt;thoughtbot’s blog&lt;/a&gt;. I did that so I could reach a larger
+audience.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;block mx-auto rounded h-auto &quot; loading=&quot;lazy&quot; src=&quot;/assets/img/2022-in-review/post-frequency.svg&quot; width=&quot;600px&quot; height=&quot;auto&quot; /&gt;
+
+  
+    &lt;figcaption&gt;
+      I was sort of consistent with writing, although most of it happened in Q1 and Q4. I didn’t write anything during Q2.
+
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;My favorite 2022 article is &lt;a href=&quot;https://thoughtbot.com/blog/pipelining-without-pipes-in-ruby&quot;&gt;Pipelining without
+pipes&lt;/a&gt; because it
+was fun to write and has a silly premise (it even &lt;a href=&quot;https://rubyweekly.com/issues/595#:~:text=Pipelining%20Without%20Pipes&quot;&gt;appeared on
+RubyWeekly&lt;/a&gt;).
+&lt;a href=&quot;https://thoughtbot.com/blog/working-in-my-native-language-requires-empathy&quot;&gt;Working in my native language requires
+empathy&lt;/a&gt;
+was the hit, though. For some reason, it went viral on LinkedIn and got featured
+in &lt;a href=&quot;https://www.linkedin.com/news/story/bilingual-empathy-in-the-workplace-5282220/&quot;&gt;LinkedIn
+News&lt;/a&gt;.
+All of that felt weird to me. I almost didn’t publish that article because it
+was so intimate, but maybe that very thing was what made people connect to it.&lt;/p&gt;
+
+&lt;h3 id=&quot;ruby-cards&quot;&gt;Ruby Cards&lt;/h3&gt;
+
+&lt;p&gt;Ruby Cards kept going! I added a card every week (that I wasn’t on vacation) and
+I grew the number of followers a lot! &lt;a href=&quot;https://twitter.com/fxn&quot;&gt;Xavier Noria&lt;/a&gt;
+(known author of the gem &lt;a href=&quot;https://github.com/fxn/zeitwerk&quot;&gt;zeitwerk&lt;/a&gt;) retweeted
+one of the cards at the beginning of the year which bumped the account. Thank
+you!&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;block mx-auto rounded h-auto &quot; loading=&quot;lazy&quot; src=&quot;/assets/img/2022-in-review/rubycards-followers.svg&quot; width=&quot;600px&quot; height=&quot;auto&quot; /&gt;
+
+  
+    &lt;figcaption&gt;
+      Once again, consistency has proven to work. I’m proud of this growth.
+
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;However, it’s exhausting to add a card every week. Not only do I have to come up
+with something new, but I have to make sure that I didn’t post the same thing
+before (and two years’ worth of cards is quite a lot). I’ve been delaying this
+for a while, but I’ll have to automate the creation of cards (at least
+partially!) in some way.&lt;/p&gt;
+
+&lt;h2 id=&quot;hobbies-and-life&quot;&gt;Hobbies and Life&lt;/h2&gt;
+
+&lt;p&gt;Unlike last year, I did no pixel art and read no comics in 2022 (and I’m not
+sure if I’m going to get back at those soon), but there was one thing I really
+dug into: music.&lt;/p&gt;
+
+&lt;h3 id=&quot;music&quot;&gt;Music&lt;/h3&gt;
+
+&lt;p&gt;One of the first things I did this year was to get my guitar to a luthier. She
+was kinda left aside and needed a bit of love. After setting it up, I played a
+bit with plugins like AmpliTube, but I knew what I really wanted: an amp.&lt;/p&gt;
+
+&lt;p&gt;I did my research, and a few weeks later, I had a Katana in my hands.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;block mx-auto rounded h-auto &quot; loading=&quot;lazy&quot; src=&quot;/assets/img/2022-in-review/boss-katana.jpg&quot; width=&quot;600px&quot; height=&quot;auto&quot; /&gt;
+
+  
+    &lt;figcaption&gt;
+      This was the first guitar gear I got in &lt;em&gt;many&lt;/em&gt; years.
+
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;I finally can afford these things, so I went all-in this year. I always dreamed
+about having a pedalboard and stuff, so I started experimenting with gear little
+by little. Here’s a timeline of all the guitar stuff I ever owned:&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;block mx-auto rounded h-auto &quot; loading=&quot;lazy&quot; src=&quot;/assets/img/2022-in-review/gear-timeline-in-years.svg&quot; width=&quot;800px&quot; height=&quot;auto&quot; /&gt;
+
+  
+    &lt;figcaption&gt;
+      You can see how I basically owned the same two pieces of gear for 6 years (mostly during college, where I was too broke to buy anything), and how I went nuts in 2022 buying pedals.
+
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;Speaking of music, I didn’t listen to a lot of music as I would in the past. I
+don’t &lt;em&gt;feel&lt;/em&gt; like this is true, but it’s what the numbers show. I’m sure I would
+hear something close to 100k minutes per year during college. Maybe it was all
+the waiting at bus stops? Or maybe it’s because nowadays I also listen to music
+from my wife’s account when we’re on the car. Anyway, this is not a metric I’m
+trying to move up or down.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;block mx-auto rounded h-auto &quot; loading=&quot;lazy&quot; src=&quot;/assets/img/2022-in-review/spotify-minutes.jpeg&quot; width=&quot;600px&quot; height=&quot;auto&quot; /&gt;
+
+  
+&lt;/figure&gt;
+
+&lt;h4 id=&quot;brasília-music-school&quot;&gt;Brasília Music School&lt;/h4&gt;
+
+&lt;p&gt;Maybe my excitement with playing guitar was so evident that my wife asked me,
+&lt;em&gt;“Have you ever thought about going to Music School?”&lt;/em&gt;. I haven’t thought about
+that in years. I was so busy with college that I forgot about it altogether.&lt;/p&gt;
+
+&lt;p&gt;Well, there wasn’t any good reason &lt;em&gt;not&lt;/em&gt; to apply, so I did. I played a version
+of &lt;a href=&quot;https://www.youtube.com/watch?v=bWv3cZOBgpM&quot;&gt;Everyday I Have The Blues by John
+Mayer&lt;/a&gt; (I’m sorry, I’m too shy to
+show you the recording) and was accepted. My first semester was focused on the
+basics (pentatonics, how to read sheet music), but I’ve learned so much! I’m
+eagerly waiting for the next one.&lt;/p&gt;
+
+&lt;h3 id=&quot;im-learning-italian&quot;&gt;I’m learning Italian&lt;/h3&gt;
+
+&lt;p&gt;An Italian friend, &lt;a href=&quot;https://heyvaleria.github.io/&quot;&gt;Valeria&lt;/a&gt;, started teaching Italian to a few folks at
+thoughtbot. That was the beginning of my journey with Italian. I didn’t have
+plans to learn a new language, but that was the only other language (aside from
+English) I ever did on Duolingo before, so why not?&lt;/p&gt;
+
+&lt;p&gt;As I said, I tried learning a bit of Italian some years ago, but lost my 90-day
+streak and gave it up. This time is different. I’m taking it more serious: I’m
+not only doing the Duolingo lessions, I’m listening to podcasts in Italian,
+watching shows with Italian dub/subs, reading books and doing Anki cards.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;block mx-auto rounded h-auto &quot; loading=&quot;lazy&quot; src=&quot;/assets/img/2022-in-review/duolingo.jpeg&quot; width=&quot;600px&quot; height=&quot;auto&quot; /&gt;
+
+  
+&lt;/figure&gt;
+
+&lt;p&gt;It’s different from learning English because I’m not doing formal lessons, so
+it’s more… casual? At the same time, when I was younger, I learned a bunch of
+English without realizing it: I was just reading song lyrics or playing games. I
+also don’t need Italian to work, study, program, watch movies or YouTube, so
+it’s a different approach. To put it simple, I need to engage with the language
+&lt;em&gt;actively&lt;/em&gt; to learn it.&lt;/p&gt;
+
+&lt;p&gt;Music has been a good part of my learning process. I’ve found this fantastic
+band called Ministri (which was a large portion of what I listened to in 2022),
+and noticed that it’s easier for me to remember words that came from music
+lyrics than random words on Anki.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;block mx-auto rounded h-auto &quot; loading=&quot;lazy&quot; src=&quot;/assets/img/2022-in-review/top-songs-2022.jpeg&quot; width=&quot;800px&quot; height=&quot;auto&quot; /&gt;
+
+  
+    &lt;figcaption&gt;
+      Three out of the top 5 songs I listened to in 2022 are in Italian.
+
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;gaming&quot;&gt;Gaming&lt;/h3&gt;
+
+&lt;p&gt;I played 238 hours in 19 different games over 143 days. Playstation says it’s
+22% (43h) more than last year, but I don’t feel like that. Here’s the breakdown
+of my top 5 games:&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;block mx-auto rounded h-auto &quot; loading=&quot;lazy&quot; src=&quot;/assets/img/2022-in-review/games-2022.png&quot; width=&quot;400px&quot; height=&quot;auto&quot; /&gt;
+
+  
+&lt;/figure&gt;
+
+&lt;p&gt;My partner also plays on the same console, so the only games played by me were
+Skyrim, Fifa, and It Takes 2. These add up to 93h, which is 36% less than the
+previous year’s 147 hours.&lt;/p&gt;
+
+&lt;p&gt;I also didn’t finish many games (just Stray and It takes 2). I was mainly
+playing casually, hence the 30h of Fifa and almost 50h of Skyrim, where I would
+roam around without a defined plan. I think this reflects my focus on other
+things during the year.&lt;/p&gt;
+
+&lt;h2 id=&quot;expectations-vs-reality&quot;&gt;Expectations vs. Reality&lt;/h2&gt;
+
+&lt;p&gt;Having tha said, let’s see how my expectations for 2022 went. Last year I wrote:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I wanna keep getting involved in Ruby’s development&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I did work on open source a bit, and &lt;a href=&quot;https://bugs.ruby-lang.org/issues/16122#note-31&quot;&gt;I was part of the discussion on
+naming&lt;/a&gt; Ruby’s 3.2 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Data&lt;/code&gt; class
+(my suggestions weren’t the final product, but at least I was there?). No “code
+contributions”, though.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;and keep working on my health&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I was mostly talking about physical health, and I indeed failed at that. I was
+super inconsistent in working out, and I didn’t practice any sports.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, I got back to playing guitar, and I haven’t invested in it
+this much (both in terms of money and time) in a long time. I hope this
+compensates for the lack of exercise in some way, but I don’t want to have to
+choose between mental and physical health.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I’ll leave game development on hold for a while and focus on programming
+languages. I specifically want to understand how type checkers work and build
+a simple one.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Yeah… that didn’t happen at all. I did not feel like doing any programming
+language development this year.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I hope I can visit new places this year. An international trip would be
+fantastic, but the pandemic might not allow me to do that.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Well, that was a pleasant surprise. I made not only one but two international
+trips! Shout out to my buddy &lt;a href=&quot;https://github.com/jmeinerz&quot;&gt;Jonas&lt;/a&gt; that was such
+a lifesaver for me in London.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I wish we could live a COVID-free life (at least a mask-free one), but that
+probably won’t happen this year (and maybe neither in the next one).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I got COVID in the same month I wrote that, lol 🤦🏽‍♂️.&lt;/p&gt;
+
+&lt;p&gt;Mask-free life is not exactly what we have. It feels like Covid is a
+never-ending matter, and people just decided to live with it, for better or
+worse.&lt;/p&gt;
+
+&lt;h2 id=&quot;2023-goals&quot;&gt;2023 Goals&lt;/h2&gt;
+
+&lt;p&gt;2022 felt like the year of music to me. It seems like much of what I’ve done (at
+least in my free time) was related to that. I believe that a big part of this
+year will be similar.&lt;/p&gt;
+
+&lt;p&gt;Again, I want to “correct” what I don’t think I succeed at in the previous year.
+In particular:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Exercise! Sports, gym, whatever it is, I need to move this lazy body.&lt;/li&gt;
+  &lt;li&gt;I do want to keep on working on core Ruby. TBH, contributing to CRuby feels
+too far off from my skill set. Maybe I can work on supporting things like
+documentation.&lt;/li&gt;
+  &lt;li&gt;Keep my work/life balance. This wasn’t a problem in 2022, and I want to make
+sure it keeps not being one.&lt;/li&gt;
+  &lt;li&gt;Working on something fun! Language development, games, something else? I don’t
+care, as long as I enjoy doing it.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Wow. This took a lot of time to write. Gathering the data from different
+sources, compiling it, and actually creating a blog post is hard, but I’m glad I
+did it. See you in 2024!&lt;/p&gt;
+</description>
+        
+          <description>&lt;p&gt;Two thousand and twenty two is over, so, &lt;a href=&quot;/categories/#year-in-review&quot;&gt;as usual&lt;/a&gt;, I took some time to reflect
+a bit on the things that happened (or didn’t happen) during the year.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sat, 21 Jan 2023 00:00:00 +0000</pubDate>
+        <link>http://matheusrich.com/2022-in-review/</link>
+        <guid isPermaLink="true">http://matheusrich.com/2022-in-review/</guid>
+        
+        
+        <category>year-in-review</category>
+        
+      </item>
+      
+    
+      
+      <item>
+        <title>2021 In Review</title>
+        <description>
+&lt;aside class=&quot;Note Note--info&quot;&gt;
+  
+
+  
+
+  &lt;p class=&quot;content&quot;&gt;This is my first &lt;a href=&quot;/categories/#year-in-review&quot;&gt;year in review&lt;/a&gt; article. I plan to do one every year from now! Cya in 365 days!&lt;/p&gt;
+
+
+  
+&lt;/aside&gt;
+
+&lt;p&gt;Since 2018 I have been writing down things that happened in my life,
+particularly the good stuff, as we tend too often to forget about them and
+focus on the bad events.&lt;/p&gt;
+
+&lt;p&gt;2021 was such a surprising year for me that I figured I could use some of those
+notes to reflect and review the year in a blog post.&lt;/p&gt;
+
+&lt;h2 id=&quot;where-things-started&quot;&gt;Where things started&lt;/h2&gt;
+
+&lt;p&gt;For some context, before 2021, I…&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;was working in my first full-time job with an incredible team at a &lt;a href=&quot;https://fretadao.com/&quot;&gt;Brazilian startup&lt;/a&gt;;&lt;/li&gt;
+  &lt;li&gt;had just created my &lt;a href=&quot;https://github.com/Fretadao/f_service&quot;&gt;first&lt;/a&gt;
+&lt;a href=&quot;https://rubygems.org/gems/benchable&quot;&gt;three&lt;/a&gt;
+&lt;a href=&quot;https://rubygems.org/gems/ez_attributes&quot;&gt;gems&lt;/a&gt; and I was pretty excited about
+it;&lt;/li&gt;
+  &lt;li&gt;had started to learn about interpreters with &lt;a href=&quot;https://craftinginterpreters.com/&quot;&gt;Crafting Interpreters&lt;/a&gt;;&lt;/li&gt;
+  &lt;li&gt;had made my first &lt;em&gt;major&lt;/em&gt; open source contribution: getting a &lt;a href=&quot;https://github.com/rspec/rspec-core/pull/2778&quot;&gt;PR merged into RSpec&lt;/a&gt;;&lt;/li&gt;
+  &lt;li&gt;had left this blog &lt;a href=&quot;/all/#2020-ref&quot;&gt;picking up dust&lt;/a&gt;, and only wrote one article in the entire year of 2020;&lt;/li&gt;
+  &lt;li&gt;had just started &lt;a href=&quot;https://twitter.com/RubyCards&quot;&gt;Ruby Cards&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;2021&quot;&gt;2021&lt;/h2&gt;
+
+&lt;p&gt;Since this blog was pretty much dead and I wanted to get better at writing, I
+made a resolution to write a blog post per month in 2021. Turns out that writing
+more was one of the decisions that opened many other opportunities for me. The
+article “&lt;a href=&quot;/dont-use-comments-use-code/&quot;&gt;Don’t use comments! Use code.&lt;/a&gt;”, for instance, got featured in
+RubyWeekly and got me to talk on a &lt;a href=&quot;/talks#comments-are-the-devil-ruby-rogues-podcast&quot;&gt;podcast&lt;/a&gt; for the first time!&lt;/p&gt;
+
+&lt;p&gt;I’m also glad that I finally graduated from college after all sorts of COVID
+nonsense. Not that the degree itself changed anything in my career, but it’s
+nice to take that weight off my shoulders.&lt;/p&gt;
+
+&lt;p&gt;Kinda out of nowhere, I decided to &lt;a href=&quot;/on-learning-rust&quot;&gt;learn Rust&lt;/a&gt;. I’m delighted with Ruby, to be honest. Still, learning a new language is cool, so I
+picked one very different (statically typed and compiled). Not exactly the
+easiest way to learn a new language, but as one of my first projects, I created
+&lt;a href=&quot;https://github.com/MatheusRich/lana&quot;&gt;Lana&lt;/a&gt;, a LISP implemented in Rust
+influenced by Clojure.&lt;/p&gt;
+
+&lt;h3 id=&quot;career&quot;&gt;Career&lt;/h3&gt;
+
+&lt;p&gt;I was used to doing internal presentations at my previous job, but I gave talks
+elsewhere for the first time this year. They were on the &lt;a href=&quot;/talks#taming-god-objects&quot;&gt;3rd&lt;/a&gt; and &lt;a href=&quot;/talks#start-tdding-in-5-minutes-lightning-talk&quot;&gt;5th&lt;/a&gt;
+editions of &lt;a href=&quot;http://adarb.com.br/&quot;&gt;ada.rb&lt;/a&gt;, alongside people like &lt;a href=&quot;https://github.com/rafaelfranca&quot;&gt;Rafael França&lt;/a&gt;, who has always been
+a role model for me.&lt;/p&gt;
+
+&lt;p&gt;Then in the second half of the year, almost by accident, I started working on
+one of my dream companies: &lt;a href=&quot;https://thoughtbot.com/&quot;&gt;thoughtbot&lt;/a&gt; 🤖. I saw that a fellow Brazilian (&lt;a href=&quot;https://twitter.com/sarahraquelsh&quot;&gt;@SarahLima&lt;/a&gt;) had
+joined the company, then I thought, &lt;em&gt;“What if I tried?”&lt;/em&gt; and here I am.&lt;/p&gt;
+
+&lt;aside class=&quot;Note Note--info&quot;&gt;
+  
+
+  
+
+  &lt;p class=&quot;content&quot;&gt;It’s amazing how important it is to have someone you can relate to in the places you want to be.&lt;/p&gt;
+
+
+  
+&lt;/aside&gt;
+
+&lt;p&gt;I never thought I would get here this early in my career! It still feels
+otherworldly working with people I always admired, like &lt;a href=&quot;https://joshuaclayton.me/&quot;&gt;Josh Clayton&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/sviccari&quot;&gt;Steph
+Viccari&lt;/a&gt;, and &lt;a href=&quot;https://twitter.com/joelquen&quot;&gt;Joël Quenneville&lt;/a&gt; (to not mention all the other &lt;strong&gt;amazing&lt;/strong&gt; folks
+I met after I joined). For sure, this was one of the best decisions I’ve made in my life.&lt;/p&gt;
+
+&lt;p&gt;On the technology aspect, I still got to work with Ruby, which I absolutely
+&lt;em&gt;love&lt;/em&gt;, but I got the chance to work with other tools as well, like Next.js and
+TypeScript.&lt;/p&gt;
+
+&lt;aside class=&quot;Note&quot;&gt;
+  &lt;strong class=&quot;&quot;&gt;Quick takes:&lt;/strong&gt;
+
+  &lt;ul class=&quot;&quot;&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;https://www.typescriptlang.org/&quot;&gt;TypeScript&lt;/a&gt;: cool and adds a lot of sanity to JavaScript development.
+      The VSCode integration is really good.
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;https://nextjs.org/&quot;&gt;Next.js&lt;/a&gt;: it's slick and has great docs, but I'm still skeptical about it.
+      It felt like overengineering for most cases. I think that
+      something like &lt;a href=&quot;https://hotwired.dev/&quot;&gt;Hotwire&lt;/a&gt; or
+      &lt;a href=&quot;https://github.com/phoenixframework/phoenix_live_view&quot;&gt;LiveView&lt;/a&gt; are saner approaches
+      (especially for small teams).
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;I’m eager for all the new things I’ll learn and apps I’ll work on within the following years.&lt;/p&gt;
+
+&lt;h3 id=&quot;open-source&quot;&gt;Open-source&lt;/h3&gt;
+
+&lt;p&gt;Even though I didn’t release any new library this year, I did some work on
+open-source. I contributed to many projects I use daily like &lt;a href=&quot;https://github.com/github/view_component/pull/917&quot;&gt;ViewComponent&lt;/a&gt; and
+&lt;a href=&quot;https://github.com/rails/rails/pulls?q=is%3Apr+author%3AMatheusRich+is%3Amerged+&quot;&gt;Rails&lt;/a&gt;. Beyond writing code, I did more OSS things like reviewing PRs and
+issues in Rails. I even wrote a blog post about &lt;a href=&quot;/start-contributing-to-open-source-today/&quot;&gt;how to start contributing to
+open-source&lt;/a&gt; to help other folks
+start doing it.&lt;/p&gt;
+
+&lt;p&gt;I already regularly checked &lt;a href=&quot;https://bugs.ruby-lang.org/issues/&quot;&gt;Ruby’s issue tracker&lt;/a&gt;. This year, though, I got
+more &lt;a href=&quot;https://bugs.ruby-lang.org/issues/17938&quot;&gt;actively&lt;/a&gt; involved in discussions about new additions to Ruby there. This
+is a habit that I want to keep for a couple of reasons. First, I want to
+understand the shaping of new features in Ruby, and second, I want to
+help/influence this process. Doing this led me to my first three commits in
+Ruby &lt;sup id=&quot;fnref:a&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:a&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;sup&gt;∙&lt;/sup&gt; &lt;sup id=&quot;fnref:b&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:b&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; &lt;sup&gt;∙&lt;/sup&gt; &lt;sup id=&quot;fnref:c&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:c&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;hobbies--life&quot;&gt;Hobbies &amp;amp; Life&lt;/h3&gt;
+
+&lt;p&gt;One of the hobbies I started in 2021 was pixel art. I did a bit of it when I was
+a kid but never invested much time in it. I hope to eventually use this
+ability to create sprites for my games.&lt;/p&gt;
+
+&lt;div class=&quot;flex flex-wrap flex-center gap-4&quot;&gt;
+  &lt;figure&gt;
+  &lt;img class=&quot;block mx-auto rounded h-auto &quot; loading=&quot;lazy&quot; src=&quot;/assets/img/2021-in-review/superman.png&quot; width=&quot;300px&quot; height=&quot;auto&quot; /&gt;
+
+  
+    &lt;figcaption&gt;
+      That famous superhero
+
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+
+  &lt;div&gt;
+    &lt;figure&gt;
+  &lt;img class=&quot;block mx-auto rounded h-auto &quot; loading=&quot;lazy&quot; src=&quot;/assets/img/2021-in-review/planet.png&quot; width=&quot;300px&quot; height=&quot;auto&quot; /&gt;
+
+  
+    &lt;figcaption&gt;
+      Studying light and shadows
+
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+
+    &lt;figure&gt;
+  &lt;img class=&quot;block mx-auto rounded h-auto &quot; loading=&quot;lazy&quot; src=&quot;/assets/img/2021-in-review/hollow-knight.png&quot; width=&quot;300px&quot; height=&quot;auto&quot; /&gt;
+
+  
+    &lt;figcaption&gt;
+      My favorite knight bug
+
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Something that graduating from college did change was playing games
+without feeling guilty. I finally experienced some of my most anticipated games
+like God of War 2018, Marvel’s Spider-Man, and Hollow Knight.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;block mx-auto rounded h-auto &quot; loading=&quot;lazy&quot; src=&quot;/assets/img/2021-in-review/gaming.png&quot; width=&quot;800px&quot; height=&quot;auto&quot; /&gt;
+
+  
+    &lt;figcaption&gt;
+      Not too many hours, but a lot more than the previous years
+
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;I felt the need to read a bit more (non-technical content), so I looked for
+alternatives this year. I always had an interest in comics, but I didn’t have money
+to buy them as a kid, so I signed up for Marvel Unlimited. I’m having a blast
+reading Ultimate Marvel!&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;block mx-auto rounded h-auto &quot; loading=&quot;lazy&quot; src=&quot;/assets/img/2021-in-review/webdev-parker.jpeg&quot; width=&quot;800px&quot; height=&quot;auto&quot; /&gt;
+
+  
+    &lt;figcaption&gt;
+      Did you know that Peter Parker is a web developer (no pun intended)? He needs to freshen up his DevOps skills, tho.
+
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;health&quot;&gt;Health&lt;/h3&gt;
+
+&lt;p&gt;I have a standing desk, but most of my work is sitting. I know this is not
+ideal, so I decided to start working out by year-end. It’s very recent, but I
+have already started seeing the results.&lt;/p&gt;
+
+&lt;p&gt;I also had a chance to take PTO and go on some much-needed vacations! After all
+this time in the pandemic, it felt good to recharge my mental health.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;block mx-auto rounded h-auto &quot; loading=&quot;lazy&quot; src=&quot;/assets/img/2021-in-review/maceio.jpeg&quot; width=&quot;500px&quot; height=&quot;auto&quot; /&gt;
+
+  
+    &lt;figcaption&gt;
+      One of the beautiful beaches in Maceió (AL) - Brazil
+
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;things-im-proud-of&quot;&gt;Things I’m proud of&lt;/h3&gt;
+
+&lt;p&gt;I’m really proud of my &lt;strong&gt;consistency&lt;/strong&gt;. I wrote one article &lt;em&gt;every month&lt;/em&gt;. It
+might not look like much now, but it was quite a change from a year where I
+basically hadn’t written anything.&lt;/p&gt;
+
+&lt;p&gt;Posting one Ruby Card &lt;em&gt;every week&lt;/em&gt; was a massive effort too! And the numbers
+reflect my work. I grew the Twitter account from less than 100 to over 500
+followers!&lt;/p&gt;
+
+&lt;p&gt;The consistency made me be featured on RubyWeekly 3 times &lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt; &lt;sup&gt;∙&lt;/sup&gt; &lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;
+&lt;sup&gt;∙&lt;/sup&gt; &lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;6&lt;/a&gt;&lt;/sup&gt; and in the &lt;a href=&quot;https://www.bikeshed.fm/309&quot;&gt;BikeShed podcast&lt;/a&gt;
+too!&lt;/p&gt;
+
+&lt;p&gt;Contributing to Rails and especially Ruby were my personal highlights of 2021.
+I’ve always wanted to do this! I’m really happy with those achievements.&lt;/p&gt;
+
+&lt;h3 id=&quot;things-i-wish-i-did-better&quot;&gt;Things I wish I did better&lt;/h3&gt;
+
+&lt;p&gt;Ironically, I wish I had been more consistent with Rust. I didn’t play with it
+as much as I would like. For instance, I haven’t implemented language-defined
+macros in Lana and &lt;a href=&quot;https://github.com/MatheusRich/lana/issues&quot;&gt;several other
+features&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I started the year creating a
+&lt;a href=&quot;https://github.com/MatheusRich/roguelike&quot;&gt;Roguelike&lt;/a&gt; (here’s a &lt;a href=&quot;https://twitter.com/matheusrich/status/1397347697074610179&quot;&gt;Twitter thread&lt;/a&gt;
+about it, if you’re curious) but left it unfinished. I tried learning the
+&lt;a href=&quot;https://bevyengine.org/&quot;&gt;Bevy&lt;/a&gt; game engine, but I didn’t go too far. I’m not
+good at balancing my liking of game development and programing language design.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;video class=&quot;block mx-auto rounded h-auto&quot; src=&quot;/assets/img/2021-in-review/roguelike.mp4&quot; width=&quot;800px&quot; controls=&quot;&quot;&gt;&lt;/video&gt;
+  &lt;figcaption&gt;Pretty barebones, but it was a fun project.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I wish I did more pixel art. I was very excited about it, but I lost momentum by
+the end of the year. It’s hard to be consistent on too many things at the same
+time&lt;/p&gt;
+
+&lt;p&gt;Talking at RubyConf was another goal of mine, but I changed jobs close to the
+CFP deadline, so I missed it. That was a bummer, but I think I made the right
+decision.&lt;/p&gt;
+
+&lt;h2 id=&quot;2022&quot;&gt;2022&lt;/h2&gt;
+
+&lt;p&gt;My main goal with 2022 is to keep doing what went well last year and improve
+what didn’t work.&lt;/p&gt;
+
+&lt;p&gt;I wanna keep getting involved in Ruby’s development and keep working on my
+health. I’ll leave game development on hold for a while and focus on programming
+languages. I specifically want to understand how type checkers work and build a
+simple one.&lt;/p&gt;
+
+&lt;p&gt;I hope I can visit new places this year. An international trip would be fantastic,
+but the pandemic might not allow me to do that.&lt;/p&gt;
+
+&lt;p&gt;Speaking of which, I wish we could live a COVID-free life (at least a mask-free
+one), but that probably won’t happen this year (and maybe neither in the next
+one). Well, one can dream, right?&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Phew&lt;/em&gt;! That’s it for 2021. It was a surprising, weird year! I hope to see you
+in 2023. Take care!&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:a&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://github.com/ruby/ruby/pull/5268&quot;&gt;https://github.com/ruby/ruby/pull/5268&lt;/a&gt; &lt;a href=&quot;#fnref:a&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:b&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://github.com/ruby/ruby/pull/5270&quot;&gt;https://github.com/ruby/ruby/pull/5270&lt;/a&gt; &lt;a href=&quot;#fnref:b&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:c&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://github.com/ruby/ruby/pull/5277&quot;&gt;https://github.com/ruby/ruby/pull/5277&lt;/a&gt; &lt;a href=&quot;#fnref:c&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Ruby Cards &lt;a href=&quot;https://rubyweekly.com/issues/546#:~:text=around%20the%C2%A0corner.-,%40RubyCards,-is%20a%20Twitter&quot;&gt;in RubyWeekly&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Thread about Matz’s view on what’s coming after Ruby 3.0 &lt;a href=&quot;https://rubyweekly.com/issues/556#:~:text=you%20can%20enjoy-,Matheus%20Richard%27s,-Twitter%20notes%20of&quot;&gt;in RubyWeekly&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;“Don’t Use Comments. Use Code.” &lt;a href=&quot;https://rubyweekly.com/issues/568#:~:text=the%20better%C2%A0path.-,MATHEUS%20RICHARD,-%F0%9F%9B%A0%C2%A0Code%20%26%20Tools&quot;&gt;in RubyWeekly&lt;/a&gt; &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        
+          <description>
+&lt;aside class=&quot;Note Note--info&quot;&gt;
+  
+
+  
+
+  &lt;p class=&quot;content&quot;&gt;This is my first &lt;a href=&quot;/categories/#year-in-review&quot;&gt;year in review&lt;/a&gt; article. I plan to do one every year from now! Cya in 365 days!&lt;/p&gt;
+
+
+  
+&lt;/aside&gt;
+</description>
+        
+        <pubDate>Sat, 29 Jan 2022 00:00:00 +0000</pubDate>
+        <link>http://matheusrich.com/2021-in-review/</link>
+        <guid isPermaLink="true">http://matheusrich.com/2021-in-review/</guid>
+        
+        
+        <category>year-in-review</category>
+        
+      </item>
+      
+    
+      
+      <item>
+        <title>TIL: JavaScript's void Operator</title>
+        <description>&lt;p&gt;Today I discovered the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void#immediately_invoked_function_expressions&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;void&lt;/code&gt;
+operator&lt;/a&gt;
+in JavaScript. It evaluates an expression but always returns &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;undefined&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;hello world&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// prints `undefined`&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It can be used on a
+&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Glossary/IIFE&quot;&gt;
+  &lt;abbr title=&quot;Immediately Invoked Function Expressions&quot;&gt;IIFE&lt;/abbr&gt;
+&lt;/a&gt;,
+which usually uses parenthesis to make the function definition be interpreted
+as an expression and not a declaration:&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;hello world&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}();&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// prints &quot;hello world&quot;&lt;/span&gt;
+
+
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;hello world&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})();&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// prints &quot;hello world&quot;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;hello world&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}();&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// SyntaxError&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This operator is also useful to ensure that an arrow function always return &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;undefined&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// changes to the return value of `doSomething` won't affect this code&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;button&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onclick&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;doSomething&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;caveat&quot;&gt;Caveat&lt;/h2&gt;
+
+&lt;p&gt;It’s important to note that this operator has a &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table&quot;&gt;high precedence&lt;/a&gt;
+with right-to-left associativity, so you may want to use parenthesis to
+correctly construct some expressions:&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; world&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// parsed as: (void &quot;hello&quot;) + &quot; world&quot;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// =&amp;gt; 'undefined world'&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; world&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// parsed as: void (&quot;hello&quot; + &quot; world&quot;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// =&amp;gt; undefined&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+</description>
+        
+          <description>&lt;p&gt;Today I discovered the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void#immediately_invoked_function_expressions&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;void&lt;/code&gt;
+operator&lt;/a&gt;
+in JavaScript. It evaluates an expression but always returns &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;undefined&lt;/code&gt;.&lt;/p&gt;
+</description>
+        
+        <pubDate>Thu, 20 Jan 2022 14:54:45 +0000</pubDate>
+        <link>http://matheusrich.com/til-javascripts-void-operator/</link>
+        <guid isPermaLink="true">http://matheusrich.com/til-javascripts-void-operator/</guid>
+        
+        
+        <category>TIL</category>
+        
+        <category>javascript</category>
+        
+      </item>
+      
+    
+      
+      <item>
+        <title>TIL: Object#presence_in</title>
+        <description>
+&lt;aside class=&quot;Note Note--info&quot;&gt;
+  
+
+  
+
+  &lt;p class=&quot;content&quot;&gt;This year I’m going to share small things I just learned
+    (&lt;acronym title=&quot;Today I Learned&quot;&gt;TILs&lt;/acronym&gt;). This is the first of them. I hope you enjoy it!&lt;/p&gt;
+
+
+  
+&lt;/aside&gt;
+
+&lt;p&gt;Rails &lt;a href=&quot;https://api.rubyonrails.org/classes/Object.html#method-i-presence_in&quot;&gt;adds&lt;/a&gt; the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;presence_in&lt;/code&gt; method to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Object&lt;/code&gt; class. It basically returns
+the receiver if it’s included in the given object, or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nil&lt;/code&gt; otherwise.&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Object&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;presence_in&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;another_object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;another_object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;nil&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;To understand how it works, it might be useful to look at the definition of
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Object#in?&lt;/code&gt;, which is basically &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#include?&lt;/code&gt; with left and right-hand side
+swapped.&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;in?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;another_object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;another_object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;include?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;rescue&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;NoMethodError&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;raise&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ArgumentError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;The parameter passed to #in? must respond to #include?&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I think this is particularly useful for allowlists like&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;UsersController&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;BaseController&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;index&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;sort_by&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:sort_by&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;presence_in&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;created_at&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+    &lt;span class=&quot;vi&quot;&gt;@users&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sort_by&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort_by&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Note that it’s really easy to add a default/fallback value in case you get a bad value.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;UsersController&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;BaseController&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;index&lt;/span&gt;
+&lt;span class=&quot;hll&quot;&gt;    &lt;span class=&quot;n&quot;&gt;sort_by&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:sort_by&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;presence_in&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;created_at&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;id&quot;&lt;/span&gt;
+&lt;/span&gt;    &lt;span class=&quot;vi&quot;&gt;@users&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sort_by&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort_by&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        
+          <description>
+&lt;aside class=&quot;Note Note--info&quot;&gt;
+  
+
+  
+
+  &lt;p class=&quot;content&quot;&gt;This year I’m going to share small things I just learned
+    (&lt;acronym title=&quot;Today I Learned&quot;&gt;TILs&lt;/acronym&gt;). This is the first of them. I hope you enjoy it!&lt;/p&gt;
+
+
+  
+&lt;/aside&gt;
+</description>
+        
+        <pubDate>Thu, 06 Jan 2022 00:47:30 +0000</pubDate>
+        <link>http://matheusrich.com/til-object-presence-in/</link>
+        <guid isPermaLink="true">http://matheusrich.com/til-object-presence-in/</guid>
+        
+        
+        <category>TIL</category>
+        
+        <category>rails</category>
+        
+      </item>
+      
+    
+      
+      <item>
+        <title>A Mindset for Better Code</title>
+        <description>&lt;p&gt;An app is like a living being: it comprises several small parts that interact,
+forming larger, more complex parts. Also, like a living thing, some elements
+(cells) die every day, being replaced by new ones.&lt;/p&gt;
+
+&lt;p&gt;No code stays the same forever. Sometimes it needs to be refactored, sometimes
+it needs to be deleted, and a few times, it actually lasts. Now imagine every
+time we had to touch a method/function/class/module, we had to &lt;strong&gt;completely
+delete it first&lt;/strong&gt;, then &lt;strong&gt;rewrite everything again&lt;/strong&gt;. Sounds nuts, right? But bear
+with me.&lt;/p&gt;
+
+&lt;p&gt;What would be the side-effects of doing this?&lt;/p&gt;
+
+&lt;h2 id=&quot;more-code--more-work&quot;&gt;More code == More work&lt;/h2&gt;
+
+&lt;p&gt;First of all, we would despise large blocks of code. For the simple reason that
+they would require us to write more when changing it. Also, it’s more code to
+read and understand before rewriting it.&lt;/p&gt;
+
+&lt;p&gt;To make things easier, we would split a large function/class into a couple of
+small, meaningful ones, so we would avoid rewriting the whole thing when
+changing a single one.&lt;/p&gt;
+
+&lt;p&gt;Oh, sure, we would think more about &lt;a href=&quot;https://martinfowler.com/bliki/Yagni.html&quot;&gt;YAGNI&lt;/a&gt; and &lt;a href=&quot;https://thoughtbot.com/blog/ruby-and-kiss-sitting-in-a-tree&quot;&gt;KISS&lt;/a&gt; more often.&lt;/p&gt;
+
+&lt;h2 id=&quot;fewer-dependencies&quot;&gt;Fewer dependencies&lt;/h2&gt;
+
+&lt;p&gt;Code with lots of dependencies is a pain to maintain. Everything is related to
+everything else! Imagine replacing an HTTP client that’s used throughout the
+app. We would essentially have to rewrite the entire app!&lt;/p&gt;
+
+&lt;p&gt;That’s definitely not ideal, so we’d be sure to have external libraries like
+that wrapped in an internal module/class, so we could update them in a single
+place.&lt;/p&gt;
+
+&lt;p&gt;Our code would probably be using more &lt;a href=&quot;/mocking-made-simple/&quot;&gt;dependency injection&lt;/a&gt; too.&lt;/p&gt;
+
+&lt;h2 id=&quot;well-named-things&quot;&gt;Well named things&lt;/h2&gt;
+
+&lt;p&gt;Before changing something, we first need to read it and
+understand it. This is harder when the code is not well named.&lt;/p&gt;
+
+&lt;aside class=&quot;Note Note--info&quot;&gt;
+  
+
+  
+    &lt;strong class=&quot;title&quot;&gt;Naming is intention&lt;/strong&gt;
+  
+
+  
+&lt;p class=&quot;content&quot;&gt;Yeah, naming things is one of the &lt;a href=&quot;https://martinfowler.com/bliki/TwoHardThings.html&quot;&gt;hardest things&lt;/a&gt; on Computer Science, and
+that’s precisely why it’s important.&lt;/p&gt;
+
+&lt;p class=&quot;content&quot;&gt;Names reveal the intent of the code. Good naming matters because the
+implementation does not always match the original purpose. This is especially
+relevant for languages without type annotations like Ruby since naming is the
+only way to reveal intent to the reader.&lt;/p&gt;
+
+
+
+  
+&lt;/aside&gt;
+
+&lt;p&gt;Vague names in important places like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;value&lt;/code&gt;, for example, would make
+our jobs much harder&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Literally everything in code is data.&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# And what in the world is `process`?&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# This method could do anything!&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;process_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;# ...&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If, instead, we had&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;convert_to_json&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;# ...&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Small change, but this is &lt;em&gt;way&lt;/em&gt; easier to understand what’s going on, even
+without the method body. The name hints at what the method does, and we’d know
+what to expect from it.&lt;/p&gt;
+
+&lt;p&gt;When poorly named, even small variables would bother us&lt;/p&gt;
+
+&lt;div class=&quot;language-rust highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;// What the heck is this number?&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6371&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It seems silly, but when writing code, we can’t expect someone to know by
+heart/recognize Earth’s radius.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-winds-of-change&quot;&gt;The winds of change&lt;/h2&gt;
+
+&lt;p&gt;Thinking about code as something ephemeral helps us write code that is easier to
+understand and change. It also makes us not too attached to the code we wrote.&lt;/p&gt;
+
+&lt;p&gt;Remember, this is not a rule but an exercise. What’s essential is understanding
+what makes a codebase easy to work with: small, well-named, self-contained
+parts.&lt;/p&gt;
+
+&lt;p&gt;Doing this exercise is future-proofing ourselves because we can be sure:
+&lt;strong&gt;things will change&lt;/strong&gt;. And when they do, we want our code to be easy to
+change as well.&lt;/p&gt;
+
+</description>
+        
+          <description>&lt;p&gt;An app is like a living being: it comprises several small parts that interact,
+forming larger, more complex parts. Also, like a living thing, some elements
+(cells) die every day, being replaced by new ones.&lt;/p&gt;
+</description>
+        
+        <pubDate>Wed, 29 Dec 2021 00:00:00 +0000</pubDate>
+        <link>http://matheusrich.com/a-mindset-for-better-code/</link>
+        <guid isPermaLink="true">http://matheusrich.com/a-mindset-for-better-code/</guid>
+        
+        
+        <category>refactoring</category>
+        
+        <category>quick-tip</category>
+        
+      </item>
+      
+    
+      
+      <item>
+        <title>How To Get Pull Requests Merged Faster</title>
+        <description>&lt;p&gt;No one likes huge Pull Requests. Reviewers have a hard time reading them, bugs sneak in, they took
+ages to get merged, conflicts pop everywhere… It’s a nightmare. There’s a better way to handle
+this.&lt;/p&gt;
+
+&lt;p&gt;Listen carefully. It’s a secret: 🤫 &lt;em&gt;&lt;small&gt;make them small.&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“How do I do that?”&lt;/em&gt; - You may ask. To answer that, we have to learn about developer hats.&lt;/p&gt;
+
+&lt;h2 id=&quot;-wearing-one-hat-at-a-time&quot;&gt;🎩 Wearing one hat at a time&lt;/h2&gt;
+
+&lt;p&gt;Martin Fowler, in the &lt;a href=&quot;https://martinfowler.com/books/refactoring.html&quot;&gt;Refactoring book&lt;/a&gt;, says that there are two types of
+software changes: behavioral and structural. Behavioral changes are when you add
+or remove features from the existing codebase, while structural changes are
+changes to the &lt;em&gt;code structure&lt;/em&gt; without changing any of its functionality. Those
+kinds of changes are fundamentally different, and we should avoid mixing them.
+Structural modifications are easily reversible, whereas behavioral often aren’t,
+for example.&lt;/p&gt;
+
+&lt;p&gt;And &lt;strong&gt;that is the secret sauce for smaller PRs&lt;/strong&gt;: splitting those two kinds of changes whenever
+possible. In other words, separate refactoring from adding new features. It may seem small at first,
+but once we know the difference between those changes, we can start thinking a few steps ahead and
+plan how to work more efficiently.&lt;/p&gt;
+
+&lt;aside class=&quot;Note Note--info&quot;&gt;
+  
+
+  
+    &lt;strong class=&quot;title&quot;&gt;Preparing the field&lt;/strong&gt;
+  
+
+  &lt;p class=&quot;content&quot;&gt;Have you ever thought &lt;em&gt;“This change would be so simple if the code looked like X”&lt;/em&gt;?
+  I have, and it’s often easier to add a new feature by refactoring the surroundings first.
+  This technique is known as &lt;strong&gt;preparatory refactoring&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p class=&quot;content&quot;&gt;Remember this classic quote:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p class=&quot;content&quot;&gt;“For each desired change, make the change easy (warning: this may be hard),
+then make the easy change” — Kent Beck&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p class=&quot;content&quot;&gt;Before start coding a new task, ask yourself: &lt;em&gt;“Would this be easier with some preparatory
+  refactoring?”&lt;/em&gt;. The answer can make your work far easier.&lt;/p&gt;
+
+
+
+  
+&lt;/aside&gt;
+
+&lt;p&gt;Another side effect you’ll see it’s that the code reviews themselves will improve. This happens
+because smaller code samples are easier to understand, so reviewers can focus deeper on what you did.&lt;/p&gt;
+
+&lt;h2 id=&quot;-dividing-work&quot;&gt;➗ Dividing work&lt;/h2&gt;
+
+&lt;p&gt;Sometimes our workflow may lead to lots of files changed, and that’s okay. The
+thing is that &lt;strong&gt;we don’t need to add all of them to the same PR&lt;/strong&gt;. Once we got
+the work done, we can split commits into several &lt;a href=&quot;https://thoughtbot.com/blog/break-apart-your-features-into-full-stack-slices&quot;&gt;deliverable&lt;/a&gt; PRs. Being
+&lt;a href=&quot;https://thoughtbot.com/blog/git-interactive-rebase-squash-amend-rewriting-history&quot;&gt;comfortable with Git&lt;/a&gt; will make this task far more manageable.&lt;/p&gt;
+
+&lt;h2 id=&quot;-nice-presentation&quot;&gt;💅 Nice presentation&lt;/h2&gt;
+
+&lt;p&gt;Stepping out from the code side a bit, if you want to make a good PR, make sure
+to make it appealing. Some file changes with no context at all won’t make a
+reviewer happy. Here are some things you can do to put a smile on their faces:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Good description&lt;/strong&gt;: What is this PR doing? Is it a bugfix, a new feature, or
+refactoring? Does it include any breaking change?&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Context&lt;/strong&gt;: Please don’t just link a GitHub issue or a Jira ticket on your
+PRs. Try to answer some of these questions: &lt;em&gt;Why&lt;/em&gt; are you doing this? Why did
+you choose a particular approach? If possible, provide information (links,
+docs) to back it up. Benchmarks and screenshots are welcome as well.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A good PR description makes the reviewer do less back-and-forth by proactively
+answering a lot of their questions in the first place.&lt;/p&gt;
+
+&lt;h2 id=&quot;-tests&quot;&gt;🧪 Tests!&lt;/h2&gt;
+
+&lt;p&gt;Don’t forget to add tests to your code changes as well — unless it’s a refactoring, where the
+behavior stays the same. If you’re doing a bugfix, you &lt;a href=&quot;/a-simple-way-to-get-started-with-tdd/&quot;&gt;already have the test scenarios&lt;/a&gt;; if you’re
+doing TDD, well, you already have the tests 😅. No matter how you prefer to work, tests add more
+confidence that the code works and prevents regressions in the future.&lt;/p&gt;
+
+</description>
+        
+          <description>&lt;p&gt;No one likes huge Pull Requests. Reviewers have a hard time reading them, bugs sneak in, they took
+ages to get merged, conflicts pop everywhere… It’s a nightmare. There’s a better way to handle
+this.&lt;/p&gt;
+</description>
+        
+        <pubDate>Thu, 25 Nov 2021 00:00:00 +0000</pubDate>
+        <link>http://matheusrich.com/how-to-get-pull-requests-merged-faster/</link>
+        <guid isPermaLink="true">http://matheusrich.com/how-to-get-pull-requests-merged-faster/</guid>
+        
+        
+        <category>quick-tip</category>
+        
+        <category>productivity</category>
+        
+      </item>
+      
+    
+      
+      <item>
+        <title>Easy View Components In Jekyll</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; is a famous static site generator. It has over 43k stars on GitHub,
+but in our current &lt;a href=&quot;https://jamstack.org/what-is-jamstack/&quot;&gt;JAMstack&lt;/a&gt; world, it’s not the shiniest star anymore.&lt;/p&gt;
+
+&lt;p&gt;With web development becoming more complex — some would say &lt;em&gt;too&lt;/em&gt;
+complicated—, Jekyll may feel bare bones when compared with competitor tools.
+One of the key aspects it lacks is components, which becomes a must with the
+introduction of &lt;a href=&quot;https://adamwathan.me/css-utility-classes-and-separation-of-concerns/&quot;&gt;utility-first CSS&lt;/a&gt; libraries like &lt;a href=&quot;https://tailwindcss.com/&quot;&gt;Tailwind&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I was losing hope, but then I discovered the &lt;a href=&quot;https://jekyllrb.com/docs/includes/&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;include&lt;/code&gt;&lt;/a&gt; tag.&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-components&quot;&gt;Creating components&lt;/h2&gt;
+
+&lt;p&gt;Include tags are kinda similar to partials in Rails: they allow us to include
+content from another file (stored in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_includes&lt;/code&gt; directory).&lt;/p&gt;
+
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &amp;lt;!-- This includes the contents of _includes/footer.html into this file --&amp;gt;
+  &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;footer.html&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The cool thing is that you can pass parameters to include tags! This is where
+things start to get interesting. We can create components similar to what we
+would do with React, for example. But instead of using JS, we use &lt;a href=&quot;https://shopify.github.io/liquid/&quot;&gt;Liquid&lt;/a&gt;.&lt;/p&gt;
+
+&lt;figure&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;aside&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;max-w-md p-5 rounded bg-gray-50 border-l-4 border-l-blue-500&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;strong&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;block mb-4&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;{{include.title}}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/strong&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;{{include.content}}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/aside&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;figcaption style=&quot;margin-top: -1rem;&quot;&gt;Poorman's JSX&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;And we use it in the template like this:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;aside.html&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Include tags are cool&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Keep reading for caviats, tho&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;It’s even possible to have parameters with default values using Liquid’s &lt;a href=&quot;https://shopify.github.io/liquid/filters/default/&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;default&lt;/code&gt;&lt;/a&gt; filter:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;aside&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;max-w-md p-5 rounded bg-gray-50 border-l-4 border-l-blue-500&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hll&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;strong&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;block mb-4&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;{{include.title | default: 'Note'}}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/strong&amp;gt;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- default value here --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;{{include.content}}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/aside&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;dont-be-greedy&quot;&gt;Don’t be greedy!&lt;/h2&gt;
+
+&lt;p&gt;Include tags are powerful, but they add an overhead on the build time for your
+site, so don’t use them for &lt;em&gt;every single thing&lt;/em&gt;. The docs recommend not using
+them for every image on your blog, for example.&lt;/p&gt;
+
+&lt;p&gt;A different approach would be using &lt;a href=&quot;https://jekyllrb.com/docs/plugins/tags/&quot;&gt;custom Liquid tags&lt;/a&gt; to create components,
+but note that they are &lt;a href=&quot;https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/troubleshooting-jekyll-build-errors-for-github-pages-sites#unknown-tag-error&quot;&gt;not supported&lt;/a&gt; by GitHub Pages — so automatic
+build/deploy won’t work.&lt;/p&gt;
+
+&lt;aside class=&quot;Note Note--info&quot;&gt;
+  
+    &lt;div class=&quot;icon-box&quot;&gt;
+      &lt;span class=&quot;icon&quot;&gt;
+        
+          i
+         &lt;/span&gt;
+    &lt;/div&gt;
+  
+
+  
+
+  &lt;p class=&quot;content&quot;&gt;If you wanna something more… &lt;em&gt;modern (?)&lt;/em&gt; for doing JAMstack with
+    Ruby, check out &lt;a href=&quot;https://bridgetownrb.com/&quot;&gt;Bridgetown&lt;/a&gt;.&lt;/p&gt;
+
+
+  
+&lt;/aside&gt;
+
+&lt;!-- &lt;small&gt;TIP: &lt;/small&gt; --&gt;
+
+</description>
+        
+          <description>&lt;p&gt;&lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; is a famous static site generator. It has over 43k stars on GitHub,
+but in our current &lt;a href=&quot;https://jamstack.org/what-is-jamstack/&quot;&gt;JAMstack&lt;/a&gt; world, it’s not the shiniest star anymore.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
+        <link>http://matheusrich.com/easy-view-components-in-jekyll/</link>
+        <guid isPermaLink="true">http://matheusrich.com/easy-view-components-in-jekyll/</guid>
+        
+        
+        <category>ruby</category>
+        
+        <category>ssg</category>
+        
+        <category>jekyll</category>
+        
+        <category>quick-tip</category>
+        
+      </item>
+      
+    
+      
+      <item>
+        <title>Custom Linters For Custom Needs</title>
+        <description>&lt;p&gt;I’m working on a project that heavily relies on Feature Flags. Whenever we add a new feature or fix
+a bug, we add a flag for it. Here’s how that looks.&lt;/p&gt;
+
+&lt;p&gt;We list our flags in a YAML file:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# config/feature_flags.yml&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;two_factor_authentication: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Enabled 2-factor auth for all users&quot;&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;fix_1234: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Check for nils on User#can_vote?&quot;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# ...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And we use them on our code:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;User&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;can_vote?&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Feature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;enabled?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:fix_1234&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;present?&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This is nice because we can toggle the flags in production and fix bugs or have different features available for different clients.&lt;/p&gt;
+
+&lt;h2 id=&quot;cleaning-up-flags&quot;&gt;Cleaning up flags&lt;/h2&gt;
+
+&lt;p&gt;If flags refer to bugfixes (like the example above), when QA approves them and the patch goes to
+production, we have to clean the flags up.&lt;/p&gt;
+
+&lt;div class=&quot;language-diff highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; config/feature_flags.yml
+&lt;span class=&quot;p&quot;&gt;two_factor_authentication: &quot;Enabled 2-factor auth for all users&quot;
+&lt;/span&gt;&lt;span class=&quot;gd&quot;&gt;-fix_1234: &quot;Check for nils on User#can_vote?&quot;
+&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-diff highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; class User
+   def can_vote?
+&lt;span class=&quot;gd&quot;&gt;-    if Feature.enabled?(:fix_1234)
+-      age.present? &amp;amp;&amp;amp; age &amp;gt;= 16
+-    else
+-      age &amp;gt;= 16
+-    end
+&lt;/span&gt;&lt;span class=&quot;gi&quot;&gt;+    age.present? &amp;amp;&amp;amp; age &amp;gt;= 16
+&lt;/span&gt;   end
+ end
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;While this works well, it’s easy to forget old feature flags in the system. Test coverage helps
+here, but what if we could do some static checking?&lt;/p&gt;
+
+&lt;p&gt;That’s when Rubocop comes to play. We can create a custom cop that checks that for us!&lt;/p&gt;
+
+&lt;p&gt;The principle is simple: We need to search for calls like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Feature.enabled?(&amp;lt;some-flag&amp;gt;)&lt;/code&gt; and check
+if that flag exists on our YAML file. We &lt;em&gt;could&lt;/em&gt; do this by grepping, but it would be hard since
+code can vary in style (indentation, use or lack of parentheses, etc.).&lt;/p&gt;
+
+&lt;p&gt;What we’re going to do is to search for patterns directly into the parsed code. It’s like grepping,
+but on the AST.&lt;/p&gt;
+
+&lt;h2 id=&quot;grepping-the-what&quot;&gt;Grepping the &lt;em&gt;what&lt;/em&gt;?&lt;/h2&gt;
+
+&lt;p&gt;When Ruby reads your code, it transforms it from plain text to a data structure called &lt;a href=&quot;https://en.wikipedia.org/wiki/Abstract_syntax_tree&quot;&gt;Abstract
+Syntax Tree (AST)&lt;/a&gt;. It is basically a tree that represents how Ruby will evaluate your code.&lt;/p&gt;
+
+&lt;p&gt;Let’s look at an AST for the expression &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3 * 5 + 1&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     CODE                               AST
+     ‾‾‾‾                               ‾‾‾
+ ___________      ________             ( + )
+| 3 * 5 + 1 | =&amp;gt; | PARSER ｜  =&amp;gt;       /   \
+ ‾‾‾‾‾‾‾‾‾‾‾      ‾‾‾‾‾‾‾‾         ( * )  ( 1 )
+                                   /   \
+                                ( 3 )  ( 5 )
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;center&gt;Figure 1 - Code to AST&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;While ASCII art is fun, it’s definitely not practical to textually represent trees this way. A better
+way to do it is to use &lt;a href=&quot;https://en.wikipedia.org/wiki/S-expression&quot;&gt;S-expressions&lt;/a&gt;. This is
+straightforward if you already know
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Lisp_(programming_language)&quot;&gt;LISP&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The S-expression representation for the tree in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Figure 1&lt;/code&gt; could look like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-lisp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;small&gt;Tip: If you wanna learn more about how languages (especially interpreted ones) work, check out the
+&lt;strong&gt;amazing&lt;/strong&gt; book &lt;a href=&quot;https://craftinginterpreters.com/&quot;&gt;Crafting Interpreters&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/munificentbob&quot;&gt;Bob
+Nystrom&lt;/a&gt;.&lt;/small&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;oh-ok-grepping-the-ast&quot;&gt;Oh, ok. Grepping the AST&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Getting back to our topic…&lt;/em&gt; Rubocop allows us to grep the AST with S-expressions in the same fashion
+that we’re used to with regexes. So, we have to find what’s the S-expression for our pattern
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Feature.enabled?(&amp;lt;some-flag&amp;gt;)&lt;/code&gt;. Here’s the best part: &lt;strong&gt;we don’t need to know this from the top of
+our heads&lt;/strong&gt;. The gem called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;parser&lt;/code&gt;, which ships with Rubocop, does the job for us:&lt;/p&gt;
+
+&lt;div class=&quot;language-lisp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;ruby-parse&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Feature.enabled?(:some_flag)&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;send&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:Feature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:enabled?&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;sym&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:some_flag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Here we’re using a hardcoded symbol &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:some_flag&lt;/code&gt;, but we’re going to swap it out to
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$_&lt;/code&gt;, which means that Rubocop will capture the symbol value and yield it for
+us. Here’s the final pattern we’re going to use to search our code:&lt;/p&gt;
+
+&lt;div class=&quot;language-lisp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;send&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:Feature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:enabled?&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;sym&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;actually-writing-a-cop&quot;&gt;Actually writing a cop&lt;/h2&gt;
+
+&lt;p&gt;To create a custom Rubocop cop, we create a class that subclasses &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;RuboCop::Cop::Base&lt;/code&gt;. Then we
+need to hop on one of the hooks Rubocop runs while reading our code, like
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;on_class&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;on_if&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;on_send&lt;/code&gt;. In this case, we’re going to use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;on_send&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;CustomCops&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;UnknownFeatureFlag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;RuboCop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Cop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Base&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;on_send&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;# do stuff with the AST node&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now we define a custom matcher for the pattern we specified earlier. It will
+filter out all nodes that we’re not interested in. Note how the matcher yields
+back the captured symbol to the block so that we can use it.&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;CustomCops&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;UnknownFeatureFlag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;RuboCop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Cop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Base&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;def_node_matcher&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:on_feature_flag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;~&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;PATTERN&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;
+      (send (const nil :Feature) :enabled? (sym $_))
+&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;    PATTERN&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;on_send&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;on_feature_flag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;# do stuff with the flag&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now we check if this flag exists in our file and register an offense if it doesn’t:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;CustomCops&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;UnknownFeatureFlag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;RuboCop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Cop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Base&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;def_node_matcher&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:on_feature_flag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;~&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;PATTERN&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;
+      (send (const nil :Feature) :enabled? (sym $_))
+&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;    PATTERN&lt;/span&gt;
+
+    &lt;span class=&quot;no&quot;&gt;MSG&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Unknown feature flag `%&amp;lt;flag&amp;gt;s`&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;freeze&lt;/span&gt;
+    &lt;span class=&quot;no&quot;&gt;FEATURE_FLAGS&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;YAML&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;load_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;config/feature_flags.yml&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;keys&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;on_send&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;on_feature_flag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;next&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;FEATURE_FLAGS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;include?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# known flag, move on&lt;/span&gt;
+
+        &lt;span class=&quot;n&quot;&gt;register_offense&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+    &lt;span class=&quot;kp&quot;&gt;private&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;register_offense&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;MSG&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;flag: &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+      &lt;span class=&quot;n&quot;&gt;add_offense&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;message: &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;its-alive&quot;&gt;It’s alive!&lt;/h2&gt;
+
+&lt;p&gt;That’s it! We can require our custom class to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.rubocop.yml&lt;/code&gt; and run it along with other cops&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# .rubocop.yml&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;./lib/custom_cops/unknown_feature_flag.rb&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;or run it standalone&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rubocop &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; ./lib/custom_cops/unknown_feature_flag.rb &lt;span class=&quot;nt&quot;&gt;--only&lt;/span&gt; CustomCops/UnknownFeatureFlag
+....F
+app/secret_file.rb:45:10: C: CustomCops/UnknownFeatureFlag: Unknown feature flag the_cake_is_a_lie
+      &lt;span class=&quot;k&quot;&gt;if &lt;/span&gt;Feature.enabled?&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;:the_cake_is_a_lie&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;What we did was just the tip of the iceberg. We could even make our cop
+&lt;a href=&quot;https://docs.rubocop.org/rubocop/1.13/development.html#auto-correct&quot;&gt;autocorrectable&lt;/a&gt; to delete old code. Something like&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Feature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;enabled?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:some_flag_we_cleaned_up&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;new_code&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;old_code&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;could be rewritten as&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;new_code&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;lessons-learned&quot;&gt;Lessons learned&lt;/h2&gt;
+
+&lt;p&gt;The major point here is not learning &lt;em&gt;how to write&lt;/em&gt; a custom Rubocop cop, but
+knowing how writing one can save you/your team time by avoiding manual checks.&lt;/p&gt;
+
+&lt;p&gt;For more detail on how to write, test, and bundle custom cops in a gem, refer
+to this fantastic post by &lt;a href=&quot;https://evilmartians.com/chronicles/custom-cops-for-rubocop-an-emergency-service-for-your-codebase&quot;&gt;Evil Martians&lt;/a&gt; and &lt;a href=&quot;https://docs.rubocop.org/rubocop/1.13/development.html&quot;&gt;Rubocop’s official guide&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        
+          <description>&lt;p&gt;I’m working on a project that heavily relies on Feature Flags. Whenever we add a new feature or fix
+a bug, we add a flag for it. Here’s how that looks.&lt;/p&gt;
+</description>
+        
+        <pubDate>Thu, 30 Sep 2021 18:17:47 +0000</pubDate>
+        <link>http://matheusrich.com/custom-linters-for-custom-needs/</link>
+        <guid isPermaLink="true">http://matheusrich.com/custom-linters-for-custom-needs/</guid>
+        
+        
+        <category>ruby</category>
+        
+        <category>rails</category>
+        
+        <category>rubocop</category>
+        
+        <category>linters</category>
+        
+      </item>
+      
+    
+      
+      <item>
+        <title>How Spaces Can Improve Your Code</title>
+        <description>&lt;p&gt;Writing code is similar to writing an essay: it consists of many small parts that interact.
+One big giant blob of words is hard — and tedious — to read. To address this, we use
+paragraphs. The same technique can benefit our code. Here’s how.&lt;/p&gt;
+
+&lt;h2 id=&quot;logical-blocks&quot;&gt;Logical blocks&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A paragraph is a self-contained unit of discourse in writing dealing with a particular point or
+idea.
+&lt;em&gt;— Wikipedia&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The critical thing in this definition is “dealing with a particular point or idea”. Structuring our
+code with paragraphs (i.e., logical blocks) means we group related things and &lt;strong&gt;visually separate&lt;/strong&gt;
+them from the others. A simple new line makes a huge difference in readability. Let’s look at some
+examples to clarify this idea.&lt;/p&gt;
+
+&lt;h3 id=&quot;separate-test-phases&quot;&gt;Separate test phases&lt;/h3&gt;
+
+&lt;p&gt;Consider this function: it takes two numbers and returns their sum. Pretty simple.&lt;/p&gt;
+
+&lt;div class=&quot;language-rust highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;i64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;i64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;i64&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;A possible unit test for this function could look like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-rust highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;#[test]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;it_sums_two_numbers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nd&quot;&gt;assert_eq!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;While this test follows the &lt;a href=&quot;https://thoughtbot.com/blog/four-phase-test&quot;&gt;four-phase pattern&lt;/a&gt;, separating each test phase makes
+them more clear:&lt;/p&gt;
+
+&lt;div class=&quot;language-rust highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;#[test]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;it_sums_two_numbers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+  &lt;span class=&quot;nd&quot;&gt;assert_eq!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;grouping-related-concerns&quot;&gt;Grouping related concerns&lt;/h3&gt;
+
+&lt;p&gt;Programmers often use structures like modules and classes to tie code together. It is a great
+technique, but can lead to clutter if we’re not careful.&lt;/p&gt;
+
+&lt;p&gt;Check out this Rails model. Even though it’s only a few lines long, it’s a bit hard to parse this
+class.&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;User&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ApplicationRecord&lt;/span&gt;
+  &lt;span class=&quot;kp&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Clearance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;User&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;has_many&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:books&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;belongs_to&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:organization&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;validates&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;presence: &lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;validates&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:email&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;presence: &lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;uniqueness: &lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;See how different it looks when we separate its logical blocks:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;User&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ApplicationRecord&lt;/span&gt;
+  &lt;span class=&quot;kp&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Clearance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;User&lt;/span&gt;
+
+  &lt;span class=&quot;n&quot;&gt;has_many&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:books&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;belongs_to&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:organization&lt;/span&gt;
+
+  &lt;span class=&quot;n&quot;&gt;validates&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;presence: &lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;validates&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:email&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;presence: &lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;uniqueness: &lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Here, we grouped each section by its “theme” (mixins, associations, validations, query methods,
+etc.). The spacing helps us see the logical separation between each section, which speeds us up when
+searching where to add and change code.&lt;/p&gt;
+
+&lt;h3 id=&quot;separate-calculations-from-the-return-value&quot;&gt;Separate calculations from the return value&lt;/h3&gt;
+
+&lt;p&gt;Another great opportunity to use code blocks is in function bodies. We often do some preparation
+work before return the result, so it’s good to split those two parts up. This technique is especially
+beneficial when the language allows omitting the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;return&lt;/code&gt; keyword.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;FYI: I’m omitting some details in this Rust implementation to keep it simpler.&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-rust highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;enum&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FileFormat&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;HTML&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Latex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Markdown&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;// ...&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;render_markdown_to&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;markdown_content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format_to_convert_to&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FileFormat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;renderer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;match&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format_to_convert_to&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nn&quot;&gt;FileFormat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HTML&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;HTMLRenderer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
+    &lt;span class=&quot;nn&quot;&gt;FileFormat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Latex&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;LatexRenderer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;other&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nd&quot;&gt;panic!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Cannot convert markdown to {}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;other&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;renderer&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;.render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;markdown_content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;For those unfamiliar with Rust, omitting the semicolon in the last line indicates the function’s
+return value. It’s a subtle detail that is easy to miss. Adding a new line here makes it more
+evident where the calculations end and what is the actual return value.&lt;/p&gt;
+
+&lt;div class=&quot;language-rust highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;render_markdown_to&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;markdown_content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format_to_convert_to&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FileFormat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;renderer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Renderer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;match&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format_to_convert_to&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nn&quot;&gt;FileFormat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HTML&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;HTMLRenderer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
+    &lt;span class=&quot;nn&quot;&gt;FileFormat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Latex&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;LatexRenderer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;other&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nd&quot;&gt;panic!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Cannot convert markdown to {}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;other&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+  &lt;span class=&quot;n&quot;&gt;renderer&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;.render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;markdown_content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;extracting-behavior&quot;&gt;Extracting behavior&lt;/h2&gt;
+
+&lt;p&gt;Using logical blocks also helps us to refactor. It’s particularly useful to extract functionality:
+grouped lines probably will move together. Looking at the last example, we could extract the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;match&lt;/code&gt;
+expression to its own function:&lt;/p&gt;
+
+&lt;div class=&quot;language-rust highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;render_markdown_to&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;markdown_content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format_to_convert_to&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FileFormat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;renderer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;renderer_for_format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;format_to_convert_to&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+  &lt;span class=&quot;n&quot;&gt;renderer&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;.render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;markdown_content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;renderer_for_format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FileFormat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Box&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Renderer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;match&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nn&quot;&gt;FileFormat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HTML&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;HTMLRenderer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()),&lt;/span&gt;
+    &lt;span class=&quot;nn&quot;&gt;FileFormat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Latex&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;LatexRenderer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()),&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;other&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nd&quot;&gt;panic!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Cannot convert markdown to {}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;other&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;simple-but-effective&quot;&gt;Simple but effective&lt;/h2&gt;
+
+&lt;p&gt;Separating logical blocks is a technique that is really simple but highly effective in making code
+more maintainable. Remember, we read code more than we write, so optimize your code for reading. A
+little effort today can save your team hours in the future.&lt;/p&gt;
+
+</description>
+        
+          <description>&lt;p&gt;Writing code is similar to writing an essay: it consists of many small parts that interact.
+One big giant blob of words is hard — and tedious — to read. To address this, we use
+paragraphs. The same technique can benefit our code. Here’s how.&lt;/p&gt;
+</description>
+        
+        <pubDate>Tue, 31 Aug 2021 15:53:10 +0000</pubDate>
+        <link>http://matheusrich.com/how-spaces-can-improve-your-code/</link>
+        <guid isPermaLink="true">http://matheusrich.com/how-spaces-can-improve-your-code/</guid>
+        
+        
+        <category>quick-tip</category>
+        
+        <category>refactoring</category>
+        
+      </item>
+      
+    
+      
+      <item>
+        <title>Kitchen Sink</title>
+        <description>&lt;p&gt;Imagine you drink a glass of water and go to the kitchen sink to wash it. When you get there, there’s a HUGE pile of
+dirty dishes in the sink. To wash your glass, you would have to clean all the mess before. You look around… no one’s
+watching. You carefully put the glass in the sink’s corner and sneak out. You walk away thinking &lt;em&gt;“How things got this
+way?”&lt;/em&gt;. The ironic answer comes to your mind: &lt;em&gt;one glass a day&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;In the same way, software accumulates technical debt over time. Most of the time, tech debt starts from simple actions:
+&lt;em&gt;“let’s add another method to that class”&lt;/em&gt;, &lt;em&gt;“let’s add another parameter to that function”&lt;/em&gt;, &lt;em&gt;“let’s duplicate that
+code for the 10th time… What? Don’t look at me, it’s how everyone does this!”&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Giant classes/functions/modules are like magnets: they attract all responsibilities to themselves and tend to get even
+bigger! There is so much code stuffed inside that everything seems to fit in there. That creates a sort of black hole
+that won’t stop growing.&lt;/p&gt;
+
+&lt;p&gt;I’m not saying you should abstract early. I’m all aboard with &lt;a href=&quot;https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction&quot;&gt;ma’am Sandi Metz&lt;/a&gt; on
+&lt;em&gt;“duplication is far cheaper than the wrong abstraction”&lt;/em&gt;, but an abstraction will &lt;em&gt;have&lt;/em&gt; to exist
+at some point.&lt;/p&gt;
+
+&lt;h2 id=&quot;-a-way-out&quot;&gt;🚪 A way out&lt;/h2&gt;
+
+&lt;p&gt;If you thought &lt;em&gt;“I can’t touch this without breaking all the things”&lt;/em&gt;, you’re not the only one. Every developer will
+eventually deal with software that has technical debt and sometimes it may even seem that there’s no salvation. Luckily,
+smart folks like Martin Fowler taught us patterns for dealing with this very situation! The &lt;a href=&quot;https://martinfowler.com/bliki/StranglerFigApplication.html&quot;&gt;Strangler Fig
+Pattern&lt;/a&gt;, for example, allows us to refactor big classes (or even applications) incrementally, without
+breaking backward compatibility!&lt;/p&gt;
+
+&lt;p&gt;The point is, in the same way that there are &lt;a href=&quot;https://en.wikipedia.org/wiki/Software_design_pattern&quot;&gt;design patterns&lt;/a&gt; for creating new code and addressing issues,
+there &lt;a href=&quot;https://martinfowler.com/books/refactoring.html&quot;&gt;is a list of code smells and refactoring techniques&lt;/a&gt; to deal with them as well. Refactoring should
+be part of our daily work, not something &lt;em&gt;~special~&lt;/em&gt;. We should study, learn and teach others about it. The more we do it,
+the easier (and natural) it gets!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“A refactor a day keeps the rewrite away!” - &lt;em&gt;Developer Granny&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;-gravity-is-working-against-me&quot;&gt;🎸 Gravity is working against me&lt;/h2&gt;
+
+&lt;p&gt;Bad code attracts (more) bad code. Developers, especially when they’re new in a codebase, tend to repeat patterns. That
+way, expect a bad piece of code to influence similar instances. To prevent this &lt;strong&gt;we must resist inertia&lt;/strong&gt;. Yeah, it’s easy
+just to follow what everyone’s been doing, but this approach won’t work forever.&lt;/p&gt;
+
+&lt;p&gt;How to do this? Following the &lt;a href=&quot;https://martinfowler.com/bliki/OpportunisticRefactoring.html&quot;&gt;boy-scout rule&lt;/a&gt; &lt;em&gt;“always leave the code behind in a better state than you found
+it”&lt;/em&gt; helps to create a good mindset for it. We’ll think twice before just adding a new line of that huge method or
+nesting another &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;if/else&lt;/code&gt; statement. This rule helps us not to be afraid of taking small actions to improve the code.
+Did we touch a function? How can we improve it? Does it have tests? Can we &lt;a href=&quot;/dont-use-comments-use-code/&quot;&gt;use code to get rid of some
+comments&lt;/a&gt;?&lt;/p&gt;
+
+&lt;p&gt;When we finally understand &lt;em&gt;that piece of spaghetti code&lt;/em&gt; (everyone has at least one in mind), we won’t keep it to
+ourselves! We have to materialize this knowledge in the code itself by renaming variables, functions, extracting small
+methods to clarify intention, etc. It costs us a bit today but will save a ton of time for other developers (or
+ourselves in 6 months).&lt;/p&gt;
+
+&lt;p&gt;Those simple actions can be powerful in the long run! One glass a day, that dirty pile gets smaller. You may even have
+some partners joining this quest! Soon enough, that sink will be shining, and when it is clean, no one will want to be
+the first to leave a dirty dish there.&lt;/p&gt;
+
+</description>
+        
+          <description>&lt;p&gt;Imagine you drink a glass of water and go to the kitchen sink to wash it. When you get there, there’s a HUGE pile of
+dirty dishes in the sink. To wash your glass, you would have to clean all the mess before. You look around… no one’s
+watching. You carefully put the glass in the sink’s corner and sneak out. You walk away thinking &lt;em&gt;“How things got this
+way?”&lt;/em&gt;. The ironic answer comes to your mind: &lt;em&gt;one glass a day&lt;/em&gt;.&lt;/p&gt;
+</description>
+        
+        <pubDate>Thu, 22 Jul 2021 20:13:13 +0000</pubDate>
+        <link>http://matheusrich.com/kitchen-sink/</link>
+        <guid isPermaLink="true">http://matheusrich.com/kitchen-sink/</guid>
+        
+        
+        <category>refactoring</category>
+        
+      </item>
+      
+    
+  </channel>
+</rss>

@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="en" class="no-js lt-ie9 lt-ie8" <![endif]-->
+<!--[if IE 8]><html lang="en" class="no-js lt-ie9" <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2022 In Review</title>
+
+    <!-- Open Graph Meta -->
+    <meta content="Rich Codes" property="og:site_name">
+    
+      <meta content="2022 In Review" property="og:title">
+    
+    
+      <meta content="article" property="og:type">
+    
+    
+      <meta content="I left my country for the first time, bought a bunch of guitar gear, wrote Ruby and learned Italian. All of this, but with charts and pictures." property="og:description">
+    
+    
+      <meta content="http://matheusrich.com/2022-in-review/" property="og:url">
+    
+    
+      <meta content="2023-01-21T00:00:00+00:00" property="article:published_time">
+      <meta content="http://matheusrich.com/about/" property="article:author">
+    
+    
+      <meta content="http://matheusrich.com/assets/img/code.webp" property="og:image">
+    
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@matheusrich">
+    <meta name="twitter:creator" content="@matheusrich">
+    
+      <meta name="twitter:title" content="2022 In Review">
+    
+    
+      <meta name="twitter:url" content="http://matheusrich.com/2022-in-review/">
+    
+    
+      <meta name="twitter:description" content="I left my country for the first time, bought a bunch of guitar gear, wrote Ruby and learned Italian. All of this, but with charts and pictures.">
+    
+    
+      <meta name="twitter:image:src" content="http://matheusrich.com/assets/img/code.webp">
+    
+
+    <meta name="theme-color" content="#111" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+
+    <!-- Come and get me RSS readers -->
+    <link rel="alternate" type="application/rss+xml" title="Rich Codes" href="http://matheusrich.com/feed.xml" />
+
+    <!-- Stylesheet -->
+    <link async rel="stylesheet" href="/assets/css/style.css">
+    <!--[if IE 8]><link rel="stylesheet" href="/assets/css/ie.css"><![endif]-->
+
+    <link rel="canonical" href="http://matheusrich.com/2022-in-review/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>2022 In Review | Rich Codes</title>
+<meta name="generator" content="Jekyll v4.2.1" />
+<meta property="og:title" content="2022 In Review" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I left my country for the first time, bought a bunch of guitar gear, wrote Ruby and learned Italian. All of this, but with charts and pictures." />
+<meta property="og:description" content="I left my country for the first time, bought a bunch of guitar gear, wrote Ruby and learned Italian. All of this, but with charts and pictures." />
+<link rel="canonical" href="http://matheusrich.com/2022-in-review/" />
+<meta property="og:url" content="http://matheusrich.com/2022-in-review/" />
+<meta property="og:site_name" content="Rich Codes" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-01-21T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="2022 In Review" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-01-21T00:00:00+00:00","datePublished":"2023-01-21T00:00:00+00:00","description":"I left my country for the first time, bought a bunch of guitar gear, wrote Ruby and learned Italian. All of this, but with charts and pictures.","headline":"2022 In Review","mainEntityOfPage":{"@type":"WebPage","@id":"http://matheusrich.com/2022-in-review/"},"url":"http://matheusrich.com/2022-in-review/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+
+<body>
+
+   <div class="header">
+  <div class="container">
+    <h1 class="logo">
+      <a href="/">
+        <span class="dir">~</span>
+        <span class="text"> RICH CODES </span>
+      </a>
+    </h1>
+    <nav class="nav-collapse" style="visibility: hidden">
+      <ul class="noList">
+        
+        <li class="element first ">
+          <a href="/">🏠 Home</a>
+        </li>
+        
+        <li class="element  ">
+          <a href="/about/">👨‍💻 About me</a>
+        </li>
+        
+        <li class="element  ">
+          <a href="/categories/">🏷️ Categories</a>
+        </li>
+        
+        <li class="element  ">
+          <a href="/all/">📝 All posts</a>
+        </li>
+        
+        <li class="element  ">
+          <a href="/speaking/">🎙️ Speaking</a>
+        </li>
+        
+        <li class="element last">
+          <button class="theme-toggle" data-theme="dark" onclick="toggleTheme()">Turn lights</button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<!-- end .header -->
+
+<script>
+  function toggleTheme() {
+    const systemInitiatedDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const currentOverridenTheme = sessionStorage.getItem('theme');
+
+    if (currentOverridenTheme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'light');
+      sessionStorage.setItem('theme', 'light');
+    } else if (currentOverridenTheme === 'light') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      sessionStorage.setItem('theme', 'dark');
+    } else if (systemInitiatedDark.matches) {
+      document.documentElement.setAttribute('data-theme', 'light');
+      sessionStorage.setItem('theme', 'light');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      sessionStorage.setItem('theme', 'dark');
+    }
+  }
+
+  const overridenTheme = sessionStorage.getItem('theme');
+  if (overridenTheme === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    sessionStorage.setItem('theme', 'dark');
+  } else if (overridenTheme === 'light') {
+    document.documentElement.setAttribute('data-theme', 'light');
+    sessionStorage.setItem('theme', 'light');
+  }
+</script>
+
+
+   <div class="content">
+      <div class="container">
+         <article class="post">
+  
+
+  <h1 class="postTitle">
+    2022 In Review
+  </h1>
+
+  <p class="meta">
+    January 21, 2023 | <span class="time">15</span> minute read
+    
+
+    
+      | ✍🏼
+        <a href="https://github.com/MatheusRich/matheusrich.github.io/blob/main/_posts/2023-01-21-2022-in-review.md">
+          Fix typo
+        </a>
+    
+
+    
+  </p>
+
+  <p>Two thousand and twenty two is over, so, <a href="/categories/#year-in-review">as usual</a>, I took some time to reflect
+a bit on the things that happened (or didn’t happen) during the year.</p>
+
+<aside class="Note Note--info">
+  
+
+  
+
+  <p class="content">Inspired by my friend <a href="https://pothix.com/">@PotHix</a>, I’m including a bit more data (i.e., numbers) in this year’s review. I’m nowhere close to what <a href="https://pothix.com/2020/">he does</a>, but it’s useful anyway.</p>
+
+
+  
+</aside>
+
+<h2 id="career"><a href="#career">Career</a></h2>
+
+<p>It has been a great year at thoughtbot. It’s the best place I’ve worked in, and
+I feel like everyone is trying to make it the best it can be. I get to work with
+great people and with cool projects. Working with Mozilla was one of the
+highlights for me this year. I got promoted and was a mentor in <a href="https://thoughtbot.com/jobs#jobs">the
+apprenticeship program</a>, which was a great
+experience. I wish more places did something similar.</p>
+
+<aside class="Note">
+  <h4>Quick takes:</h4>
+  <ul>
+    <li>
+      <a href="https://nestjs.com/">Nest.js</a>: I hated it! I felt like to get anything done I'd have to do a lot of pumbling. The test infra is not ideal. All the system test examples I saw would mock the DB (which is great for speed), but nothing ever touched the DB which felt really weird. There was no way of knowing if things were actually working. Also, no transactions between tests, so you have to roll back the data on your own.
+    </li>
+    <li>
+      <a href="https://openai.com/">Open AI</a>: I haven't done much work with it yet, so take this with a grain of salt. I'm also not interested in Q&amp;A or chatting. I've used it for things like keyword extraction and text summarization, which it handled really well.
+    </li>
+  </ul>
+</aside>
+
+<h3 id="name-pronunciations"><a href="#name-pronunciations">Name pronunciations</a></h3>
+
+<p>Because I don’t have a “traditional name”, I’m often asked how to pronounce
+it. I figured other folks probably experienced the same, so I added support for
+uploading your name pronunciation to an internal thoughtbot tool. Thus, before
+going to a meeting with somebody new, you could check how to pronounce their
+name.</p>
+
+<p>Turns out this feature was very appreciated, and I even got a shout-out on the
+<a href="https://www.bikeshed.fm/323">BikeShed podcast</a> for that. This DEI theme
+would appear again in a blog post later in the year.</p>
+
+<h3 id="mining-gold"><a href="#mining-gold">Mining gold</a></h3>
+
+<p>We have a lot of interesting discussions on thoughtbot’s Slack. I thought those
+could also benefit the community in some way, so I created a tool called
+GoldMiner that searches those conversations and turns them into <a href="https://thoughtbot.com/blog/tags/this-week-in-dev">blog
+posts</a>.</p>
+
+<p>I’m happy with the results, and I’m working on making it open-source.</p>
+
+<aside class="Note Note--info">
+  
+    <div class="icon-box">
+      <span class="icon">
+        
+          i
+         </span>
+    </div>
+  
+
+  
+
+  <p class="content">2023 update: it’s now open-source! Check it out at <a href="https://github.com/thoughtbot/gold_miner">thoughtbot/gold_miner</a>.</p>
+
+
+  
+</aside>
+
+<h3 id="summits"><a href="#summits">Summits</a></h3>
+
+<h4 id="brighton--london"><a href="#brighton--london">Brighton / London</a></h4>
+
+<p>In May this year, I flew to Brighton (UK) to meet my coworkers in person for the
+first time! It also was my first international trip, which was scary and
+exciting. The impostor syndrome hit hard before getting there (I was suddenly
+afraid I wouldn’t be able to communicate properly 🤷🏽), but everything was
+fine. I had a wonderful time there. I also spent an extra week in London since I
+was so close.</p>
+
+<div class="flex flex-wrap flex-center gap-4">
+  <figure>
+  <img class="block mx-auto rounded h-auto " loading="lazy" src="/assets/img/2022-in-review/tower-bridge.png" width="400px" height="auto" />
+
+  
+</figure>
+
+
+  <figure>
+  <img class="block mx-auto rounded h-auto " loading="lazy" src="/assets/img/2022-in-review/london-eye.png" width="400px" height="auto" />
+
+  
+</figure>
+
+</div>
+
+<p>Some thoughts about being in the UK:</p>
+
+<ul>
+  <li>Having sun at 9 PM was almost unbelievable to me. I knew this happened in
+other places, but actually seeing it was cool.</li>
+  <li>Yeah, eating beans for breakfast is weird;</li>
+  <li>Walking in the streets at night or with my phone in my hands was something…
+different.
+    <ul>
+      <li>After getting back to Brazil, I started noticing some things I did all the
+time, like always looking over my shoulders, not pulling my phone out of my
+pocket when there was some stranger too close in the streets, or rushing to
+get in/out of the car as fast as possible.</li>
+      <li>I know there’s no perfect place, but it felt good to have a different
+lifestyle for a couple of days.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="azores"><a href="#azores">Azores</a></h4>
+
+<p>In October, we had another meeting, this time in the Azores (Portugal). Being in
+a different country but still speaking Portuguese was weird. It was confusing to
+switch from English to Portuguese all the time. I would often speak with a
+waiter in Portuguese and then in English two minutes later, for example.</p>
+
+<p>Aside from amazing people, friends, and food, I did some hiking and went to the
+hot springs.</p>
+
+<div class="flex flex-wrap flex-center gap-4">
+  <figure>
+  <img class="block mx-auto rounded h-auto " loading="lazy" src="/assets/img/2022-in-review/lake.jpg" width="400px" height="auto" />
+
+  
+    <figcaption>
+      You can really see a “volcano shape” in this picture.
+
+    </figcaption>
+  
+</figure>
+
+
+  <div>
+    <figure>
+  <img class="block mx-auto rounded h-auto " loading="lazy" src="/assets/img/2022-in-review/sea.jpg" width="400px" height="auto" />
+
+  
+    <figcaption>
+      The sea was angry, no swimming for me.
+
+    </figcaption>
+  
+</figure>
+
+
+    <figure>
+  <img class="block mx-auto rounded h-auto " loading="lazy" src="/assets/img/2022-in-review/baos.jpg" width="400px" height="auto" />
+
+  
+    <figcaption>
+      These baos (and the taco behind them) were ✨ A M A Z I N G ✨!
+
+    </figcaption>
+  
+</figure>
+
+  </div>
+</div>
+
+<p>Thoughts on being in the Azores:</p>
+
+<ul>
+  <li>It’s weird to think I was basically at the top of a volcano.</li>
+  <li>The architecture left me with an unsettling feeling: everything felt similar
+(like in a Brazilian town), but… <em>European</em> in some way. Maybe it was the
+weather or the asphalt. Also, the beaches had black sand 🤔.</li>
+  <li>The accent can be <strong>so difficult</strong> to understand. They will generally soften
+their accent when speaking to a tourist, but when they talk between
+themselves… I couldn’t get a word!</li>
+  <li>My favorite restaurant was TukáTulá, by far! It has a great view and great
+food.</li>
+</ul>
+
+<h2 id="open-source"><a href="#open-source">Open-source</a></h2>
+
+<p>Overall, I didn’t do much open-source work this year, but I’m happy with what I
+did.</p>
+
+<figure>
+  <img class="block mx-auto rounded h-auto " loading="lazy" src="/assets/img/2022-in-review/rubygems-2022.png" width="600px" height="auto" />
+
+  
+</figure>
+
+<h3 id="end-of-life"><a href="#end-of-life">End of Life</a></h3>
+
+<p>January this year, I released my fourth gem:
+<a href="https://github.com/MatheusRich/end_of_life">end_of_life</a>, a gem that helps you
+find which projects you have that use a deprecated Ruby version. It was one of
+those ideas I couldn’t take out of my head, so I hacked the first version during
+a weekend. It is pretty simple, but I think it has a nice UI, and I like how I
+<a href="https://github.com/MatheusRich/end_of_life/blob/da5dc945fb69a735a4dc8d8fb947ac2ed31a680e/lib/end_of_life.rb#L39-L44">handled errors using
+monads</a>.</p>
+
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># simplified version of the code that searches for repos with deprecated Ruby</span>
+<span class="k">def</span> <span class="nf">check_eol_ruby_on_repositories</span>
+  <span class="n">fetch_repositories</span>
+    <span class="p">.</span><span class="nf">fmap</span> <span class="p">{</span> <span class="o">|</span><span class="n">repositories</span><span class="o">|</span> <span class="n">filter_repositories_with_end_of_life</span><span class="p">(</span><span class="n">repositories</span><span class="p">)</span> <span class="p">}</span>
+    <span class="p">.</span><span class="nf">fmap</span> <span class="p">{</span> <span class="o">|</span><span class="n">eol_repositories</span><span class="o">|</span> <span class="n">print_diagnose_for</span><span class="p">(</span><span class="n">eol_repositories</span><span class="p">)</span> <span class="p">}</span>
+    <span class="p">.</span><span class="nf">or</span> <span class="p">{</span> <span class="o">|</span><span class="n">error</span><span class="o">|</span> <span class="nb">puts</span> <span class="n">error_msg</span><span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="p">}</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>I like this pipeline, and I don’t think it looks weird in Ruby. IMO, it’s much
+better than exceptions, which I first started using, and they didn’t play nice
+with Threads; then I had to do all sorts of workarounds, and suddenly everything
+was a mess.</p>
+
+<h3 id="rails"><a href="#rails">Rails</a></h3>
+
+<p>I’ve got one <a href="https://github.com/rails/rails/pull/44085">PR merged into Rails</a>.
+It’s a small convenience and will be out on Rails 7.1.</p>
+
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Now it's possible to write</span>
+<span class="n">audio_tag</span><span class="p">(</span><span class="n">user</span><span class="p">.</span><span class="nf">audio_file</span><span class="p">)</span>
+<span class="n">video_tag</span><span class="p">(</span><span class="n">user</span><span class="p">.</span><span class="nf">video_file</span><span class="p">)</span>
+
+<span class="c1"># Instead of</span>
+<span class="n">audio_tag</span><span class="p">(</span><span class="n">polymorphic_path</span><span class="p">(</span><span class="n">user</span><span class="p">.</span><span class="nf">audio_file</span><span class="p">))</span>
+<span class="n">video_tag</span><span class="p">(</span><span class="n">polymorphic_path</span><span class="p">(</span><span class="n">user</span><span class="p">.</span><span class="nf">video_file</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>I expected this to work, and I was surprised it didn’t. I believe most of my
+contributions to Rails will be similar to this.</p>
+
+<p>I also participated in a few discussions/PR reviews. Some of those PRs <a href="https://github.com/rails/rails/pull/43945">got
+merged</a>, and others <a href="https://github.com/rails/rails/pull/45991">were
+rejected</a> in a few minutes. There are
+also the <a href="https://github.com/rails/rails/pull/46863">ones I don’t know yet</a>.</p>
+
+<h3 id="dry-monads"><a href="#dry-monads">Dry Monads</a></h3>
+
+<p>I opened <a href="https://github.com/dry-rb/dry-monads/pull/160">a PR</a> adding a new
+feature to dry-monads, but it was rejected. That happens sometimes, and it’s
+okay.</p>
+
+<h3 id="blogging"><a href="#blogging">Blogging</a></h3>
+
+<p>I had the resolution to write one blog post per month in 2021 to force myself to
+get back to writing. That worked well, but I hated the pressure all the time.
+For this year, I felt that I would naturally write (especially during
+<a href="https://thoughtbot.com/blog/investment-time">Investment Days</a>), so I didn’t
+force anything. I wrote when I felt like it and had time.</p>
+
+<p>Turns out that this worked well. I wrote 14 articles throughout the year (one
+more than <a href="https://www.matheusrich.com/all/#2021-ref">last year</a>). The
+difference is that (aside from two TILs articles and <a href="https://www.matheusrich.com/2021-in-review/">2021 In Review</a>) all of
+them were written in <a href="https://thoughtbot.com/blog/authors/matheus-richardc">thoughtbot’s blog</a>. I did that so I could reach a larger
+audience.</p>
+
+<figure>
+  <img class="block mx-auto rounded h-auto " loading="lazy" src="/assets/img/2022-in-review/post-frequency.svg" width="600px" height="auto" />
+
+  
+    <figcaption>
+      I was sort of consistent with writing, although most of it happened in Q1 and Q4. I didn’t write anything during Q2.
+
+    </figcaption>
+  
+</figure>
+
+<p>My favorite 2022 article is <a href="https://thoughtbot.com/blog/pipelining-without-pipes-in-ruby">Pipelining without
+pipes</a> because it
+was fun to write and has a silly premise (it even <a href="https://rubyweekly.com/issues/595#:~:text=Pipelining%20Without%20Pipes">appeared on
+RubyWeekly</a>).
+<a href="https://thoughtbot.com/blog/working-in-my-native-language-requires-empathy">Working in my native language requires
+empathy</a>
+was the hit, though. For some reason, it went viral on LinkedIn and got featured
+in <a href="https://www.linkedin.com/news/story/bilingual-empathy-in-the-workplace-5282220/">LinkedIn
+News</a>.
+All of that felt weird to me. I almost didn’t publish that article because it
+was so intimate, but maybe that very thing was what made people connect to it.</p>
+
+<h3 id="ruby-cards"><a href="#ruby-cards">Ruby Cards</a></h3>
+
+<p>Ruby Cards kept going! I added a card every week (that I wasn’t on vacation) and
+I grew the number of followers a lot! <a href="https://twitter.com/fxn">Xavier Noria</a>
+(known author of the gem <a href="https://github.com/fxn/zeitwerk">zeitwerk</a>) retweeted
+one of the cards at the beginning of the year which bumped the account. Thank
+you!</p>
+
+<figure>
+  <img class="block mx-auto rounded h-auto " loading="lazy" src="/assets/img/2022-in-review/rubycards-followers.svg" width="600px" height="auto" />
+
+  
+    <figcaption>
+      Once again, consistency has proven to work. I’m proud of this growth.
+
+    </figcaption>
+  
+</figure>
+
+<p>However, it’s exhausting to add a card every week. Not only do I have to come up
+with something new, but I have to make sure that I didn’t post the same thing
+before (and two years’ worth of cards is quite a lot). I’ve been delaying this
+for a while, but I’ll have to automate the creation of cards (at least
+partially!) in some way.</p>
+
+<h2 id="hobbies-and-life"><a href="#hobbies-and-life">Hobbies and Life</a></h2>
+
+<p>Unlike last year, I did no pixel art and read no comics in 2022 (and I’m not
+sure if I’m going to get back at those soon), but there was one thing I really
+dug into: music.</p>
+
+<h3 id="music"><a href="#music">Music</a></h3>
+
+<p>One of the first things I did this year was to get my guitar to a luthier. She
+was kinda left aside and needed a bit of love. After setting it up, I played a
+bit with plugins like AmpliTube, but I knew what I really wanted: an amp.</p>
+
+<p>I did my research, and a few weeks later, I had a Katana in my hands.</p>
+
+<figure>
+  <img class="block mx-auto rounded h-auto " loading="lazy" src="/assets/img/2022-in-review/boss-katana.jpg" width="600px" height="auto" />
+
+  
+    <figcaption>
+      This was the first guitar gear I got in <em>many</em> years.
+
+    </figcaption>
+  
+</figure>
+
+<p>I finally can afford these things, so I went all-in this year. I always dreamed
+about having a pedalboard and stuff, so I started experimenting with gear little
+by little. Here’s a timeline of all the guitar stuff I ever owned:</p>
+
+<figure>
+  <img class="block mx-auto rounded h-auto " loading="lazy" src="/assets/img/2022-in-review/gear-timeline-in-years.svg" width="800px" height="auto" />
+
+  
+    <figcaption>
+      You can see how I basically owned the same two pieces of gear for 6 years (mostly during college, where I was too broke to buy anything), and how I went nuts in 2022 buying pedals.
+
+    </figcaption>
+  
+</figure>
+
+<p>Speaking of music, I didn’t listen to a lot of music as I would in the past. I
+don’t <em>feel</em> like this is true, but it’s what the numbers show. I’m sure I would
+hear something close to 100k minutes per year during college. Maybe it was all
+the waiting at bus stops? Or maybe it’s because nowadays I also listen to music
+from my wife’s account when we’re on the car. Anyway, this is not a metric I’m
+trying to move up or down.</p>
+
+<figure>
+  <img class="block mx-auto rounded h-auto " loading="lazy" src="/assets/img/2022-in-review/spotify-minutes.jpeg" width="600px" height="auto" />
+
+  
+</figure>
+
+<h4 id="brasília-music-school">Brasília Music School</h4>
+
+<p>Maybe my excitement with playing guitar was so evident that my wife asked me,
+<em>“Have you ever thought about going to Music School?”</em>. I haven’t thought about
+that in years. I was so busy with college that I forgot about it altogether.</p>
+
+<p>Well, there wasn’t any good reason <em>not</em> to apply, so I did. I played a version
+of <a href="https://www.youtube.com/watch?v=bWv3cZOBgpM">Everyday I Have The Blues by John
+Mayer</a> (I’m sorry, I’m too shy to
+show you the recording) and was accepted. My first semester was focused on the
+basics (pentatonics, how to read sheet music), but I’ve learned so much! I’m
+eagerly waiting for the next one.</p>
+
+<h3 id="im-learning-italian"><a href="#im-learning-italian">I’m learning Italian</a></h3>
+
+<p>An Italian friend, <a href="https://heyvaleria.github.io/">Valeria</a>, started teaching Italian to a few folks at
+thoughtbot. That was the beginning of my journey with Italian. I didn’t have
+plans to learn a new language, but that was the only other language (aside from
+English) I ever did on Duolingo before, so why not?</p>
+
+<p>As I said, I tried learning a bit of Italian some years ago, but lost my 90-day
+streak and gave it up. This time is different. I’m taking it more serious: I’m
+not only doing the Duolingo lessions, I’m listening to podcasts in Italian,
+watching shows with Italian dub/subs, reading books and doing Anki cards.</p>
+
+<figure>
+  <img class="block mx-auto rounded h-auto " loading="lazy" src="/assets/img/2022-in-review/duolingo.jpeg" width="600px" height="auto" />
+
+  
+</figure>
+
+<p>It’s different from learning English because I’m not doing formal lessons, so
+it’s more… casual? At the same time, when I was younger, I learned a bunch of
+English without realizing it: I was just reading song lyrics or playing games. I
+also don’t need Italian to work, study, program, watch movies or YouTube, so
+it’s a different approach. To put it simple, I need to engage with the language
+<em>actively</em> to learn it.</p>
+
+<p>Music has been a good part of my learning process. I’ve found this fantastic
+band called Ministri (which was a large portion of what I listened to in 2022),
+and noticed that it’s easier for me to remember words that came from music
+lyrics than random words on Anki.</p>
+
+<figure>
+  <img class="block mx-auto rounded h-auto " loading="lazy" src="/assets/img/2022-in-review/top-songs-2022.jpeg" width="800px" height="auto" />
+
+  
+    <figcaption>
+      Three out of the top 5 songs I listened to in 2022 are in Italian.
+
+    </figcaption>
+  
+</figure>
+
+<h3 id="gaming"><a href="#gaming">Gaming</a></h3>
+
+<p>I played 238 hours in 19 different games over 143 days. Playstation says it’s
+22% (43h) more than last year, but I don’t feel like that. Here’s the breakdown
+of my top 5 games:</p>
+
+<figure>
+  <img class="block mx-auto rounded h-auto " loading="lazy" src="/assets/img/2022-in-review/games-2022.png" width="400px" height="auto" />
+
+  
+</figure>
+
+<p>My partner also plays on the same console, so the only games played by me were
+Skyrim, Fifa, and It Takes 2. These add up to 93h, which is 36% less than the
+previous year’s 147 hours.</p>
+
+<p>I also didn’t finish many games (just Stray and It takes 2). I was mainly
+playing casually, hence the 30h of Fifa and almost 50h of Skyrim, where I would
+roam around without a defined plan. I think this reflects my focus on other
+things during the year.</p>
+
+<h2 id="expectations-vs-reality"><a href="#expectations-vs-reality">Expectations vs. Reality</a></h2>
+
+<p>Having tha said, let’s see how my expectations for 2022 went. Last year I wrote:</p>
+
+<blockquote>
+  <p>I wanna keep getting involved in Ruby’s development</p>
+</blockquote>
+
+<p>I did work on open source a bit, and <a href="https://bugs.ruby-lang.org/issues/16122#note-31">I was part of the discussion on
+naming</a> Ruby’s 3.2 <code class="language-plaintext highlighter-rouge">Data</code> class
+(my suggestions weren’t the final product, but at least I was there?). No “code
+contributions”, though.</p>
+
+<blockquote>
+  <p>and keep working on my health</p>
+</blockquote>
+
+<p>I was mostly talking about physical health, and I indeed failed at that. I was
+super inconsistent in working out, and I didn’t practice any sports.</p>
+
+<p>On the other hand, I got back to playing guitar, and I haven’t invested in it
+this much (both in terms of money and time) in a long time. I hope this
+compensates for the lack of exercise in some way, but I don’t want to have to
+choose between mental and physical health.</p>
+
+<blockquote>
+  <p>I’ll leave game development on hold for a while and focus on programming
+languages. I specifically want to understand how type checkers work and build
+a simple one.</p>
+</blockquote>
+
+<p>Yeah… that didn’t happen at all. I did not feel like doing any programming
+language development this year.</p>
+
+<blockquote>
+  <p>I hope I can visit new places this year. An international trip would be
+fantastic, but the pandemic might not allow me to do that.</p>
+</blockquote>
+
+<p>Well, that was a pleasant surprise. I made not only one but two international
+trips! Shout out to my buddy <a href="https://github.com/jmeinerz">Jonas</a> that was such
+a lifesaver for me in London.</p>
+
+<blockquote>
+  <p>I wish we could live a COVID-free life (at least a mask-free one), but that
+probably won’t happen this year (and maybe neither in the next one).</p>
+</blockquote>
+
+<p>I got COVID in the same month I wrote that, lol 🤦🏽‍♂️.</p>
+
+<p>Mask-free life is not exactly what we have. It feels like Covid is a
+never-ending matter, and people just decided to live with it, for better or
+worse.</p>
+
+<h2 id="2023-goals"><a href="#2023-goals">2023 Goals</a></h2>
+
+<p>2022 felt like the year of music to me. It seems like much of what I’ve done (at
+least in my free time) was related to that. I believe that a big part of this
+year will be similar.</p>
+
+<p>Again, I want to “correct” what I don’t think I succeed at in the previous year.
+In particular:</p>
+
+<ul>
+  <li>Exercise! Sports, gym, whatever it is, I need to move this lazy body.</li>
+  <li>I do want to keep on working on core Ruby. TBH, contributing to CRuby feels
+too far off from my skill set. Maybe I can work on supporting things like
+documentation.</li>
+  <li>Keep my work/life balance. This wasn’t a problem in 2022, and I want to make
+sure it keeps not being one.</li>
+  <li>Working on something fun! Language development, games, something else? I don’t
+care, as long as I enjoy doing it.</li>
+</ul>
+
+<p>Wow. This took a lot of time to write. Gathering the data from different
+sources, compiling it, and actually creating a blog post is hard, but I’m glad I
+did it. See you in 2024!</p>
+
+
+
+  <div class="Categories">
+    <h2>Categories</h2>
+
+    
+    
+      <a href="/categories/#year-in-review"><span class="Tag Tag--outlined">year-in-review</span></a>
+    
+  </div>
+
+  <!-- POST NAVIGATION -->
+  <div class="postNav clearfix">
+    
+      <a class="prev" href="/2021-in-review/"><span>&laquo;&nbsp;2021 In Review</span>
+      
+    </a>
+    
+    
+  </div>
+</article>
+      </div>
+   </div><!-- end .content -->
+
+   <div class="footer">
+   <div class="container">
+      <p class="copy"></a> Powered by <a href="http://jekyllrb.com">Jekyll</a> ❤️</p>
+
+      <div class="footer-links">
+         <ul class="noList">
+            
+            
+            <li><a href="https://twitter.com/matheusrich">
+                  <svg id="twitter" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" style="height: 30px; width: 30px;"><circle class="outer-shape" cx="50" cy="50" r="48" style="opacity: 1;"></circle>
+                  <path class="inner-shape" style="opacity: 1;" transform="translate(25,25) scale(0.5)" d="M99.001,19.428c-3.606,1.608-7.48,2.695-11.547,3.184c4.15-2.503,7.338-6.466,8.841-11.189 c-3.885,2.318-8.187,4-12.768,4.908c-3.667-3.931-8.893-6.387-14.676-6.387c-11.104,0-20.107,9.054-20.107,20.223 c0,1.585,0.177,3.128,0.52,4.609c-16.71-0.845-31.525-8.895-41.442-21.131C6.092,16.633,5.1,20.107,5.1,23.813 c0,7.017,3.55,13.208,8.945,16.834c-3.296-0.104-6.397-1.014-9.106-2.529c-0.002,0.085-0.002,0.17-0.002,0.255 c0,9.799,6.931,17.972,16.129,19.831c-1.688,0.463-3.463,0.71-5.297,0.71c-1.296,0-2.555-0.127-3.783-0.363 c2.559,8.034,9.984,13.882,18.782,14.045c-6.881,5.424-15.551,8.657-24.971,8.657c-1.623,0-3.223-0.096-4.796-0.282 c8.898,5.738,19.467,9.087,30.82,9.087c36.982,0,57.206-30.817,57.206-57.543c0-0.877-0.02-1.748-0.059-2.617 C92.896,27.045,96.305,23.482,99.001,19.428z"></path>
+                  </svg>
+            </a></li>
+            
+            
+            <li><a href="https://github.com/matheusrich">
+                  <svg id="github" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" style="height: 30px; width: 30px;"><circle class="outer-shape" cx="50" cy="50" r="48" style="opacity: 1;"></circle>
+                  <path class="inner-shape" style="opacity: 1;" transform="translate(25,25) scale(0.5)" d="M50,1C22.938,1,1,22.938,1,50s21.938,49,49,49s49-21.938,49-49S77.062,1,50,1z M79.099,79.099 c-3.782,3.782-8.184,6.75-13.083,8.823c-1.245,0.526-2.509,0.989-3.79,1.387v-7.344c0-3.86-1.324-6.699-3.972-8.517 c1.659-0.16,3.182-0.383,4.57-0.67c1.388-0.287,2.855-0.702,4.402-1.245c1.547-0.543,2.935-1.189,4.163-1.938 c1.228-0.75,2.409-1.723,3.541-2.919s2.082-2.552,2.847-4.067s1.372-3.334,1.818-5.455c0.446-2.121,0.67-4.458,0.67-7.01 c0-4.945-1.611-9.155-4.833-12.633c1.467-3.828,1.308-7.991-0.478-12.489l-1.197-0.143c-0.829-0.096-2.321,0.255-4.474,1.053 c-2.153,0.798-4.57,2.105-7.249,3.924c-3.797-1.053-7.736-1.579-11.82-1.579c-4.115,0-8.039,0.526-11.772,1.579 c-1.69-1.149-3.294-2.097-4.809-2.847c-1.515-0.75-2.727-1.26-3.637-1.532c-0.909-0.271-1.754-0.439-2.536-0.503 c-0.782-0.064-1.284-0.079-1.507-0.048c-0.223,0.031-0.383,0.064-0.478,0.096c-1.787,4.53-1.946,8.694-0.478,12.489 c-3.222,3.477-4.833,7.688-4.833,12.633c0,2.552,0.223,4.889,0.67,7.01c0.447,2.121,1.053,3.94,1.818,5.455 c0.765,1.515,1.715,2.871,2.847,4.067s2.313,2.169,3.541,2.919c1.228,0.751,2.616,1.396,4.163,1.938 c1.547,0.543,3.014,0.957,4.402,1.245c1.388,0.287,2.911,0.511,4.57,0.67c-2.616,1.787-3.924,4.626-3.924,8.517v7.487 c-1.445-0.43-2.869-0.938-4.268-1.53c-4.899-2.073-9.301-5.041-13.083-8.823c-3.782-3.782-6.75-8.184-8.823-13.083 C9.934,60.948,8.847,55.56,8.847,50s1.087-10.948,3.231-16.016c2.073-4.899,5.041-9.301,8.823-13.083s8.184-6.75,13.083-8.823 C39.052,9.934,44.44,8.847,50,8.847s10.948,1.087,16.016,3.231c4.9,2.073,9.301,5.041,13.083,8.823 c3.782,3.782,6.75,8.184,8.823,13.083c2.143,5.069,3.23,10.457,3.23,16.016s-1.087,10.948-3.231,16.016 C85.848,70.915,82.88,75.317,79.099,79.099L79.099,79.099z"></path>
+                  </svg>
+            </a></li>
+            
+            
+            <li><a href="https://www.linkedin.com/in/matheus-richard">
+                  <svg id="linkedin" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" style="height: 30px; width: 30px;"><circle class="outer-shape" cx="50" cy="50" r="48" style="opacity: 1;"></circle>
+                  <path class="inner-shape" style="opacity: 1;" transform="translate(30,25) scale(1.8)" d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+                  </svg>
+            </a></li>
+            
+            <li>
+               <a href="https://dev.to/matheusrich" class="dark-safe">
+                 <img src="/assets/img/dev-to-badge.svg" alt="Matheus Richard's DEV Profile" height="30" width="30">
+               </a>
+            </li>
+            
+            <li><a href="mailto:matheusrichardt@gmail.com">
+                  <svg id="mail" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" style="height: 30px; width: 30px;"><circle class="outer-shape" cx="50" cy="50" r="48" style="opacity: 1;"></circle>
+                  <path class="inner-shape" style="opacity: 1;" transform="translate(25,25) scale(0.5)" d="M50,1C22.938,1,1,22.938,1,50s21.938,49,49,49s49-21.938,49-49S77.062,1,50,1z M25.5,25.5h49 c0.874,0,1.723,0.188,2.502,0.542L50,57.544L22.998,26.041C23.777,25.687,24.626,25.499,25.5,25.5L25.5,25.5z M19.375,68.375v-36.75 c0-0.128,0.005-0.256,0.014-0.383l17.96,20.953L19.587,69.958C19.448,69.447,19.376,68.916,19.375,68.375L19.375,68.375z M74.5,74.5 h-49c-0.541,0-1.072-0.073-1.583-0.212l17.429-17.429L50,66.956l8.653-10.096l17.429,17.429C75.572,74.427,75.041,74.5,74.5,74.5 L74.5,74.5z M80.625,68.375c0,0.541-0.073,1.072-0.211,1.583L62.652,52.195l17.96-20.953c0.008,0.127,0.014,0.255,0.014,0.383 L80.625,68.375L80.625,68.375z"></path>
+                  </svg>
+            </a></li>
+            
+         </ul>
+      </div>
+   </div>
+</div><!-- end .footer -->
+
+
+   <script defer src="/assets/js/responsive-nav.min.js"></script>
+<script defer type="module" src="/assets/js/scripts.js"></script>
+
+
+</body>
+
+</html>
