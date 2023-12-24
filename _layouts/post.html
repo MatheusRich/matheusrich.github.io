@@ -61,15 +61,6 @@ layout: default
   </div>
 </article>
 
-<script defer type="module">
-  import {dimNonHighlightedLines} from '../assets/js/posts.js';
-  import {onDocumentReady} from '../assets/js/utils.js';
-
-  onDocumentReady(() => {
-    dimNonHighlightedLines();
-  })
-</script>
-
 {%- if site.disqus.shortname -%}
   {%- include disqus_comments.html -%}
 {%- endif -%}

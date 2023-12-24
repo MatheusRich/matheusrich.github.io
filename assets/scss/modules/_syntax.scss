@@ -12,8 +12,7 @@
   color: var(--code-foreground-color);
 }
 
-figure.highlight,
-div.highlight {
+:is(figure, div).highlight {
   $shadow-color: rgb(0 0 0 / 0.05);
   border: 1px solid $shadow-color;
   box-shadow: 0 1px 2px 0 $shadow-color;
@@ -29,6 +28,10 @@ div.highlight {
   background-color: rgba($highlight-color, 0.15);
   display: block;
   min-width: fit-content;
+}
+
+.highlight code:has(span.hll) span:not(.hll, .hll *) {
+  filter: opacity(0.5);
 }
 
 .highlight .gd {
