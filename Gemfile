@@ -9,4 +9,5 @@ gem "webrick"
 
 group :development do
   gem "bake"
+  gem "standard"
 end
