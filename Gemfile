@@ -1,5 +1,7 @@
 source "http://rubygems.org"
 
+ruby file: ".ruby-version"
+
 gem "jekyll"
 gem "jekyll-paginate"
 gem "support-for"
