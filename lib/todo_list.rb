@@ -4,10 +4,10 @@ module TodoList
   def todo(what, subtasks: [], wait: true)
     if subtasks.any?
       substasks_count = subtasks.count
-      puts what + " (#{substasks_count} subtask#{(substasks_count > 1) ? "s" : ""})"
+      puts what + " (#{substasks_count} subtasks)"
 
-      subtasks.each do |subtask|
-        subtask(subtask, wait: wait)
+      subtasks.each.with_index(1) do |subtask, i|
+        subtask(subtask, current: i, total: substasks_count, wait: wait)
       end
     else
       print "#{what}... "
@@ -16,8 +16,8 @@ module TodoList
     end
   end
 
-  def subtask(what, wait: true)
-    print "  #{what}... "
+  def subtask(what, current:, total:, wait: true)
+    print "  (#{current}/#{total}) #{what}... "
     wait_for_enter_or_space if wait
     done
   end
