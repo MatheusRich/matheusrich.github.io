@@ -73,7 +73,8 @@ HEADER STYLING
         padding: 0 5px;
         border: none;
 
-        a, button {
+        a,
+        button {
           color: white;
           font-size: 0.9em;
           text-decoration: none;
@@ -106,7 +107,8 @@ MENU STYLING
       max-height: none;
     }
 
-    ul li a, button {
+    ul li a,
+    button {
       display: inline-block;
     }
   }
@@ -131,6 +133,7 @@ POST STYLING
   ul,
   ol,
   dl,
+  details,
   blockquote,
   aside.Note,
   .pageTitle {

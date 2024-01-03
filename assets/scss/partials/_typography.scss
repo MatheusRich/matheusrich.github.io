@@ -59,7 +59,7 @@ h3, .h3 {
   line-height: 1.13636364; //25px / 22px
 }
 
-@media (min-width: 43.75em) {
+@media (min-width: 43.75em) { 
   h3, .h3 {
     font-size: 1.5em; // 1.5x body copy size = 24px
     line-height: 1.25;
@@ -68,7 +68,7 @@ h3, .h3 {
 
 @media (min-width: 56.25em) {
   h3, .h3 {
-    font-size: 1.75em; // 1.75x body copy size = 28px
+    font-size: 1.65em; // 1.6x body copy size = 32px
     line-height: 1.25;
   }
 }

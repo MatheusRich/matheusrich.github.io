@@ -30,6 +30,16 @@ layout: default
     {% endif %}
   </p>
 
+  {% if page.toc == true %}
+    <details>
+      <summary>Table of Contents</summary>
+      <nav>
+        {% toc %}
+      </nav>
+    </details>
+  {% endif %}
+
+
   {{ content }}
 
 

@@ -6,6 +6,7 @@ gem "jekyll"
 gem "jekyll-paginate"
 gem "support-for"
 gem "jekyll-redirect-from"
+gem "jekyll-toc", "~> 0.18.0"
 gem "jekyll-seo-tag"
 gem "webrick"
 

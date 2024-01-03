@@ -612,6 +612,7 @@ code.language-plaintext.highlighter-rouge {
   h5,
   h6 {
     &:first-child {
+      display: block;
       margin-top: 0;
       margin-left: 0;
     }
@@ -751,9 +752,13 @@ kbd {
     box-shadow: 0.1em 0 0 0 var(--highlight-color);
 
     --blink-cursor-animation: blink-cursor 1.25s step-end 2s infinite;
-    animation: typing-small 1.75s steps(9, end), var(--blink-cursor-animation);
+    animation:
+      typing-small 1.75s steps(9, end),
+      var(--blink-cursor-animation);
     @media only screen and (min-width: 800px) {
-      animation: typing-large 1.75s steps(9, end), var(--blink-cursor-animation);
+      animation:
+        typing-large 1.75s steps(9, end),
+        var(--blink-cursor-animation);
     }
 
     @keyframes typing-small {
@@ -830,4 +835,9 @@ div.footnotes {
       width: 100%;
     }
   }
+}
+
+details > summary {
+  cursor: pointer;
+  font-weight: bold;
 }
