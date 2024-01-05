@@ -23,9 +23,12 @@ end
 # @param draft_name [String] name of the draft to be created.
 # @param tags [Array(String)] tags of the draft.
 def draft(draft_name, tags: ["ruby"])
+  draft_file_path = draft_file_path_for(draft_name)
+  return if File.exist?(draft_file_path)
+
   time = nil
 
-  File.write(draft_file_path_for(draft_name), file_content(draft_name, time, tags))
+  File.write(draft_file_path, file_content(draft_name, time, tags))
 end
 
 # Publishes a draft
@@ -47,7 +50,8 @@ end
 def year_in_review
   puts "Year in Review Article To-do list (press Enter/Space to continue)"
   TodoList.todo("📝 Create draft article...", wait: false)
-  draft("#{Time.now.year - 1} in Review", tags: ["year-in-review"])
+  year = Time.now.year - 1
+  draft("#{year} in Review", tags: ["year-in-review"])
 
   TodoList.todo(
     "🎵 Get Spotify Stats",
@@ -63,6 +67,8 @@ def year_in_review
     "📊 Get Open Source Stats",
     subtasks: [
       "RubyGems",
+      "PRs opened (https://github.com/search?q=is%3Apr+author%3AMatheusRich++created%3A#{year}-01-01..#{year}-12-31+is%3Apublic+&type=pullrequests)",
+      "Rails contributions (https://contributors.rubyonrails.org/contributors/matheus-richard/commits)",
       "Talks"
     ]
   )
