@@ -84,6 +84,23 @@ def year_in_review
   )
 end
 
+# Reports all the pictures in `assets/img` (and subdirectories) that are not being used.
+def unused_pictures
+  system "jekyll build --quiet --drafts"
+
+  unused = Dir["assets/img/**/*"].filter_map do |picture_path|
+    next if File.directory?(picture_path)
+
+    picture_name = picture_path.split("/").last
+    next if Dir["_site/**/*.html"].any? { |html_path| File.read(html_path).include?(picture_name) }
+
+    picture_name
+  end
+
+  puts "Unused pictures:\n#{unused.join("\n")}" if unused.any?
+  exit 1 if unused.any?
+end
+
 private
 
 POSTS_PATH = "_posts/"
