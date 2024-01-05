@@ -123,22 +123,22 @@ POST STYLING
 ***************/
 
 .post {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  ul,
-  ol,
-  dl,
-  details,
-  blockquote,
+  > h1,
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > h6,
+  > p,
+  > ul,
+  > ol,
+  > dl,
+  > details,
+  > blockquote,
   aside.Note,
   .pageTitle {
-    width: 90%;
     float: none;
+    width: 90%;
     margin: 0 auto 2rem;
   }
 
