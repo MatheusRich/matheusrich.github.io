@@ -18,8 +18,6 @@ plugins:
 paginate: 10
 
 navigation:
-  - title: 🏠 Home
-    url: /
   - title: 👨‍💻 About me
     url: /about/
   - title: 🏷️ Categories
