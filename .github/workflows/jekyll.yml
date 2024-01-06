@@ -42,9 +42,7 @@ jobs:
       - name: Lint with Jekyll
         run: |
           bundle install --with development
-          bundle exec jekyll doctor
-          bundle exec bake unused_pictures
-          bundle exec standardrb
+          bundle exec bake lint
 
       - name: Setup Pages
         id: pages

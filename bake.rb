@@ -8,6 +8,12 @@ def s
 end
 alias_method :call, :s
 
+def lint
+  system("bundle exec jekyll doctor") &&
+    system("bundle exec bake unused_pictures") &&
+    system("bundle exec standardrb")
+end
+
 # Creates a new post
 #
 # @param post_name [String] name of the post to be created.
