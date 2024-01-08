@@ -99,7 +99,7 @@ def unused_pictures
     next if File.directory?(picture_path)
 
     picture_name = picture_path.split("/").last
-    next if Dir["_site/**/*.html"].any? { |html_path| File.read(html_path).include?(picture_name) }
+    next if Dir["_site/**/*.html"].any? { |html_path| File.read(html_path).match?(/#{picture_name}/i) }
 
     picture_name
   end
