@@ -80,6 +80,8 @@ def year_in_review
     ]
   )
   TodoList.todo("📖 Article Stats")
+  TodoList.todo("📚 Book stats")
+  TodoList.todo("💪 Gym stats")
   TodoList.todo(
     "🎸 Music Stats",
     subtasks: [
@@ -93,13 +95,14 @@ end
 
 # Reports all the pictures in `assets/img` (and subdirectories) that are not being used.
 def unused_pictures
+  puts "Checking for unused pictures..."
   system "jekyll build --quiet --drafts"
 
   unused = Dir["assets/img/**/*"].filter_map do |picture_path|
     next if File.directory?(picture_path)
 
     picture_name = picture_path.split("/").last
-    next if Dir["_site/**/*.html"].any? { |html_path| File.read(html_path).include?(picture_name) }
+    next if Dir["_site/**/*.html"].any? { |html_path| File.read(html_path).match?(/#{picture_name}/i) }
 
     picture_name
   end
