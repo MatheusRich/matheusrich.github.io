@@ -13,7 +13,7 @@ layout: default
   </h1>
 
   <p class="meta">
-    {{ page.date | date: '%B %d, %Y' }} | <span class="time">{{ page.content | number_of_words | divided_by:200 | at_least: 1 }}</span> minute read
+    {{ page.date | date: '%B %d, %Y' }} | <span class="time">{{ page.content | number_of_words | divided_by:250 | at_least: 1 }}</span> minute read
     {% if jekyll.environment != "production" %}
       | <span class="time">{{ page.content | number_of_words }} words</span>
     {% endif %}
