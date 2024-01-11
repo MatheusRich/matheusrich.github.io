@@ -98,11 +98,12 @@ def unused_pictures
   puts "Checking for unused pictures..."
   system "jekyll build --quiet --drafts"
 
+  html_files = Dir["_site/**/*.html"].map { File.read _1 }
   unused = Dir["assets/img/**/*"].filter_map do |picture_path|
     next if File.directory?(picture_path)
 
     picture_name = picture_path.split("/").last
-    next if Dir["_site/**/*.html"].any? { |html_path| File.read(html_path).match?(/#{picture_name}/i) }
+    next if html_files.any? { _1.match?(/#{picture_name}/i) }
 
     picture_name
   end
