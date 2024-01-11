@@ -22,8 +22,7 @@ work on makes that clearer 😅.
     <li>
       <p>
       <a href="https://react.dev/">React</a> + <a href="https://graphql.org/">Graphql</a> x <a href="https://hotwired.dev/">Hotwire + REST</a>: I had the
-      experience of working with both this year, and I have it's not even a
-      competition. With Hotwire
+      experience of working with both this year, and it's not even a competition. With Hotwire
       <a href="https://dev.37signals.com/a-happier-happy-path-in-turbo-with-morphing/">getting better and better</a>,
       the cases for React have become very narrow. I had the pleasure of working on
       a migration of React + GraphQL to vanilla Rails + Hotwire and saw PRs with
@@ -33,12 +32,12 @@ work on makes that clearer 😅.
     </li>
     <li>
       <p>
-       Ruby's <a href="https://react.dev/">Data class</a>: I love it! It makes creating value objects very easy, and helps with immutability too. I've used a lot on my open-source projects.
+       Ruby's <a href="https://react.dev/">Data class</a>: I love it! It makes creating <a href="https://thoughtbot.com/blog/value-object-semantics-in-ruby">value objects</a> very easy, and helps with immutability too. I've used a lot on my open-source projects.
       </p>
     </li>
     <li>
       <p>
-        <a href="">LLMs</a>: They became much more popular this year.
+        <a href="https://thoughtbot.com/blog/what-llms-are-in-ai">LLMs</a>: They became much more popular this year.
         (You can notice the difference with me referring to ChatGPT as "OpenAI" in last year's review 🙈).
         We went
         basically from having a single player in the market, to having multiple
@@ -48,15 +47,15 @@ work on makes that clearer 😅.
       <p>The ones I used the most were:</p>
       <ul>
         <li>
-          <p><a href="https://chat.openai.com/">ChatGPT</a>: very good in being a
+          <p><a href="https://chat.openai.com/">ChatGPT</a>: mostly as a
           <a href="https://simonwillison.net/2023/Apr/2/calculator-for-words/">calculator for words.</a>
-          It's very good when you can't quite turn your question into a Google search.
+          It is very good when you can't quite turn your question into a Google search.
           I've used a lot to create Google Spreadsheet formulas an regex out of natural language.
-          From time to time I'd use it as pair buddy to help me name things. Also asking "how to do X in Rust" was very helpful, as I'm not as skilled with it as I am with Ruby.
+          From time to time I'd use it as pair buddy to help me name things, or brainstorm something. Asking "how to do X in Rust" was very helpful, as I'm not as skilled with it as I am with Ruby.
           </p>
         </li>
         <li>
-          <a href="https://github.com/features/copilot">GitHub Copilot</a>: A.k.a, a super-smart autocomplete. That's my main use for it. I didn't expect/want it to write a whole codebase for me, but it was very good at suggesting the next line (or few lines). It was very good to remind/teach me of a specific API (like methods on a given class). Unfortunately its knowledge isn't updated as often as I'd like.
+          <a href="https://github.com/features/copilot">GitHub Copilot</a>: a.k.a, a super-smart autocomplete. That's my main use for it. I didn't expect/want it to write a whole codebase for me, but it was great at suggesting the next line (or few lines). It was super useful to remind/teach me of a specific API (like methods on a given class). Unfortunately (like many LLMs) its knowledge isn't updated as often as I'd like.
         </li>
       </ul>
     </li>
@@ -70,7 +69,7 @@ again. We had a company-wide summit at Brighton, UK, and a smaller one (for the
 Americas team only) in Mérida, Mexico.
 
 Unfortunately my favorite food place in Brighton, closed down 😭. I spent a
-couple of days in London to buy a new guitar (I'll talk about that shortly).
+couple of days in London to buy a new guitar (I'll talk about that later).
 Weirdly, it was where I had my first burrito ever.
 
 {%
@@ -80,10 +79,10 @@ Weirdly, it was where I had my first burrito ever.
     caption="Burrito - London"
 %}
 
-I also went to a museum, and hearing someone speak Mayan fluently was very
-interesting. México felt surprisingly similar to Brazil. The people, the
-streets, the houses. In Mérida, I loved my breakfasts at Merci Paseo 60. Here
-are some pictures:
+In Mérida, I went to the Mayan World Museum. Hearing someone speak Mayan
+fluently was very interesting. México felt surprisingly similar to Brazil: the
+people, the streets, the houses. In Mérida, I loved my breakfasts at Merci Paseo
+0060. Here are some pictures:
 
 <div class="flex flex-wrap flex-center gap-4">
   {%
@@ -115,16 +114,16 @@ build camaraderie and makes our relationships feel more real.
 
 ### Setup
 
-I didn't buy any new hardware this year, but I committed one of the biggest sins
+I didn't buy any new hardware this year, but I committed one of the _biggest sins_
 in the software development world: **I switched to light mode**.
 
-I was a very big fan of dark mode, and have been using One Dark Pro since I can
+I was a hardcore dark mode fan, and have been using One Dark Pro since I can
 remember, but I read many things about how light mode is better for your eyes
 (during the day) and the arguments were compelling. To be fair, I made the theme
-change with my system, so at night I still use dark mode. That seems to be the
-ideal set.
+follow my system settings, so at night I still use dark mode. That seems to be
+the ideal set.
 
-Here's how they look:
+Here's how the themes look:
 
 <div class="flex flex-wrap flex-center gap-4">
   {%
@@ -144,21 +143,21 @@ Here's how they look:
 
 #### RubyCards
 
-Last year I wrote:
+In 2022 I wrote:
 
 > it's exhausting to add a card every week. [...] I'll have to automate the
 > creation of cards (at least partially!) in some way.
 
 So... I didn't automate it. And I didn't had the energy to keep up with it, so I
-just stopped. I'm not proud of that, but it's what happened. I feel guilty for
-that, so I'll try to keep the projecting going in 2024, even if that means a new
-owner.
+just stopped. The last card was [released in March][]. I'm not proud of that,
+but it's what happened. I feel guilty for that, so I'll try to keep the
+projecting going in 2024, even if that means a new owner.
 
 #### RubyDF
 
 I started a local meetup group for Rubyists in the Brazilian Federal District
 (where I currently live). About 20 people showed up for the first meeting, which
-I think is a good number. I'm planning nother editions in 2024. I gave my talk
+I think is a good number. I'm planning other editions in 2024. I gave my talk
 on [Taming God Objects](/speaking/#taming-god-objects).
 
 {%
@@ -180,7 +179,7 @@ year I wrote 21 articles, the most I've ever written in a year.
 %}
 
 If I exclude those, though, I've only written 8 articles, which is 2 less than
-last year. I'll keep an eye on this number, so it doesn't fall too much. I think
+2022. I'll keep an eye on this number, so it doesn't fall too much. I think
 10 articles/year is a fairly good baseline.
 
 {%
@@ -190,7 +189,7 @@ last year. I'll keep an eye on this number, so it doesn't fall too much. I think
 %}
 
 Most of my articles were written in the 2nd and 3rd quarters of the year, which
-is exactly the opposite of last year.
+is exactly the opposite of 2022.
 
 <div class="flex flex-wrap flex-center gap-4">
   {%
@@ -214,7 +213,7 @@ is exactly the opposite of last year.
 </div>
 
 I mostly wrote about Ruby, followed by a tie between AI, concurrency, debugging,
-Machine Learning, and Rust. This was the first year I wrote about Rust [^rust1] [^rust2]!
+machine learning, and Rust. This was the first year I wrote about Rust [^rust1] [^rust2]!
 
 {%
   include figure.html
@@ -227,8 +226,8 @@ Machine Learning, and Rust. This was the first year I wrote about Rust [^rust1] 
 
 I'm proud of the article [My Adventure With Async Ruby][], which was [featured on
 RubyWeekly](https://rubyweekly.com/issues/638#:~:text=My%20Adventure%20With%20Async%20Ruby).
-Learning about `async` helped me speeding up a few of my open-source projects
-immensely.
+Learning about `async` helped me speeding up a few of my open-source projects by large factors.
+Speaking about that...
 
 ### Open-Source
 
@@ -238,22 +237,22 @@ I did a fair amount of open-source work this year.
   include figure.html
     src="2023-in-review/rubygems.jpg"
     width="600px"
+    caption="My RubyGems profile"
 %}
 
-My gems got downloaded 26k times in total, which is 5k more than last year. I
-released a new gem, [Code Picture], which I'll discuss further down. I opened a
-few PRs on gems
+My gems got downloaded 26k times in total, which is 5k more than 2022. I
+released a new gem, [Code Picture], which I'll discuss further down.
 
 I got two documentation-related PRs [^3] [^4] merged on Ruby itself. I still
 have one PR open on RDoc, which _finally_ [makes the default generated template
 work on mobile devices]. I hope it can get merged soon.
 
 I did a PR [correcting some docs in Rails], and [another one][] adding a
-`ModelValidator` to `ActiveModel`, and [one got rejected]. I'm confident this
-will be merged in 2024. There were also a few [minor PRs] making a gem more
-"hygienic" (like not polluting the global namespace)
+`ModelValidator` to `ActiveModel`(I'm confident this will be merged in 2024).
+[One of my Rails PRs got rejected][], and there were also a few [minor PRs]
+making a gem more "hygienic" (like not polluting the global namespace).
 
-One fun thing that happened was [a 4-year-old PR] I opened on a gem got merged.
+Fun fact: [a 4-year-old PR] I opened on a gem got merged.
 It was probably one of my first OSS contributions, so it was emotional to see it
 get merged.
 
@@ -264,19 +263,19 @@ get merged.
 [correcting some docs in Rails]: https://github.com/rails/rails/pull/49712
 [a 4-year-old PR]: https://github.com/adammck/minitest-stub-const/pull/14
 [another one]: https://github.com/rails/rails/pull/49534
-[one got rejected]: https://github.com/rails/rails/pull/49703
+[One of my Rails PRs got rejected]: https://github.com/rails/rails/pull/49703
 
 #### Gold Miner
 
 This year I open-sourced [Gold Miner][]. It is a tool that turns interesting
-messages on thoughtbot's Slack into blog posts. It was something I started last
-year, but I made it public in 2023. I also added a bunch [^1] [^2] of
+messages on thoughtbot's Slack into blog posts (the [This Week in #dev] series).
+It was something I started in 2022, but I made it public in 2023. I added a bunch [^1] [^2] of
 optimizations using [async Ruby][async] (basically making HTTP requests in
 parallel). I did [similar][] optimizations to [end_of_life][], and got 10x
 faster ([from 25s to 2.5s][similar])!
 
-I did a series of refactoring too in the code to make it more maintainable.
-After a while, the code was getting very entangled: the Slack Client class had
+I opened a series of refactoring PRs to make the code more maintainable.
+After a while, the it was getting very entangled: the Slack Client class had
 to know about people's names and links to their profiles, so this was an obvious
 sign that things weren't right.
 
@@ -284,7 +283,7 @@ I broke down the whole flow in a series of objects that colaborated in a
 pipeline, while also [trying to be consisted with the metaphor][] of mining
 gold. I ended extracting [gold nuggets][], [gold containers][], [explorers][],
 [smiths][], and [distributors][]. Not only that creates a stronger metaphor, but
-also helped the code to be more maintainable. And, of course, I wrote a total of
+helps the code to be more maintainable. And, of course, I wrote a total of
 13 articles using this tool.
 
 #### Code Picture
@@ -294,7 +293,7 @@ parser, [Prism][], it was the perfect time to do it. I started it in a Friday
 night I had free (like most of my open-source LOL).
 
 There isn't much to say here, it turns your code into pixel art. I [wrote about
-it][] (in 2024) in the thoughtbot blog. Here's an example:
+it][] (in 2024) in the thoughtbot blog. Here's an output example:
 
 {%
   include figure.html
@@ -316,12 +315,12 @@ about coding, but I used [Github Wrapped][] to get some stats.
 
 I was active on GitHub for 240 days this year (around 66% of the year). March
 was my most active month. I was working on a MVP Rails project, so it was easy
-to get stuff done. It was a very fun project, and the codebase was very fun to
-work with.
+to get stuff done. It was running on latest Ruby and Rails, so codebase was very
+fun to work with.
 
 {% include figure.html src="2023-in-review/code-contributions-month.jpg" %}
 
-Going to a weekly view, I'm quiet consistent with how much I contribute per day,
+Going to a weekly view, I'm quite consistent with how much I contribute per day,
 with a productivity boost on Thursdays and Fridays (investment day?).
 
 {% include figure.html src="2023-in-review/code-contributions-day.jpg" %}
@@ -346,7 +345,7 @@ fairly small, digestable, change.
 ### Italian
 
 I still kept learning Italian in 2023. In the first few days of the year I did
-my first Italki class in Italian. I was very excited, and I didn't think I'd be
+my first Italki class in Italian. I was excited, and didn't think I'd be
 able to talk for 30mins in another language. Of course, here and there I asked
 how to say a word, and I was very happy with my progress.
 
@@ -355,7 +354,7 @@ terrible. Just random people skipping or showing their genitals. I don't know
 what else I expected from talking to strangers on the internet...
 
 I did find some Italians, but it's hard to find someone willing to talk
-(especially with a beginner). Many were helpful, recommending movies, music, and
+(especially with a beginner). Some were helpful, recommending movies, music, and
 stuff. They were always surprised to see that I was learning Italian (even though
 I have no family ties to Italy).
 
@@ -371,7 +370,7 @@ challenging).
     caption="My Duolingo progress"
 %}
 
-I study for about 20% less minutes than last year, got about 50% less XP, but
+I studied for about 20% less minutes than 2022, got about 50% less XP, but
 still managed to learn 2.2x more words. All that happened in a total of 306
 unique days (84% of the year). I hope I can get to travel to Italy, so that will
 be a good motivation to study more.
@@ -385,24 +384,24 @@ but I compensated by going to a lot of concerts and playing a lot more.
 
 The year I went to the most concerts in my life! I went to 5 concerts in total:
 
-1. **Coldplay (2023/03/13):** My wife loves Coldplay, so I went with her. Very
-   good concert, they play several of their hits, with a good mix of old and new
-   stuff. The smaller stage in the middle of the crowd was a nice touch.
-1. **Selvagens à Procura de Lei (2023/10/01):** My favorite Brazilian indie
+0001. **Coldplay (2023/03/13):** My wife loves Coldplay, so I went with her.
+   Amazing concert! They play several of their hits, with a good mix of old and
+   new stuff. The smaller stage in the middle of the crowd was a nice touch.
+0001. **Selvagens à Procura de Lei (2023/10/01):** My favorite Brazilian indie
    band. I always go to their concerts when they're in town and they never let
    me down.
-1. **Red Hot Chili Peppers (2023/11/07):** A dream come true. This was the first
-   concert from a big international I really like band I went to. Seeing John,
-   Flea, Chad, and Anthony doing their thing live was amazing! It's a very weird
-   feeling after having watched so many videos of them before. They even played
-   gems like Wet Sand, so definitely bucket list material.
-1. **Taylor Swift (2023/11/25):** This was my wife's long-time dream. I'm not
+0001. **Red Hot Chili Peppers (2023/11/07):** A dream come true. This was the
+   first concert from a big international band I really like that I went to.
+   Seeing John, Flea, Chad, and Anthony doing their thing live was amazing! It's
+   a weird feeling after having watched so many videos of them before. They
+   even played gems like Wet Sand, so definitely bucket list material.
+0001. **Taylor Swift (2023/11/25):** This was my wife's long-time dream. I'm not
    the biggest Swift fan, but I've been listening to her stuff for over a decade
    now, so I do know several songs. I don't even need to mention the whole
    spectacle her concert is. The crowd was screaming every song so loud! I wish
    there was more Speak Now songs, but she played Safe And Sound, which was a
-   nice surprise. It was also very touching seeing my wife having this moment.
-1. **Paul McCartney (2023/11/30):** This one wasn't planned at all! Paul's
+   good surprise. It was also very touching seeing my wife having this moment.
+0001. **Paul McCartney (2023/11/30):** This one wasn't planned at all! Paul's
    production invited a few random students from my music school for the
    soundcheck, and I was one of them! It was basically a 1h concert for a few
    dozen people. What else can one ask for?
@@ -417,7 +416,7 @@ The year I went to the most concerts in my life! I went to 5 concerts in total:
 #### Streaming
 
 My streaming numbers went down a bit, again. Not that I care about that number
-being high, I just noted I didn't listen to music as much while deep-working.
+being high, I just noticed I didn't listen to music as much while deep-working.
 2023 was the first year I got Jazz in my top 5 genres.
 
 <div class="flex flex-wrap flex-center gap-4">
@@ -454,7 +453,7 @@ Jazz standard. And, of course RHCP was my #1 artist.
   %}
 </div>
 
-Interesting that Spotify noted that I tend to listen to albums back-to-back.
+Interesting that Spotify noticed that I tend to listen to albums back-to-back.
 Call me old, I guess.
 
 {% include aside.html type="info" content=" I requested my all-time listening data from
@@ -485,7 +484,7 @@ or 5 years. All of that gear I bought during my whole life was finally used live
 
 I bought a new guitar! It's been almost 8 years since my last one. I already had
 a Strat, so I went with the perfect pair: a Les Paul. It also helped on music
-school since humbuckers are more fitting for Jazz/Bossa than single-coil pickups.
+school since humbuckers are more fitting for Jazz/Bossa than single-coil pickups, IMO.
 I fell in love with an Ebony Epiphone Custom Pro, so I took it home.
 
 It's nice to have a similar looking guitar to some of my guitar heroes:
@@ -506,7 +505,7 @@ It's nice to have a similar looking guitar to some of my guitar heroes:
   %}
 </div>
 
-Aside from that, I sold my cheap Klon clone and a fuzz pedal I wasn't feeling. I
+Aside from that, I sold my cheap Klon clone and a fuzz pedal I wasn't found of. I
 bought a JHS Angry Chalie clone, which is a very nice distortion. I'm happy I
 spent time using these things outside of my bedroom. Here's the 2023 timeline of
 my music gear:
@@ -522,17 +521,18 @@ And here's the whole crew:
   src="2023-in-review/music-gear.jpg"
   caption="A bigger apartment helped managing all this gear" %}
 
-### Exercising
+### Working Out
 
-I started the year knowing I exercising was something I _needed_ to do (and had
-set as a goal for the year), but I didn't _want_ to do it. Mid-April, my wife
-hired a nutritionist for me, so I had to start exercising. I used my apartment's
+I started the year knowing exercising was something I _needed_ to do (and had
+set as a goal for the year), but I, honestly, didn't _want_ to do it. Mid-April, my wife
+hired a nutritionist for me, so I had to start exercising. I used my condo's
 gym, and aimed for around 3 sessions a week.
 
 I did that for about a month and a half, but I got my hand cut while doing the
 dishes 🤦🏽‍♂️. I already had made some progress, so that injury got me upset
-because I knew I'd quickly lose it. I stopped exercising for about 4 months,
-when I decided I wasn't living the life I wanted to live, so I got back.
+because I knew I'd quickly lose it. That frustration (+ the healing time) made
+me stop exercising for about 4 months, when I decided I wasn't living the life I
+wanted to live, so I got back.
 
 {%
   include figure.html
@@ -552,21 +552,21 @@ Chest + Triceps (2023/04/12 | 55kg)
 
 I notice I was very consistent with this format: muscle groups, date, my weight,
 exercises with sets, reps, weight. So, of couse I wrote my own parser for that.
-It was a very fun to work on, and a perfect opportunity to use Rust. All the
-charts and data in this section were generated with it.
+It was a very fun side project to work on, and a perfect opportunity to use
+Rust. All the charts and data in this section were generated with it.
 
 {% include aside.html type="info" icon=false content="...and that's why Rust is my second most used language this year" %}
 
-I thought I was being consistent, but the numbers show otherwise. I only went to
-the gym 33 days the whole year (less than 10% of the year), with a median of 2
-days per week. It looks like I went to gym mostly on Wednesdays and Thursdays. I
-never went on Sundays, and I was more consistent with Saturdays than Mondays and
-Fridays. I had no idea!
+I thought I was going consistently to the gym, but the numbers show otherwise. I
+only worked out 33 days the whole year (less than 10% of the year), with a
+median of 2 days per week. It looks like I went to gym mostly on Wednesdays and
+Thursdays. I never went on Sundays, and I was more consistent with Saturdays
+than Mondays and Fridays. I had no idea!
 
 {% include figure.html src="2023-in-review/training-days.jpg" width="600px" %}
 
 I think I did a pretty good job on working out all muscle groups. Biceps were
-the least worked out, but I think that's something I wasn't focusing on. I also
+the least worked out, but it was something I deliberately wasn't focusing on. I
 didn't do any abs exercises. I'll try to improve on that in 2024.
 
 {% include figure.html src="2023-in-review/training-muscle-groups.jpg" width="600px" %}
@@ -578,7 +578,7 @@ weight/reps.
 {% include figure.html src="2023-in-review/training-leg-press.jpg" width="700px" %}
 
 That also reflected on my body weight. I started the working out at around 55kg,
-and ended the year with almost 4kg more. I'm very happy with that.
+and ended the year with almost 4kg more. I'm happy with that.
 
 {% include figure.html src="2023-in-review/my-weight-over-time.jpg" width="700px" %}
 
@@ -611,7 +611,7 @@ on my plate, so I stopped after a few months.
 %}
 </div>
 
-I played 10 games in total, for about 108h. This is about 53% less than last year.
+I played 10 games in total, for about 112h. This is about 53% less than 2022.
 
 {%
   include figure.html
@@ -664,18 +664,19 @@ I want to do a meta thing here and talk about this article itself. To write it
 in the level of detail I wanted, I had to have _data_. I took the time to
 automate some of the data collection, and also created several charts to help me
 visualize it. I also created a [do-nothing script][] to help me remember all the
-data I have to collect (and where to find it).
+things I have to collect (and where to find them).
 
 I installed WakaTime before starting to write this article, and it tells me that
-I spent about 15.5h writing it (including the code stuff). I'm betting it'll pay
-off in 2024, so I'll write the next one faster. Let's see how it goes.
+I spent about 15.5h writing it (about 10h in just on the Markdown file). I'm
+betting it'll pay off in 2024, so I'll write the next one faster. Let's see how
+it goes.
 
 {%
   include aside.html
     type="info"
     content="While writing, I often got frustrated with the limitations of Liquid. Multiple
       times I had to resist the urge to rewrite this blog with something else. I like
-      Jekyll, but I really miss ERB. I'll look into how to use ERB with Jekyll as soon
+      Jekyll, but I really miss ERB templates. I'll look into how to use ERB with Jekyll as soon
       as I publish this article. The hand-written CSS is also giving me a headache.
       I'll look into Tailwind CSS as well."
 %}
@@ -687,17 +688,17 @@ I want to be more consistent with everything I do. In particular, I want to:
 
 - Go to the gym at least 3 times a week (median)
 - Get more involved with Ruby:
-  - Keep the RubyDF Meetup going on;
-  - Keep showing up to the issue tracker and other kinds of discussions;
+  - Keep the RubyDF Meetup going on.
+  - Keep showing up to the issue tracker and other kinds of discussions.
   - More PRs to Ruby. At least docs, but I'd like to propose at least one small
     feature. Maybe an `Enumerable` method?
+  - Talk on conferences.
 - Keep working with Rust. It is a fun, fast language. It's a good tool to have
   around.
   - Maybe I'll exploring Gleam.
 - Keep doing fun things with software:
   - Get back to programming language design/development. Being a language author
     myself will help me understand the challenges of the Ruby core team too.
-- Talk on conferences.
 - More music gigs!
 
 That's it. This took a hell of a long time to write, but it's always worth it.
@@ -725,3 +726,4 @@ On to 2024!
 [^rust1]: [Rust Doesn't Have Named Arguments. So What?](https://thoughtbot.com/blog/rust-doesn-t-have-named-arguments-so-what)
 [^rust2]: [How I Have Fun With Rust](https://thoughtbot.com/blog/how-i-have-fun-with-rust)
 [do-nothing script]: https://blog.danslimmon.com/2019/07/15/do-nothing-scripting-the-key-to-gradual-automation/
+[released in March]: https://twitter.com/RubyCards/status/1633234653938171906
