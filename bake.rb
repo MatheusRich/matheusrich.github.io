@@ -103,7 +103,7 @@ def unused_pictures
     next if File.directory?(picture_path)
 
     picture_name = picture_path.split("/").last
-    next if html_files.any? { _1.match?(/#{picture_name}/i) }
+    next if html_files.any? { _1.match?(/#{picture_name}/) }
 
     picture_name
   end
