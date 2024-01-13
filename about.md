@@ -13,24 +13,6 @@ title: About Me | Rich Codes
 
   <h2 id="open-source">Open source projects</h2>
 
-  <h3>Lit lang <a href="https://github.com/lit-lang/lit">(GitHub)</a></h3>
-
-  <p>My first attempt at programming language design. Lit is a simple functional programming language.</p>
-
-  <p>Here's a sample of its (current) syntax:</p>
-
-{% highlight rust %}
-let fib = fn { |n|
-  if (n < 2) { return n; }
-
-  return fib(n - 1) + fib(n - 2);
-}
-
-let n = gets();
-
-puts("The # {n} fibonacci number is {fib(n)}")
-{% endhighlight %}
-
   <h3>Benchable <a href="https://github.com/MatheusRich/benchable">(GitHub)</a></h3>
 
   <p>Benchable aims to make creating Ruby benchmarks easier.</p>
@@ -57,7 +39,6 @@ end
 
   <p>There are 4 benchmark types available: <code class="language-plaintext highlighter-rouge">bm</code>, <code class="language-plaintext highlighter-rouge">bmbm</code>, <code class="language-plaintext highlighter-rouge">ips</code> and <code class="language-plaintext highlighter-rouge">memory</code>.</p>
 
-
   <h3>EzAttributes <a href="https://github.com/MatheusRich/EzAttributes">(GitHub)</a></h3>
 
   <p>Easily define initializers with keyword args (in Ruby).</p>
@@ -76,5 +57,23 @@ user = User.new(name: 'Matz', age: 22)
 # EzAttributes will add getters for all fields too.
 user.name
 # => "Matz"
+{% endhighlight %}
+
+  <h3>Lit lang <a href="https://github.com/lit-lang/lit">(GitHub)</a></h3>
+
+  <p>My first attempt at programming language design. Lit is a simple functional programming language.</p>
+
+  <p>Here's a sample of its (current) syntax:</p>
+
+{% highlight rust %}
+let fib = fn { |n|
+  if (n < 2) { return n; }
+
+  return fib(n - 1) + fib(n - 2);
+}
+
+let n = gets();
+
+puts("The # {n} fibonacci number is {fib(n)}")
 {% endhighlight %}
 </div>
