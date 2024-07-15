@@ -74,4 +74,4 @@ talks:
       Oh no! Computers are not doubling in speed every two years anymore! How can we make software run faster? You and your Rails app cannot just wait doing nothing, so join me to explore how we can leverage concurrency and parallelism concepts to enhance performance and scalability!
     date: 2024-04-05 -0300
     slides_url: https://docs.google.com/presentation/d/1zwy3RZhH4TOKBTEYPqtaK2Bl_d8bcIc9VhKr9t9lasw/edit?usp=sharing
-    video_url: https://www.youtube.com/watch?v=CfC2blkrkys&feature=youtu.be
+    video_url: https://www.youtube.com/embed/CfC2blkrkys
