@@ -8,7 +8,7 @@ title: About Me | Rich Codes
   <div class="profilePic">
     <img loading="lazy" width=200 height=200 src="{{ '/assets/img/me.jpg' | prepend: site.baseurl }}" alt="Profile picture of Matheus Richard">
   </div>
-  <p class="intro">Hello, my name is Matheus! I'm a Software Engineer from Brazil. I make open-source software,<a href="https://rubydf.com/">run a meetup</a>. I also love music, games and creating programming languages.</p>
+  <p class="intro">Hello, my name is Matheus! I'm a Software Engineer from Brazil. I make open-source software, <a href="https://rubydf.com/">run a meetup</a>. I also love music, games and creating programming languages.</p>
   <p>You can find me online using the links in the footer. Cya!</p>
 
   <h2 id="open-source">Open source projects</h2>
