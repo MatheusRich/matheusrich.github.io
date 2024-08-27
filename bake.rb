@@ -76,6 +76,7 @@ def year_in_review
       "PRs opened (https://github.com/search?q=is%3Apr+author%3AMatheusRich++created%3A#{year}-01-01..#{year}-12-31+is%3Apublic+&type=pullrequests)",
       "PRs merged (https://github.com/search?q=is%3Apr+author%3AMatheusRich++merged%3A#{year}-01-01..#{year}-12-31+is%3Apublic+&type=pullrequests)",
       "Rails contributions (https://contributors.rubyonrails.org/contributors/matheus-richard/commits)",
+      "Ruby-core contributions (https://bugs.ruby-lang.org/activity?from=#{year}-01-01&user_id=49162)",
       "Talks"
     ]
   )
