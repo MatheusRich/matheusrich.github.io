@@ -1,31 +1,31 @@
 // Reset using Normalize
-@import "normalize";
+@import 'normalize';
 
 // Import fonts from Google
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,800;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,800;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&display=swap');
 
 // Site configuration
-@import "config";
+@import 'config';
 
 // Import Partials
-@import "partials/typography";
-@import "partials/mixins";
+@import 'partials/typography';
+@import 'partials/mixins';
 
 // Modules
-@import "modules/buttons";
-@import "modules/tables";
-@import "modules/syntax";
+@import 'modules/buttons';
+@import 'modules/tables';
+@import 'modules/syntax';
 
 // Mobile up base styles
-@import "breakpoints/mobileup";
+@import 'breakpoints/mobileup';
 
 // Import media queries add more as you desire
 @media only screen and (min-width: 800px) {
-  @import "breakpoints/800up";
+  @import 'breakpoints/800up';
 }
 @media only screen and (min-width: 1200px) {
-  @import "breakpoints/1200up";
+  @import 'breakpoints/1200up';
 }
 
 // If IE support is needed you can add them here or create another stylesheet for specific IE fixes
@@ -104,6 +104,10 @@
   align-items: center;
 }
 
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
 .gap-4 {
   gap: 1rem;
 }
@@ -140,4 +144,9 @@
     font-size: 1.5rem;
     margin-left: 0;
   }
+}
+
+.Masonry {
+  columns: 2 400px;
+  column-gap: 1rem;
 }
