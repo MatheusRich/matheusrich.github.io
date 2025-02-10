@@ -58,6 +58,7 @@ def year_in_review
   TodoList.todo("📝 Create draft article...", wait: false)
   year = Time.now.year - 1
   draft("#{year} in Review", tags: ["year-in-review"])
+  FileUtils.mkdir_p("assets/img/#{year}-in-review")
 
   TodoList.todo(
     "🎵 Get Spotify Stats",
