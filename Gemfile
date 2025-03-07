@@ -2,6 +2,9 @@ source "http://rubygems.org"
 
 ruby file: ".ruby-version"
 
+gem "bigdecimal"
+gem "base64"
+gem "csv"
 gem "jekyll"
 gem "jekyll-paginate"
 gem "support-for"
