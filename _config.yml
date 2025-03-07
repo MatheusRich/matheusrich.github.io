@@ -75,3 +75,10 @@ talks:
     date: 2024-04-05 -0300
     slides_url: https://docs.google.com/presentation/d/1zwy3RZhH4TOKBTEYPqtaK2Bl_d8bcIc9VhKr9t9lasw/edit?usp=sharing
     video_url: https://www.youtube.com/embed/CfC2blkrkys
+  - title: "Ruby Internals: A Guide for Rails Developers - Tropical on Rails"
+    description: >
+      Ever wondered how Ruby takes your code and runs it? It’s time to go on a journey into Ruby internals designed especially for Rails developers! We’ll learn about all the parts of an interpreter, and how their inner-workings affect our Rails apps! No experience with C is required!
+    date: 2025-04-04 -0300
+    event_url: https://www.tropicalonrails.com/matheus-richard
+    # slides_url: https://docs.google.com/presentation/d/1zwy3RZhH4TOKBTEYPqtaK2Bl_d8bcIc9VhKr9t9lasw/edit?usp=sharing
+    # video_url: https://www.youtube.com/embed/CfC2blkrkys

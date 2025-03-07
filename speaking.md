@@ -14,18 +14,20 @@ redirect_from:
       <li>
         <span class="date">{{ talk.date | date_to_string }}</span>
         <h3 id="{{ talk.title | slugify }}">{{ talk.title }}</h3>
-        <p>
+        <div class="flex gap-4">
           {% if talk.audio_url %}
             <a href="{{ talk.audio_url }}" target="_blank">🎧 Hear it</a>
           {% endif %}
           {% if talk.slides_url %}
             <a href="{{ talk.video_url }}" target="_blank">🖥️ Watch it</a>
           {% endif %}
-          <span style="display:inline-block;width: 5px"></span>
           {% if talk.slides_url %}
             <a href="{{ talk.slides_url }}" target="_blank">🃏 Presentation slides</a>
           {% endif %}
-        </p>
+          {% if talk.event_url %}
+            <a href="{{ talk.event_url }}" target="_blank">📅 Event</a>
+          {% endif %}
+        </div>
         <p class="description">{{ talk.description }}</p>
 
         {% if talk.slides_url %}
