@@ -422,7 +422,7 @@ others][type-checking] have shown that type checking dynamic-typed languages is 
 
 #### Doctests
 
-The [Elixir language] has a coold feature called [doctests]. They're basically
+The [Elixir language] has a cool feature called [doctests]. They're basically
 code examples inside comements, but they _actually run_ the code and check if
 the output is correct. This way you can document your code and test it at the
 same time. Here's an example:
