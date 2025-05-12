@@ -460,7 +460,7 @@ def fetch_foos
 end
 ```
 
-Do you have any other good cases for comments? Let me know in the comments!
+Do you have any other good cases for comments? <a href="https://x.com/{{ site.social.twitter }}" target="_blank">Let me know</a>!
 
 ## Comments are not code!
 
