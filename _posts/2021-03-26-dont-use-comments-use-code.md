@@ -24,6 +24,7 @@ duplications and add no value. On the contrary, they encourage other developers 
 get rid of them. Good variable and function naming is the way to go here.
 
 ```ruby
+
 ### DON'T ###
 
 module Dungeon
@@ -59,6 +60,7 @@ ask"][tell] in OOP, for commenting it should be **"Do, don't tell"**. Extracting
 searching, modifying, and testing far easier than when using comments.
 
 ```ruby
+
 ### DON'T ###
 
 def something_important
@@ -93,6 +95,7 @@ those is pretty simple: add a constant. You can use a simple type like an intege
 hash-tables, structs and objects if needed.
 
 ```ruby
+
 ### DON'T ###
 
 def notify
@@ -122,6 +125,7 @@ Some people think this kind of comment is OK. I think, as in most of the cases, 
 is the kind of thing that spreads quickly throughout your code, but it's easy to avoid:
 
 ```ruby
+
 ### DON'T ###
 
 module RecurringJob
@@ -159,6 +163,7 @@ If you're using comments to divide a file into sections, this may indicate that 
 much. It's better to split it into several modules:
 
 ```ruby
+
 ### DON'T ###
 
 module Utils
@@ -212,6 +217,7 @@ These kinds of TODO's rarely get done. If you're the one adding the comment, you
 cares about it. Do it now!
 
 ```ruby
+
 ### DON'T ###
 
 # TODO: handle exceptions
@@ -245,6 +251,7 @@ Deprecating code with comments is not efficient. Especially in libraries, develo
 source code before using it. Be proactive and do something actionable (like a warning) right away.
 
 ```ruby
+
 ### DON'T ###
 
 # DEPRECATED: use `puts` instead
@@ -257,7 +264,6 @@ end
 def deprecate(target, alternative:)
   Log.warning("[DEPRECATION] `#{target}` is deprecated. Use #{alternative} instead.")
 end
-
 
 def printf(str)
   deprecate(:printf, alternative: :puts)
@@ -273,6 +279,7 @@ Are you using comments to generate deprecation documentation? Read [this section
 This is the same principle as the one before: codify your comments.
 
 ```ruby
+
 ### DON'T ###
 
 class Post < BaseModel
@@ -298,6 +305,7 @@ If an `exception` is too harsh for you, you can just give a warning.
 You could go even further:
 
 ```ruby
+
 ### DO² ###
 
 class Post < BaseModel
@@ -322,6 +330,7 @@ think you may need it later? Short answer: _you probably won't_. And even if you
 have Version Control Systems like Git <small>(If you're not using a VCS, what are you doing?!)</small>.
 
 ```ruby
+
 ### DON'T ###
 
 # NOTE: Maybe I'll need this someday
@@ -410,6 +419,33 @@ $ bake new_post 'test-post' categories=ruby,testing
 
 OBS: even though type checking _can_ be implemented with comments, [sorbet][sorbet], [rbs][rbs], and [several
 others][type-checking] have shown that type checking dynamic-typed languages is possible with code.
+
+#### Doctests
+
+The [Elixir language] has a coold feature called [doctests]. They're basically
+code examples inside comements, but they _actually run_ the code and check if
+the output is correct. This way you can document your code and test it at the
+same time. Here's an example:
+
+```elixir
+defmodule Calc do
+  @doc ~S"""
+  `add/2` adds two integers together.
+
+  ## Examples
+
+      iex> add(39, 3)
+      42
+
+  """
+  def add(x, y) do
+    x + y
+  end
+end
+```
+
+[Elixir language]: https://elixir-lang.org/
+[doctests]: https://hexdocs.pm/elixir/docs-tests-and-with.html
 
 ### 3. When you have no other tool
 
