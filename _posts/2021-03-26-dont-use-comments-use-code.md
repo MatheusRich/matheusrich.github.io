@@ -474,7 +474,7 @@ checks, _testing_!
 Comments are a confession that we were unable to represent our ideas with code. That happens
 sometimes, but try your best to avoid them.
 
-**TLDL:** Don't use comments. Codify your comments.
+In short: don't use comments. Codify your comments.
 
 [hard]: https://martinfowler.com/bliki/TwoHardThings.html
 [tell]: https://martinfowler.com/bliki/TellDontAsk.html
