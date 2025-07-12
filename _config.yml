@@ -78,7 +78,7 @@ talks:
   - title: "Ruby Internals: A Guide for Rails Developers - Tropical on Rails 2025"
     description: >
       Ever wondered how Ruby takes your code and runs it? It’s time to go on a journey into Ruby internals designed especially for Rails developers! We’ll learn about all the parts of an interpreter, and how their inner-workings affect our Rails apps! No experience with C is required!
-    date: 2025-04-04 -0300
+    date: 2025-07-01 -0300
     audio_url: https://bikeshed.thoughtbot.com/467
     embed: <iframe src="https://player.fireside.fm/v2/fa2C4vFU+NjlQNV0k?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
   - title: "How to get the most out of attending a conference - The Bike Shed #467"
