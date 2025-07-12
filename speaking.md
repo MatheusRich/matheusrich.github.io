@@ -18,7 +18,7 @@ redirect_from:
           {% if talk.audio_url %}
             <a href="{{ talk.audio_url }}" target="_blank">🎧 Hear it</a>
           {% endif %}
-          {% if talk.slides_url %}
+          {% if talk.video_url %}
             <a href="{{ talk.video_url }}" target="_blank">🖥️ Watch it</a>
           {% endif %}
           {% if talk.slides_url %}
@@ -30,9 +30,13 @@ redirect_from:
         </div>
         <p class="description">{{ talk.description }}</p>
 
-        {% if talk.slides_url %}
-          <div class="embedded-video">
+        {% if talk.video_url %}
+          <div class="embedded-media embedded-video">
             <iframe src="{{ talk.video_url }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        {% elsif talk.embed %}
+          <div class="embedded-media">
+            {{ talk.embed }}
           </div>
         {% endif %}
       </li>

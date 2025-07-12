@@ -552,15 +552,19 @@ POST LIST STYLING
   }
 }
 
-.embedded-video {
+.embedded-media {
   display: flex;
   justify-content: center;
 
   iframe {
     width: 100%;
     height: auto;
-    aspect-ratio: 16/9;
     max-width: 800px;
+  }
+}
+.embedded-video {
+  iframe {
+    aspect-ratio: 16/9;
   }
 }
 
