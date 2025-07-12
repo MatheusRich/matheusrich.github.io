@@ -35,7 +35,7 @@ redirect_from:
             <iframe src="{{ talk.video_url }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         {% elsif talk.embed %}
-          <div class="embedded-media">
+          <div class="embedded-media" style="height: 200px;">
             {{ talk.embed }}
           </div>
         {% endif %}
