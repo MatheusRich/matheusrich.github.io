@@ -68,6 +68,7 @@ def year_in_review
     ]
   )
   TodoList.todo("💻 Get Github Stats (https://www.githubwrapped.io/private)")
+  TodoList.todo("💻 Get Wakatime Stats (https://wakatime.com/a-look-back-at-2025)")
   TodoList.todo("🎮 Get Playstation Stats (https://wrapup.playstation.com/en-us)")
   TodoList.todo("🌍 Get DuoLingo Stats")
   TodoList.todo(
