@@ -154,7 +154,6 @@ MENU STYLING
   user-select: none;
   float: right;
   line-height: 0.9;
-  background-color: var(--background-color);
   border-radius: 4px;
   padding: 2px 0;
   color: white;
@@ -175,12 +174,12 @@ MENU STYLING
   }
 
   &:after {
-    content: "≡";
+    content: '≡';
   }
 
   &.active {
     &:after {
-      content: "×";
+      content: '×';
     }
   }
 }
@@ -286,17 +285,17 @@ POST STYLING
 
       &:before {
         opacity: 0.4;
-        content: "— ";
+        content: '— ';
       }
     }
 
     &:before {
-      content: "“";
+      content: '“';
       left: -8px;
     }
 
     &:after {
-      content: "”";
+      content: '”';
       right: 0px;
 
       @media only screen and (min-width: 800px) {
@@ -623,13 +622,13 @@ code.language-plaintext.highlighter-rouge {
   details {
     @keyframes arrows {
       0% {
-        content: "Show more";
+        content: 'Show more';
       }
       50% {
-        content: "Show more ›";
+        content: 'Show more ›';
       }
       100% {
-        content: "Show more ››";
+        content: 'Show more ››';
       }
     }
 
@@ -637,12 +636,12 @@ code.language-plaintext.highlighter-rouge {
       animation: arrows 1.25s;
     }
     summary::after {
-      content: "Show more ››";
+      content: 'Show more ››';
     }
 
     &[open] {
       summary::after {
-        content: "" !important;
+        content: '' !important;
       }
     }
   }
@@ -800,7 +799,7 @@ h6[id] {
   }
   &::before {
     display: none;
-    content: "#";
+    content: '#';
     color: var(--primary-color-lt);
     font-size: 0.7em;
     position: absolute;
