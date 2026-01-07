@@ -96,3 +96,11 @@ talks:
     event_url: https://railsconf.org/speakers/#matheus-richard
     slides_url: https://docs.google.com/presentation/d/1NZKbXAkYu_ynXfJ_u7avd-Viz9COX4a9yT9pQv1f4iw/view
     video_url: https://www.youtube.com/embed/ozayFBNKO2M
+  - title: "Introdução ao Desenvolvimento de Jogos com Ruby (🇧🇷)"
+    description: >
+      Every developer has dreamed of making a game, but most never try, and many get
+      lost in tooling or big ideas they cannot finish. But there is a way out! In this
+      talk, we will build a complete game using the tool we already have: Ruby.
+    date: 2025-12-13 -0300
+    event_url: https://rubydf.com/events/decima-edicao/
+    video_url: https://www.youtube.com/embed/rFahd2DzXxI?si=Wr4Cv7Xl9CmtYzka
