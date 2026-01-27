@@ -6,7 +6,8 @@
         <span class="text"> {{ site.title | upcase }} </span>
       </a>
     </h1>
-    <nav class="nav-collapse" style="visibility: hidden">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation"></button>
+    <nav id="nav-menu" class="nav-collapse">
       <ul class="noList">
         {% for link in site.navigation %}
         <li class="element {% if forloop.first %}first{% endif %} {% if page.url == link.url %} current {% endif %}">

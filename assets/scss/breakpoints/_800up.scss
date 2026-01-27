@@ -98,19 +98,15 @@ HEADER STYLING
 MENU STYLING
 ***************/
 
-.js {
-  .nav-collapse {
-    position: relative;
-    max-height: none;
+.nav-collapse {
+  position: relative;
+  top: auto;
+  max-height: none;
+  overflow: visible;
 
-    &.closed {
-      max-height: none;
-    }
-
-    ul li a,
-    button {
-      display: inline-block;
-    }
+  ul li a,
+  ul li button {
+    display: inline-block;
   }
 }
 
@@ -182,17 +178,6 @@ POST STYLING
       transform-origin: bottom left;
     }
   }
-}
-
-.js .nav-collapse {
-  clip: rect(0 0 0 0);
-  max-height: 0;
-  position: absolute;
-  display: block;
-  overflow: hidden;
-  zoom: 1;
-  clear: both;
-  width: 100%;
 }
 
 /***************
