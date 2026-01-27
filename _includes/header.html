@@ -6,8 +6,8 @@
         <span class="text"> {{ site.title | upcase }} </span>
       </a>
     </h1>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation"></button>
-    <nav id="nav-menu" class="nav-collapse">
+    <button class="nav-toggle" popovertarget="nav-menu" aria-label="Toggle navigation"></button>
+    <nav id="nav-menu" class="nav-collapse" popover="auto">
       <ul class="noList">
         {% for link in site.navigation %}
         <li class="element {% if forloop.first %}first{% endif %} {% if page.url == link.url %} current {% endif %}">
@@ -51,4 +51,10 @@
     document.documentElement.setAttribute('data-theme', 'light');
     sessionStorage.setItem('theme', 'light');
   }
+
+  // Close mobile nav popover when resizing to desktop
+  const navPopover = document.getElementById('nav-menu');
+  window.matchMedia('(min-width: 800px)').addEventListener('change', (e) => {
+    if (e.matches) navPopover.hidePopover();
+  });
 </script>

@@ -98,6 +98,15 @@ HEADER STYLING
 MENU STYLING
 ***************/
 
+.nav-collapse[popover]:not(:popover-open) {
+  display: block;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+}
+
 .nav-collapse {
   position: relative;
   top: auto;
