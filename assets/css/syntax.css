@@ -1,9 +1,7 @@
-// Tokens: https://github.com/rouge-ruby/rouge/wiki/List-of-tokens
-// VsCode colors: https://github.com/rouge-ruby/rouge/wiki/List-of-tokens
 .highlight {
   white-space: pre;
   overflow: auto;
-  word-wrap: normal; /* horizontal scrolling */
+  word-wrap: normal;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -13,19 +11,16 @@
 }
 
 :is(figure, div).highlight {
-  $shadow-color: rgb(0 0 0 / 0.05);
-  border: 1px solid $shadow-color;
-  box-shadow: 0 1px 2px 0 $shadow-color;
+  border: 1px solid rgb(0 0 0 / 0.05);
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
 }
 
-// Highlighted lines
+/* Highlighted lines */
 .highlight .hll {
-  $highlight-color: #97c475;
-
   margin: 0 -20px;
   padding: 0 18px;
-  border-left: 2px solid $highlight-color;
-  background-color: rgba($highlight-color, 0.15);
+  border-left: 2px solid #97c475;
+  background-color: rgb(151 196 117 / 0.15);
   display: block;
   min-width: fit-content;
 }
@@ -51,7 +46,7 @@
   background-color: #2c3032;
 }
 
-// Comments
+/* Comments */
 .highlight .c,
 .highlight .cm,
 .highlight .c1,
@@ -89,13 +84,13 @@
   color: var(--code-foreground-color);
 }
 
-// Literal.String.Symbol
+/* Literal.String.Symbol */
 .highlight .ni,
 .highlight .ss {
   color: var(--code-symbol-color);
 }
 
-// Strings
+/* Strings */
 .highlight .s,
 .highlight .sh,
 .highlight .s1,
@@ -103,55 +98,51 @@
   color: var(--code-string-color);
 }
 
-.highlight .k,  // Keyword
-.highlight .kc, // Keyword.Constant
-.highlight .kd, // Keyword.Declaration
-.highlight .kn, //
-.highlight .kp, // Keyword.Pseudo
-.highlight .kr, // Keyword.Reserved
-.highlight .kt, // Keyword.Type
-.highlight .nt, // Name.Tag
-.highlight .si  // Literal.String.Interpol
-{
+.highlight .k,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt,
+.highlight .nt,
+.highlight .si {
   color: var(--code-keyword-color);
 }
-.highlight .cp, // Comment.Preproc
-.highlight .gh, // Generic.Heading
-.highlight .gu, // Generic.Subheading
-.highlight .na, // Name.Attribute
+
+.highlight .cp,
+.highlight .gh,
+.highlight .gu,
+.highlight .na,
 .highlight .nf {
   color: var(--code-method-call-color);
 }
 
-.highlight .o, // Operator
-.highlight .sr,// Literal.String.Regex
+.highlight .o,
+.highlight .sr,
 .highlight .se,
-.highlight .nb // Name.Builtin
-{
+.highlight .nb {
   color: var(--code-builtin-color);
 }
 
-.highlight .nc, // Name.Class
-.highlight .nn, // Name.Namespace
-.highlight .no // Name.Constant
-{
+.highlight .nc,
+.highlight .nn,
+.highlight .no {
   color: var(--code-class-color);
 }
 
-.highlight .m,  // Literal.Number
-.highlight .mf, // Literal.Number.Float
-.highlight .mh, // Literal.Number.Hex
-.highlight .mi, // Literal.Number.Integer
-.highlight .mo, // Literal.Number.Oct
-.highlight .il  // Literal.Number.Integer.Long
-{
+.highlight .m,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo,
+.highlight .il {
   color: var(--code-number-color);
 }
 
-.highlight .nv, // Name.Variable
-.highlight .vc, // Name.Variable.Class
-.highlight .vg, // Name.Variable.Global
-.highlight .vi  // Name.Variable.Instance
-{
+.highlight .nv,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi {
   color: var(--code-parameter-color);
 }

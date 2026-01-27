@@ -2,7 +2,8 @@
 BUTTON DEFAULTS
 ***************/
 
-%btn {
+.button,
+.button--outlined {
   background-color: var(--primary-color);
   display: inline-block;
   position: relative;
@@ -19,28 +20,19 @@ BUTTON DEFAULTS
   margin-bottom: 0.5em;
   transition: background-color 0.14s ease-in-out;
 
-  // hovering on the btn
   &:hover,
   &:focus {
     color: white;
     text-decoration: none;
     background-color: var(--primary-color-dk);
-  } // end hover
+  }
 
-  // clicking on the button
   &:active {
-    top: 1px; // adds a tiny hop to the click
-  } // end active
-} // end .button
-
-// Default button class
-.button {
-  @extend %btn;
+    top: 1px;
+  }
 }
 
-// Outline Button
 .button--outlined {
-  @extend %btn;
   background-color: transparent;
   border: 2px solid var(--primary-color);
   color: var(--primary-color);

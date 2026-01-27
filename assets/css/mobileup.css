@@ -32,7 +32,7 @@ body {
   }
 }
 
-// Media Styling
+/* Media Styling */
 img,
 video,
 audio,
@@ -41,7 +41,7 @@ object {
   max-width: 100%;
 }
 
-// Layout
+/* Layout */
 .container {
   max-width: 610px;
   padding: 0 20px;
@@ -281,12 +281,12 @@ POST STYLING
     }
 
     &:before {
-      content: '“';
+      content: '\201C';
       left: -8px;
     }
 
     &:after {
-      content: '”';
+      content: '\201D';
       right: 0px;
 
       @media only screen and (min-width: 800px) {
@@ -459,46 +459,46 @@ FOOTER STYLING
   .copy {
     margin-bottom: 1rem;
   }
+}
 
-  &-links {
-    ul {
-      text-align: center;
+.footer-links {
+  ul {
+    text-align: center;
 
-      li {
+    li {
+      display: inline-block;
+      margin-right: 8px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
         display: inline-block;
-        margin-right: 8px;
+        width: 30px;
+        height: 30px;
+        transition: all 0.2s ease-in-out;
 
-        &:last-child {
-          margin-right: 0;
-        }
+        svg {
+          display: block;
+          width: 100%;
+          height: 100%;
 
-        a {
-          display: inline-block;
-          width: 30px;
-          height: 30px;
-          transition: all 0.2s ease-in-out;
+          .outer-shape {
+            fill: var(--primary-color);
+          }
 
-          svg {
-            display: block;
-            width: 100%;
-            height: 100%;
-
-            .outer-shape {
-              fill: var(--primary-color);
-            }
-
-            .inner-shape {
-              fill: var(--page-bg-color);
-            }
+          .inner-shape {
+            fill: var(--page-bg-color);
           }
         }
+      }
 
-        &:hover {
-          a {
-            svg {
-              .outer-shape {
-                fill: var(--primary-color-dk);
-              }
+      &:hover {
+        a {
+          svg {
+            .outer-shape {
+              fill: var(--primary-color-dk);
             }
           }
         }
@@ -658,44 +658,45 @@ code.language-plaintext.highlighter-rouge {
     }
   }
 
-  &--info {
-    background: var(--bg-info-color);
-    border-left-color: var(--info-color);
+}
 
-    & .icon {
-      color: var(--info-color);
-      box-shadow: 0 0 0 3px var(--info-color);
-    }
+.Note--info {
+  background: var(--bg-info-color);
+  border-left-color: var(--info-color);
+
+  & .icon {
+    color: var(--info-color);
+    box-shadow: 0 0 0 3px var(--info-color);
   }
+}
 
-  &--warn {
-    background: var(--bg-warn-color);
-    border-left-color: var(--warn-color);
+.Note--warn {
+  background: var(--bg-warn-color);
+  border-left-color: var(--warn-color);
 
-    & .icon {
-      color: var(--warn-color);
-      box-shadow: 0 0 0 3px var(--warn-color);
-    }
+  & .icon {
+    color: var(--warn-color);
+    box-shadow: 0 0 0 3px var(--warn-color);
   }
+}
 
-  &--error {
-    background: var(--bg-error-color);
-    border-left-color: var(--error-color);
+.Note--error {
+  background: var(--bg-error-color);
+  border-left-color: var(--error-color);
 
-    & .icon {
-      color: var(--error-color);
-      box-shadow: 0 0 0 3px var(--error-color);
-    }
+  & .icon {
+    color: var(--error-color);
+    box-shadow: 0 0 0 3px var(--error-color);
   }
+}
 
-  &--success {
-    background: var(--bg-success-color);
-    border-left-color: var(--success-color);
+.Note--success {
+  background: var(--bg-success-color);
+  border-left-color: var(--success-color);
 
-    & .icon {
-      color: var(--success-color);
-      box-shadow: 0 0 0 3px var(--success-color);
-    }
+  & .icon {
+    color: var(--success-color);
+    box-shadow: 0 0 0 3px var(--success-color);
   }
 }
 
@@ -772,7 +773,7 @@ kbd {
   }
 }
 
-// headings with anchors should not be styled as links
+/* headings with anchors should not be styled as links */
 h2[id],
 h3[id],
 h4[id],

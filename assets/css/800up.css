@@ -215,7 +215,7 @@ FOOTER STYLES
 ***************/
 
 .footer {
-  &-links {
+  .footer-links {
     float: right;
   }
 

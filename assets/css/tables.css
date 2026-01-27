@@ -1,0 +1,49 @@
+/***************
+TABLE STYLES
+***************/
+
+:root {
+  --grey-border: color-mix(in srgb, var(--grey) 55%, transparent);
+  --grey-bg: color-mix(in srgb, var(--grey) 10%, transparent);
+}
+
+table {
+  width: 100%;
+  border: 1px solid var(--grey-border);
+  margin-bottom: 1.5em;
+
+  caption {
+    margin: 0 0 7px;
+    font-size: 0.75em;
+    color: var(--grey);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
+
+tr {
+  border-bottom: 1px solid var(--grey-border);
+
+  &:nth-child(even) {
+    background-color: var(--grey-bg);
+  }
+}
+
+td {
+  padding: 7px;
+  border-right: 1px solid var(--grey-border);
+
+  &:last-child {
+    border-right: 0;
+  }
+}
+
+th {
+  background-color: var(--grey-bg);
+  border-bottom: 1px solid var(--grey-border);
+  border-right: 1px solid var(--grey-border);
+
+  &:last-child {
+    border-right: 0;
+  }
+}

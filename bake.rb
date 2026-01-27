@@ -4,7 +4,7 @@ require_relative "lib/todo_list"
 
 # Runs development server
 def s
-  system "npx gulp"
+  system "bundle exec jekyll serve --drafts --livereload --incremental"
 end
 alias_method :call, :s
 
