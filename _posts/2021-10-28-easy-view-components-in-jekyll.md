@@ -57,7 +57,7 @@ And we use it in the template like this:
 
 It's even possible to have parameters with default values using Liquid's [`default`] filter:
 
-{% highlight html highlight_lines="2" %}
+{% highlight html mark_lines="2" %}
 {% raw %}
 <aside class="max-w-md p-5 rounded bg-gray-50 border-l-4 border-l-blue-500">
   <strong class="block mb-4">{{include.title | default: 'Note'}}</strong> <!-- default value here -->

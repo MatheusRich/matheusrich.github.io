@@ -48,7 +48,7 @@ end
 
 Note that it's really easy to add a default/fallback value in case you get a bad value.
 
-{% highlight ruby highlight_lines="3" %}
+{% highlight ruby mark_lines="3" %}
 class UsersController < BaseController
   def index
     sort_by = params[:sort_by].presence_in(["created_at", "id", "name"]) || "id"
