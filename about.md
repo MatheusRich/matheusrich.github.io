@@ -65,7 +65,7 @@ user.name
 
   <p>Here's a sample of its (current) syntax:</p>
 
-{% highlight rust %}
+{% highlight lit %}
 fn factorial_of { |n|
   if n <= 1 do return 1
 
