@@ -59,21 +59,23 @@ user.name
 # => "Matz"
 {% endhighlight %}
 
-  <h3>Lit lang <a href="https://github.com/lit-lang/lit">(GitHub)</a></h3>
+  <h3>Lit lang <a href="https://lit-lang.org/">(Official site)</a></h3>
 
   <p>My first attempt at programming language design. Lit is a simple functional programming language.</p>
 
   <p>Here's a sample of its (current) syntax:</p>
 
 {% highlight rust %}
-let fib = fn { |n|
-  if (n < 2) { return n; }
+fn factorial_of { |n|
+  if n <= 1 do return 1
 
-  return fib(n - 1) + fib(n - 2);
+  n * factorial_of(n - 1)
 }
 
-let n = gets();
-
-puts("The # {n} fibonacci number is {fib(n)}")
+if let n = readln().to_i!() {
+  println("The factorial of {n} is {factorial_of(n)}")
+} else {
+  println("Not a valid number")
+}
 {% endhighlight %}
 </div>
