@@ -163,7 +163,9 @@ POST STYLING
   }
 
   p {
+    hyphens: auto;
     text-align: justify;
+    text-wrap: pretty;
   }
 
   .pageTitle {
