@@ -78,7 +78,7 @@ talks:
   - title: "Ruby Internals: A Guide for Rails Developers - Tropical on Rails 2025"
     description: >
       Ever wondered how Ruby takes your code and runs it? It’s time to go on a journey into Ruby internals designed especially for Rails developers! We’ll learn about all the parts of an interpreter, and how their inner-workings affect our Rails apps! No experience with C is required!
-    date: 2025-07-01 -0300
+    date: 2025-04-04 -0300
     slides_url: https://docs.google.com/presentation/d/1IdNgAU7z9umDeyx6xG8fv7wqauG3_QkfhpCM1sVXelw/view
     video_url: https://www.youtube.com/embed/nFoOmIpMcm0?si=pc5aRfuYPYMOMlJc
   - title: "How to get the most out of attending a conference - The Bike Shed #467"
@@ -86,7 +86,7 @@ talks:
       Joël continues his preparations for the last RailsConf as he talks with Matheus about how to make the most of your time at the conference.
 
       Hear their tips to connect and communicate with other attendees, the different ways to take notes at the various talks you can attend, what to do when your discussions have a lull, as well as how to draw inspiration from others talks and using it to your advantage.
-    date: 2022-01-26 -0300
+    date: 2025-07-01 -0300
     audio_url: https://bikeshed.thoughtbot.com/467
     embed: <iframe src="https://player.fireside.fm/v2/fa2C4vFU+NjlQNV0k?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
   - title: "Ruby Internals: A Guide for Rails Developers - RailsConf 2025"
