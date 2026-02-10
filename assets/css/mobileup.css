@@ -563,6 +563,7 @@ code.language-plaintext.highlighter-rouge {
   color: var(--inline-code-color);
   padding: 1px 8px;
   border-radius: 8px;
+  hyphens: none;
 }
 
 .Note {
