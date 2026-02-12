@@ -174,7 +174,7 @@ $ bake list
 ```
 
 The result:
-<img loading="lazy" style="display: block; margin: 0 auto;" src="/assets/img/bake-list.png" alt="source code of the command `bake list`" width=635 height=126>
+<img loading="lazy" style="display: block; margin: 0 auto;" src="/assets/img/bake-list.webp" alt="source code of the command `bake list`" width=635 height=126>
 <p style="text-align: center;">Bake has this nice output when listing tasks</p>
 
 You can filter tasks by providing a pattern:

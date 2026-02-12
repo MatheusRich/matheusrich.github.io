@@ -10,7 +10,7 @@ I hate typos! Seriously! I've made a decision: **I want typo-proof development!*
 
 {%
   include figure.html
-    src="typo.png"
+    src="typo.webp"
     width=207
     height=103
     caption="The kind of typo that makes you debug for hours..."
@@ -21,7 +21,7 @@ avoided. Otherwise, a simple spellchecker might do it:
 
 {%
   include figure.html
-    src="typo-checked.png"
+    src="typo-checked.webp"
     width=276
     caption="Even though it's not an error, the squiggly line might be enough to draw your attention to the typo"
 %}
@@ -41,7 +41,7 @@ Using autocomplete at your favor
 
 {%
   include figure.html
-    src="typo-proof-dev/copilot.png"
+    src="typo-proof-dev/copilot.webp"
     class="max-w-sm"
     caption="Github's Copilot can help you avoid some typos as well"
 %}
@@ -52,14 +52,14 @@ Using autocomplete at your favor
 
 {%
   include figure.html
-  src="typo-proof-dev/zsh-autocomplete.png"
+  src="typo-proof-dev/zsh-autocomplete.webp"
   class="max-w-sm"
   caption="You can also get a similar benefit by using <kbd>Ctrl</kbd> + <kbd>R</kbd>"
 %}
 
 [zsh-syntax-highlight](https://github.com/zsh-users/zsh-syntax-highlighting)
 
-{% include figure.html src="typo-proof-dev/zsh-highlight.png" class="max-w-sm" %}
+{% include figure.html src="typo-proof-dev/zsh-highlight.webp" class="max-w-sm" %}
 
 ## Fixing common mistakes
 

@@ -115,6 +115,56 @@ def unused_pictures
   exit 1 if unused.any?
 end
 
+# Converts images to WebP format and updates references in posts/drafts.
+#
+# @param directory [String] directory to search for images.
+# @param quality [Integer] WebP quality (1-100).
+def optimize_images(directory, quality: 90)
+  unless system("which cwebp > /dev/null 2>&1")
+    abort "cwebp not found. Install it with: brew install webp"
+  end
+
+  image_files = Dir["#{directory}/**/*.{jpg,jpeg,png}"]
+
+  if image_files.empty?
+    puts "No images to optimize in #{directory}"
+    return
+  end
+
+  total_before = 0
+  total_after = 0
+  converted = []
+
+  image_files.each do |file|
+    webp_path = file.sub(/\.(jpe?g|png)$/i, ".webp")
+
+    if File.exist?(webp_path)
+      puts "Skipping #{file} (WebP already exists)"
+      next
+    end
+
+    before_size = File.size(file)
+    total_before += before_size
+
+    unless system("cwebp", "-q", quality.to_s, file, "-o", webp_path, [:out, :err] => "/dev/null")
+      puts "Failed to convert #{file}"
+      next
+    end
+
+    after_size = File.size(webp_path)
+    total_after += after_size
+    converted << {original: file, webp: webp_path}
+
+    puts "#{file} → #{webp_path} (#{human_size(before_size)} → #{human_size(after_size)})"
+  end
+
+  if converted.any?
+    puts "\nTotal: #{human_size(total_before)} → #{human_size(total_after)} (saved #{human_size(total_before - total_after)})"
+    update_image_references(converted)
+    converted.each { |pair| File.delete(pair[:original]) }
+  end
+end
+
 private
 
 POSTS_PATH = "_posts/"
@@ -138,3 +188,35 @@ def file_content(post_name, date, tags) = <<~CONTENT
   categories: #{tags.join(" ")}
   ---
 CONTENT
+
+def human_size(bytes)
+  units = ["B", "KB", "MB", "GB"]
+  unit = units.shift
+  while bytes >= 1024 && units.any?
+    bytes /= 1024.0
+    unit = units.shift
+  end
+  "%.1f %s" % [bytes, unit]
+end
+
+def update_image_references(converted)
+  md_files = Dir["{#{POSTS_PATH},#{DRAFTS_PATH}}**/*.md"]
+  return if md_files.empty?
+
+  puts "\nUpdating image references in posts/drafts..."
+  md_files.each do |md_file|
+    content = File.read(md_file)
+    original_content = content.dup
+
+    converted.each do |pair|
+      old_name = File.basename(pair[:original])
+      new_name = File.basename(pair[:webp])
+      content = content.gsub(old_name, new_name)
+    end
+
+    if content != original_content
+      File.write(md_file, content)
+      puts "  Updated #{md_file}"
+    end
+  end
+end

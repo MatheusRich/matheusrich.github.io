@@ -77,7 +77,7 @@ We can use `if/else` expressions --- which I'm very familiar with, coming from R
 not having it in Rust.
 
 <figure>
-  <img loading="lazy" style="display: block; margin: 0 auto;" src="/assets/img/first-month-rust/gimme-ternary-or-die.png" alt="Gimme ternary or die!">
+  <img loading="lazy" style="display: block; margin: 0 auto;" src="/assets/img/first-month-rust/gimme-ternary-or-die.webp" alt="Gimme ternary or die!">
   <figcaption>Although this feature may be <span class="italic">very valuable</span> for some users...</figcaption>
 </figure>
 
