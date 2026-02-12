@@ -91,7 +91,6 @@ def year_in_review
     subtasks: [
       "Guitar gear",
       "Live performances",
-      "Songs learned?",
       "Music released?"
     ]
   )

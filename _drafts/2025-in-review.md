@@ -1,0 +1,573 @@
+---
+layout: post
+title: "2025 In Review"
+description: "I knew this year would be busy, I just didn't know how much so."
+categories: year-in-review
+toc: true
+---
+
+I knew this year would be busy, I just didn't know how much so. Being a dad
+changed my life drastically, but a lot of other things happened too!
+
+## Parenting
+
+I had so many "firsts" this year as a dad. I saw my daughter talk, eat solid
+food, crawl, walk, and many other things I can't even count. It is as rewarding
+as it is challenging. Nothing I've done this year would be possible without the
+support of my wife, who is an amazing mom and partner. I love you two!
+
+## Career
+
+Four years at thoughtbot. It's been such a journey! I'm glad I have such a great
+place to work which allows me to grow in many different directions.
+
+<aside class="Note">
+  <h4 id="quick-takes">Quick takes</h4>
+  <ul>
+    <li>
+      <p>
+        <a href="https://www.ruby-lang.org/en/">Ruby</a> / <a href="https://rubyonrails.org/">Rails</a>: I don't need to say much about these. They allow me to focus on problems, not language. There's nothing like them, for me.
+      </p>
+    </li>
+    <li>
+      <p>
+        <a href="https://thoughtbot.com/blog/what-llms-are-in-ai">LLMs</a>: Everyone is using them, for better or worse. The thing about LLMs is that they amplify all the good <em>and bad</em> things about programmers and their practices. If you practiced TDD and small PRs, good. If you did big diffs, tests after the code... Now the burden is on your team to review that.
+      </p>
+      <p>
+        Like last year, I've used <a href="https://chat.openai.com/">ChatGPT</a>, <a href="https://github.com/features/copilot">GitHub Copilot</a> mostly.
+      </p>
+      <p>
+        I've tried stuff like Cursor and Windsurf, but to me the VS Code integration with AI is enough. Shamefully, I haven't tried Claude Code yet.
+      </p>
+    </li>
+  </ul>
+</aside>
+
+### Public Speaking
+
+I spoke in two different conferences this year: [Tropical on Rails](https://www.youtube.com/watch?v=nFoOmIpMcm0) and [RailsConf](https://www.youtube.com/watch?v=ozayFBNKO2M).
+Both were the same talk — [Ruby Internals: A Guide For Rails Developers](https://www.matheusrich.com/speaking/#ruby-internals-a-guide-for-rails-developers-railsconf-2025) — but these were great achievements for me:
+
+- At Tropical, there were over 600 people, and, not only because of the huge
+  audience, being around great speakers like Xavier Noria, Chris Oliver, Rosa
+  Gutiérrez, Jackson Pires and many others was inspiring.
+- I had the pleasure of speaking at _the last_ RailsConf. It was amazing to be
+  part of a conference that I myself had watched online for years.
+
+<div class="Masonry">
+{%
+  include figure.html
+    src="2025-in-review/jackson-pires-and-i.jpg"
+    width="auto"
+%}
+
+{%
+  include figure.html
+    src="2025-in-review/railsconf.jpg"
+    width="auto"
+%}
+{%
+  include figure.html
+    src="2025-in-review/tropical-ruby-xavier-and-i.jpg"
+    width="auto"
+%}
+
+{%
+  include figure.html
+    src="2025-in-review/tropical-rosa-and-i.jpg"
+    width="auto"
+%}
+</div>
+
+Going to RailsConf was my first time in the US. I had very little time there,
+but I did eat a cheesesteak in Philly, so it counts!
+
+{%
+  include figure.html
+    src="2025-in-review/cheesesteak.jpg"
+    width="400"
+%}
+
+I also was accepted to Baltic Ruby and RubyConf Austria, but had to turn them
+down for personal reasons.
+
+### Books
+
+I haven't read a lot in the past years (aside from some Asimov), but I decided
+to read *something* in 2025. I read two books:
+
+- **Scar Tissue**, a biography of Anthony Kiedis, the lead singer of Red Hot
+  Chili Peppers, one of my favorite bands.
+- [**Getting Real**](https://basecamp.com/gettingreal), from Basecamp. This is
+  the kind of book one can revisit from time to time to get bite-sized advice on
+  how to build a software product.
+
+Technically, I also finished [Crafting
+Interpreters](https://craftinginterpreters.com/), but I read it in parts over
+the years, so I'm not counting it here.
+
+### Ruby DF
+
+[Ruby DF](https://rubydf.com/), the meetup I run in my city, had a great year!
+We hosted 7 events (all time high!) with 9 talks and over 75 attendees. We also
+got sponsorship from [Ruby Central](https://rubycentral.org/), which allowed us
+to record the meetups and share them on our [YouTube
+channel](https://www.youtube.com/@ruby-df).
+
+<div class="embedded-media embedded-video">
+  <iframe src="https://www.youtube.com/embed/tun5XnQnSNE?si=6ot0uugVZcgL_Bll" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### Blogging
+
+{%
+  include figure.html
+    src="2025-in-review/articles-per-year.png"
+    width="auto"
+%}
+
+I wrote 5 articles in 2025. That is half of what I wrote in 2024, and the lowest
+number since 2020. Of course, I had a lot on my plate this year, but I think I
+made up for it with the talks.
+
+{%
+  include figure.html
+    src="2025-in-review/articles-frequency.png"
+    width="auto"
+%}
+
+The articles were fairly distributed throughout the year, with the 3rd quarter
+being the most active with two articles. One of them was a guest post for App
+Signal about [Ruby Parsing with
+Prism](https://blog.appsignal.com/2026/01/07/an-introduction-to-ruby-parsing-with-prism.html),
+but it was only published in 2026.
+
+{%
+  include figure.html
+    src="2025-in-review/articles-tag-distribution.png"
+    width="auto"
+    caption="I wrote mostly about Ruby and programming in general."
+%}
+
+### Memopack
+
+Late 2024 I started working on Memopack, an app I'm writing for myself to
+replace a bunch of Google Keep notes and other stuff I had scattered around. I
+wanted to have a single place to keep a journal (with mood tracking), all my
+notes, todos, and other things like bookmarks.
+
+{%
+  include figure.html
+    src="2025-in-review/memopack-mood.png"
+    width="auto"
+%}
+
+2025 was when things really took off. I've been using it daily, and improving
+it as I go. Ruby on Rails is really good for taking these ideas and making them
+reality quickly.
+
+{%
+  include figure.html
+    src="2025-in-review/memopack-sticker.png"
+    width="auto"
+    caption="I did 18 things for the first time in 2025"
+%}
+
+I'm even using it to help me write this article. I have tags (called stickers)
+for my journal entries, so I can quickly find all the "first time" things I did
+this year, for example.
+
+### Open-Source
+
+{%
+  include figure.html
+    src="2025-in-review/gems.png"
+    width="500"
+%}
+
+My gems were downloaded 87,940 times in total. That's a ~69% YoY increase. I've
+released a number of new gems, but the most important are:
+
+1. [**rails-diff**](https://github.com/matheusrich/rails-diff): a gem to help
+   you compare files generated by Rails (like Dockerfile, .gitignore, etc) with
+   the ones in your repository, making it easier to keep track of changes and
+   updates. This gem started entirely vibe-coded with Windsurf as an experiment.
+   The code got messy pretty quickly, so I had to steer the AI to write tests
+   and do some refactoring. It's still not great, but it got better.
+2. [**data_customs**](https://github.com/thoughtbot/data_customs/): a simple gem
+   to help you perform safe data migrations in your Rails app. It was an
+   extraction of some code I wrote for a client project. It has been working
+   really well for us and I plan to keep improving it.
+
+Smaller gems like [argument_parser](https://github.com/thoughtbot/argument_parser) and [planck](https://github.com/thoughtbot/planck) were extractions from the bigger ones. Existing gems like
+`end_of_life` got revamps, updates and new releases.
+
+#### Rails
+
+I made [7 commits to
+Rails](https://contributors.rubyonrails.org/contributors/matheus-richard/commits)
+this year, contributing to the new [Sign up and
+Settings](https://guides.rubyonrails.org/sign_up_and_settings.html) and
+[Wishlists](https://guides.rubyonrails.org/wishlists.html) guides.
+
+I opened a few other PRs, but the only one that got merged was [adding the
+helper `relative_time_in_words` to
+ActionView](https://github.com/rails/rails/pull/55405). This was an extraction
+from Memopack. I hope to extract even more!
+
+#### Ruby
+
+This was a great year for my Ruby contributions! I proposed a few features to
+Ruby core:
+
+1. [`String#ensure_suffix`](https://bugs.ruby-lang.org/issues/21346):
+   **Approved by Matz!** 🎉 This method ensures a string ends with a given suffix
+   without duplicating it. It got discussed at the June dev meeting and Matz
+   gave the green light. Still waiting for the merge, but I'm thrilled.
+
+2. [`Time#am?` and `Time#pm?`](https://bugs.ruby-lang.org/issues/21533):
+   Rejected. The edge cases around noon and midnight (is 12:00 AM or PM?) proved
+   too ambiguous. I proposed alternatives like returning `false` for those times
+   or adding `noon?`/`midnight?` methods, but no consensus was reached.
+
+3. [`Array#values`](https://bugs.ruby-lang.org/issues/21615): Rejected. I
+   wanted uniform Array/Hash treatment. Unfortunately, it didn't go far.
+
+4. [`Enumerable#join_map`](https://bugs.ruby-lang.org/issues/21386):
+   Rejected. I proposed combining `map` and `join` into a single-pass method
+   (like `filter_map` does for `filter + compact`). Matz rejected it, hoping JIT
+   inlining will optimize `.map { }.join` in the future instead.
+
+Not only did I propose these, but I actually provided patches for them (some
+written in C). That was on my to-do list for a while, and now it's done. I'm
+really proud of that, even if none have been merged yet.
+
+I also participated in several discussions:
+- Proposed [`Ruby::Context`](https://bugs.ruby-lang.org/issues/21385#note-27) as
+  the name for the new namespace feature (it ended up being called `Ruby::Box`).
+- Proposed `?=` as an [uninitialized assignment
+  operator](https://bugs.ruby-lang.org/issues/17316) for memoization (although
+  this syntax already exists in Ruby for other uses)
+- Suggested [`zip_map`](https://bugs.ruby-lang.org/issues/4539) as a name for
+  `Array#zip_with`.
+
+On the code side, I [fixed a bug on
+RubyGems](https://github.com/ruby/rubygems/pull/8963) improving error handling
+for missing version files. This work came from [my gem `end_of_life`](https://github.com/matheusrich/end_of_life). I opened a [small
+PR to fix docs in Ruby](https://github.com/ruby/ruby/pull/13364) as well.
+
+#### Crystal
+
+I cross-pollinated my Ruby work to Crystal! Both [`String#ensure_prefix` and
+`String#ensure_suffix`](https://github.com/crystal-lang/crystal/pull/15782) got
+approved and merged there. I'm now [officially a Crystal
+contributor!](https://github.com/crystal-lang/crystal/commits?author=matheusrich)
+🎉
+
+#### Misc
+
+I also had small contributions to several other projects, including
+[Kamal](https://github.com/basecamp/kamal),
+[Trix](https://github.com/basecamp/trix), [Devise
+Invitable](https://github.com/scambra/devise_invitable), [Litestream
+Ruby](https://github.com/fractaledmind/litestream-ruby),
+[Fizzy](https://github.com/basecamp/fizzy),
+[StoreModel](https://github.com/DmitryTsepelev/store_model), and
+[Try](https://github.com/tobi/try).
+
+### Game Development
+
+I didn't work on actual game projects like [Frenzy
+Jumpers](https://matheusrich.itch.io/frenzy-jumpers) or play with DragonRuby this year,
+but I gave a talk about game development for beginners.
+
+<div class="embedded-media embedded-video">
+  <iframe src="https://www.youtube.com/embed/rFahd2DzXxI?si=3FPJS9ZGaM2k9dnm" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+Because of the talk, I did touch
+[rich_engine](https://github.com/MatheusRich/rich_engine), my little engine for
+[terminal games](https://github.com/MatheusRich/terminal_games), a bit.
+
+### Language Development
+
+[Last year](https://www.matheusrich.com/2024-in-review/) I didn't touch langdev
+at all, but surprisingly, this year I spent over 128h working on my own
+programming language, [Lit](http://lit-lang.org/) (the inspiration for my talk [Ruby Internals: A Guide For Rails Developers](https://www.matheusrich.com/speaking/#ruby-internals-a-guide-for-rails-developers-railsconf-2025)).
+
+I started this language back in 2020 while reading [Crafting
+Interpreters](https://craftinginterpreters.com/), but I finally finished the
+book and made something real out of it. I wrote the interpreter in Crystal
+(which is why I ended up contributing to Crystal too).
+
+I released 3 versions in 2025:
+
+- **v0.1.0**: The "Hello World" release — basically Lox with different
+  syntax, arrays, string interpolation, a pipeline operator (`|>`), and no
+  inheritance.
+- **v0.2.0**: Removed required semicolons, added methods on primitives,
+  anonymous functions, operator overloading, maps, and `else if`.
+- **v0.3.0**: Made everything an expression (`if`, `while`, blocks),
+  added array/map literals, `do` blocks for one-liners, the `it` default
+  parameter (inspired by Kotlin and Ruby), file imports, and augmented
+  assignment operators.
+
+```lit
+let greeting = if "world" == "world" do "Hello, world!" else do "Goodbye"
+
+# Array and map literals with string interpolation
+let numbers = [1, 2, 3, 4, 5]
+let scores = {alice: 95, bob: 87, charlie: 92}
+
+# Using the `it` default parameter with do blocks
+numbers.each(fn do println("Number: {it}"))
+
+# Pipeline operator for function composition
+fn double do it * 2
+fn square do it * it
+fn just do it # sorry, I had to
+
+let result = 5 |> just() |> double() |> square()
+println(result) # => 100
+```
+
+Lit is now expression-oriented and is starting to feel like a real language. My
+current goal is building a Lit interpreter in Lit itself, a fun challenge that
+helps me find pain points in the design.
+
+### Code Statistics
+
+{%
+  include figure.html
+    src="2025-in-review/github.png"
+    width="auto"
+%}
+
+According to [WakaTime](https://wakatime.com/), I logged almost 999 hours of
+coding this year, averaging about 3 hours and 13 minutes a day. That's a
+significant jump (+41%) from last year's 704 hours (roughly 2 hours and 45
+minutes/day). GitHub confirms this, showing that I made 4006 commits,
+nearly 60% more than last year and an all-time high for me.
+
+Aside from work, most of this time went into personal projects: 265 hours on
+Memopack, 128 hours on Lit, and about 50 hours on maintaining `end_of_life`.
+
+{%
+  include figure.html
+    src="2025-in-review/coding-week.png"
+    width="auto"
+    caption="I was most productive on Wednesdays. Guess which day of the week I had no meetings?"
+%}
+
+These aren't numbers I'm trying to optimize for, but it's interesting to see how
+they evolve over time. I didn't expect to code *more* in the year I have a newborn to take care of.
+
+## Life & Hobbies
+
+### Italian
+
+{%
+  include figure.html
+    src="2025-in-review/duolingo-per-year.png"
+    width="auto"
+%}
+
+Another year of Duolingo Italian! I spent 793 minutes learning (55% more than
+last year), practiced on 339 days (93% of the year), and kept my streak alive
+for 1119 days total. That's over 3 years without breaking the chain.
+
+I'm mostly doing this not to forget what I already know, but it's not a hard
+focus for me.
+
+### Music
+
+#### Concerts
+
+I saw Linkin Park live and it was the best concert I've ever been to. The
+setlist was perfect, the production incredible, and the crowd sang every word.
+
+On the other side of the stage, I played 3 concerts during the year. The highlight was my
+graduation concert at Music School. Three years of study culminating in one
+night! We played a mix of international influences (RHCP, John Mayer, Fearless
+Flyers) and Brazilian classics (Djavan, Hermeto Pascoal, Luís Bonfá).
+
+{%
+  include figure.html
+    src="2025-in-review/live2.png"
+    width="auto"
+%}
+
+<div class="Masonry">
+{%
+  include figure.html
+    src="2025-in-review/linkin-park.jpg"
+    class="aspect-square object-cover"
+    width="auto"
+%}
+{%
+  include figure.html
+    src="2025-in-review/live.png"
+    width="auto"
+%}
+</div>
+
+#### Streaming
+
+I streamed 12800 minutes, 18% more than last year. I wasn't anticipating that.
+
+{%
+  include figure.html
+    src="2025-in-review/minutes-streamed.png"
+    width="600"
+%}
+
+Luckily Spotify didn't count all the kids songs I played during this year, so I
+got an accurate picture of my listening habits.
+
+{%
+  include figure.html
+    src="2025-in-review/spotify.png"
+    width="300"
+%}
+
+RHCP was the top artist and Cor dos Olhos was the top album. It's a self-titled
+debut from a new indie band, and I had it on repeat.
+
+#### Gear
+
+{%
+  include figure.html
+    src="2025-in-review/gear-timeline.png"
+    width="auto"
+%}
+
+Like I said last year, I just needed a dual switch for my Ampero, and that's
+literally the one thing I got. I'm done with gear, I'm in creation mode now.
+
+{%
+  include figure.html
+    src="2025-in-review/gear.jpg"
+    width="600"
+%}
+
+### Working Out
+
+I tried to get back to the gym after my baby was born. I wasn't shooting for
+anything specific, but I wanted to get back to the routine. I went sort of
+consistently for January, but quit mid February. Having a baby + preparing for
+talks was a lot for me to handle on top of everything I already had on my plate.
+
+{% include figure.html src="2025-in-review/training-days.png" %}
+
+### Gaming
+
+{% include figure.html src="2025-in-review/gaming-hours-per-year.png" width="600" %}
+
+Contrary to last year, I played *a lot* fewer games. Yes, parenting hit me hard,
+but I was also focused on so many other things. Unfortunately, I didn't see my
+Playstation Wrapped while it was available, so I don't have exact numbers, but I
+have a good estimate. It's a shame Playstation doesn't have a way to retrieve my
+game data after the fact (no API, no official app to list it). I only played
+Overcooked with my wife, and by the end of the year I started Hollow
+Knight: Silksong.
+
+{% include figure.html src="2025-in-review/gaming-hours-by-platform.png" width="600" %}
+
+I did get a Nintendo Switch 2 as a gift (thank you, Joice!), which opened a
+whole new world of games for me. Among a few minor things, I dove deep into
+Zelda: Breath of the Wild — amazing game BTW — Mario 3D World and some Mario
+Kart World. The Switch is great for playing with friends and family. The
+portability is a game-changer! No more boring lines or wait times anywhere!
+
+{% include figure.html src="2025-in-review/gaming-nintendo.jpeg" width="400" %}
+
+## Expectations x Reality
+
+Let's see how I did with my 2025 goals:
+
+> Figure out being a dad. That's my #1 priority.
+
+There's no such thing as "figuring out being a dad". I'll always be figuring it
+out. I'm doing my best every day, and that's what I'll do for the rest of my
+life.
+
+> Find a new routine that works for me and my family.
+
+Sort of. It's really f-ing hard. I didn't find the balance yet. I can't work 8h
+a day on a chair and not exercise!
+
+> Balance work and personal life.
+
+This has never been a problem for me, luckily. Yes, it's hard to work and be a
+parent, but I have the flexibility to do it, and I have a supportive partner.
+
+> Keep my hobbies alive during this new phase.
+
+Yes. I finished my course at Music School, did a bunch of coding on personal
+projects, and even found time to play some games and concerts.
+
+> Keep contributing to Rails and Ruby.
+
+Heck yeah! I think my contributions are getting more tangible. Not only feature
+requests, but actual code proposals and bug fixes.
+
+> Keep the Ruby DF meetup going (at least 4 events).
+
+Yup! Not only 4, but 7 events! We had a great year, and I'm really proud of what
+we built.
+
+> Propose more features to Ruby (and hopefully get one accepted).
+
+I guess I did just that. Four proposals, one accepted. Not bad!
+
+> Talk at more events.
+
+I did it! And I'd speak even more, if I had the time.
+
+> Keep writing (aim at 10 articles).
+
+I wrote, but not 10 articles. But I made up for that with the talks!
+
+> Be more consistent at working out (aim at 2 times a week).
+
+😓 Not at all...
+
+## Writing This Article
+
+This was the article that took me the longest to publish. Not because it took
+longer to write, but because I couldn't find the time to start it. This was
+actually the fastest one to write because I could use AI to do manual work like
+going through all my activity on the Ruby Redmine, instead of me going week by
+week to collect the data.
+
+{%
+  include figure.html
+    src="2025-in-review/article-writing.png"
+    caption="This article took me about 7h to finish"
+    width="600"
+%}
+
+That made my writing speed increase by approximately 35% compared to last year
+(from 371 to 500 words/hour).
+
+## 2026 Goals
+
+This was an amazing year. I got to give talks, visit a new country, see my
+daughter learn so many things, and contribute to the community many different
+ways. I wanna keep all of that going, and more! Here are my goals for 2026:
+
+- Keep giving talks. Keep writing.
+  - There's not a set number for either of these (as long it's more than zero),
+    but these are habits I want to keep.
+- Keep Ruby DF going strong.
+- Keep contributing to Ruby and Rails.
+  - Keep extracting stuff from real projects as patches and gems.
+- Open-source Memopack?
+  - I think it could help others too. I'm not sure what's the best path to make
+    this a business.
+- Play in at least two concerts.
+  - Music is a big part of me, and I want to keep it alive.
+- Get back to the gym. One, two times a week. Anything!
+  - I just can't afford not to do it.
+
+Can't wait for the next year and all the surprises it has for me! Until then.
