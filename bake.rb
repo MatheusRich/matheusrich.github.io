@@ -165,10 +165,10 @@ def optimize_images(directory, quality: 90)
   end
 end
 
-private
-
 POSTS_PATH = "_posts/"
 DRAFTS_PATH = "_drafts/"
+
+private
 
 def slugify(str) = str.downcase.strip.tr(" ", "-").gsub(/[^\w-]/, "")
 
