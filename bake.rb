@@ -200,7 +200,7 @@ def human_size(bytes)
 end
 
 def update_image_references(converted)
-  md_files = Dir["{#{POSTS_PATH},#{DRAFTS_PATH}}**/*.md"]
+  md_files = Dir["{#{POSTS_PATH},#{DRAFTS_PATH}}**/*.{md,markdown}"]
   return if md_files.empty?
 
   puts "\nUpdating image references in posts/drafts..."
