@@ -104,15 +104,15 @@ def unused_pictures
   html_files = Dir["_site/**/*.html"].map { File.read _1 }
   unused = Dir["assets/img/**/*"].filter_map do |picture_path|
     next if File.directory?(picture_path)
+    next if html_files.any? { _1.include?(picture_path) }
 
-    picture_name = picture_path.split("/").last
-    next if html_files.any? { _1.match?(/#{picture_name}/) }
-
-    picture_name
+    picture_path
   end
 
-  puts "Unused pictures:\n#{unused.join("\n")}" if unused.any?
-  exit 1 if unused.any?
+  if unused.any?
+    puts "Unused pictures:\n#{unused.join("\n")}"
+    exit 1
+  end
 end
 
 # Converts images to WebP format and updates references in posts/drafts.
