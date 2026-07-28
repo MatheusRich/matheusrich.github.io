@@ -8,10 +8,16 @@ def s
 end
 alias_method :call, :s
 
+# Bake ignores what a task returns, so failures have to set the exit status
+# here. Otherwise CI stays green while the checks below fail.
 def lint
-  system("bundle exec jekyll doctor") &&
-    system("bundle exec bake unused_pictures") &&
-    system("bundle exec standardrb")
+  checks = [
+    "bundle exec jekyll doctor",
+    "bundle exec bake unused_pictures",
+    "bundle exec standardrb"
+  ]
+
+  exit 1 unless checks.all? { system(_1) }
 end
 
 # Creates a new post
