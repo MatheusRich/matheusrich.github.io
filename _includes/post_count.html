@@ -10,16 +10,19 @@
 
 {% assign n_articles = site.posts | size %}
 
+{% assign external_posts = site.posts | where_exp: "post", "post.redirect_to" %}
+{% assign n_external = external_posts | size %}
+{% assign n_local = n_articles | minus: n_external %}
+
 {% assign n_words = 0 %}
 {% for post in site.posts  %}
+  {% if post.redirect_to %}{% continue %}{% endif %}
   {% assign post_words = post.content | number_of_words %}
   {% assign n_words = n_words | plus: post_words %}
 {% endfor  %}
 
 <p>
-  I've written for {{n_years}} years, across {{n_articles}} articles and {{n_words}} words! Check out all my posts
-bellow.
-</p>
-<p>
-  I also have some articles on <a href="https://robots.thoughtbot.com/authors/matheus-richard">thoughtbot's blog</a>.
+  I've written for {{n_years}} years, across {{n_articles}} articles! {{n_external}} of them were published on
+<a href="https://thoughtbot.com/blog/authors/matheus-richard">thoughtbot's blog</a>, and link there; the
+{{n_local}} here add up to {{n_words}} words. Check out all my posts below.
 </p>

@@ -1,0 +1,7 @@
+{%- if include.post.redirect_to -%}
+  {%- assign host = include.post.redirect_to | split: "//" | last | split: "/" | first | remove: "www." -%}
+
+  <a{% if include.class %} class="{{ include.class }}"{% endif %} href="{{ include.post.redirect_to }}" title="Published on {{ host }}">{{ include.post.title }}&nbsp;{%- include external_link_icon.html -%}</a>
+{%- else -%}
+  <a{% if include.class %} class="{{ include.class }}"{% endif %} href="{{ include.post.url | prepend: site.baseurl }}">{{ include.post.title }}</a>
+{%- endif -%}

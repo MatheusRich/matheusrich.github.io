@@ -29,7 +29,7 @@ permalink: /all/
 
     <li>
       <h3 class="font-xl">
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        {% include post_link.html post=post %}
         <span class="date">{{ post.date | date: "%B %-d" }}</span>
       </h3>
     </li>

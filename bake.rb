@@ -57,6 +57,45 @@ def publish(draft: "")
   File.write(new_file_path, new_content)
 end
 
+# Imports posts published on thoughtbot's blog into `_posts`.
+#
+# Each one becomes a stub with a `redirect_to` front matter: it shows up in the
+# listings and gets a permalink here, but readers land on the original article.
+# Posts already synced are left untouched, so this is safe to re-run.
+#
+# @param author [String] the author slug on thoughtbot's blog.
+def sync_external_posts(author: "matheus-richard")
+  require "net/http"
+  require "nokogiri"
+  require "yaml"
+
+  created = []
+  conflicting = []
+  synced = 0
+
+  each_external_post(author) do |post|
+    existing_post = post_with_slug(post[:slug])
+
+    if existing_post.nil?
+      file_path = "#{POSTS_PATH}#{post[:date]}-#{post[:slug]}.md"
+      File.write(file_path, external_post_content(post))
+      created << file_path
+    elsif external_post?(existing_post)
+      synced += 1
+    else
+      conflicting << [post[:url], existing_post]
+    end
+  end
+
+  created.each { puts "Created #{_1}" }
+  puts "#{created.size} post(s) created, #{synced} already synced."
+
+  if conflicting.any?
+    puts "\nSkipped, already published here under the same slug:"
+    conflicting.each { |url, path| puts "  #{url}\n    -> #{path}" }
+  end
+end
+
 # Generates a draft "year in review" post for the last year.
 # Also runs a todo script to get all the info needed.
 def year_in_review
@@ -173,6 +212,7 @@ end
 
 POSTS_PATH = "_posts/"
 DRAFTS_PATH = "_drafts/"
+EXTERNAL_SITE_URL = "https://thoughtbot.com"
 
 private
 
@@ -194,6 +234,107 @@ def file_content(post_name, date, tags) = <<~CONTENT
   categories: #{tags.join(" ")}
   ---
 CONTENT
+
+# Stops when a page brings nothing new, which covers both an empty page and a
+# `page` param that the blog decides to ignore.
+def each_external_post(author)
+  seen = []
+  page = 1
+
+  loop do
+    url = "#{EXTERNAL_SITE_URL}/blog/authors/#{author}?page=#{page}"
+    elements = Nokogiri::HTML(fetch(url)).css("li.mini-post")
+
+    abort <<~MESSAGE if elements.empty? && page == 1
+      Found no posts at #{url}.
+
+      Either the author slug is wrong or the blog's HTML changed, so the
+      selectors in this task need updating.
+    MESSAGE
+
+    posts = elements
+      .map { parse_external_post(_1, url) }
+      .reject { seen.include?(_1[:slug]) }
+
+    break if posts.empty?
+
+    posts.each do |post|
+      seen << post[:slug]
+      yield post
+    end
+
+    page += 1
+  end
+end
+
+def external_post?(file_path)
+  front_matter = File.read(file_path)[/\A---\s*\n(.*?)^---\s*$/m, 1].to_s
+  data = YAML.safe_load(front_matter, permitted_classes: [Date, Time])
+
+  data.is_a?(Hash) && data.key?("redirect_to")
+end
+
+def post_with_slug(slug)
+  Dir["#{POSTS_PATH}*"].find do |file_path|
+    File.basename(file_path).sub(/\A\d{4}-\d{2}-\d{2}-/, "").sub(/\.\w+\z/, "") == slug
+  end
+end
+
+def fetch(url)
+  response = Net::HTTP.get_response(URI(url))
+  abort "Failed to fetch #{url} (#{response.code})" unless response.is_a?(Net::HTTPSuccess)
+
+  response.body
+end
+
+def parse_external_post(element, page_url)
+  link = element.at_css("h2.mini-post-title a")
+  title = link&.text
+  href = link&.[]("href")
+  description = element.at_css("p.mini-post-teaser")&.text
+  published_at = element.at_css("time.meta-date")&.[]("datetime")
+
+  blank = {
+    "h2.mini-post-title a" => title,
+    "h2.mini-post-title a[href]" => href,
+    "p.mini-post-teaser" => description,
+    "time.meta-date[datetime]" => published_at
+  }.filter_map { |selector, value| selector if value.to_s.strip.empty? }
+
+  abort <<~MESSAGE unless blank.empty?
+    Unexpected markup at #{page_url}.
+
+    Missing or empty: #{blank.join(", ")}
+
+    The blog's HTML changed, so the selectors in `parse_external_post` need
+    updating. Posts already synced are unaffected.
+  MESSAGE
+
+  {
+    title: title.strip,
+    slug: File.basename(href),
+    url: "#{EXTERNAL_SITE_URL}#{href}",
+    description: description.strip,
+    date: Date.parse(published_at),
+    categories: element.css("ul.meta-tag-list a").map { slugify(_1.text) }
+  }
+end
+
+def external_post_content(post)
+  front_matter = {
+    "layout" => "post",
+    "title" => post[:title],
+    "categories" => post[:categories].join(" "),
+    "description" => post[:description],
+    "redirect_to" => post[:url]
+  }
+
+  <<~CONTENT
+    #{YAML.dump(front_matter, line_width: -1)}---
+
+    This article was published on [thoughtbot's blog](#{post[:url]}).
+  CONTENT
+end
 
 def human_size(bytes)
   units = ["B", "KB", "MB", "GB"]

@@ -213,6 +213,7 @@ DEPENDENCIES
   jekyll-redirect-from
   jekyll-seo-tag
   jekyll-toc (~> 0.18.0)
+  nokogiri
   standard
   support-for
   webrick

@@ -15,5 +15,6 @@ gem "webrick"
 
 group :development do
   gem "bake"
+  gem "nokogiri"
   gem "standard"
 end

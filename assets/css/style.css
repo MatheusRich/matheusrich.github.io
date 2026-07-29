@@ -63,6 +63,12 @@
   vertical-align: middle;
 }
 
+.externalIcon {
+  width: 0.75em;
+  height: 0.75em;
+  vertical-align: baseline;
+}
+
 .italic {
   font-style: italic;
 }

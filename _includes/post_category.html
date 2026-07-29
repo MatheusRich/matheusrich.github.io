@@ -3,7 +3,7 @@
   {% for post in include.posts %}
   <li>
     <h3 class="font-xl">
-      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      {% include post_link.html post=post %}
       {% if post.draft %}
         <span class="Tag">Draft</span>
       {% else %}

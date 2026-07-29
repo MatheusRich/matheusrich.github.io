@@ -21,12 +21,12 @@ title: Recent Posts | Rich Codes
             {% endfor %}
           </span>
           <h3>
-            <a class="post-link align-middle" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            {% include post_link.html post=post class="post-link align-middle" %}
             {% if post.draft %}
               {% include draft_tag.html %}
             {% endif %}
           </h3>
-          <p>{% if post.description %}{{ post.description }}{% else %}{{ post.excerpt | strip_html }}{% endif %}</p>
+          <p>{% if post.description %}{{ post.description }}{% elsif post.redirect_to == nil %}{{ post.excerpt | strip_html }}{% endif %}</p>
         </article>
       </li>
     {% endfor %}
