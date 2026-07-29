@@ -17,6 +17,14 @@ plugins:
   - jekyll-toc
 paginate: 10
 
+# Jekyll appends its own defaults (Gemfile, node_modules, etc.) to this list.
+exclude:
+  - LICENSE
+  - README.md
+  - bake.rb
+  - bin
+  - lib
+
 navigation:
   - title: 👨‍💻 About me
     url: /about/
