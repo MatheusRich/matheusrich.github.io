@@ -78,15 +78,15 @@
 
       function toggleTheme() {
         const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-        sessionStorage.setItem('theme', next);
+        localStorage.setItem('theme', next);
         applyTheme(next);
       }
 
-      applyTheme(sessionStorage.getItem('theme') || (systemDark.matches ? 'dark' : 'light'));
+      applyTheme(localStorage.getItem('theme') || (systemDark.matches ? 'dark' : 'light'));
 
       // Follow the OS while the visitor hasn't picked a theme themselves
       systemDark.addEventListener('change', (e) => {
-        if (!sessionStorage.getItem('theme')) applyTheme(e.matches ? 'dark' : 'light');
+        if (!localStorage.getItem('theme')) applyTheme(e.matches ? 'dark' : 'light');
       });
     </script>
 
