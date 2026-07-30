@@ -65,6 +65,41 @@
     <!-- Come and get me RSS readers -->
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
+    <!--
+      Resolve the theme before the stylesheet loads so data-theme is always set
+      and assets/css/config.css needs no prefers-color-scheme media query.
+    -->
+    <script>
+      const systemDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+      function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+      }
+
+      function toggleTheme() {
+        const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+        sessionStorage.setItem('theme', next);
+        applyTheme(next);
+      }
+
+      applyTheme(sessionStorage.getItem('theme') || (systemDark.matches ? 'dark' : 'light'));
+
+      // Follow the OS while the visitor hasn't picked a theme themselves
+      systemDark.addEventListener('change', (e) => {
+        if (!sessionStorage.getItem('theme')) applyTheme(e.matches ? 'dark' : 'light');
+      });
+    </script>
+
+    <noscript>
+      <!-- The toggle above can't work, so don't offer it. The whole list item
+           goes, because the li carries its own padding on desktop. -->
+      <style>
+        .element:has(.theme-toggle) {
+          display: none;
+        }
+      </style>
+    </noscript>
+
     <!-- Stylesheet -->
     <link async rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.baseurl }}">
 

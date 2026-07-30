@@ -24,34 +24,6 @@
 <!-- end .header -->
 
 <script>
-  function toggleTheme() {
-    const systemInitiatedDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const currentOverridenTheme = sessionStorage.getItem('theme');
-
-    if (currentOverridenTheme === 'dark') {
-      document.documentElement.setAttribute('data-theme', 'light');
-      sessionStorage.setItem('theme', 'light');
-    } else if (currentOverridenTheme === 'light') {
-      document.documentElement.setAttribute('data-theme', 'dark');
-      sessionStorage.setItem('theme', 'dark');
-    } else if (systemInitiatedDark.matches) {
-      document.documentElement.setAttribute('data-theme', 'light');
-      sessionStorage.setItem('theme', 'light');
-    } else {
-      document.documentElement.setAttribute('data-theme', 'dark');
-      sessionStorage.setItem('theme', 'dark');
-    }
-  }
-
-  const overridenTheme = sessionStorage.getItem('theme');
-  if (overridenTheme === 'dark') {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    sessionStorage.setItem('theme', 'dark');
-  } else if (overridenTheme === 'light') {
-    document.documentElement.setAttribute('data-theme', 'light');
-    sessionStorage.setItem('theme', 'light');
-  }
-
   // Close mobile nav popover when resizing to desktop
   const navPopover = document.getElementById('nav-menu');
   window.matchMedia('(min-width: 800px)').addEventListener('change', (e) => {
