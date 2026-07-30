@@ -111,18 +111,6 @@ MENU STYLING
         background: none;
         border: none;
         cursor: pointer;
-
-        .icon-moon-stars {
-          display: var(--moon-icon-display);
-        }
-
-        .icon-sun {
-          display: var(--sun-icon-display);
-        }
-
-        &:after {
-          content: var(--toggle-theme-word);
-        }
       }
 
       a,
@@ -151,6 +139,30 @@ MENU STYLING
       }
     }
   }
+}
+
+/*
+  The theme button carries a label for each preference and shows the one in
+  effect. Kept at the top level, and out of the .nav-collapse nesting, so the
+  reveal below outweighs the rule that hides the rest.
+*/
+.theme-option {
+  display: none;
+}
+
+html[data-theme-preference="system"] .theme-option[data-theme-option="system"],
+html[data-theme-preference="light"] .theme-option[data-theme-option="light"],
+html[data-theme-preference="dark"] .theme-option[data-theme-option="dark"] {
+  display: inline;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 .nav-toggle {

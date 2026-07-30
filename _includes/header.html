@@ -15,7 +15,12 @@
         </li>
         {% endfor %}
         <li class="element last">
-          <button class="theme-toggle" data-theme="dark" onclick="toggleTheme()">{% include icon.html name="moon-stars" %}{% include icon.html name="sun" %}Turn lights</button>
+          <button class="theme-toggle" onclick="cycleTheme()">
+            <span class="visually-hidden">Theme:</span>
+            <span class="theme-option" data-theme-option="system">{% include icon.html name="display" %}System</span>
+            <span class="theme-option" data-theme-option="light">{% include icon.html name="sun" %}Light mode</span>
+            <span class="theme-option" data-theme-option="dark">{% include icon.html name="moon-stars" %}Dark mode</span>
+          </button>
         </li>
       </ul>
     </nav>

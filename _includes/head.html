@@ -66,27 +66,46 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
     <!--
-      Resolve the theme before the stylesheet loads so data-theme is always set
-      and assets/css/config.css needs no prefers-color-scheme media query.
+      Resolves the theme before the stylesheet loads, so data-theme is always
+      set and assets/css/config.css needs no prefers-color-scheme media query.
+
+      Two separate things: the preference is light, dark or system, while
+      data-theme is only ever light or dark. A missing key means system, which
+      is also what an unrecognised one falls back to.
     -->
     <script>
+      // Keys are the preferences a visitor can hold, values are what clicking
+      // the toggle moves them to
+      const THEME_CYCLE = { system: 'light', light: 'dark', dark: 'system' };
       const systemDark = window.matchMedia('(prefers-color-scheme: dark)');
 
-      function applyTheme(theme) {
-        document.documentElement.setAttribute('data-theme', theme);
+      function currentPreference() {
+        const stored = localStorage.getItem('theme');
+
+        return stored in THEME_CYCLE ? stored : 'system';
       }
 
-      function toggleTheme() {
-        const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      function applyPreference(preference) {
+        const root = document.documentElement;
+        const resolved =
+          preference === 'system' ? (systemDark.matches ? 'dark' : 'light') : preference;
+
+        root.setAttribute('data-theme', resolved);
+        root.setAttribute('data-theme-preference', preference);
+      }
+
+      function cycleTheme() {
+        const next = THEME_CYCLE[currentPreference()];
+
         localStorage.setItem('theme', next);
-        applyTheme(next);
+        applyPreference(next);
       }
 
-      applyTheme(localStorage.getItem('theme') || (systemDark.matches ? 'dark' : 'light'));
+      applyPreference(currentPreference());
 
       // Follow the OS while the visitor hasn't picked a theme themselves
-      systemDark.addEventListener('change', (e) => {
-        if (!localStorage.getItem('theme')) applyTheme(e.matches ? 'dark' : 'light');
+      systemDark.addEventListener('change', () => {
+        if (currentPreference() === 'system') applyPreference('system');
       });
     </script>
 

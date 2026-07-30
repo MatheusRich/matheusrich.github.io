@@ -72,10 +72,6 @@ html[data-theme="light"] {
 
   --dark-safe: unset;
 
-  --moon-icon-display: inline-block;
-  --sun-icon-display: none;
-  --toggle-theme-word: " off";
-
   color-scheme: light;
 }
 
@@ -117,10 +113,6 @@ html[data-theme="dark"] {
   --footer-border-color: #333;
 
   --dark-safe: invert(100%);
-
-  --moon-icon-display: none;
-  --sun-icon-display: inline-block;
-  --toggle-theme-word: " on";
 
   color-scheme: dark;
 }
