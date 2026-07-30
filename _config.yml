@@ -26,13 +26,17 @@ exclude:
   - lib
 
 navigation:
-  - title: 👨‍💻 About me
+  - title: About me
+    icon: person
     url: /about/
-  - title: 🏷️ Categories
+  - title: Categories
+    icon: tags
     url: /categories/
-  - title: 📝 All posts
+  - title: All posts
+    icon: journal-text
     url: /all/
-  - title: 🎙️ Speaking
+  - title: Speaking
+    icon: mic
     url: /speaking/
 
 social:

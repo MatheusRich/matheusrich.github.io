@@ -6,16 +6,16 @@
         <span class="text"> {{ site.title | upcase }} </span>
       </a>
     </h1>
-    <button class="nav-toggle" popovertarget="nav-menu" aria-label="Toggle navigation"></button>
+    <button class="nav-toggle" popovertarget="nav-menu" aria-label="Toggle navigation">{% include icon.html name="list" %}{% include icon.html name="x-lg" %}</button>
     <nav id="nav-menu" class="nav-collapse" popover="auto">
       <ul class="noList">
         {% for link in site.navigation %}
         <li class="element {% if forloop.first %}first{% endif %} {% if page.url == link.url %} current {% endif %}">
-          <a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+          <a href="{{ link.url | prepend: site.baseurl }}">{% if link.icon %}{% include icon.html name=link.icon %}{% endif %}{{ link.title }}</a>
         </li>
         {% endfor %}
         <li class="element last">
-          <button class="theme-toggle" data-theme="dark" onclick="toggleTheme()">Turn lights</button>
+          <button class="theme-toggle" data-theme="dark" onclick="toggleTheme()">{% include icon.html name="moon-stars" %}{% include icon.html name="sun" %}Turn lights</button>
         </li>
       </ul>
     </nav>
